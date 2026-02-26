@@ -1,7 +1,7 @@
 'use client';
 
 import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
-import { isBefore, parseISO } from 'date-fns';
+import { isBefore, parseISO, startOfDay } from 'date-fns';
 
 interface DashboardProps {
   deals: Deal[];
@@ -47,7 +47,7 @@ export default function Dashboard({ deals }: DashboardProps) {
     .reduce((sum, d) => sum + parseValue(d.value), 0);
 
   const overdueCount = activeDeals.filter(
-    (d) => d.next_action_date && isBefore(parseISO(d.next_action_date), new Date())
+    (d) => d.next_action_date && isBefore(parseISO(d.next_action_date), startOfDay(new Date()))
   ).length;
 
   const waitingOnBrand = activeDeals.filter((d) => d.waiting_on === 'brand').length;
