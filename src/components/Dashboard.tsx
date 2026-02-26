@@ -7,17 +7,44 @@ interface DashboardProps {
   deals: Deal[];
 }
 
+function parseValue(value: string | null): number {
+  if (!value) return 0;
+  const match = value.match(/\$?([\d,]+)/);
+  if (match) {
+    return parseInt(match[1].replace(/,/g, ''), 10);
+  }
+  return 0;
+}
+
 export default function Dashboard({ deals }: DashboardProps) {
   const activeDeals = deals.filter((d) => !d.archived && d.stage !== 'paused');
   
-  const totalPipelineValue = activeDeals.reduce((sum, deal) => {
-    if (!deal.value) return sum;
-    const match = deal.value.match(/\$?([\d,]+)/);
-    if (match) {
-      return sum + parseInt(match[1].replace(/,/g, ''), 10);
-    }
-    return sum;
-  }, 0);
+  // Value buckets based on stage
+  const potentialValue = deals
+    .filter(d => d.stage === 'negotiation' && !d.archived)
+    .reduce((sum, d) => sum + parseValue(d.value), 0);
+  
+  const agreedValue = deals
+    .filter(d => (d.stage === 'agreed' || d.stage === 'contract') && !d.archived)
+    .reduce((sum, d) => sum + parseValue(d.value), 0);
+  
+  const currentContractsValue = deals
+    .filter(d => ['content', 'approval', 'scheduled', 'delivered', 'invoiced'].includes(d.stage) && !d.archived)
+    .reduce((sum, d) => sum + parseValue(d.value), 0);
+  
+  // Paid this year (2026)
+  const currentYear = new Date().getFullYear();
+  const paidThisYear = deals
+    .filter(d => d.stage === 'paid' && !d.archived)
+    .filter(d => {
+      // Check if last_contact or updated_at is this year
+      if (d.last_contact) {
+        const year = new Date(d.last_contact).getFullYear();
+        return year === currentYear;
+      }
+      return true; // Include if no date to filter by
+    })
+    .reduce((sum, d) => sum + parseValue(d.value), 0);
 
   const overdueCount = activeDeals.filter(
     (d) => d.next_action_date && isBefore(parseISO(d.next_action_date), new Date())
@@ -39,14 +66,7 @@ export default function Dashboard({ deals }: DashboardProps) {
           <p className="text-gray-500">Track partnerships from pitch to payment</p>
         </div>
 
-        <div className="flex flex-wrap gap-4">
-          <div className="bg-green-50 rounded-lg px-4 py-2 border border-green-200">
-            <p className="text-sm text-green-600 font-medium">Pipeline Value</p>
-            <p className="text-2xl font-bold text-green-700">
-              ${totalPipelineValue.toLocaleString()}
-            </p>
-          </div>
-
+        <div className="flex flex-wrap gap-3">
           <div className="bg-blue-50 rounded-lg px-4 py-2 border border-blue-200">
             <p className="text-sm text-blue-600 font-medium">Active Deals</p>
             <p className="text-2xl font-bold text-blue-700">{activeDeals.length}</p>
@@ -67,6 +87,33 @@ export default function Dashboard({ deals }: DashboardProps) {
               <span title="Waiting on us">📌 {waitingOnUs}</span>
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Value Breakdown */}
+      <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="bg-purple-50 rounded-lg px-4 py-3 border border-purple-200">
+          <p className="text-xs text-purple-600 font-medium uppercase tracking-wide">Potential</p>
+          <p className="text-xl font-bold text-purple-700">${potentialValue.toLocaleString()}</p>
+          <p className="text-xs text-purple-500">In negotiation</p>
+        </div>
+
+        <div className="bg-amber-50 rounded-lg px-4 py-3 border border-amber-200">
+          <p className="text-xs text-amber-600 font-medium uppercase tracking-wide">Agreed Upon</p>
+          <p className="text-xl font-bold text-amber-700">${agreedValue.toLocaleString()}</p>
+          <p className="text-xs text-amber-500">Agreed + contract review</p>
+        </div>
+
+        <div className="bg-blue-50 rounded-lg px-4 py-3 border border-blue-200">
+          <p className="text-xs text-blue-600 font-medium uppercase tracking-wide">Active Contracts</p>
+          <p className="text-xl font-bold text-blue-700">${currentContractsValue.toLocaleString()}</p>
+          <p className="text-xs text-blue-500">Content → invoiced</p>
+        </div>
+
+        <div className="bg-green-50 rounded-lg px-4 py-3 border border-green-200">
+          <p className="text-xs text-green-600 font-medium uppercase tracking-wide">Paid ({currentYear})</p>
+          <p className="text-xl font-bold text-green-700">${paidThisYear.toLocaleString()}</p>
+          <p className="text-xs text-green-500">Received this year</p>
         </div>
       </div>
 

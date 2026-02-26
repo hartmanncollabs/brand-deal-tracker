@@ -27,6 +27,7 @@ export default function KanbanBoard() {
   const [isNewDeal, setIsNewDeal] = useState(false);
   const [activeDragId, setActiveDragId] = useState<string | null>(null);
   const [showArchived, setShowArchived] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
 
   const sensors = useSensors(
@@ -214,7 +215,21 @@ export default function KanbanBoard() {
   };
 
   const activeDeal = deals.find((d) => d.id === activeDragId);
-  const filteredDeals = showArchived ? deals : deals.filter((d) => !d.archived);
+  const filteredDeals = deals.filter((d) => {
+    // Filter by archived status
+    if (!showArchived && d.archived) return false;
+    
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      const matchesBrand = d.brand?.toLowerCase().includes(query);
+      const matchesContact = d.contact_name?.toLowerCase().includes(query);
+      const matchesEmail = d.contact_email?.toLowerCase().includes(query);
+      if (!matchesBrand && !matchesContact && !matchesEmail) return false;
+    }
+    
+    return true;
+  });
 
   if (loading) {
     return (
@@ -228,8 +243,8 @@ export default function KanbanBoard() {
     <div className="min-h-screen bg-gray-50 p-4">
       <Dashboard deals={filteredDeals} />
 
-      <div className="flex justify-between items-center mb-4">
-        <div className="flex gap-2">
+      <div className="flex justify-between items-center mb-4 gap-4">
+        <div className="flex gap-2 items-center">
           <button
             onClick={handleNewDeal}
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
@@ -245,6 +260,37 @@ export default function KanbanBoard() {
             />
             Show archived
           </label>
+        </div>
+        
+        <div className="relative">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search brands..."
+            className="pl-9 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-64"
+          />
+          <svg
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            >
+              ×
+            </button>
+          )}
         </div>
       </div>
 

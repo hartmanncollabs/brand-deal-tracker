@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, Priority, WaitingOn } from '@/types/database';
+import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Priority, WaitingOn } from '@/types/database';
 import { format, parseISO } from 'date-fns';
 
 interface DealModalProps {
@@ -70,16 +70,43 @@ export default function DealModal({
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden">
-        <div className="p-4 border-b flex justify-between items-center bg-gray-50">
-          <h2 className="text-xl font-bold text-gray-800">
-            {isNew ? 'New Deal' : formData.brand}
-          </h2>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 text-2xl"
-          >
-            ×
-          </button>
+        <div className="p-4 border-b bg-gray-50">
+          <div className="flex justify-between items-start">
+            <div className="flex-1">
+              <h2 className="text-xl font-bold text-gray-800">
+                {isNew ? 'New Deal' : formData.brand}
+              </h2>
+              {!isNew && (
+                <div className="mt-2 flex items-center gap-2">
+                  <span className="text-sm text-gray-500">Move to:</span>
+                  <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border ${STAGE_COLORS[formData.stage as DealStage || 'pitch']}`}>
+                    <select
+                      value={formData.stage || 'pitch'}
+                      onChange={(e) => {
+                        const newStage = e.target.value as DealStage;
+                        setFormData({ ...formData, stage: newStage });
+                        // Auto-save stage change
+                        onSave({ ...formData, stage: newStage });
+                      }}
+                      className="text-sm font-medium bg-transparent cursor-pointer focus:outline-none"
+                    >
+                      {STAGES.map((s) => (
+                        <option key={s} value={s}>
+                          {STAGE_LABELS[s]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              )}
+            </div>
+            <button
+              onClick={onClose}
+              className="text-gray-500 hover:text-gray-700 text-2xl ml-4"
+            >
+              ×
+            </button>
+          </div>
         </div>
 
         {!isNew && (
