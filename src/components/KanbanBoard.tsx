@@ -89,7 +89,18 @@ export default function KanbanBoard() {
     if (!over) return;
 
     const dealId = active.id as string;
-    const newStage = over.id as DealStage;
+    
+    // over.id could be a stage name (if dropped on column) or a deal id (if dropped on a card)
+    // Check if over.id is a valid stage, otherwise find the stage from the target deal
+    let newStage: DealStage;
+    if (STAGES.includes(over.id as DealStage)) {
+      newStage = over.id as DealStage;
+    } else {
+      // Dropped on a card - find that card's stage
+      const targetDeal = deals.find((d) => d.id === over.id);
+      if (!targetDeal) return;
+      newStage = targetDeal.stage;
+    }
 
     const deal = deals.find((d) => d.id === dealId);
     if (!deal || deal.stage === newStage) return;
