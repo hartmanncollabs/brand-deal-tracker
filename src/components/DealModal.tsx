@@ -36,7 +36,7 @@ export default function DealModal({
       setFormData({
         brand: '',
         slug: '',
-        stage: 'pitch',
+        stage: 'outreach',
         priority: 'medium',
         value: '',
         contact_name: '',
@@ -49,6 +49,8 @@ export default function DealModal({
         follow_up_count: 0,
         notes: '',
         archived: false,
+        is_repeat_brand: false,
+        past_history: '',
       });
     }
   }, [deal, isNew]);
@@ -79,9 +81,9 @@ export default function DealModal({
               {!isNew && (
                 <div className="mt-2 flex items-center gap-2">
                   <span className="text-sm text-gray-500">Move to:</span>
-                  <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border ${STAGE_COLORS[formData.stage as DealStage || 'pitch']}`}>
+                  <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border ${STAGE_COLORS[formData.stage as DealStage || 'outreach']}`}>
                     <select
-                      value={formData.stage || 'pitch'}
+                      value={formData.stage || 'outreach'}
                       onChange={(e) => {
                         const newStage = e.target.value as DealStage;
                         setFormData({ ...formData, stage: newStage });
@@ -178,7 +180,7 @@ export default function DealModal({
                     Stage
                   </label>
                   <select
-                    value={formData.stage || 'pitch'}
+                    value={formData.stage || 'outreach'}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -337,6 +339,39 @@ export default function DealModal({
                   rows={3}
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                 />
+              </div>
+
+              {/* Repeat Brand Section */}
+              <div className="p-3 bg-purple-50 rounded-lg border border-purple-200">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={formData.is_repeat_brand || false}
+                    onChange={(e) =>
+                      setFormData({ ...formData, is_repeat_brand: e.target.checked })
+                    }
+                    className="rounded border-purple-400 text-purple-600 focus:ring-purple-500"
+                  />
+                  <span className="text-sm font-medium text-purple-800">
+                    ↺ Repeat Brand (worked together before)
+                  </span>
+                </label>
+                {formData.is_repeat_brand && (
+                  <div className="mt-3">
+                    <label className="block text-sm font-medium text-purple-700 mb-1">
+                      Past History
+                    </label>
+                    <textarea
+                      value={formData.past_history || ''}
+                      onChange={(e) =>
+                        setFormData({ ...formData, past_history: e.target.value })
+                      }
+                      rows={2}
+                      placeholder="Previous campaigns, total value, deliverables, outcome..."
+                      className="w-full px-3 py-2 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 bg-white"
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="flex justify-between pt-4 border-t">

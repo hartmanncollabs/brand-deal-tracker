@@ -55,17 +55,29 @@ export default function DealCard({ deal, onClick }: DealCardProps) {
       `}
     >
       <div className="flex justify-between items-start mb-2">
-        <h3 className="font-semibold text-gray-900 text-sm">{deal.brand}</h3>
-        {isOverdue && (
-          <span className="px-1.5 py-0.5 bg-red-100 text-red-700 text-xs rounded font-medium">
-            OVERDUE
-          </span>
-        )}
-        {isUrgent && !isOverdue && (
-          <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-xs rounded font-medium">
-            SOON
-          </span>
-        )}
+        <div className="flex items-center gap-1.5">
+          <h3 className="font-semibold text-gray-900 text-sm">{deal.brand}</h3>
+          {deal.is_repeat_brand && (
+            <span 
+              className="text-purple-600 cursor-help" 
+              title={deal.past_history || 'Returning brand'}
+            >
+              ↺
+            </span>
+          )}
+        </div>
+        <div className="flex gap-1">
+          {isOverdue && (
+            <span className="px-1.5 py-0.5 bg-red-100 text-red-700 text-xs rounded font-medium">
+              OVERDUE
+            </span>
+          )}
+          {isUrgent && !isOverdue && (
+            <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-xs rounded font-medium">
+              SOON
+            </span>
+          )}
+        </div>
       </div>
 
       {deal.value && (

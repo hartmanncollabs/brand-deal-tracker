@@ -1,6 +1,6 @@
 export type DealStage =
-  | 'pitch'
   | 'outreach'
+  | 'pitched'
   | 'negotiation'
   | 'agreed'
   | 'contract'
@@ -34,6 +34,8 @@ export interface Deal {
   follow_up_count: number;
   notes: string | null;
   archived: boolean;
+  is_repeat_brand: boolean;
+  past_history: string | null; // Summary of past campaigns, value, deliverables
   created_at: string;
   updated_at: string;
 }
@@ -64,8 +66,8 @@ export interface Database {
 }
 
 export const STAGES: DealStage[] = [
-  'pitch',
   'outreach',
+  'pitched',
   'negotiation',
   'agreed',
   'contract',
@@ -80,8 +82,8 @@ export const STAGES: DealStage[] = [
 ];
 
 export const STAGE_LABELS: Record<DealStage, string> = {
-  pitch: 'Pitch',
   outreach: 'Outreach',
+  pitched: 'Pitched',
   negotiation: 'Negotiation',
   agreed: 'Agreed',
   contract: 'Contract',
@@ -96,8 +98,8 @@ export const STAGE_LABELS: Record<DealStage, string> = {
 };
 
 export const STAGE_COLORS: Record<DealStage, string> = {
-  pitch: 'bg-slate-100 border-slate-300',
-  outreach: 'bg-blue-50 border-blue-300',
+  outreach: 'bg-slate-100 border-slate-300',
+  pitched: 'bg-blue-50 border-blue-300',
   negotiation: 'bg-amber-50 border-amber-300',
   agreed: 'bg-lime-50 border-lime-300',
   contract: 'bg-yellow-50 border-yellow-300',
