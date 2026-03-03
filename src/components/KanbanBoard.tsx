@@ -16,7 +16,6 @@ import {
   CollisionDetection,
   UniqueIdentifier,
 } from '@dnd-kit/core';
-import { arrayMove } from '@dnd-kit/sortable';
 import { Deal, DealActivity, DealStage, STAGES } from '@/types/database';
 import { supabase } from '@/lib/supabase';
 import Column from './Column';
