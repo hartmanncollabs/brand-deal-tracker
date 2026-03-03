@@ -36,6 +36,7 @@ export interface Deal {
   archived: boolean;
   is_repeat_brand: boolean;
   past_history: string | null; // Summary of past campaigns, value, deliverables
+  sort_order: number | null; // Position within stage for drag-and-drop reordering
   created_at: string;
   updated_at: string;
 }

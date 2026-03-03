@@ -8,9 +8,11 @@ import { format, parseISO, isBefore, addDays } from 'date-fns';
 interface DealCardProps {
   deal: Deal;
   onClick: () => void;
+  isHovered?: boolean;
+  isDragSource?: boolean;
 }
 
-export default function DealCard({ deal, onClick }: DealCardProps) {
+export default function DealCard({ deal, onClick, isHovered, isDragSource }: DealCardProps) {
   const {
     attributes,
     listeners,
@@ -22,7 +24,7 @@ export default function DealCard({ deal, onClick }: DealCardProps) {
 
   const style = {
     transform: CSS.Transform.toString(transform),
-    transition,
+    transition: transition ?? 'transform 200ms ease',
   };
 
   const isOverdue = deal.next_action_date
@@ -48,10 +50,11 @@ export default function DealCard({ deal, onClick }: DealCardProps) {
       onClick={onClick}
       className={`
         bg-white rounded-lg shadow-sm border-2 border-l-4 p-3 cursor-grab active:cursor-grabbing
-        hover:shadow-md transition-shadow
+        hover:shadow-md transition-all duration-200
         ${priorityColors[deal.priority]}
         ${isOverdue ? 'border-red-500 ring-2 ring-red-200' : 'border-gray-200'}
-        ${isDragging ? 'opacity-50 shadow-lg' : ''}
+        ${isDragging || isDragSource ? 'opacity-50 shadow-lg scale-[0.98]' : ''}
+        ${isHovered ? 'translate-y-3 border-t-blue-400 border-t-4' : ''}
       `}
     >
       <div className="flex justify-between items-start mb-2">

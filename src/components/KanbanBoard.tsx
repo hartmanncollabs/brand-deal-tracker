@@ -4,12 +4,17 @@ import { useState, useEffect, useCallback } from 'react';
 import {
   DndContext,
   DragEndEvent,
+  DragOverEvent,
   DragOverlay,
   DragStartEvent,
-  closestCorners,
+  closestCenter,
+  pointerWithin,
+  rectIntersection,
   PointerSensor,
   useSensor,
   useSensors,
+  CollisionDetection,
+  UniqueIdentifier,
 } from '@dnd-kit/core';
 import { Deal, DealActivity, DealStage, STAGES } from '@/types/database';
 import { supabase } from '@/lib/supabase';
@@ -19,6 +24,34 @@ import DealModal from './DealModal';
 import Dashboard from './Dashboard';
 import { format } from 'date-fns';
 
+// Custom collision detection that prefers columns over cards
+const customCollisionDetection: CollisionDetection = (args) => {
+  // First check if we're over a column (stage)
+  const pointerCollisions = pointerWithin(args);
+  const columnCollision = pointerCollisions.find((collision) =>
+    STAGES.includes(collision.id as DealStage)
+  );
+  
+  if (columnCollision) {
+    // Now check if we're also over a card within that column
+    const rectCollisions = rectIntersection(args);
+    const cardCollision = rectCollisions.find(
+      (collision) => !STAGES.includes(collision.id as DealStage)
+    );
+    
+    // If over a card, return that for insertion positioning
+    if (cardCollision) {
+      return [cardCollision];
+    }
+    
+    // Otherwise return the column
+    return [columnCollision];
+  }
+  
+  // Fallback to closest center
+  return closestCenter(args);
+};
+
 export default function KanbanBoard() {
   const [deals, setDeals] = useState<Deal[]>([]);
   const [activities, setActivities] = useState<DealActivity[]>([]);
@@ -26,6 +59,7 @@ export default function KanbanBoard() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isNewDeal, setIsNewDeal] = useState(false);
   const [activeDragId, setActiveDragId] = useState<string | null>(null);
+  const [activeOverId, setActiveOverId] = useState<UniqueIdentifier | null>(null);
   const [showArchived, setShowArchived] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
@@ -42,6 +76,7 @@ export default function KanbanBoard() {
     const { data, error } = await supabase
       .from('deals')
       .select('*')
+      .order('sort_order', { ascending: true, nullsFirst: false })
       .order('updated_at', { ascending: false });
 
     if (error) {
@@ -80,55 +115,142 @@ export default function KanbanBoard() {
 
   const handleDragStart = (event: DragStartEvent) => {
     setActiveDragId(event.active.id as string);
+    setActiveOverId(null);
+  };
+
+  const handleDragOver = (event: DragOverEvent) => {
+    setActiveOverId(event.over?.id ?? null);
+  };
+
+  // Helper to find target stage from over.id - ALWAYS returns a valid stage or null
+  const findTargetStage = (overId: UniqueIdentifier): DealStage | null => {
+    // First check if overId is directly a stage name
+    if (STAGES.includes(overId as DealStage)) {
+      return overId as DealStage;
+    }
+    
+    // Otherwise it's a deal ID - find that deal and return its stage
+    // IMPORTANT: We look up the deal's stage, which must be a valid stage name
+    const targetDeal = deals.find((d) => d.id === overId);
+    if (targetDeal && STAGES.includes(targetDeal.stage)) {
+      return targetDeal.stage;
+    }
+    
+    // If we can't determine a valid stage, return null
+    return null;
   };
 
   const handleDragEnd = async (event: DragEndEvent) => {
-    setActiveDragId(null);
-
     const { active, over } = event;
+    
+    setActiveDragId(null);
+    setActiveOverId(null);
+
     if (!over) return;
 
     const dealId = active.id as string;
+    const deal = deals.find((d) => d.id === dealId);
+    if (!deal) return;
+
+    // Get the target stage - this MUST be a valid stage name from STAGES
+    const newStage = findTargetStage(over.id);
     
-    // over.id could be a stage name (if dropped on column) or a deal id (if dropped on a card)
-    // Check if over.id is a valid stage, otherwise find the stage from the target deal
-    let newStage: DealStage;
-    if (STAGES.includes(over.id as DealStage)) {
-      newStage = over.id as DealStage;
-    } else {
-      // Dropped on a card - find that card's stage
-      const targetDeal = deals.find((d) => d.id === over.id);
-      if (!targetDeal) return;
-      newStage = targetDeal.stage;
+    // CRITICAL: Validate newStage is actually a valid stage, not a UUID
+    if (!newStage || !STAGES.includes(newStage)) {
+      console.error('Invalid stage detected:', newStage, 'over.id was:', over.id);
+      return;
     }
 
-    const deal = deals.find((d) => d.id === dealId);
-    if (!deal || deal.stage === newStage) return;
+    const isStageChange = deal.stage !== newStage;
+    const isDropOnCard = !STAGES.includes(over.id as DealStage);
+
+    // Get deals in the target column (for reordering)
+    const targetColumnDeals = deals
+      .filter((d) => d.stage === newStage && d.id !== dealId)
+      .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+
+    let newSortOrder: number;
+    let updates: { id: string; sort_order: number }[] = [];
+
+    if (isDropOnCard) {
+      // Dropped on a specific card - insert at that position
+      const targetDeal = deals.find((d) => d.id === over.id);
+      if (targetDeal) {
+        const targetIndex = targetColumnDeals.findIndex((d) => d.id === targetDeal.id);
+        
+        // Recompute sort orders for the column
+        const newOrder = [...targetColumnDeals];
+        newOrder.splice(targetIndex, 0, deal);
+        
+        updates = newOrder.map((d, index) => ({
+          id: d.id,
+          sort_order: index * 100,
+        }));
+        
+        newSortOrder = targetIndex * 100;
+      } else {
+        // Fallback: add at end
+        newSortOrder = (targetColumnDeals.length) * 100;
+      }
+    } else {
+      // Dropped on column - add at end
+      newSortOrder = (targetColumnDeals.length) * 100;
+    }
 
     // Optimistic update
-    setDeals((prev) =>
-      prev.map((d) =>
-        d.id === dealId ? { ...d, stage: newStage, updated_at: new Date().toISOString() } : d
-      )
-    );
+    setDeals((prev) => {
+      const updated = prev.map((d) => {
+        if (d.id === dealId) {
+          return { ...d, stage: newStage, sort_order: newSortOrder, updated_at: new Date().toISOString() };
+        }
+        // Apply sort order updates for other cards in the column
+        const updateEntry = updates.find((u) => u.id === d.id);
+        if (updateEntry) {
+          return { ...d, sort_order: updateEntry.sort_order };
+        }
+        return d;
+      });
+      
+      // Re-sort by sort_order
+      return updated.sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+    });
 
-    // Update in database
+    // Update the dragged deal in database
     const { error } = await supabase
       .from('deals')
-      .update({ stage: newStage, updated_at: new Date().toISOString() })
+      .update({ 
+        stage: newStage, 
+        sort_order: newSortOrder,
+        updated_at: new Date().toISOString() 
+      })
       .eq('id', dealId);
 
     if (error) {
-      console.error('Error updating deal stage:', error);
+      console.error('Error updating deal:', error);
       fetchDeals(); // Revert on error
+      return;
     }
 
-    // Add activity
-    await supabase.from('deal_activities').insert({
-      deal_id: dealId,
-      date: format(new Date(), 'yyyy-MM-dd'),
-      note: `Moved to ${newStage}`,
-    });
+    // Update sort orders for other cards if needed
+    if (updates.length > 0) {
+      for (const update of updates) {
+        if (update.id !== dealId) {
+          await supabase
+            .from('deals')
+            .update({ sort_order: update.sort_order })
+            .eq('id', update.id);
+        }
+      }
+    }
+
+    // Add activity only for stage changes
+    if (isStageChange) {
+      await supabase.from('deal_activities').insert({
+        deal_id: dealId,
+        date: format(new Date(), 'yyyy-MM-dd'),
+        note: `Moved to ${newStage}`,
+      });
+    }
   };
 
   const handleDealClick = (deal: Deal) => {
@@ -307,8 +429,9 @@ export default function KanbanBoard() {
 
       <DndContext
         sensors={sensors}
-        collisionDetection={closestCorners}
+        collisionDetection={customCollisionDetection}
         onDragStart={handleDragStart}
+        onDragOver={handleDragOver}
         onDragEnd={handleDragEnd}
       >
         <div className="flex gap-4 overflow-x-auto pb-4">
@@ -318,6 +441,8 @@ export default function KanbanBoard() {
               stage={stage}
               deals={filteredDeals.filter((d) => d.stage === stage)}
               onDealClick={handleDealClick}
+              activeOverId={activeOverId}
+              activeDragId={activeDragId}
             />
           ))}
         </div>

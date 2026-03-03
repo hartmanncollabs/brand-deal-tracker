@@ -1,23 +1,33 @@
 'use client';
 
-import { useDroppable } from '@dnd-kit/core';
+import { useDroppable, UniqueIdentifier } from '@dnd-kit/core';
 import {
   SortableContext,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { Deal, DealStage, STAGE_LABELS, STAGE_COLORS } from '@/types/database';
+import { Deal, DealStage, STAGE_LABELS, STAGE_COLORS, STAGES } from '@/types/database';
 import DealCard from './DealCard';
 
 interface ColumnProps {
   stage: DealStage;
   deals: Deal[];
   onDealClick: (deal: Deal) => void;
+  activeOverId: UniqueIdentifier | null;
+  activeDragId: string | null;
 }
 
-export default function Column({ stage, deals, onDealClick }: ColumnProps) {
-  const { setNodeRef, isOver } = useDroppable({
+export default function Column({ stage, deals, onDealClick, activeOverId, activeDragId }: ColumnProps) {
+  const { setNodeRef } = useDroppable({
     id: stage,
   });
+
+  // Determine if this column is being hovered (either directly or via a card)
+  const isColumnHovered = 
+    activeOverId === stage || 
+    (!STAGES.includes(activeOverId as DealStage) && deals.some((d) => d.id === activeOverId));
+
+  // Find which card is being hovered for insertion indicator
+  const hoveredCardId = !STAGES.includes(activeOverId as DealStage) ? activeOverId : null;
 
   const totalValue = deals.reduce((sum, deal) => {
     if (!deal.value) return sum;
@@ -28,10 +38,13 @@ export default function Column({ stage, deals, onDealClick }: ColumnProps) {
     return sum;
   }, 0);
 
+  // Sort deals by sort_order
+  const sortedDeals = [...deals].sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+
   return (
     <div
-      className={`flex flex-col min-w-[280px] max-w-[280px] rounded-lg border-2 ${STAGE_COLORS[stage]} ${
-        isOver ? 'ring-2 ring-blue-400' : ''
+      className={`flex flex-col min-w-[280px] max-w-[280px] rounded-lg border-2 transition-all duration-200 ${STAGE_COLORS[stage]} ${
+        isColumnHovered ? 'ring-2 ring-blue-400 bg-blue-50/50' : ''
       }`}
     >
       <div className="p-3 border-b border-inherit">
@@ -50,20 +63,29 @@ export default function Column({ stage, deals, onDealClick }: ColumnProps) {
 
       <div
         ref={setNodeRef}
-        className="flex-1 p-2 space-y-2 overflow-y-auto min-h-[200px] max-h-[calc(100vh-280px)]"
+        className="flex-1 p-2 overflow-y-auto min-h-[200px] max-h-[calc(100vh-280px)]"
       >
         <SortableContext
-          items={deals.map((d) => d.id)}
+          items={sortedDeals.map((d) => d.id)}
           strategy={verticalListSortingStrategy}
         >
-          {deals.map((deal) => (
-            <DealCard
-              key={deal.id}
-              deal={deal}
-              onClick={() => onDealClick(deal)}
-            />
-          ))}
+          <div className="space-y-2">
+            {sortedDeals.map((deal) => (
+              <DealCard
+                key={deal.id}
+                deal={deal}
+                onClick={() => onDealClick(deal)}
+                isHovered={hoveredCardId === deal.id}
+                isDragSource={activeDragId === deal.id}
+              />
+            ))}
+          </div>
         </SortableContext>
+        
+        {/* Drop indicator at end of column when hovering column directly */}
+        {activeOverId === stage && activeDragId && (
+          <div className="h-1 bg-blue-400 rounded mt-2 animate-pulse" />
+        )}
       </div>
     </div>
   );
