@@ -24,7 +24,8 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
 
   const style = {
     transform: CSS.Transform.toString(transform),
-    transition: transition ?? 'transform 200ms ease',
+    transition: transition || 'transform 200ms cubic-bezier(0.25, 1, 0.5, 1)',
+    zIndex: isDragging ? 999 : undefined,
   };
 
   const isOverdue = deal.next_action_date
