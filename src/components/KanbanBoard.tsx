@@ -147,6 +147,9 @@ export default function KanbanBoard() {
     setActiveOverId(null);
 
     if (!over) return;
+    
+    // SAFETY: If dropped on itself, do nothing
+    if (over.id === active.id) return;
 
     const dealId = active.id as string;
     const deal = deals.find((d) => d.id === dealId);
@@ -156,8 +159,17 @@ export default function KanbanBoard() {
     const newStage = findTargetStage(over.id);
     
     // CRITICAL: Validate newStage is actually a valid stage, not a UUID
-    if (!newStage || !STAGES.includes(newStage)) {
-      console.error('Invalid stage detected:', newStage, 'over.id was:', over.id);
+    // UUIDs are 36 chars with dashes - stage names are short words
+    const looksLikeUUID = typeof newStage === 'string' && newStage.length > 20;
+    if (!newStage || !STAGES.includes(newStage) || looksLikeUUID) {
+      console.error('BLOCKED invalid stage:', { newStage, overId: over.id, activeId: active.id });
+      return;
+    }
+    
+    // Double-check: newStage must be one of our known stages
+    const validStages: string[] = ['pitch', 'outreach', 'negotiation', 'agreed', 'contract', 'content', 'approval', 'scheduled', 'delivered', 'invoiced', 'paid', 'complete', 'paused'];
+    if (!validStages.includes(newStage)) {
+      console.error('BLOCKED stage not in hardcoded list:', newStage);
       return;
     }
 
