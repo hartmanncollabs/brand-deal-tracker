@@ -119,6 +119,9 @@ export default function KanbanBoard() {
     setActiveOverId(null);
   };
 
+  // Hardcoded valid stages - the ONLY values allowed
+  const VALID_STAGE_LIST: string[] = ['pitch', 'outreach', 'negotiation', 'agreed', 'contract', 'content', 'approval', 'scheduled', 'delivered', 'invoiced', 'paid', 'complete', 'paused'];
+
   const handleDragOver = (event: DragOverEvent) => {
     const { active, over } = event;
     setActiveOverId(over?.id ?? null);
@@ -132,7 +135,7 @@ export default function KanbanBoard() {
     const activeDeal = deals.find(d => d.id === activeId);
     if (!activeDeal) return;
     
-    // Determine target stage
+    // Determine target stage - WITH STRICT VALIDATION
     let targetStage: DealStage | null = null;
     let overDeal: Deal | undefined;
     
@@ -140,12 +143,16 @@ export default function KanbanBoard() {
       targetStage = overId as DealStage;
     } else {
       overDeal = deals.find(d => d.id === overId);
-      if (overDeal && STAGES.includes(overDeal.stage)) {
+      if (overDeal && STAGES.includes(overDeal.stage) && VALID_STAGE_LIST.includes(overDeal.stage)) {
         targetStage = overDeal.stage;
       }
     }
     
-    if (!targetStage) return;
+    // CRITICAL: Validate targetStage before any update
+    if (!targetStage || !VALID_STAGE_LIST.includes(targetStage) || targetStage.length > 20) {
+      console.warn('handleDragOver: Invalid targetStage blocked:', targetStage);
+      return;
+    }
     
     // Cross-column move
     if (targetStage !== activeDeal.stage) {
