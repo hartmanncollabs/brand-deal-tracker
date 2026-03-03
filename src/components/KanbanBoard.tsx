@@ -119,68 +119,10 @@ export default function KanbanBoard() {
     setActiveOverId(null);
   };
 
-  // Hardcoded valid stages - the ONLY values allowed
-  const VALID_STAGE_LIST: string[] = ['pitch', 'outreach', 'negotiation', 'agreed', 'contract', 'content', 'approval', 'scheduled', 'delivered', 'invoiced', 'paid', 'complete', 'paused'];
-
   const handleDragOver = (event: DragOverEvent) => {
-    const { active, over } = event;
+    const { over } = event;
     setActiveOverId(over?.id ?? null);
-    
-    if (!over || over.id === active.id) return;
-    
-    const activeId = active.id as string;
-    const overId = over.id as string;
-    
-    // Find the active deal
-    const activeDeal = deals.find(d => d.id === activeId);
-    if (!activeDeal) return;
-    
-    // Determine target stage - WITH STRICT VALIDATION
-    let targetStage: DealStage | null = null;
-    let overDeal: Deal | undefined;
-    
-    if (STAGES.includes(overId as DealStage)) {
-      targetStage = overId as DealStage;
-    } else {
-      overDeal = deals.find(d => d.id === overId);
-      if (overDeal && STAGES.includes(overDeal.stage) && VALID_STAGE_LIST.includes(overDeal.stage)) {
-        targetStage = overDeal.stage;
-      }
-    }
-    
-    // CRITICAL: Validate targetStage before any update
-    if (!targetStage || !VALID_STAGE_LIST.includes(targetStage) || targetStage.length > 20) {
-      console.warn('handleDragOver: Invalid targetStage blocked:', targetStage);
-      return;
-    }
-    
-    // Cross-column move
-    if (targetStage !== activeDeal.stage) {
-      setDeals(prev => {
-        const updated = prev.map(d => 
-          d.id === activeId ? { ...d, stage: targetStage! } : d
-        );
-        return updated;
-      });
-    } 
-    // Same column reorder
-    else if (overDeal) {
-      setDeals(prev => {
-        const columnDeals = prev.filter(d => d.stage === targetStage);
-        const otherDeals = prev.filter(d => d.stage !== targetStage);
-        
-        const oldIndex = columnDeals.findIndex(d => d.id === activeId);
-        const newIndex = columnDeals.findIndex(d => d.id === overId);
-        
-        if (oldIndex !== -1 && newIndex !== -1 && oldIndex !== newIndex) {
-          const reordered = arrayMove(columnDeals, oldIndex, newIndex);
-          // Update sort_order for animation
-          const withOrder = reordered.map((d, i) => ({ ...d, sort_order: i * 100 }));
-          return [...otherDeals, ...withOrder];
-        }
-        return prev;
-      });
-    }
+    // NO optimistic updates here - let handleDragEnd do the work safely
   };
 
   // Helper to find target stage from over.id - ALWAYS returns a valid stage or null
