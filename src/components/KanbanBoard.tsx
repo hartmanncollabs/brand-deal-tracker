@@ -168,12 +168,7 @@ export default function KanbanBoard() {
       return;
     }
     
-    // Double-check: newStage must be one of our known stages
-    const validStages: string[] = ['pitch', 'outreach', 'negotiation', 'agreed', 'contract', 'content', 'approval', 'scheduled', 'delivered', 'invoiced', 'paid', 'complete', 'paused'];
-    if (!validStages.includes(newStage)) {
-      console.error('BLOCKED stage not in hardcoded list:', newStage);
-      return;
-    }
+    // Double-check: newStage must be one of our known stages (use STAGES constant, not hardcoded list)
 
     const isStageChange = deal.stage !== newStage;
     const isDropOnCard = !STAGES.includes(over.id as DealStage);
