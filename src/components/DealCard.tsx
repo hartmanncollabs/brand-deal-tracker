@@ -3,7 +3,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Deal } from '@/types/database';
-import { format, parseISO, isBefore, addDays, startOfDay, isEqual } from 'date-fns';
+import { format, parseISO, addDays } from 'date-fns';
 
 interface DealCardProps {
   deal: Deal;
@@ -28,15 +28,16 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
     zIndex: isDragging ? 999 : undefined,
   };
 
-  const today = startOfDay(new Date());
-  const actionDate = deal.next_action_date ? startOfDay(parseISO(deal.next_action_date)) : null;
+  // Compare date strings to avoid timezone issues
+  const todayStr = format(new Date(), 'yyyy-MM-dd');
+  const actionDateStr = deal.next_action_date || null;
 
-  const isDueToday = actionDate ? isEqual(actionDate, today) : false;
+  const isDueToday = actionDateStr === todayStr;
 
-  const isOverdue = actionDate ? isBefore(actionDate, today) : false;
+  const isOverdue = actionDateStr ? actionDateStr < todayStr : false;
 
-  const isUrgent = actionDate
-    ? isBefore(actionDate, addDays(today, 2)) && !isOverdue && !isDueToday
+  const isUrgent = actionDateStr
+    ? actionDateStr <= format(addDays(new Date(), 2), 'yyyy-MM-dd') && !isOverdue && !isDueToday
     : false;
 
   const priorityColors: Record<string, string> = {
