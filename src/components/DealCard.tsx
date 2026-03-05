@@ -3,7 +3,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Deal } from '@/types/database';
-import { format, parseISO, isBefore, addDays } from 'date-fns';
+import { format, parseISO, isBefore, addDays, startOfDay, isEqual } from 'date-fns';
 
 interface DealCardProps {
   deal: Deal;
@@ -28,12 +28,15 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
     zIndex: isDragging ? 999 : undefined,
   };
 
-  const isOverdue = deal.next_action_date
-    ? isBefore(parseISO(deal.next_action_date), new Date())
-    : false;
+  const today = startOfDay(new Date());
+  const actionDate = deal.next_action_date ? startOfDay(parseISO(deal.next_action_date)) : null;
 
-  const isUrgent = deal.next_action_date
-    ? isBefore(parseISO(deal.next_action_date), addDays(new Date(), 2)) && !isOverdue
+  const isDueToday = actionDate ? isEqual(actionDate, today) : false;
+
+  const isOverdue = actionDate ? isBefore(actionDate, today) : false;
+
+  const isUrgent = actionDate
+    ? isBefore(actionDate, addDays(today, 2)) && !isOverdue && !isDueToday
     : false;
 
   const priorityColors: Record<string, string> = {
@@ -53,7 +56,7 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
         bg-white rounded-lg shadow-sm border-2 border-l-4 p-3 cursor-grab active:cursor-grabbing
         hover:shadow-md transition-all duration-200
         ${priorityColors[deal.priority]}
-        ${isOverdue ? 'border-red-500 ring-2 ring-red-200' : 'border-gray-200'}
+        ${isOverdue ? 'border-red-500 ring-2 ring-red-200' : isDueToday ? 'border-amber-500 ring-2 ring-amber-200' : 'border-gray-200'}
         ${isDragging || isDragSource ? 'opacity-50 shadow-lg scale-[0.98]' : ''}
         ${isHovered ? 'translate-y-3 border-t-blue-400 border-t-4' : ''}
       `}
@@ -76,8 +79,13 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
               OVERDUE
             </span>
           )}
-          {isUrgent && !isOverdue && (
+          {isDueToday && (
             <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-xs rounded font-medium">
+              DUE TODAY
+            </span>
+          )}
+          {isUrgent && (
+            <span className="px-1.5 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded font-medium">
               SOON
             </span>
           )}
