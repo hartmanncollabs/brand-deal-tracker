@@ -1,7 +1,7 @@
 -- Brand Deal Tracker Database Schema
 -- Run this in your Supabase SQL editor
 
--- Enable UUID extension (if needed for backwards compat)
+-- Enable UUID extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp" SCHEMA extensions;
 
 -- Create deals table
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS deals (
   follow_up_count INTEGER DEFAULT 0,
   notes TEXT,
   archived BOOLEAN DEFAULT false,
-  sort_order INTEGER,
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
