@@ -57,6 +57,7 @@ export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDra
 
   return (
     <div
+      id={`deal-${deal.id}`}
       ref={setNodeRef}
       style={style}
       {...attributes}

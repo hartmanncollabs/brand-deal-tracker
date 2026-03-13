@@ -433,6 +433,19 @@ export default function KanbanBoard() {
     setIsSpawnModalOpen(true);
   };
 
+  // Scroll to a specific deal card
+  const handleScrollToDeal = (dealId: string) => {
+    const element = document.getElementById(`deal-${dealId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+      // Add a brief highlight effect
+      element.classList.add('ring-4', 'ring-blue-400');
+      setTimeout(() => {
+        element.classList.remove('ring-4', 'ring-blue-400');
+      }, 2000);
+    }
+  };
+
   // Actually spawn the child card
   const handleDoSpawn = async (data: { stage: DealStage; value: number; notes: string }) => {
     if (!spawnParentDeal) return;
@@ -524,7 +537,7 @@ export default function KanbanBoard() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
-      <Dashboard deals={filteredDeals} />
+      <Dashboard deals={filteredDeals} onScrollToDeal={handleScrollToDeal} />
 
       <div className="flex justify-between items-center mb-4 gap-4">
         <div className="flex gap-2 items-center">
