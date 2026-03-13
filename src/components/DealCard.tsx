@@ -56,16 +56,14 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource, child
   return (
     <div
       ref={setNodeRef}
-      style={{
-        ...style,
-        borderStyle: showDottedBorder ? 'dashed' : 'solid',
-      }}
+      style={style}
       {...attributes}
       {...listeners}
       onClick={onClick}
       className={`
         bg-white rounded-lg shadow-sm border-2 border-l-4 p-3 cursor-grab active:cursor-grabbing
         hover:shadow-md transition-all duration-200
+        ${showDottedBorder ? 'border-dashed' : 'border-solid'}
         ${priorityColors[deal.priority]}
         ${isOverdue ? 'border-red-500 ring-2 ring-red-200' : isDueToday ? 'border-amber-500 ring-2 ring-amber-200' : 'border-gray-200'}
         ${isDragging || isDragSource ? 'opacity-50 shadow-lg scale-[0.98]' : ''}
