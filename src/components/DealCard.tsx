@@ -85,6 +85,14 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource, isMul
               ↺
             </span>
           )}
+          {deal.deal_type === 'ugc' && (
+            <span 
+              className="text-amber-600 cursor-help text-xs" 
+              title="UGC: Brand posts content (skips scheduled/delivered)"
+            >
+              🎬
+            </span>
+          )}
           {isParentDeal && (
             <span 
               className="text-blue-600 cursor-help text-xs" 

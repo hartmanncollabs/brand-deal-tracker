@@ -17,6 +17,8 @@ export type WaitingOn = 'brand' | 'us' | null;
 
 export type Priority = 'low' | 'medium' | 'high';
 
+export type DealType = 'ugc' | 'posted' | 'hybrid';
+
 export interface Deal {
   id: string;
   brand: string;
@@ -37,6 +39,7 @@ export interface Deal {
   is_repeat_brand: boolean;
   past_history: string | null; // Summary of past campaigns, value, deliverables
   sort_order: number | null; // Position within stage for drag-and-drop reordering
+  deal_type: DealType; // ugc = brand posts (skip scheduled/delivered), posted = Liz posts (full pipeline)
   // Multi-month deal fields
   is_multi_month: boolean;
   total_months: number | null;

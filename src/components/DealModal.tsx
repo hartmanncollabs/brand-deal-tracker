@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Priority, WaitingOn } from '@/types/database';
+import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Priority, WaitingOn, DealType } from '@/types/database';
 import { format, parseISO } from 'date-fns';
 
 interface DealModalProps {
@@ -57,6 +57,7 @@ export default function DealModal({
         archived: false,
         is_repeat_brand: false,
         past_history: '',
+        deal_type: 'posted',
         is_multi_month: false,
         total_months: null,
         monthly_value: null,
@@ -197,7 +198,7 @@ export default function DealModal({
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-4 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Stage
@@ -217,6 +218,25 @@ export default function DealModal({
                         {STAGE_LABELS[s]}
                       </option>
                     ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Deal Type
+                  </label>
+                  <select
+                    value={formData.deal_type || 'posted'}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        deal_type: e.target.value as DealType,
+                      })
+                    }
+                    className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="posted">📱 Posted</option>
+                    <option value="ugc">🎬 UGC Only</option>
+                    <option value="hybrid">🔄 Hybrid</option>
                   </select>
                 </div>
                 <div>
@@ -258,6 +278,13 @@ export default function DealModal({
                   </select>
                 </div>
               </div>
+              
+              {/* Deal type info */}
+              {formData.deal_type === 'ugc' && (
+                <p className="text-xs text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg">
+                  🎬 UGC deals skip Scheduled → Delivered (brand posts the content)
+                </p>
+              )}
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
