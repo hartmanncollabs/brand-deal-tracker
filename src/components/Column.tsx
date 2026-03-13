@@ -12,12 +12,13 @@ interface ColumnProps {
   stage: DealStage;
   deals: Deal[];
   onDealClick: (deal: Deal) => void;
+  onSpawnChild?: (deal: Deal) => void;
   activeOverId: UniqueIdentifier | null;
   activeDragId: string | null;
   getChildCount?: (dealId: string) => number;
 }
 
-export default function Column({ stage, deals, onDealClick, activeOverId, activeDragId, getChildCount }: ColumnProps) {
+export default function Column({ stage, deals, onDealClick, onSpawnChild, activeOverId, activeDragId, getChildCount }: ColumnProps) {
   const { setNodeRef } = useDroppable({
     id: stage,
   });
@@ -76,6 +77,7 @@ export default function Column({ stage, deals, onDealClick, activeOverId, active
                 key={deal.id}
                 deal={deal}
                 onClick={() => onDealClick(deal)}
+                onSpawnChild={onSpawnChild}
                 isHovered={hoveredCardId === deal.id}
                 isDragSource={activeDragId === deal.id}
                 childCount={deal.is_multi_month && !deal.parent_deal_id ? getChildCount?.(deal.id) : undefined}

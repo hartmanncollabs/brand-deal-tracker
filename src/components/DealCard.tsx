@@ -8,12 +8,13 @@ import { format, parseISO, addDays } from 'date-fns';
 interface DealCardProps {
   deal: Deal;
   onClick: () => void;
+  onSpawnChild?: (deal: Deal) => void;
   isHovered?: boolean;
   isDragSource?: boolean;
   childCount?: number; // Number of child portions created (for parent cards)
 }
 
-export default function DealCard({ deal, onClick, isHovered, isDragSource, childCount }: DealCardProps) {
+export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDragSource, childCount }: DealCardProps) {
   const {
     attributes,
     listeners,
@@ -51,6 +52,7 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource, child
   const isParentDeal = deal.is_multi_month && !deal.parent_deal_id;
   const isChildDeal = !!deal.parent_deal_id;
   // Only child cards get dashed border - parent cards stay solid
+  // Note: Using !isChildDeal because parent cards (is_multi_month=true, no parent_deal_id) should be solid
   const showDottedBorder = isChildDeal;
 
   return (
@@ -108,7 +110,22 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource, child
             </span>
           )}
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 items-center">
+          {/* Spawn child button - show on all non-child cards */}
+          {!isChildDeal && onSpawnChild && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onSpawnChild(deal);
+              }}
+              className="p-1 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded transition-colors"
+              title="Spawn child card"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          )}
           {isOverdue && (
             <span className="px-1.5 py-0.5 bg-red-100 text-red-700 text-xs rounded font-medium">
               OVERDUE

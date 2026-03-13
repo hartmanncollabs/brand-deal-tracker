@@ -21,6 +21,7 @@ import { supabase } from '@/lib/supabase';
 import Column from './Column';
 import DealCard from './DealCard';
 import DealModal from './DealModal';
+import SpawnChildModal from './SpawnChildModal';
 import Dashboard from './Dashboard';
 import { format } from 'date-fns';
 
@@ -63,6 +64,8 @@ export default function KanbanBoard() {
   const [showArchived, setShowArchived] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
+  const [isSpawnModalOpen, setIsSpawnModalOpen] = useState(false);
+  const [spawnParentDeal, setSpawnParentDeal] = useState<Deal | null>(null);
 
   // Helper to get child deals for a parent
   const getChildDeals = useCallback((parentId: string) => {
@@ -424,6 +427,76 @@ export default function KanbanBoard() {
     fetchDeals(); // Refresh to get proper ordering
   };
 
+  // Open spawn child modal
+  const handleSpawnChild = (deal: Deal) => {
+    setSpawnParentDeal(deal);
+    setIsSpawnModalOpen(true);
+  };
+
+  // Actually spawn the child card
+  const handleDoSpawn = async (data: { stage: DealStage; value: number; notes: string }) => {
+    if (!spawnParentDeal) return;
+
+    const existingChildren = getChildDeals(spawnParentDeal.id);
+    const nextMonthNumber = existingChildren.length + 1;
+
+    // Create the child card
+    const { error } = await supabase
+      .from('deals')
+      .insert({
+        brand: `${spawnParentDeal.brand} — Month ${nextMonthNumber}`,
+        slug: `${spawnParentDeal.slug}-month-${nextMonthNumber}`,
+        stage: data.stage,
+        priority: spawnParentDeal.priority,
+        value: `$${data.value.toLocaleString()}`,
+        contact_name: spawnParentDeal.contact_name,
+        contact_email: spawnParentDeal.contact_email,
+        contact_source: spawnParentDeal.contact_source,
+        waiting_on: 'us',
+        follow_up_count: 0,
+        notes: data.notes || `Month ${nextMonthNumber} for ${spawnParentDeal.brand}`,
+        archived: false,
+        is_multi_month: false,
+        parent_deal_id: spawnParentDeal.id,
+        month_number: nextMonthNumber,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error creating child card:', error);
+      throw error;
+    }
+
+    // Update parent card: mark as multi-month, subtract value
+    const currentValue = parseFloat(spawnParentDeal.value?.replace(/[$,]/g, '') || '0');
+    const newValue = Math.max(0, currentValue - data.value);
+    const newTotalMonths = (spawnParentDeal.total_months || 0) || nextMonthNumber;
+
+    await supabase
+      .from('deals')
+      .update({
+        is_multi_month: true,
+        total_months: Math.max(newTotalMonths, nextMonthNumber),
+        monthly_value: data.value,
+        value: newValue > 0 ? `$${newValue.toLocaleString()} remaining` : spawnParentDeal.value,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('id', spawnParentDeal.id);
+
+    // Add activity to parent
+    await supabase.from('deal_activities').insert({
+      deal_id: spawnParentDeal.id,
+      date: format(new Date(), 'yyyy-MM-dd'),
+      note: `Spawned Month ${nextMonthNumber} child card ($${data.value.toLocaleString()}) → ${data.stage}`,
+    });
+
+    // Refresh deals
+    fetchDeals();
+  };
+
   const activeDeal = deals.find((d) => d.id === activeDragId);
   const filteredDeals = deals.filter((d) => {
     // Filter by archived status
@@ -518,6 +591,7 @@ export default function KanbanBoard() {
               stage={stage}
               deals={filteredDeals.filter((d) => d.stage === stage)}
               onDealClick={handleDealClick}
+              onSpawnChild={handleSpawnChild}
               activeOverId={activeOverId}
               activeDragId={activeDragId}
               getChildCount={(id) => getChildDeals(id).length}
@@ -550,6 +624,19 @@ export default function KanbanBoard() {
         childDeals={selectedDeal ? getChildDeals(selectedDeal.id) : []}
         parentDeal={selectedDeal ? getParentDeal(selectedDeal.parent_deal_id) : null}
       />
+
+      {spawnParentDeal && (
+        <SpawnChildModal
+          isOpen={isSpawnModalOpen}
+          onClose={() => {
+            setIsSpawnModalOpen(false);
+            setSpawnParentDeal(null);
+          }}
+          parentDeal={spawnParentDeal}
+          existingChildCount={getChildDeals(spawnParentDeal.id).length}
+          onSpawn={handleDoSpawn}
+        />
+      )}
     </div>
   );
 }
