@@ -9,7 +9,7 @@ interface DealModalProps {
   activities: DealActivity[];
   isOpen: boolean;
   onClose: () => void;
-  onSave: (deal: Partial<Deal>) => void;
+  onSave: (deal: Partial<Deal>, keepOpen?: boolean) => void;
   onAddActivity: (dealId: string, note: string) => void;
   onArchive: (dealId: string) => void;
   onCreateMonthlyPortion?: (parentDealId: string) => void;
@@ -111,8 +111,8 @@ export default function DealModal({
                       onChange={(e) => {
                         const newStage = e.target.value as DealStage;
                         setFormData({ ...formData, stage: newStage });
-                        // Auto-save stage change
-                        onSave({ ...formData, stage: newStage });
+                        // Auto-save stage change, keep modal open
+                        onSave({ ...formData, stage: newStage }, true);
                       }}
                       className="text-sm font-medium bg-transparent cursor-pointer focus:outline-none"
                     >
@@ -357,9 +357,9 @@ export default function DealModal({
                         ...formData,
                         next_action_date: newDate,
                       });
-                      // Auto-save date change (skip for new deals)
+                      // Auto-save date change (skip for new deals), keep modal open
                       if (!isNew) {
-                        onSave({ ...formData, next_action_date: newDate });
+                        onSave({ ...formData, next_action_date: newDate }, true);
                       }
                     }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
@@ -378,9 +378,9 @@ export default function DealModal({
                     setFormData({ ...formData, next_action: e.target.value })
                   }
                   onBlur={(e) => {
-                    // Auto-save on blur (skip for new deals)
+                    // Auto-save on blur (skip for new deals), keep modal open
                     if (!isNew && e.target.value !== deal?.next_action) {
-                      onSave({ ...formData, next_action: e.target.value });
+                      onSave({ ...formData, next_action: e.target.value }, true);
                     }
                   }}
                   placeholder="What needs to happen next?"

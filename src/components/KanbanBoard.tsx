@@ -289,7 +289,7 @@ export default function KanbanBoard() {
     setIsModalOpen(true);
   };
 
-  const handleSave = async (dealData: Partial<Deal>) => {
+  const handleSave = async (dealData: Partial<Deal>, keepOpen = false) => {
     if (isNewDeal) {
       const { data, error } = await supabase
         .from('deals')
@@ -327,8 +327,10 @@ export default function KanbanBoard() {
       );
     }
 
-    setIsModalOpen(false);
-    setSelectedDeal(null);
+    if (!keepOpen) {
+      setIsModalOpen(false);
+      setSelectedDeal(null);
+    }
   };
 
   const handleAddActivity = async (dealId: string, note: string) => {
