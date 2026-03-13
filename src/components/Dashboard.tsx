@@ -1,7 +1,7 @@
 'use client';
 
 import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
-import { isBefore, parseISO, startOfDay } from 'date-fns';
+import { isBefore, parseISO, startOfDay, isEqual } from 'date-fns';
 
 interface DashboardProps {
   deals: Deal[];
@@ -46,8 +46,14 @@ export default function Dashboard({ deals }: DashboardProps) {
     })
     .reduce((sum, d) => sum + parseValue(d.value), 0);
 
+  const today = startOfDay(new Date());
+  
   const overdueCount = activeDeals.filter(
-    (d) => d.next_action_date && isBefore(parseISO(d.next_action_date), startOfDay(new Date()))
+    (d) => d.next_action_date && isBefore(parseISO(d.next_action_date), today)
+  ).length;
+
+  const dueTodayCount = activeDeals.filter(
+    (d) => d.next_action_date && isEqual(startOfDay(parseISO(d.next_action_date)), today)
   ).length;
 
   const waitingOnBrand = activeDeals.filter((d) => d.waiting_on === 'brand').length;
@@ -76,6 +82,13 @@ export default function Dashboard({ deals }: DashboardProps) {
             <div className="bg-red-50 rounded-lg px-4 py-2 border border-red-200">
               <p className="text-sm text-red-600 font-medium">Overdue</p>
               <p className="text-2xl font-bold text-red-700">{overdueCount}</p>
+            </div>
+          )}
+
+          {dueTodayCount > 0 && (
+            <div className="bg-orange-50 rounded-lg px-4 py-2 border border-orange-200">
+              <p className="text-sm text-orange-600 font-medium">Due Today</p>
+              <p className="text-2xl font-bold text-orange-700">{dueTodayCount}</p>
             </div>
           )}
 
