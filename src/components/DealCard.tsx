@@ -10,11 +10,10 @@ interface DealCardProps {
   onClick: () => void;
   isHovered?: boolean;
   isDragSource?: boolean;
-  isMultiMonthIncomplete?: boolean; // True if this is part of an incomplete multi-month deal
   childCount?: number; // Number of child portions created (for parent cards)
 }
 
-export default function DealCard({ deal, onClick, isHovered, isDragSource, isMultiMonthIncomplete, childCount }: DealCardProps) {
+export default function DealCard({ deal, onClick, isHovered, isDragSource, childCount }: DealCardProps) {
   const {
     attributes,
     listeners,

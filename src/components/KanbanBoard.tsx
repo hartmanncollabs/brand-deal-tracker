@@ -76,24 +76,6 @@ export default function KanbanBoard() {
     return deals.find(d => d.id === parentId) || null;
   }, [deals]);
 
-  // Check if a multi-month deal is incomplete (not all children paid)
-  const isMultiMonthIncomplete = useCallback((deal: Deal) => {
-    if (!deal.is_multi_month) return false;
-    
-    if (deal.parent_deal_id) {
-      // This is a child - check if parent's deal is complete
-      const parent = getParentDeal(deal.parent_deal_id);
-      if (!parent) return true;
-      const children = getChildDeals(parent.id);
-      return children.some(c => c.stage !== 'paid' && c.stage !== 'complete');
-    } else {
-      // This is a parent - check if all children are paid
-      const children = getChildDeals(deal.id);
-      if (children.length < (deal.total_months || 0)) return true;
-      return children.some(c => c.stage !== 'paid' && c.stage !== 'complete');
-    }
-  }, [getChildDeals, getParentDeal]);
-
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
@@ -538,7 +520,6 @@ export default function KanbanBoard() {
               onDealClick={handleDealClick}
               activeOverId={activeOverId}
               activeDragId={activeDragId}
-              isMultiMonthIncomplete={isMultiMonthIncomplete}
               getChildCount={(id) => getChildDeals(id).length}
             />
           ))}

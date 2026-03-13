@@ -14,11 +14,10 @@ interface ColumnProps {
   onDealClick: (deal: Deal) => void;
   activeOverId: UniqueIdentifier | null;
   activeDragId: string | null;
-  isMultiMonthIncomplete?: (deal: Deal) => boolean;
   getChildCount?: (dealId: string) => number;
 }
 
-export default function Column({ stage, deals, onDealClick, activeOverId, activeDragId, isMultiMonthIncomplete, getChildCount }: ColumnProps) {
+export default function Column({ stage, deals, onDealClick, activeOverId, activeDragId, getChildCount }: ColumnProps) {
   const { setNodeRef } = useDroppable({
     id: stage,
   });
@@ -79,7 +78,6 @@ export default function Column({ stage, deals, onDealClick, activeOverId, active
                 onClick={() => onDealClick(deal)}
                 isHovered={hoveredCardId === deal.id}
                 isDragSource={activeDragId === deal.id}
-                isMultiMonthIncomplete={isMultiMonthIncomplete?.(deal)}
                 childCount={deal.is_multi_month && !deal.parent_deal_id ? getChildCount?.(deal.id) : undefined}
               />
             ))}
