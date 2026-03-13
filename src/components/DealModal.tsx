@@ -12,7 +12,10 @@ interface DealModalProps {
   onSave: (deal: Partial<Deal>) => void;
   onAddActivity: (dealId: string, note: string) => void;
   onArchive: (dealId: string) => void;
+  onCreateMonthlyPortion?: (parentDealId: string) => void;
   isNew?: boolean;
+  childDeals?: Deal[]; // Child deals for this parent
+  parentDeal?: Deal | null; // Parent deal if this is a child
 }
 
 export default function DealModal({
@@ -23,7 +26,10 @@ export default function DealModal({
   onSave,
   onAddActivity,
   onArchive,
+  onCreateMonthlyPortion,
   isNew = false,
+  childDeals = [],
+  parentDeal = null,
 }: DealModalProps) {
   const [formData, setFormData] = useState<Partial<Deal>>({});
   const [newNote, setNewNote] = useState('');
@@ -51,9 +57,26 @@ export default function DealModal({
         archived: false,
         is_repeat_brand: false,
         past_history: '',
+        is_multi_month: false,
+        total_months: null,
+        monthly_value: null,
+        parent_deal_id: null,
+        month_number: null,
       });
     }
   }, [deal, isNew]);
+
+  // Computed values for multi-month deals
+  const isParentDeal = formData.is_multi_month && !formData.parent_deal_id;
+  const isChildDeal = !!formData.parent_deal_id;
+  const completedMonths = childDeals.filter(c => c.stage === 'paid' || c.stage === 'complete').length;
+  const totalChildValue = childDeals.reduce((sum, c) => {
+    const match = c.value?.match(/\$?([\d,]+)/);
+    return sum + (match ? parseInt(match[1].replace(/,/g, ''), 10) : 0);
+  }, 0);
+  const remainingValue = isParentDeal && formData.total_months && formData.monthly_value
+    ? (formData.total_months * formData.monthly_value) - totalChildValue
+    : null;
 
   if (!isOpen) return null;
 
@@ -373,6 +396,120 @@ export default function DealModal({
                   </div>
                 )}
               </div>
+
+              {/* Multi-Month Deal Section */}
+              {!isChildDeal && (
+                <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={formData.is_multi_month || false}
+                      onChange={(e) =>
+                        setFormData({ 
+                          ...formData, 
+                          is_multi_month: e.target.checked,
+                          total_months: e.target.checked ? formData.total_months : null,
+                          monthly_value: e.target.checked ? formData.monthly_value : null,
+                        })
+                      }
+                      className="rounded border-blue-400 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-sm font-medium text-blue-800">
+                      📅 Multi-Month Deal
+                    </span>
+                  </label>
+                  {formData.is_multi_month && (
+                    <div className="mt-3 space-y-3">
+                      <div className="grid grid-cols-2 gap-3">
+                        <div>
+                          <label className="block text-sm font-medium text-blue-700 mb-1">
+                            Total Months
+                          </label>
+                          <input
+                            type="number"
+                            min="1"
+                            value={formData.total_months || ''}
+                            onChange={(e) =>
+                              setFormData({ ...formData, total_months: e.target.value ? parseInt(e.target.value) : null })
+                            }
+                            placeholder="6"
+                            className="w-full px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-blue-700 mb-1">
+                            Monthly Value ($)
+                          </label>
+                          <input
+                            type="number"
+                            min="0"
+                            step="0.01"
+                            value={formData.monthly_value || ''}
+                            onChange={(e) =>
+                              setFormData({ ...formData, monthly_value: e.target.value ? parseFloat(e.target.value) : null })
+                            }
+                            placeholder="875.00"
+                            className="w-full px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white"
+                          />
+                        </div>
+                      </div>
+                      {formData.total_months && formData.monthly_value && (
+                        <div className="text-sm text-blue-700">
+                          Total contract value: <strong>${(formData.total_months * formData.monthly_value).toLocaleString()}</strong>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Child Deal Info */}
+              {isChildDeal && parentDeal && (
+                <div className="p-3 bg-indigo-50 rounded-lg border border-indigo-200">
+                  <p className="text-sm text-indigo-700">
+                    <span className="font-medium">📅 Monthly Portion</span> of {parentDeal.brand}
+                  </p>
+                  <p className="text-xs text-indigo-600 mt-1">
+                    Month {formData.month_number} of {parentDeal.total_months}
+                  </p>
+                </div>
+              )}
+
+              {/* Monthly Portions List (for parent deals) */}
+              {isParentDeal && !isNew && childDeals.length > 0 && (
+                <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                  <p className="text-sm font-medium text-gray-700 mb-2">
+                    Monthly Portions ({completedMonths}/{childDeals.length} paid)
+                  </p>
+                  <div className="space-y-1">
+                    {childDeals.map((child) => (
+                      <div key={child.id} className="flex justify-between text-xs">
+                        <span className={child.stage === 'paid' ? 'text-green-600' : 'text-gray-600'}>
+                          Month {child.month_number}: {child.stage}
+                        </span>
+                        <span className="text-gray-500">{child.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                  {remainingValue !== null && remainingValue > 0 && (
+                    <p className="text-sm text-gray-600 mt-2 pt-2 border-t">
+                      Remaining: <strong className="text-green-600">${remainingValue.toLocaleString()}</strong>
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* Create Monthly Portion Button */}
+              {isParentDeal && !isNew && onCreateMonthlyPortion && childDeals.length < (formData.total_months || 0) && (
+                <button
+                  type="button"
+                  onClick={() => deal?.id && onCreateMonthlyPortion(deal.id)}
+                  className="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 flex items-center justify-center gap-2"
+                >
+                  <span>➕</span>
+                  <span>Create Month {childDeals.length + 1} Portion</span>
+                </button>
+              )}
 
               <div className="flex justify-between pt-4 border-t">
                 {!isNew && (

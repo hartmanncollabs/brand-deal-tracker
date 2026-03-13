@@ -10,9 +10,11 @@ interface DealCardProps {
   onClick: () => void;
   isHovered?: boolean;
   isDragSource?: boolean;
+  isMultiMonthIncomplete?: boolean; // True if this is part of an incomplete multi-month deal
+  childCount?: number; // Number of child portions created (for parent cards)
 }
 
-export default function DealCard({ deal, onClick, isHovered, isDragSource }: DealCardProps) {
+export default function DealCard({ deal, onClick, isHovered, isDragSource, isMultiMonthIncomplete, childCount }: DealCardProps) {
   const {
     attributes,
     listeners,
@@ -46,10 +48,18 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
     low: 'border-l-green-500',
   };
 
+  // Multi-month styling
+  const isParentDeal = deal.is_multi_month && !deal.parent_deal_id;
+  const isChildDeal = !!deal.parent_deal_id;
+  const showDottedBorder = isMultiMonthIncomplete || (deal.is_multi_month && deal.stage !== 'paid' && deal.stage !== 'complete');
+
   return (
     <div
       ref={setNodeRef}
-      style={style}
+      style={{
+        ...style,
+        borderStyle: showDottedBorder ? 'dashed' : 'solid',
+      }}
       {...attributes}
       {...listeners}
       onClick={onClick}
@@ -60,6 +70,8 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
         ${isOverdue ? 'border-red-500 ring-2 ring-red-200' : isDueToday ? 'border-amber-500 ring-2 ring-amber-200' : 'border-gray-200'}
         ${isDragging || isDragSource ? 'opacity-50 shadow-lg scale-[0.98]' : ''}
         ${isHovered ? 'translate-y-3 border-t-blue-400 border-t-4' : ''}
+        ${isParentDeal ? 'bg-gradient-to-r from-white to-blue-50' : ''}
+        ${isChildDeal ? 'bg-gradient-to-r from-white to-indigo-50 ml-2' : ''}
       `}
     >
       <div className="flex justify-between items-start mb-2">
@@ -71,6 +83,22 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
               title={deal.past_history || 'Returning brand'}
             >
               ↺
+            </span>
+          )}
+          {isParentDeal && (
+            <span 
+              className="text-blue-600 cursor-help text-xs" 
+              title={`Multi-month: ${deal.total_months || '?'} months @ $${deal.monthly_value?.toLocaleString() || '?'}/mo`}
+            >
+              📅{deal.total_months || ''}
+            </span>
+          )}
+          {isChildDeal && deal.month_number && (
+            <span 
+              className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium"
+              title="Monthly portion"
+            >
+              M{deal.month_number}
             </span>
           )}
         </div>
@@ -94,7 +122,14 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource }: Dea
       </div>
 
       {deal.value && (
-        <p className="text-green-600 font-medium text-sm mb-1">{deal.value}</p>
+        <p className="text-green-600 font-medium text-sm mb-1">
+          {deal.value}
+          {isParentDeal && childCount !== undefined && deal.total_months && (
+            <span className="text-gray-500 font-normal text-xs ml-1">
+              ({childCount}/{deal.total_months} months)
+            </span>
+          )}
+        </p>
       )}
 
       {deal.contact_name && (

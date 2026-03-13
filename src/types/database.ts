@@ -37,6 +37,15 @@ export interface Deal {
   is_repeat_brand: boolean;
   past_history: string | null; // Summary of past campaigns, value, deliverables
   sort_order: number | null; // Position within stage for drag-and-drop reordering
+  // Multi-month deal fields
+  is_multi_month: boolean;
+  total_months: number | null;
+  monthly_value: number | null;
+  parent_deal_id: string | null;
+  month_number: number | null;
+  // Computed fields (populated by queries)
+  children?: Deal[];
+  parent?: Deal;
   created_at: string;
   updated_at: string;
 }

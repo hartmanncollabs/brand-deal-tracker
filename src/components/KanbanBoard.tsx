@@ -64,6 +64,36 @@ export default function KanbanBoard() {
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
 
+  // Helper to get child deals for a parent
+  const getChildDeals = useCallback((parentId: string) => {
+    return deals.filter(d => d.parent_deal_id === parentId)
+      .sort((a, b) => (a.month_number || 0) - (b.month_number || 0));
+  }, [deals]);
+
+  // Helper to get parent deal for a child
+  const getParentDeal = useCallback((parentId: string | null) => {
+    if (!parentId) return null;
+    return deals.find(d => d.id === parentId) || null;
+  }, [deals]);
+
+  // Check if a multi-month deal is incomplete (not all children paid)
+  const isMultiMonthIncomplete = useCallback((deal: Deal) => {
+    if (!deal.is_multi_month) return false;
+    
+    if (deal.parent_deal_id) {
+      // This is a child - check if parent's deal is complete
+      const parent = getParentDeal(deal.parent_deal_id);
+      if (!parent) return true;
+      const children = getChildDeals(parent.id);
+      return children.some(c => c.stage !== 'paid' && c.stage !== 'complete');
+    } else {
+      // This is a parent - check if all children are paid
+      const children = getChildDeals(deal.id);
+      if (children.length < (deal.total_months || 0)) return true;
+      return children.some(c => c.stage !== 'paid' && c.stage !== 'complete');
+    }
+  }, [getChildDeals, getParentDeal]);
+
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
@@ -356,6 +386,62 @@ export default function KanbanBoard() {
     setSelectedDeal(null);
   };
 
+  const handleCreateMonthlyPortion = async (parentDealId: string) => {
+    const parentDeal = deals.find(d => d.id === parentDealId);
+    if (!parentDeal || !parentDeal.is_multi_month) return;
+
+    const existingChildren = getChildDeals(parentDealId);
+    const nextMonthNumber = existingChildren.length + 1;
+
+    if (nextMonthNumber > (parentDeal.total_months || 0)) {
+      console.error('All monthly portions already created');
+      return;
+    }
+
+    const monthlyValue = parentDeal.monthly_value || 0;
+
+    const { data, error } = await supabase
+      .from('deals')
+      .insert({
+        brand: parentDeal.brand,
+        slug: `${parentDeal.slug}-month-${nextMonthNumber}`,
+        stage: 'content', // Child cards start in content
+        priority: parentDeal.priority,
+        value: `$${monthlyValue.toLocaleString()}`,
+        contact_name: parentDeal.contact_name,
+        contact_email: parentDeal.contact_email,
+        contact_source: parentDeal.contact_source,
+        waiting_on: 'us',
+        follow_up_count: 0,
+        notes: `Month ${nextMonthNumber} of ${parentDeal.total_months} for ${parentDeal.brand}`,
+        archived: false,
+        is_multi_month: true,
+        parent_deal_id: parentDealId,
+        month_number: nextMonthNumber,
+        monthly_value: monthlyValue,
+        total_months: parentDeal.total_months,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error creating monthly portion:', error);
+      return;
+    }
+
+    // Add activity to parent
+    await supabase.from('deal_activities').insert({
+      deal_id: parentDealId,
+      date: format(new Date(), 'yyyy-MM-dd'),
+      note: `Created Month ${nextMonthNumber} portion`,
+    });
+
+    setDeals((prev) => [data, ...prev]);
+    fetchDeals(); // Refresh to get proper ordering
+  };
+
   const activeDeal = deals.find((d) => d.id === activeDragId);
   const filteredDeals = deals.filter((d) => {
     // Filter by archived status
@@ -452,6 +538,8 @@ export default function KanbanBoard() {
               onDealClick={handleDealClick}
               activeOverId={activeOverId}
               activeDragId={activeDragId}
+              isMultiMonthIncomplete={isMultiMonthIncomplete}
+              getChildCount={(id) => getChildDeals(id).length}
             />
           ))}
         </div>
@@ -476,7 +564,10 @@ export default function KanbanBoard() {
         onSave={handleSave}
         onAddActivity={handleAddActivity}
         onArchive={handleArchive}
+        onCreateMonthlyPortion={handleCreateMonthlyPortion}
         isNew={isNewDeal}
+        childDeals={selectedDeal ? getChildDeals(selectedDeal.id) : []}
+        parentDeal={selectedDeal ? getParentDeal(selectedDeal.parent_deal_id) : null}
       />
     </div>
   );
