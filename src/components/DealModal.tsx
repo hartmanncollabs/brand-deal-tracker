@@ -351,12 +351,17 @@ export default function DealModal({
                   <input
                     type="date"
                     value={formData.next_action_date || ''}
-                    onChange={(e) =>
+                    onChange={(e) => {
+                      const newDate = e.target.value;
                       setFormData({
                         ...formData,
-                        next_action_date: e.target.value,
-                      })
-                    }
+                        next_action_date: newDate,
+                      });
+                      // Auto-save date change (skip for new deals)
+                      if (!isNew) {
+                        onSave({ ...formData, next_action_date: newDate });
+                      }
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -372,6 +377,12 @@ export default function DealModal({
                   onChange={(e) =>
                     setFormData({ ...formData, next_action: e.target.value })
                   }
+                  onBlur={(e) => {
+                    // Auto-save on blur (skip for new deals)
+                    if (!isNew && e.target.value !== deal?.next_action) {
+                      onSave({ ...formData, next_action: e.target.value });
+                    }
+                  }}
                   placeholder="What needs to happen next?"
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                 />
