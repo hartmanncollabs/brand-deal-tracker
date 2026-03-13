@@ -51,7 +51,8 @@ export default function DealCard({ deal, onClick, isHovered, isDragSource, isMul
   // Multi-month styling
   const isParentDeal = deal.is_multi_month && !deal.parent_deal_id;
   const isChildDeal = !!deal.parent_deal_id;
-  const showDottedBorder = isMultiMonthIncomplete || (deal.is_multi_month && deal.stage !== 'paid' && deal.stage !== 'complete');
+  // Only child cards get dashed border - parent cards stay solid
+  const showDottedBorder = isChildDeal;
 
   return (
     <div
