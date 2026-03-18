@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
 import { isBefore, parseISO, startOfDay, isEqual } from 'date-fns';
+import TierProgress from './TierProgress';
 
 interface DashboardProps {
   deals: Deal[];
@@ -227,6 +228,11 @@ export default function Dashboard({ deals, onScrollToDeal }: DashboardProps) {
           <p className="text-xl font-bold text-green-700">${paidThisYear.toLocaleString()}</p>
           <p className="text-xs text-green-500">Received this year</p>
         </div>
+      </div>
+
+      {/* Tier Progress for March 2025 */}
+      <div className="mt-4">
+        <TierProgress deals={deals} />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
