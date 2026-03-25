@@ -99,7 +99,7 @@ export const STAGE_LABELS: Record<DealStage, string> = {
   pitched: 'Pitched',
   negotiation: 'Negotiation',
   agreed: 'Agreed',
-  contract: 'Contract',
+  contract: 'Contract Review',
   content: 'Content',
   approval: 'Approval',
   scheduled: 'Scheduled',
