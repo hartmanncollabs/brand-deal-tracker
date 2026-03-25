@@ -21,20 +21,19 @@ import SpawnChildModal from './SpawnChildModal';
 // Stage colors for calendar - matching kanban progression
 // Blues → Orange/Yellow → Greens → Gray
 const STAGE_DOT_COLORS: Record<DealStage, string> = {
-  // Pitch/Outreach: Blues
-  outreach: '#3b82f6', // blue-500
-  pitched: '#0ea5e9', // sky-500
+  // Pitch/Outreach: Purples
+  outreach: '#a855f7', // purple-500
+  pitched: '#8b5cf6', // violet-500
   // Negotiation flow: Orange → Yellow
   negotiation: '#f97316', // orange-500
   agreed: '#f59e0b', // amber-500
   contract: '#eab308', // yellow-500
-  // Content → Delivery: Light green → Green
-  content: '#84cc16', // lime-500
-  approval: '#22c55e', // green-500
-  scheduled: '#10b981', // emerald-500
-  delivered: '#14b8a6', // teal-500
-  // Payment: Cyan → Bright green
-  invoiced: '#06b6d4', // cyan-500
+  // Content → Paid: Blue → Green transition
+  content: '#3b82f6', // blue-500
+  approval: '#06b6d4', // cyan-500
+  scheduled: '#14b8a6', // teal-500
+  delivered: '#10b981', // emerald-500
+  invoiced: '#22c55e', // green-500
   paid: '#16a34a', // green-600
   // Finished/Paused: Grays
   complete: '#6b7280', // gray-500

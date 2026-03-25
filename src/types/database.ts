@@ -115,21 +115,20 @@ export const STAGE_LABELS: Record<DealStage, string> = {
 };
 
 export const STAGE_COLORS: Record<DealStage, string> = {
-  // Pitch/Outreach: Blues
-  outreach: 'bg-blue-100 border-blue-400',
-  pitched: 'bg-sky-100 border-sky-400',
+  // Pitch/Outreach: Purples
+  outreach: 'bg-purple-100 border-purple-400',
+  pitched: 'bg-violet-100 border-violet-400',
   // Negotiation flow: Orange → Yellow
   negotiation: 'bg-orange-100 border-orange-400',
   agreed: 'bg-amber-100 border-amber-400',
   contract: 'bg-yellow-100 border-yellow-400',
-  // Content → Delivery: Light green → Green
-  content: 'bg-lime-100 border-lime-400',
-  approval: 'bg-green-100 border-green-400',
-  scheduled: 'bg-emerald-100 border-emerald-500',
-  delivered: 'bg-teal-100 border-teal-500',
-  // Payment: Green-blue → Bright green
-  invoiced: 'bg-cyan-100 border-cyan-500',
-  paid: 'bg-green-200 border-green-500',
+  // Content → Paid: Blue → Green transition
+  content: 'bg-blue-100 border-blue-400',
+  approval: 'bg-cyan-100 border-cyan-400',
+  scheduled: 'bg-teal-100 border-teal-500',
+  delivered: 'bg-emerald-100 border-emerald-500',
+  invoiced: 'bg-green-100 border-green-500',
+  paid: 'bg-green-200 border-green-600',
   // Finished/Paused: Grays
   complete: 'bg-gray-100 border-gray-400',
   paused: 'bg-gray-50 border-gray-300',
