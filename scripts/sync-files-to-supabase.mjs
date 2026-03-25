@@ -59,24 +59,32 @@ function parseFrontmatter(content) {
 }
 
 // Map our file fields to database fields
-function mapToDeal(frontmatter, slug) {
-  return {
+// NOTE: next_action, next_action_date, waiting_on, value are EXCLUDED from updates
+// Kenny manages these manually via the webapp - DO NOT OVERWRITE
+function mapToDeal(frontmatter, slug, isNew = false) {
+  const deal = {
     brand: frontmatter.brand,
     slug: frontmatter.slug || slug,
     stage: frontmatter.stage,
     priority: frontmatter.priority || 'medium',
-    value: frontmatter.value || null,
     contact_name: frontmatter.contact_name || null,
     contact_email: frontmatter.contact_email || null,
     contact_source: frontmatter.contact_source || null,
     last_contact: frontmatter.last_contact || null,
-    next_action: frontmatter.next_action || null,
-    next_action_date: frontmatter.next_action_date || null,
-    waiting_on: frontmatter.waiting_on || null,
     follow_up_count: frontmatter.follow_up_count || 0,
     notes: null, // Could extract from content if needed
     archived: frontmatter.stage === 'complete' || frontmatter.stage === 'paused',
   };
+  
+  // Only set these fields on NEW deals, never overwrite existing
+  if (isNew) {
+    deal.value = frontmatter.value || null;
+    deal.next_action = frontmatter.next_action || null;
+    deal.next_action_date = frontmatter.next_action_date || null;
+    deal.waiting_on = frontmatter.waiting_on || null;
+  }
+  
+  return deal;
 }
 
 async function syncDeals() {
@@ -99,17 +107,18 @@ async function syncDeals() {
       continue;
     }
     
-    const deal = mapToDeal(frontmatter, slug);
-    
-    // Check if deal exists
+    // Check if deal exists first
     const { data: existing } = await supabase
       .from('deals')
       .select('id')
-      .eq('slug', deal.slug)
+      .eq('slug', slug)
       .single();
     
+    const isNew = !existing;
+    const deal = mapToDeal(frontmatter, slug, isNew);
+    
     if (existing) {
-      // Update existing deal
+      // Update existing deal (excludes next_action, next_action_date, waiting_on)
       const { error } = await supabase
         .from('deals')
         .update(deal)
@@ -123,7 +132,7 @@ async function syncDeals() {
         updated++;
       }
     } else {
-      // Insert new deal
+      // Insert new deal (includes all fields)
       const { error } = await supabase
         .from('deals')
         .insert(deal);
