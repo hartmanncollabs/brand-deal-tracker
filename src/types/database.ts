@@ -46,6 +46,10 @@ export interface Deal {
   monthly_value: number | null;
   parent_deal_id: string | null;
   month_number: number | null;
+  // Attachment fields
+  brief_url: string | null;
+  contract_url: string | null;
+  other_attachments: { name: string; url: string }[] | null;
   // Computed fields (populated by queries)
   children?: Deal[];
   parent?: Deal;

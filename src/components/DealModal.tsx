@@ -63,6 +63,9 @@ export default function DealModal({
         monthly_value: null,
         parent_deal_id: null,
         month_number: null,
+        brief_url: null,
+        contract_url: null,
+        other_attachments: null,
       });
     }
   }, [deal, isNew]);
@@ -400,6 +403,49 @@ export default function DealModal({
                   rows={3}
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                 />
+              </div>
+
+              {/* Attachments Section */}
+              <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  📎 Attachments
+                </label>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-600 w-20">Brief:</span>
+                    <input
+                      type="url"
+                      value={formData.brief_url || ''}
+                      onChange={(e) =>
+                        setFormData({ ...formData, brief_url: e.target.value })
+                      }
+                      placeholder="URL to brief document"
+                      className="flex-1 px-2 py-1 text-sm border rounded focus:ring-2 focus:ring-blue-500"
+                    />
+                    {formData.brief_url && (
+                      <a href={formData.brief_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
+                        View
+                      </a>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-600 w-20">Contract:</span>
+                    <input
+                      type="url"
+                      value={formData.contract_url || ''}
+                      onChange={(e) =>
+                        setFormData({ ...formData, contract_url: e.target.value })
+                      }
+                      placeholder="URL to signed contract"
+                      className="flex-1 px-2 py-1 text-sm border rounded focus:ring-2 focus:ring-blue-500"
+                    />
+                    {formData.contract_url && (
+                      <a href={formData.contract_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
+                        View
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
 
               {/* Repeat Brand Section */}

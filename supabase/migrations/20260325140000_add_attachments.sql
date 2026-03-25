@@ -1,0 +1,3 @@
+ALTER TABLE deals ADD COLUMN IF NOT EXISTS brief_url TEXT;
+ALTER TABLE deals ADD COLUMN IF NOT EXISTS contract_url TEXT;
+ALTER TABLE deals ADD COLUMN IF NOT EXISTS other_attachments JSONB DEFAULT '[]'::jsonb;

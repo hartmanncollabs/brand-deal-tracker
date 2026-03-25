@@ -177,6 +177,11 @@ export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDra
             {deal.waiting_on === 'brand' ? '⏳ Brand' : '📌 Us'}
           </span>
         )}
+        {(deal.brief_url || deal.contract_url) && (
+          <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-600" title={`${deal.brief_url ? '📋 Brief' : ''}${deal.brief_url && deal.contract_url ? ' + ' : ''}${deal.contract_url ? '📄 Contract' : ''}`}>
+            📎
+          </span>
+        )}
       </div>
 
       {deal.next_action && (
