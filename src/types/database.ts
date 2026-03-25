@@ -115,17 +115,22 @@ export const STAGE_LABELS: Record<DealStage, string> = {
 };
 
 export const STAGE_COLORS: Record<DealStage, string> = {
-  outreach: 'bg-slate-100 border-slate-300',
-  pitched: 'bg-blue-50 border-blue-300',
-  negotiation: 'bg-amber-50 border-amber-300',
-  agreed: 'bg-lime-50 border-lime-300',
-  contract: 'bg-yellow-50 border-yellow-300',
-  content: 'bg-orange-50 border-orange-300',
-  approval: 'bg-purple-50 border-purple-300',
-  scheduled: 'bg-cyan-50 border-cyan-300',
-  delivered: 'bg-teal-50 border-teal-300',
-  invoiced: 'bg-indigo-50 border-indigo-300',
-  paid: 'bg-emerald-50 border-emerald-300',
-  complete: 'bg-green-50 border-green-300',
-  paused: 'bg-gray-100 border-gray-400',
+  // Pitch/Outreach: Blues
+  outreach: 'bg-blue-100 border-blue-400',
+  pitched: 'bg-sky-100 border-sky-400',
+  // Negotiation flow: Orange → Yellow
+  negotiation: 'bg-orange-100 border-orange-400',
+  agreed: 'bg-amber-100 border-amber-400',
+  contract: 'bg-yellow-100 border-yellow-400',
+  // Content → Delivery: Light green → Green
+  content: 'bg-lime-100 border-lime-400',
+  approval: 'bg-green-100 border-green-400',
+  scheduled: 'bg-emerald-100 border-emerald-500',
+  delivered: 'bg-teal-100 border-teal-500',
+  // Payment: Green-blue → Bright green
+  invoiced: 'bg-cyan-100 border-cyan-500',
+  paid: 'bg-green-200 border-green-500',
+  // Finished/Paused: Grays
+  complete: 'bg-gray-100 border-gray-400',
+  paused: 'bg-gray-50 border-gray-300',
 };

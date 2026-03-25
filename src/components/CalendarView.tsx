@@ -18,21 +18,27 @@ import { supabase } from '@/lib/supabase';
 import DealModal from './DealModal';
 import SpawnChildModal from './SpawnChildModal';
 
-// Stage colors for calendar dots - using actual color values for CSS
+// Stage colors for calendar - matching kanban progression
+// Blues → Orange/Yellow → Greens → Gray
 const STAGE_DOT_COLORS: Record<DealStage, string> = {
-  outreach: '#64748b', // slate
-  pitched: '#3b82f6', // blue
-  negotiation: '#f59e0b', // amber
-  agreed: '#84cc16', // lime
-  contract: '#eab308', // yellow
-  content: '#f97316', // orange
-  approval: '#a855f7', // purple
-  scheduled: '#06b6d4', // cyan
-  delivered: '#14b8a6', // teal
-  invoiced: '#6366f1', // indigo
-  paid: '#10b981', // emerald
-  complete: '#22c55e', // green
-  paused: '#6b7280', // gray
+  // Pitch/Outreach: Blues
+  outreach: '#3b82f6', // blue-500
+  pitched: '#0ea5e9', // sky-500
+  // Negotiation flow: Orange → Yellow
+  negotiation: '#f97316', // orange-500
+  agreed: '#f59e0b', // amber-500
+  contract: '#eab308', // yellow-500
+  // Content → Delivery: Light green → Green
+  content: '#84cc16', // lime-500
+  approval: '#22c55e', // green-500
+  scheduled: '#10b981', // emerald-500
+  delivered: '#14b8a6', // teal-500
+  // Payment: Cyan → Bright green
+  invoiced: '#06b6d4', // cyan-500
+  paid: '#16a34a', // green-600
+  // Finished/Paused: Grays
+  complete: '#6b7280', // gray-500
+  paused: '#9ca3af', // gray-400
 };
 
 interface CalendarViewProps {
@@ -394,7 +400,7 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                           handleDealClick(deal);
                         }}
                         className={`
-                          text-xs px-2 py-1 rounded truncate cursor-pointer
+                          text-xs px-1.5 py-1 rounded cursor-pointer
                           hover:ring-1 hover:ring-offset-1 transition-all
                           ${isChild ? 'border-dashed' : 'border-solid'}
                           border-2
@@ -402,13 +408,22 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                         style={{
                           backgroundColor: `${STAGE_DOT_COLORS[deal.stage]}15`,
                           borderColor: STAGE_DOT_COLORS[deal.stage],
-                          color: STAGE_DOT_COLORS[deal.stage],
                         }}
                         title={`${deal.brand} - ${STAGE_LABELS[deal.stage]}${deal.next_action ? ` - ${deal.next_action}` : ''}`}
                       >
-                        {isParent && <span className="mr-1">📅</span>}
-                        {isChild && deal.month_number && <span className="mr-1 font-medium">M{deal.month_number}</span>}
-                        {deal.brand}
+                        <div className="flex items-center gap-1">
+                          <span 
+                            className="px-1 py-0.5 rounded text-white text-[10px] font-medium shrink-0"
+                            style={{ backgroundColor: STAGE_DOT_COLORS[deal.stage] }}
+                          >
+                            {STAGE_LABELS[deal.stage]}
+                          </span>
+                          <span className="truncate text-gray-700">
+                            {isParent && '📅 '}
+                            {isChild && deal.month_number && `M${deal.month_number} `}
+                            {deal.brand}
+                          </span>
+                        </div>
                       </div>
                     );
                   })}
@@ -440,7 +455,7 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                   key={deal.id}
                   onClick={() => handleDealClick(deal)}
                   className={`
-                    text-sm px-3 py-2 rounded cursor-pointer
+                    text-sm px-2 py-1.5 rounded cursor-pointer
                     hover:ring-1 hover:ring-offset-1 transition-all
                     ${isChild ? 'border-dashed' : 'border-solid'}
                     border-2
@@ -448,13 +463,22 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                   style={{
                     backgroundColor: `${STAGE_DOT_COLORS[deal.stage]}15`,
                     borderColor: STAGE_DOT_COLORS[deal.stage],
-                    color: STAGE_DOT_COLORS[deal.stage],
                   }}
                   title={`${STAGE_LABELS[deal.stage]}`}
                 >
-                  {isParent && <span className="mr-1">📅</span>}
-                  {isChild && deal.month_number && <span className="mr-1 font-medium">M{deal.month_number}</span>}
-                  {deal.brand}
+                  <div className="flex items-center gap-1.5">
+                    <span 
+                      className="px-1.5 py-0.5 rounded text-white text-xs font-medium shrink-0"
+                      style={{ backgroundColor: STAGE_DOT_COLORS[deal.stage] }}
+                    >
+                      {STAGE_LABELS[deal.stage]}
+                    </span>
+                    <span className="text-gray-700">
+                      {isParent && '📅 '}
+                      {isChild && deal.month_number && `M${deal.month_number} `}
+                      {deal.brand}
+                    </span>
+                  </div>
                 </div>
               );
             })}
