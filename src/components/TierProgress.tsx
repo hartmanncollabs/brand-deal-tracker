@@ -36,12 +36,12 @@ function getNextTier(amount: number) {
 
 interface TierProgressProps {
   deals: Deal[];
-  targetMonth?: Date; // Defaults to March 2025 as specified
+  targetMonth?: Date;
 }
 
 export default function TierProgress({ deals, targetMonth }: TierProgressProps) {
-  // Default to March 2025 as requested
-  const month = targetMonth || new Date(2025, 2, 1); // March 2025
+  // Default to current month
+  const month = targetMonth || new Date();
   const monthStart = startOfMonth(month);
   const monthEnd = endOfMonth(month);
   const monthLabel = format(month, 'MMMM yyyy');
