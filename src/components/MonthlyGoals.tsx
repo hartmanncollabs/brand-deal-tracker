@@ -123,22 +123,10 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
 
   const committedTotal = committedDeals.reduce((sum, d) => sum + parseValue(d.value), 0);
 
-  // Negotiating deals that entered this month
-  const negotiatingDeals = deals.filter(d => {
-    if (d.stage !== 'negotiation' || d.archived || d.parent_deal_id) return false;
-    
-    // Check if entered negotiation this month (use created_at as proxy for now)
-    const changeDate = d.stage_changed_at || d.created_at;
-    if (changeDate) {
-      try {
-        const date = parseISO(changeDate);
-        return isWithinInterval(date, { start: monthStart, end: monthEnd });
-      } catch {
-        return false;
-      }
-    }
-    return false;
-  });
+  // Negotiating deals - CURRENT total (not monthly, this is a live bucket indicator)
+  const negotiatingDeals = deals.filter(d => 
+    d.stage === 'negotiation' && !d.archived && !d.parent_deal_id
+  );
 
   const negotiatingTotal = negotiatingDeals.reduce((sum, d) => sum + parseValue(d.value), 0);
 
@@ -166,7 +154,7 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
           dealCount={committedDeals.length}
         />
         <GoalBar
-          label="New Negotiations"
+          label="Active Negotiations"
           current={negotiatingTotal}
           goal={NEGOTIATING_GOAL}
           color="purple"
