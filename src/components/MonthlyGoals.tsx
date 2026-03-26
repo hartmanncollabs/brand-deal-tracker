@@ -109,7 +109,7 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
     if (!committedStages.includes(d.stage) || d.archived || d.parent_deal_id) return false;
     
     // Check if stage_changed_at is in this month
-    const changeDate = (d as any).stage_changed_at || d.updated_at;
+    const changeDate = d.stage_changed_at || d.updated_at;
     if (changeDate) {
       try {
         const date = parseISO(changeDate);
@@ -128,7 +128,7 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
     if (d.stage !== 'negotiation' || d.archived || d.parent_deal_id) return false;
     
     // Check if entered negotiation this month (use created_at as proxy for now)
-    const changeDate = (d as any).stage_changed_at || d.created_at;
+    const changeDate = d.stage_changed_at || d.created_at;
     if (changeDate) {
       try {
         const date = parseISO(changeDate);

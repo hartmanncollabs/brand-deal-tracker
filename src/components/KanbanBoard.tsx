@@ -240,11 +240,11 @@ export default function KanbanBoard() {
     });
 
     // Update the dragged deal in database
-    const updateData: Record<string, any> = { 
+    const updateData = { 
       stage: newStage, 
       sort_order: newSortOrder,
       updated_at: new Date().toISOString() 
-    };
+    } as Partial<Deal>;
     
     // Track stage change timestamp for monthly goals
     if (isStageChange) {
@@ -316,7 +316,7 @@ export default function KanbanBoard() {
 
       setDeals((prev) => [data, ...prev]);
     } else if (selectedDeal?.id) {
-      const updatePayload: Record<string, any> = { ...dealData, updated_at: new Date().toISOString() };
+      const updatePayload = { ...dealData, updated_at: new Date().toISOString() } as Partial<Deal>;
       
       // Track stage change timestamp if stage is changing
       if (dealData.stage && dealData.stage !== selectedDeal.stage) {
