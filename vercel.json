@@ -1,3 +1,4 @@
 {
-  "public": true
+  "public": true,
+  "alias": ["misslizdidit-brand-tracker.vercel.app"]
 }
