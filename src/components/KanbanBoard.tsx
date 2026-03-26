@@ -240,13 +240,20 @@ export default function KanbanBoard() {
     });
 
     // Update the dragged deal in database
+    const updateData: Record<string, any> = { 
+      stage: newStage, 
+      sort_order: newSortOrder,
+      updated_at: new Date().toISOString() 
+    };
+    
+    // Track stage change timestamp for monthly goals
+    if (isStageChange) {
+      updateData.stage_changed_at = new Date().toISOString();
+    }
+    
     const { error } = await supabase
       .from('deals')
-      .update({ 
-        stage: newStage, 
-        sort_order: newSortOrder,
-        updated_at: new Date().toISOString() 
-      })
+      .update(updateData)
       .eq('id', dealId);
 
     if (error) {
@@ -295,6 +302,7 @@ export default function KanbanBoard() {
         .from('deals')
         .insert({
           ...dealData,
+          stage_changed_at: new Date().toISOString(), // Track when entering initial stage
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         })
@@ -308,9 +316,16 @@ export default function KanbanBoard() {
 
       setDeals((prev) => [data, ...prev]);
     } else if (selectedDeal?.id) {
+      const updatePayload: Record<string, any> = { ...dealData, updated_at: new Date().toISOString() };
+      
+      // Track stage change timestamp if stage is changing
+      if (dealData.stage && dealData.stage !== selectedDeal.stage) {
+        updatePayload.stage_changed_at = new Date().toISOString();
+      }
+      
       const { error } = await supabase
         .from('deals')
-        .update({ ...dealData, updated_at: new Date().toISOString() })
+        .update(updatePayload)
         .eq('id', selectedDeal.id);
 
       if (error) {

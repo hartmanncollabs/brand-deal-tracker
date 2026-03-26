@@ -50,6 +50,8 @@ export interface Deal {
   brief_url: string | null;
   contract_url: string | null;
   other_attachments: { name: string; url: string }[] | null;
+  // Stage tracking
+  stage_changed_at: string | null; // Timestamp of last stage change
   // Computed fields (populated by queries)
   children?: Deal[];
   parent?: Deal;

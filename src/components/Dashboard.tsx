@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
 import { isBefore, parseISO, startOfDay, isEqual } from 'date-fns';
 import TierProgress from './TierProgress';
+import MonthlyGoals from './MonthlyGoals';
 
 interface DashboardProps {
   deals: Deal[];
@@ -230,7 +231,12 @@ export default function Dashboard({ deals, onScrollToDeal }: DashboardProps) {
         </div>
       </div>
 
-      {/* Tier Progress for March 2025 */}
+      {/* Monthly Goals (NEW) */}
+      <div className="mt-4">
+        <MonthlyGoals deals={deals} />
+      </div>
+
+      {/* Tier Progress */}
       <div className="mt-4">
         <TierProgress deals={deals} />
       </div>
