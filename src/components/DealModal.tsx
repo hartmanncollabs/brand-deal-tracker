@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Priority, WaitingOn, DealType } from '@/types/database';
 import { format, parseISO } from 'date-fns';
+import { supabase } from '@/lib/supabase';
 
 interface DealModalProps {
   deal: Deal | null;
@@ -410,47 +411,20 @@ export default function DealModal({
               </div>
 
               {/* Attachments Section */}
-              <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  📎 Attachments
-                </label>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-600 w-20">Brief:</span>
-                    <input
-                      type="url"
-                      value={formData.brief_url || ''}
-                      onChange={(e) =>
-                        setFormData({ ...formData, brief_url: e.target.value })
-                      }
-                      placeholder="URL to brief document"
-                      className="flex-1 px-2 py-1 text-sm border rounded focus:ring-2 focus:ring-blue-500"
-                    />
-                    {formData.brief_url && (
-                      <a href={formData.brief_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
-                        View
-                      </a>
-                    )}
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-600 w-20">Contract:</span>
-                    <input
-                      type="url"
-                      value={formData.contract_url || ''}
-                      onChange={(e) =>
-                        setFormData({ ...formData, contract_url: e.target.value })
-                      }
-                      placeholder="URL to signed contract"
-                      className="flex-1 px-2 py-1 text-sm border rounded focus:ring-2 focus:ring-blue-500"
-                    />
-                    {formData.contract_url && (
-                      <a href={formData.contract_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
-                        View
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
+              <FileUploadSection
+                label="Brief"
+                url={formData.brief_url || ''}
+                onUrlChange={(url) => setFormData({ ...formData, brief_url: url })}
+                dealSlug={formData.slug || 'new-deal'}
+                fileType="brief"
+              />
+              <FileUploadSection
+                label="Contract"
+                url={formData.contract_url || ''}
+                onUrlChange={(url) => setFormData({ ...formData, contract_url: url })}
+                dealSlug={formData.slug || 'new-deal'}
+                fileType="contract"
+              />
 
               {/* Repeat Brand Section */}
               <div className="p-3 bg-purple-50 rounded-lg border border-purple-200">
@@ -686,6 +660,150 @@ export default function DealModal({
           )}
         </div>
       </div>
+    </div>
+  );
+}
+
+// --- File Upload Sub-Component ---
+
+interface FileUploadSectionProps {
+  label: string;
+  url: string;
+  onUrlChange: (url: string) => void;
+  dealSlug: string;
+  fileType: 'brief' | 'contract';
+}
+
+function FileUploadSection({ label, url, onUrlChange, dealSlug, fileType }: FileUploadSectionProps) {
+  const [isDragOver, setIsDragOver] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
+  const [fileName, setFileName] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Extract filename from URL on mount
+  useEffect(() => {
+    if (url) {
+      const parts = url.split('/');
+      const name = parts[parts.length - 1];
+      // Decode and strip the prefix (dealSlug/fileType-)
+      try {
+        const decoded = decodeURIComponent(name);
+        setFileName(decoded.includes('-') ? decoded.substring(decoded.indexOf('-') + 1) : decoded);
+      } catch {
+        setFileName(name);
+      }
+    } else {
+      setFileName(null);
+    }
+  }, [url]);
+
+  const uploadFile = async (file: File) => {
+    setIsUploading(true);
+    const filePath = `${dealSlug}/${fileType}-${file.name}`;
+
+    const { error } = await supabase.storage
+      .from('deal-attachments')
+      .upload(filePath, file, { upsert: true });
+
+    if (error) {
+      console.error('Upload error:', error);
+      alert(`Upload failed: ${error.message}`);
+      setIsUploading(false);
+      return;
+    }
+
+    const { data: { publicUrl } } = supabase.storage
+      .from('deal-attachments')
+      .getPublicUrl(filePath);
+
+    onUrlChange(publicUrl);
+    setFileName(file.name);
+    setIsUploading(false);
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    const file = e.dataTransfer.files[0];
+    if (file) uploadFile(file);
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) uploadFile(file);
+  };
+
+  const handleRemove = () => {
+    onUrlChange('');
+    setFileName(null);
+  };
+
+  return (
+    <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+      <label className="block text-sm font-medium text-gray-700 mb-2">
+        {label === 'Brief' ? '📋' : '📄'} {label}
+      </label>
+
+      {url ? (
+        <div className="flex items-center gap-2 bg-white rounded-lg border p-2">
+          <span className="text-sm text-gray-700 truncate flex-1" title={fileName || url}>
+            {fileName || 'Uploaded file'}
+          </span>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-2 py-1 text-xs bg-blue-50 text-blue-600 rounded hover:bg-blue-100 font-medium"
+          >
+            View
+          </a>
+          <button
+            type="button"
+            onClick={handleRemove}
+            className="px-2 py-1 text-xs bg-red-50 text-red-600 rounded hover:bg-red-100 font-medium"
+          >
+            Remove
+          </button>
+        </div>
+      ) : (
+        <div
+          onDrop={handleDrop}
+          onDragOver={handleDragOver}
+          onDragLeave={() => setIsDragOver(false)}
+          onClick={() => fileInputRef.current?.click()}
+          className={`
+            border-2 border-dashed rounded-lg p-4 text-center cursor-pointer transition-colors
+            ${isDragOver ? 'border-blue-400 bg-blue-50' : 'border-gray-300 hover:border-gray-400 hover:bg-gray-100'}
+            ${isUploading ? 'opacity-50 pointer-events-none' : ''}
+          `}
+        >
+          <input
+            ref={fileInputRef}
+            type="file"
+            onChange={handleFileSelect}
+            className="hidden"
+            accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg"
+          />
+          {isUploading ? (
+            <div className="flex items-center justify-center gap-2">
+              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+              <span className="text-sm text-gray-500">Uploading...</span>
+            </div>
+          ) : (
+            <>
+              <p className="text-sm text-gray-500">
+                Drop {label.toLowerCase()} here or <span className="text-blue-600 font-medium">browse</span>
+              </p>
+              <p className="text-xs text-gray-400 mt-1">PDF, DOC, images</p>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }
