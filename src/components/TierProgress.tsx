@@ -62,12 +62,13 @@ export default function TierProgress({ deals, targetMonth }: TierProgressProps) 
 
   const pipelineTotal = pipelineDeals.reduce((sum, d) => sum + parseValue(d.value), 0);
   
-  // Get paid deals for the month (using last_contact as proxy for payment date)
+  // Get paid deals for the month (using stage_changed_at = when deal moved to paid)
   const paidDeals = deals.filter(d => {
     if (d.stage !== 'paid' || d.archived) return false;
-    if (d.last_contact) {
+    const changeDate = d.stage_changed_at;
+    if (changeDate) {
       try {
-        const paidDate = parseISO(d.last_contact);
+        const paidDate = parseISO(changeDate);
         return isWithinInterval(paidDate, { start: monthStart, end: monthEnd });
       } catch {
         return false;

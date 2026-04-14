@@ -122,14 +122,14 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
     .filter(d => ['content', 'approval', 'scheduled', 'delivered', 'invoiced'].includes(d.stage) && !d.archived)
     .reduce((sum, d) => sum + parseValue(d.value), 0);
   
-  // Paid this year (2026)
+  // Paid this year — using stage_changed_at (when deal moved to paid stage)
   const currentYear = new Date().getFullYear();
   const paidThisYear = deals
     .filter(d => d.stage === 'paid' && !d.archived)
     .filter(d => {
-      // Check if last_contact or updated_at is this year
-      if (d.last_contact) {
-        const year = new Date(d.last_contact).getFullYear();
+      const changeDate = d.stage_changed_at;
+      if (changeDate) {
+        const year = new Date(changeDate).getFullYear();
         return year === currentYear;
       }
       return true; // Include if no date to filter by
