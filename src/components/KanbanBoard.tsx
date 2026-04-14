@@ -298,11 +298,22 @@ export default function KanbanBoard() {
 
   const handleSave = async (dealData: Partial<Deal>, keepOpen = false) => {
     if (isNewDeal) {
+      // Auto-generate slug from brand name if not provided
+      if (!dealData.slug && dealData.brand) {
+        const baseSlug = dealData.brand
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-|-$/g, '');
+        // Check for existing slugs and append number if needed
+        const existing = deals.filter(d => d.slug.startsWith(baseSlug));
+        dealData.slug = existing.length > 0 ? `${baseSlug}-${existing.length + 1}` : baseSlug;
+      }
+
       const { data, error } = await supabase
         .from('deals')
         .insert({
           ...dealData,
-          stage_changed_at: new Date().toISOString(), // Track when entering initial stage
+          stage_changed_at: new Date().toISOString(),
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         })
@@ -394,9 +405,11 @@ export default function KanbanBoard() {
 
     const existingChildren = getChildDeals(parentDealId);
     const nextMonthNumber = existingChildren.length + 1;
+    const totalMonths = parentDeal.total_months || 0;
 
-    if (nextMonthNumber > (parentDeal.total_months || 0)) {
-      console.error('All monthly portions already created');
+    // Parent card is the final month (month N), so children are months 1 through N-1
+    if (totalMonths > 0 && nextMonthNumber >= totalMonths) {
+      console.error('All child portions created — parent card is the final month');
       return;
     }
 
@@ -463,7 +476,8 @@ export default function KanbanBoard() {
     }
   };
 
-  // Actually spawn the child card
+  // Actually spawn the child card (from + button / SpawnChildModal)
+  // This should ALWAYS work — no limit on total_months — so the deal can be extended.
   const handleDoSpawn = async (data: { stage: DealStage; value: number; notes: string }) => {
     if (!spawnParentDeal) return;
 
@@ -500,16 +514,16 @@ export default function KanbanBoard() {
       throw error;
     }
 
-    // Update parent card: mark as multi-month, subtract value
+    // Update parent card: mark as multi-month, expand total_months if needed
     const currentValue = parseFloat(spawnParentDeal.value?.replace(/[$,]/g, '') || '0');
     const newValue = Math.max(0, currentValue - data.value);
-    const newTotalMonths = (spawnParentDeal.total_months || 0) || nextMonthNumber;
+    const newTotalMonths = Math.max(spawnParentDeal.total_months || 0, nextMonthNumber);
 
     await supabase
       .from('deals')
       .update({
         is_multi_month: true,
-        total_months: Math.max(newTotalMonths, nextMonthNumber),
+        total_months: newTotalMonths,
         monthly_value: data.value,
         value: newValue > 0 ? `$${newValue.toLocaleString()} remaining` : spawnParentDeal.value,
         updated_at: new Date().toISOString(),
@@ -606,6 +620,31 @@ export default function KanbanBoard() {
           )}
         </div>
       </div>
+
+      {/* Unsorted deals banner — deals with stages not in the kanban */}
+      {(() => {
+        const unsortedDeals = filteredDeals.filter(d => !STAGES.includes(d.stage));
+        if (unsortedDeals.length === 0) return null;
+        return (
+          <div className="mb-4 p-3 bg-amber-50 border-2 border-amber-300 rounded-lg">
+            <p className="text-sm font-semibold text-amber-800 mb-2">
+              {unsortedDeals.length} unsorted deal{unsortedDeals.length > 1 ? 's' : ''} — click to assign a stage
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {unsortedDeals.map((d) => (
+                <button
+                  key={d.id}
+                  onClick={() => handleDealClick(d)}
+                  className="px-3 py-1.5 bg-white border border-amber-300 rounded-lg text-sm hover:bg-amber-100 transition-colors"
+                >
+                  <span className="font-medium text-gray-900">{d.brand}</span>
+                  <span className="text-gray-500 ml-1.5 text-xs">({d.stage})</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       <DndContext
         sensors={sensors}

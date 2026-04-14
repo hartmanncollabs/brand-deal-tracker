@@ -20,8 +20,8 @@
 
 import { createClient } from '@supabase/supabase-js';
 
-const CLICKUP_API_KEY = 'pk_61383668_Y1NFFRWO7KW0ZHTM3XEAJ957JBJOQ7VD';
-const CLICKUP_LIST_ID = '110102862';
+const CLICKUP_API_KEY = process.env.CLICKUP_API_KEY;
+const CLICKUP_LIST_ID = process.env.CLICKUP_LIST_ID;
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://vksjktgbakctisuumtzp.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -35,8 +35,8 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Map ClickUp status → our stage
 const STATUS_MAP = {
-  'brands to pitch': 'pitch',
-  'dm/pitch sent': 'outreach',
+  'brands to pitch': 'outreach',
+  'dm/pitch sent': 'pitched',
   'circle back': 'paused',
   'in negotiations': 'negotiation',
   'agreed in principle': 'agreed',

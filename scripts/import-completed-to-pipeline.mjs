@@ -10,8 +10,8 @@
 
 import { createClient } from '@supabase/supabase-js';
 
-const CLICKUP_API_KEY = 'pk_61383668_Y1NFFRWO7KW0ZHTM3XEAJ957JBJOQ7VD';
-const CLICKUP_LIST_ID = '110102862';
+const CLICKUP_API_KEY = process.env.CLICKUP_API_KEY;
+const CLICKUP_LIST_ID = process.env.CLICKUP_LIST_ID;
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://vksjktgbakctisuumtzp.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -66,7 +66,7 @@ function determineStage(lastUpdatedMs) {
   const age = now - lastUpdatedMs;
   
   if (age > SIX_MONTHS_MS) {
-    return 'pitch'; // Cold - needs fresh outreach
+    return 'pitched'; // Cold - needs fresh outreach
   } else if (age > THREE_MONTHS_MS) {
     return 'paused'; // Warm - circle back
   } else {
@@ -113,7 +113,7 @@ async function importCompleted(dryRun = false) {
       continue;
     }
     
-    if (stage === 'pitch') {
+    if (stage === 'outreach') {
       toPitch.push({ task, slug, rate, ageStr, lastUpdatedMs });
     } else if (stage === 'paused') {
       toCircleBack.push({ task, slug, rate, ageStr, lastUpdatedMs });
@@ -157,7 +157,7 @@ async function importCompleted(dryRun = false) {
   console.log('\n📝 Importing to Supabase...');
   
   const allToImport = [
-    ...toPitch.map(d => ({ ...d, stage: 'pitch' })),
+    ...toPitch.map(d => ({ ...d, stage: 'outreach' })),
     ...toCircleBack.map(d => ({ ...d, stage: 'paused' })),
   ];
   
@@ -175,7 +175,7 @@ async function importCompleted(dryRun = false) {
       contact_email: null,
       contact_source: 'Previous Client',
       last_contact: new Date(lastUpdatedMs).toISOString().split('T')[0],
-      next_action: stage === 'pitch' ? 'Reach out for new opportunity' : 'Circle back when relevant',
+      next_action: stage === 'outreach' ? 'Reach out for new opportunity' : 'Circle back when relevant',
       next_action_date: null,
       waiting_on: 'us',
       follow_up_count: 0,

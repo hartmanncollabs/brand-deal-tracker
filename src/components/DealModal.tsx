@@ -73,7 +73,9 @@ export default function DealModal({
   // Computed values for multi-month deals
   const isParentDeal = formData.is_multi_month && !formData.parent_deal_id;
   const isChildDeal = !!formData.parent_deal_id;
-  const completedMonths = childDeals.filter(c => c.stage === 'paid' || c.stage === 'complete').length;
+  // Parent card is the final month, so completed = paid children + parent if paid
+  const parentIsPaid = isParentDeal && (formData.stage === 'paid' || formData.stage === 'complete') ? 1 : 0;
+  const completedMonths = childDeals.filter(c => c.stage === 'paid' || c.stage === 'complete').length + parentIsPaid;
   const totalChildValue = childDeals.reduce((sum, c) => {
     const match = c.value?.match(/\$?([\d,]+)/);
     return sum + (match ? parseInt(match[1].replace(/,/g, ''), 10) : 0);
@@ -81,6 +83,8 @@ export default function DealModal({
   const remainingValue = isParentDeal && formData.total_months && formData.monthly_value
     ? (formData.total_months * formData.monthly_value) - totalChildValue
     : null;
+  // Are all child months spawned? (parent is the Nth month, children are 1 through N-1)
+  const allChildrenSpawned = isParentDeal && formData.total_months && childDeals.length >= (formData.total_months - 1);
 
   if (!isOpen) return null;
 
@@ -563,7 +567,7 @@ export default function DealModal({
               {isParentDeal && !isNew && childDeals.length > 0 && (
                 <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
                   <p className="text-sm font-medium text-gray-700 mb-2">
-                    Monthly Portions ({completedMonths}/{childDeals.length} paid)
+                    Monthly Portions ({completedMonths}/{formData.total_months || childDeals.length + 1} paid)
                   </p>
                   <div className="space-y-1">
                     {childDeals.map((child) => (
@@ -574,6 +578,13 @@ export default function DealModal({
                         <span className="text-gray-500">{child.value}</span>
                       </div>
                     ))}
+                    {/* Parent card is always the final month */}
+                    <div className="flex justify-between text-xs">
+                      <span className={formData.stage === 'paid' || formData.stage === 'complete' ? 'text-green-600 font-medium' : 'text-blue-600 font-medium'}>
+                        Month {formData.total_months || childDeals.length + 1} (this card): {STAGE_LABELS[formData.stage as DealStage] || formData.stage}
+                      </span>
+                      <span className="text-gray-500">{formData.monthly_value ? `$${formData.monthly_value.toLocaleString()}` : formData.value}</span>
+                    </div>
                   </div>
                   {remainingValue !== null && remainingValue > 0 && (
                     <p className="text-sm text-gray-600 mt-2 pt-2 border-t">
@@ -583,16 +594,20 @@ export default function DealModal({
                 </div>
               )}
 
-              {/* Create Monthly Portion Button */}
-              {isParentDeal && !isNew && onCreateMonthlyPortion && childDeals.length < (formData.total_months || 0) && (
+              {/* Create Monthly Portion Button — children are months 1 to N-1, parent is month N */}
+              {isParentDeal && !isNew && onCreateMonthlyPortion && !allChildrenSpawned && (
                 <button
                   type="button"
                   onClick={() => deal?.id && onCreateMonthlyPortion(deal.id)}
                   className="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 flex items-center justify-center gap-2"
                 >
-                  <span>➕</span>
                   <span>Create Month {childDeals.length + 1} Portion</span>
                 </button>
+              )}
+              {isParentDeal && !isNew && allChildrenSpawned && (
+                <p className="text-sm text-blue-700 bg-blue-50 rounded-lg p-3 text-center">
+                  All child months created — this card is Month {formData.total_months} (final month)
+                </p>
               )}
 
               <div className="flex justify-between pt-4 border-t">
