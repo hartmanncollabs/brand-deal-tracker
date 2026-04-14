@@ -309,10 +309,17 @@ export default function KanbanBoard() {
         dealData.slug = existing.length > 0 ? `${baseSlug}-${existing.length + 1}` : baseSlug;
       }
 
+      // Convert empty strings to null for DATE/numeric columns
+      const cleanedData = { ...dealData };
+      if (!cleanedData.next_action_date) cleanedData.next_action_date = null;
+      if (!cleanedData.last_contact) cleanedData.last_contact = null;
+      if (!cleanedData.next_action) cleanedData.next_action = null;
+      if (!cleanedData.value) cleanedData.value = null;
+
       const { data, error } = await supabase
         .from('deals')
         .insert({
-          ...dealData,
+          ...cleanedData,
           stage_changed_at: new Date().toISOString(),
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
