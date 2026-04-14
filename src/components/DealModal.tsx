@@ -386,7 +386,7 @@ export default function DealModal({
                   }
                   onBlur={(e) => {
                     // Auto-save on blur (skip for new deals), keep modal open
-                    if (!isNew && e.target.value !== deal?.next_action) {
+                    if (!isNew && deal?.id) {
                       onSave({ ...formData, next_action: e.target.value }, true);
                     }
                   }}
