@@ -53,7 +53,11 @@ const customCollisionDetection: CollisionDetection = (args) => {
   return closestCenter(args);
 };
 
-export default function KanbanBoard() {
+interface KanbanBoardProps {
+  onSwitchToCalendar?: () => void;
+}
+
+export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
   const [deals, setDeals] = useState<Deal[]>([]);
   const [activities, setActivities] = useState<DealActivity[]>([]);
   const [selectedDeal, setSelectedDeal] = useState<Deal | null>(null);
@@ -579,7 +583,7 @@ export default function KanbanBoard() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
-      <Dashboard deals={filteredDeals} onScrollToDeal={handleScrollToDeal} />
+      <Dashboard deals={filteredDeals} onScrollToDeal={handleScrollToDeal} onSwitchToCalendar={onSwitchToCalendar} />
 
       <div className="flex justify-between items-center mb-4 gap-4">
         <div className="flex gap-2 items-center">
