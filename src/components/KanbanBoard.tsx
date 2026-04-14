@@ -614,25 +614,26 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
+    <div className="min-h-screen bg-gray-50 p-2 sm:p-4">
       <Dashboard deals={filteredDeals} onScrollToDeal={handleScrollToDeal} onSwitchToCalendar={onSwitchToCalendar} />
 
-      <div className="flex justify-between items-center mb-4 gap-4">
+      <div className="flex justify-between items-center mb-3 sm:mb-4 gap-2 sm:gap-4">
         <div className="flex gap-2 items-center">
           <button
             onClick={handleNewDeal}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+            className="px-3 sm:px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium text-sm sm:text-base"
           >
             + New Deal
           </button>
-          <label className="flex items-center gap-2 text-sm text-gray-600">
+          <label className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
             <input
               type="checkbox"
               checked={showArchived}
               onChange={(e) => setShowArchived(e.target.checked)}
               className="rounded"
             />
-            Show archived
+            <span className="hidden sm:inline">Show archived</span>
+            <span className="sm:hidden">Archived</span>
           </label>
         </div>
         
@@ -642,7 +643,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search brands..."
-            className="pl-9 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-64"
+            className="pl-9 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-40 sm:w-64"
           />
           <svg
             className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"

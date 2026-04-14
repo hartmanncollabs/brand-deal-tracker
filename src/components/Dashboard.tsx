@@ -161,17 +161,17 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
   return (
     <>
     {/* Sticky top bar */}
-    <div className="sticky top-0 z-40 bg-white shadow-sm border-b px-4 py-3 -mx-4 -mt-4 mb-4">
-      <div className="flex flex-wrap gap-4 items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">Brand Deals Pipeline</h1>
-          <p className="text-gray-500 text-sm">Track partnerships from pitch to payment</p>
+    <div className="sticky top-0 z-40 bg-white shadow-sm border-b px-4 py-2 sm:py-3 -mx-4 -mt-4 mb-4">
+      <div className="flex flex-wrap gap-2 sm:gap-4 items-center justify-between">
+        <div className="min-w-0">
+          <h1 className="text-lg sm:text-2xl font-bold text-gray-800 truncate">Brand Deals Pipeline</h1>
+          <p className="text-gray-500 text-xs sm:text-sm hidden sm:block">Track partnerships from pitch to payment</p>
         </div>
 
-        <div className="flex flex-wrap gap-3 items-center">
-          <div className="bg-blue-50 rounded-lg px-4 py-2 border border-blue-200">
-            <p className="text-sm text-blue-600 font-medium">Active Deals</p>
-            <p className="text-2xl font-bold text-blue-700">{activeDeals.length}</p>
+        <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
+          <div className="bg-blue-50 rounded-lg px-3 sm:px-4 py-1.5 sm:py-2 border border-blue-200">
+            <p className="text-xs sm:text-sm text-blue-600 font-medium">Active</p>
+            <p className="text-xl sm:text-2xl font-bold text-blue-700">{activeDeals.length}</p>
           </div>
 
           {overdueDeals.length > 0 && (
@@ -200,25 +200,40 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
             />
           )}
 
-          <div className="bg-amber-50 rounded-lg px-4 py-2 border border-amber-200">
-            <p className="text-sm text-amber-600 font-medium">Waiting</p>
-            <p className="text-lg font-bold text-amber-700">
+          <div className="bg-amber-50 rounded-lg px-3 sm:px-4 py-1.5 sm:py-2 border border-amber-200">
+            <p className="text-xs sm:text-sm text-amber-600 font-medium">Waiting</p>
+            <p className="text-base sm:text-lg font-bold text-amber-700">
               <span title="Waiting on brand">🏢 {waitingOnBrand}</span>
               {' / '}
               <span title="Waiting on us">📌 {waitingOnUs}</span>
             </p>
           </div>
 
+          <a
+            href="https://claude.ai/code/scheduled/trig_01MXqTt6Hj3C8wz33mKmTvgS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-indigo-50 rounded-lg px-3 py-2 border border-indigo-200 hover:bg-indigo-100 transition-colors"
+            title="Open Brandi's scheduled agent to run or review"
+          >
+            <p className="text-sm text-indigo-600 font-medium flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <span className="hidden sm:inline">Brandi</span>
+            </p>
+          </a>
+
           {onSwitchToCalendar && (
             <button
               onClick={onSwitchToCalendar}
-              className="bg-gray-50 rounded-lg px-4 py-2 border border-gray-200 hover:bg-gray-100 transition-colors"
+              className="bg-gray-50 rounded-lg px-3 py-2 border border-gray-200 hover:bg-gray-100 transition-colors"
             >
               <p className="text-sm text-gray-600 font-medium flex items-center gap-1.5">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Calendar
+                <span className="hidden sm:inline">Calendar</span>
               </p>
             </button>
           )}
@@ -230,7 +245,7 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
 
     <div className="bg-white rounded-xl shadow-sm border p-4 mb-4">
       {/* Value Breakdown */}
-      <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
         <div className="bg-purple-50 rounded-lg px-4 py-3 border border-purple-200">
           <p className="text-xs text-purple-600 font-medium uppercase tracking-wide">Potential</p>
           <p className="text-xl font-bold text-purple-700">${potentialValue.toLocaleString()}</p>

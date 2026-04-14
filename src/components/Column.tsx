@@ -45,7 +45,7 @@ export default function Column({ stage, deals, onDealClick, onSpawnChild, active
 
   return (
     <div
-      className={`flex flex-col min-w-[280px] max-w-[280px] rounded-lg border-2 transition-all duration-200 ${STAGE_COLORS[stage]} ${
+      className={`flex flex-col min-w-[240px] sm:min-w-[280px] max-w-[240px] sm:max-w-[280px] rounded-lg border-2 transition-all duration-200 ${STAGE_COLORS[stage]} ${
         isColumnHovered ? 'ring-2 ring-blue-400 bg-blue-50/50' : ''
       }`}
     >
