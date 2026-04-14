@@ -5,6 +5,7 @@ import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
 import { isBefore, parseISO, startOfDay, isEqual } from 'date-fns';
 import TierProgress from './TierProgress';
 import MonthlyGoals from './MonthlyGoals';
+import BrandiFeedback from './BrandiFeedback';
 import { useAuth } from './AuthProvider';
 import { User } from '@supabase/supabase-js';
 import { supabase } from '@/lib/supabase';
@@ -111,6 +112,7 @@ function DealDropdown({
 
 export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }: DashboardProps) {
   const { user, signOut } = useAuth();
+  const [showBrandiFeedback, setShowBrandiFeedback] = useState(false);
   const activeDeals = deals.filter((d) => !d.archived && d.stage !== 'paused');
   
   // Value buckets based on stage
@@ -209,12 +211,10 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
             </p>
           </div>
 
-          <a
-            href="https://claude.ai/code/scheduled/trig_01MXqTt6Hj3C8wz33mKmTvgS"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setShowBrandiFeedback(true)}
             className="bg-indigo-50 rounded-lg px-3 py-2 border border-indigo-200 hover:bg-indigo-100 transition-colors"
-            title="Open Brandi's scheduled agent to run or review"
+            title="Give Brandi feedback or instructions"
           >
             <p className="text-sm text-indigo-600 font-medium flex items-center gap-1.5">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -222,7 +222,7 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
               </svg>
               <span className="hidden sm:inline">Brandi</span>
             </p>
-          </a>
+          </button>
 
           {onSwitchToCalendar && (
             <button
@@ -303,6 +303,8 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
           ))}
       </div>
     </div>
+
+    <BrandiFeedback isOpen={showBrandiFeedback} onClose={() => setShowBrandiFeedback(false)} />
     </>
   );
 }
