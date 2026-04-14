@@ -309,12 +309,15 @@ export default function KanbanBoard() {
         dealData.slug = existing.length > 0 ? `${baseSlug}-${existing.length + 1}` : baseSlug;
       }
 
-      // Convert empty strings to null for DATE/numeric columns
+      // Clean data: empty strings → null for DATE columns, strip computed fields
       const cleanedData = { ...dealData };
       if (!cleanedData.next_action_date) cleanedData.next_action_date = null;
       if (!cleanedData.last_contact) cleanedData.last_contact = null;
       if (!cleanedData.next_action) cleanedData.next_action = null;
       if (!cleanedData.value) cleanedData.value = null;
+      // Remove computed/non-DB fields that would cause insert to fail
+      delete (cleanedData as Record<string, unknown>).children;
+      delete (cleanedData as Record<string, unknown>).parent;
 
       const { data, error } = await supabase
         .from('deals')
@@ -329,6 +332,7 @@ export default function KanbanBoard() {
 
       if (error) {
         console.error('Error creating deal:', error);
+        alert(`Failed to create deal: ${error.message}`);
         return;
       }
 
