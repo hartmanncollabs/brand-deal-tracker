@@ -64,6 +64,7 @@ export interface DealActivity {
   deal_id: string;
   date: string;
   note: string;
+  actor: 'user' | 'brandi';
   created_at: string;
 }
 

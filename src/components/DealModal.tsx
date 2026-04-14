@@ -644,10 +644,17 @@ export default function DealModal({
                   activities.map((activity) => (
                     <div
                       key={activity.id}
-                      className="p-3 bg-gray-50 rounded-lg border"
+                      className={`p-3 rounded-lg border ${activity.actor === 'brandi' ? 'bg-indigo-50 border-indigo-200' : 'bg-gray-50'}`}
                     >
                       <div className="flex justify-between items-start">
-                        <p className="text-gray-700">{activity.note}</p>
+                        <div className="flex items-start gap-2">
+                          {activity.actor === 'brandi' && (
+                            <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium whitespace-nowrap mt-0.5">
+                              Brandi
+                            </span>
+                          )}
+                          <p className="text-gray-700">{activity.note}</p>
+                        </div>
                         <span className="text-xs text-gray-400 whitespace-nowrap ml-2">
                           {format(parseISO(activity.date), 'MMM d, yyyy')}
                         </span>
