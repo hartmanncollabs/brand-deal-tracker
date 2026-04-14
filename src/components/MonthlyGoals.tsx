@@ -123,6 +123,22 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
 
   const committedTotal = committedDeals.reduce((sum, d) => sum + parseValue(d.value), 0);
 
+  // Paid this month — deals that moved to "paid" stage this month
+  const paidDeals = deals.filter(d => {
+    if (d.stage !== 'paid' || d.archived || d.parent_deal_id) return false;
+    const changeDate = d.stage_changed_at;
+    if (changeDate) {
+      try {
+        const date = parseISO(changeDate);
+        return isWithinInterval(date, { start: monthStart, end: monthEnd });
+      } catch {
+        return false;
+      }
+    }
+    return false;
+  });
+  const paidTotal = paidDeals.reduce((sum, d) => sum + parseValue(d.value), 0);
+
   const COMMITTED_GOAL = 25000;
 
   return (
@@ -143,6 +159,21 @@ export default function MonthlyGoals({ deals, targetMonth }: MonthlyGoalsProps) 
         color="green"
         dealCount={committedDeals.length}
       />
+
+      {/* Paid this month — informational, no goal */}
+      <div className="mt-4 bg-purple-50 rounded-lg border border-purple-200 p-4">
+        <div className="flex items-center justify-between">
+          <h4 className="text-sm font-semibold text-purple-600 uppercase tracking-wide">
+            Paid This Month
+          </h4>
+          <span className="text-sm font-medium text-purple-700">
+            {paidDeals.length} deal{paidDeals.length !== 1 ? 's' : ''}
+          </span>
+        </div>
+        <span className="text-2xl font-bold text-purple-700">
+          ${paidTotal.toLocaleString()}
+        </span>
+      </div>
     </div>
   );
 }
