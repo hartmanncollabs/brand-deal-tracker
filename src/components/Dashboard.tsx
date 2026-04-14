@@ -5,6 +5,7 @@ import { Deal, STAGES, STAGE_LABELS } from '@/types/database';
 import { isBefore, parseISO, startOfDay, isEqual } from 'date-fns';
 import TierProgress from './TierProgress';
 import MonthlyGoals from './MonthlyGoals';
+import { useAuth } from './AuthProvider';
 
 interface DashboardProps {
   deals: Deal[];
@@ -107,6 +108,7 @@ function DealDropdown({
 }
 
 export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }: DashboardProps) {
+  const { user, signOut } = useAuth();
   const activeDeals = deals.filter((d) => !d.archived && d.stage !== 'paused');
   
   // Value buckets based on stage
@@ -218,6 +220,19 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
               </p>
             </button>
           )}
+
+          <button
+            onClick={signOut}
+            className="bg-gray-50 rounded-lg px-3 py-2 border border-gray-200 hover:bg-gray-100 transition-colors"
+            title={user?.email || 'Sign out'}
+          >
+            <p className="text-sm text-gray-500 font-medium flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              Sign Out
+            </p>
+          </button>
         </div>
       </div>
     </div>
