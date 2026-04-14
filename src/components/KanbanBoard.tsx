@@ -16,7 +16,7 @@ import {
   CollisionDetection,
   UniqueIdentifier,
 } from '@dnd-kit/core';
-import { Deal, DealActivity, DealStage, STAGES } from '@/types/database';
+import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS } from '@/types/database';
 import { supabase } from '@/lib/supabase';
 import Column from './Column';
 import DealCard from './DealCard';
@@ -343,12 +343,12 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       setDeals((prev) => [data, ...prev]);
     } else if (selectedDeal?.id) {
       const updatePayload = { ...dealData, updated_at: new Date().toISOString() } as Partial<Deal>;
-      
+
       // Track stage change timestamp if stage is changing
       if (dealData.stage && dealData.stage !== selectedDeal.stage) {
         updatePayload.stage_changed_at = new Date().toISOString();
       }
-      
+
       const { error } = await supabase
         .from('deals')
         .update(updatePayload)
@@ -357,6 +357,38 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       if (error) {
         console.error('Error updating deal:', error);
         return;
+      }
+
+      // Auto-log meaningful changes as activity
+      const changes: string[] = [];
+      if (dealData.stage && dealData.stage !== selectedDeal.stage) {
+        changes.push(`Stage: ${STAGE_LABELS[selectedDeal.stage] || selectedDeal.stage} → ${STAGE_LABELS[dealData.stage as DealStage] || dealData.stage}`);
+      }
+      if (dealData.value !== undefined && dealData.value !== selectedDeal.value) {
+        changes.push(`Value: ${selectedDeal.value || 'none'} → ${dealData.value || 'none'}`);
+      }
+      if (dealData.priority !== undefined && dealData.priority !== selectedDeal.priority) {
+        changes.push(`Priority: ${selectedDeal.priority} → ${dealData.priority}`);
+      }
+      if (dealData.waiting_on !== undefined && dealData.waiting_on !== selectedDeal.waiting_on) {
+        changes.push(`Waiting on: ${selectedDeal.waiting_on || 'none'} → ${dealData.waiting_on || 'none'}`);
+      }
+      if (dealData.contact_name !== undefined && dealData.contact_name !== selectedDeal.contact_name && dealData.contact_name) {
+        changes.push(`Contact: ${dealData.contact_name}`);
+      }
+      if (dealData.brief_url !== undefined && dealData.brief_url !== selectedDeal.brief_url) {
+        changes.push(dealData.brief_url ? 'Brief uploaded' : 'Brief removed');
+      }
+      if (dealData.contract_url !== undefined && dealData.contract_url !== selectedDeal.contract_url) {
+        changes.push(dealData.contract_url ? 'Contract uploaded' : 'Contract removed');
+      }
+
+      if (changes.length > 0) {
+        await supabase.from('deal_activities').insert({
+          deal_id: selectedDeal.id,
+          date: format(new Date(), 'yyyy-MM-dd'),
+          note: changes.join(' | '),
+        });
       }
 
       setDeals((prev) =>
