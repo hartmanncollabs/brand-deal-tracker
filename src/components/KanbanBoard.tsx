@@ -500,15 +500,27 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       return;
     }
 
+    // Subtract child value from parent
+    const currentValue = parseFloat(parentDeal.value?.replace(/[$,]/g, '') || '0');
+    const newValue = Math.max(0, currentValue - monthlyValue);
+
+    await supabase
+      .from('deals')
+      .update({
+        value: newValue > 0 ? `$${newValue.toLocaleString()} remaining` : parentDeal.value,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('id', parentDealId);
+
     // Add activity to parent
     await supabase.from('deal_activities').insert({
       deal_id: parentDealId,
       date: format(new Date(), 'yyyy-MM-dd'),
-      note: `Created Phase ${nextMonthNumber}`,
+      note: `Created Phase ${nextMonthNumber} ($${monthlyValue.toLocaleString()})`,
     });
 
     setDeals((prev) => [data, ...prev]);
-    fetchDeals(); // Refresh to get proper ordering
+    fetchDeals();
   };
 
   // Open spawn child modal
