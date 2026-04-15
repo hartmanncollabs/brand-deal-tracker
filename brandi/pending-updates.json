@@ -1,9 +1,9 @@
 [{
   "run_summary": {
-    "summary": "Big day on the pipeline 💼 — four updates across active deals:\n\n🎉 **BHG x Walmart — contract signed, officially in Content!** Liz signed the updated agreement on Apr 13 (net-45 payment terms approved after some back-and-forth). As of today, Gretta at People Inc is ordering outdoor table settings (6 place settings) to ship to Liz for the shoot. Tracking coming soon — time to start thinking about filming.\n\n📅 **Ollie's — content deadline April 29. Don't miss it.** Aviva sent the draft submission brief yesterday. E-gift card is on its way, but Liz needs to bring the Permission to Film Slip when visiting an Ollie's store. Critical: all content must be submitted for review BEFORE posting — Ollie's requires pre-approval, so no last-minute scrambles.\n\n✅ **Whisker approved** — Cheyenne flagged that the voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro.' Liz re-recorded same day and Cheyenne greenlit early next week. Posted content is right around the corner from invoicing.\n\n✨ **xTool is a new one** — Laura from xTool (Makeblock) pitched a gifted collab for their P3 80W CO2 laser (~$10K product value). Liz replied Apr 15 asking about deliverables and whether there's a paid budget. Ball is in their court.",
+    "summary": "Big day on the pipeline 💼 — five updates across active deals:\n\n🎉 **BHG x Walmart — contract signed, officially in Content!** Liz signed the updated agreement on Apr 13 (net-45 payment terms approved after some back-and-forth). As of today, Gretta at People Inc is ordering outdoor table settings (6 place settings) to ship to Liz for the shoot. Tracking coming soon — time to start thinking about filming.\n\n📅 **Ollie's — content deadline April 29. Don't miss it.** Aviva sent the draft submission brief yesterday. E-gift card is on its way, but Liz needs to bring the Permission to Film Slip when visiting an Ollie's store. Critical: all content must be submitted for review BEFORE posting — Ollie's requires pre-approval, so no last-minute scrambles.\n\n✅ **Whisker approved** — Cheyenne flagged that the voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro.' Liz re-recorded same day and Cheyenne greenlit early next week. Posted content is right around the corner from invoicing.\n\n📋 **SOJOS Sunglasses — contract landed, Kenny negotiating one clause.** Ruby sent the contract today for the $2,250 / 2 IG Reels deal. Sunglasses already arrived. Kenny responded asking to waive/remove a provision (likely a posting deadline that's already passed since the glasses just arrived). Waiting on Ruby to confirm the revision.\n\n✨ **xTool is a new one** — Laura from xTool (Makeblock) pitched a gifted collab for their 80W CO2 laser. Liz replied Apr 15 expressing interest and CC'd Kenny. Ball is in their court.",
     "emails_scanned": 20,
     "deals_created": 1,
-    "deals_updated": 3,
+    "deals_updated": 4,
     "suggestions": [
       {
         "type": "deadline",
@@ -21,9 +21,19 @@
         "message": "Content is approved and posting window is early next week (Apr 20-21). Get it live and send that invoice — you've earned it! 💸"
       },
       {
+        "type": "action",
+        "brand": "SOJOS Sunglasses",
+        "message": "Contract is in review — Kenny asked Ruby to modify a clause. Once she confirms, get this signed so Liz can start filming. First reel is due in April, so the clock is ticking on that one."
+      },
+      {
         "type": "follow-up",
         "brand": "xTool",
-        "message": "Liz asked Laura about paid budget and deliverables Apr 15 — if no reply by Apr 18, nudge her. Even if it stays gifted-only, a $10K CO2 laser system makes for serious DIY content."
+        "message": "Liz replied to Laura on Apr 15 expressing interest — if no reply by Apr 18, nudge her. Even if it stays gifted-only, an 80W CO2 laser makes for serious DIY content."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Rust-Oleum",
+        "message": "This is the 4th outreach to Jackie Walsh with zero response (Mar 3, Mar 12, Mar 19, Apr 14). Might be worth letting this one go. Consider archiving if you don't hear back by end of week."
       }
     ]
   },
@@ -64,6 +74,20 @@
       "activity_note": "Apr 15: Content approved by Whisker after minor voiceover fix (Litter-Robot 5 → Litter-Robot 5 Pro). Liz to post week of Apr 20 — moved to Scheduled."
     },
     {
+      "action": "update",
+      "brand": "SOJOS Sunglasses",
+      "stage": "contract",
+      "waiting_on": "brand",
+      "next_action": "Wait for Ruby to respond to Kenny's contract revision request",
+      "next_action_date": "2026-04-16",
+      "last_contact": "2026-04-15",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "value": 2250,
+      "notes": "[Apr 15]: Ruby sent contract. Kenny reviewed and asked to waive/remove a clause — likely a posting deadline provision since sunglasses only just arrived. Waiting on Ruby to confirm revision before Liz can sign.\n[Apr 14]: Liz confirmed receipt of 4 pairs of SOJOS sunglasses. Flagged that there was no signed agreement yet and requested a contract before filming.\n[Apr 7]: Ruby confirmed sunglasses shipped. Full content requirements sent: 1 IG Reel featuring all 4 pairs. First reel due in April; second reel in June (Amazon event) or during Prime Day if not attending.\n[Apr 3]: Rate agreed — $2,250 for 2 IG Reels. Liz selected 4 pairs from SOJOS best sellers. Products to be shipped to 2241 Bird Ln, Batavia IL 60510.",
+      "activity_note": "Apr 15: Contract received from SOJOS/Ruby for $2,250 / 2 IG Reels. Kenny reviewing — requesting one clause modified (likely posting deadline). Moved to Contract, waiting on Ruby's response."
+    },
+    {
       "action": "create",
       "brand": "xTool",
       "stage": "negotiation",
@@ -72,10 +96,10 @@
       "next_action_date": "2026-04-18",
       "last_contact": "2026-04-15",
       "contact_name": "Laura",
-      "contact_email": "gengchunhong@xtool.com",
+      "contact_email": "gengchunhong@makeblock.com",
       "value": 0,
-      "notes": "[Apr 15]: Liz replied to Laura — asked about collaboration goals, deliverables, usage rights, and whether there's a paid budget. Kenny cc'd. Waiting on response.\n[Apr 14]: Laura from xTool (Makeblock) reached out about gifted collab — xTool P3 80W CO2 laser system (~$10K product value). DIY/home decor/small business angle. Cuts 20mm basswood, 25mm acrylic in single pass. Brand has 1M+ creators globally, featured in CNET.",
-      "activity_note": "Apr 14/15: Laura from xTool pitched xTool P3 CO2 laser collab (~$10K product). Liz replied Apr 15 asking about deliverables and paid budget. Created deal card — gifted/paid TBD."
+      "notes": "[Apr 15]: Liz replied to Laura expressing interest in the collab and CC'd Kenny for next steps. Waiting on Laura's response with proposal details.\n[Apr 15]: Laura from xTool (Makeblock) reached out about a gifted collab — 80W CO2 laser for bigger DIY/craft projects. xTool has a global community of 1M+ creators. No rate/budget mentioned in initial outreach.",
+      "activity_note": "Apr 15: Laura from xTool pitched 80W CO2 laser collab. Liz replied expressing interest and CC'd Kenny. Created deal card — paid budget TBD."
     }
   ],
   "activities": []
