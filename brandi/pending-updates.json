@@ -1,24 +1,19 @@
 [{
   "run_summary": {
-    "summary": "Scanned 17 emails across 12+ threads — here's what's actionable:\n\n🚨 **SOJOS contract just landed (Apr 15)**: Ruby from SOJOS sent the contract attachment AND is asking what content Liz wants to create. Glasses are already at the house. This needs attention TODAY — moved to Contract.\n\n✅ **Whisker content submitted (Apr 14)**: Liz sent the Drive link to Cheyenne Mabey for approval. Ball is in Whisker's court — moved to Approval.\n\n📦 **BHG x Walmart moving forward**: Liz sent her shipping address to Gretta (BHG Collective) on Apr 14. Product is on its way for the outdoor living campaign.\n\n🔴 **Dreo is urgent**: Posting window opened TODAY (Apr 15–30) and Yaki at Vanzo still hasn't responded to the $3K quote from Apr 1. Liz followed up Apr 14. If no word by Apr 17, this deal may be dead — window's too tight.\n\n📋 **Linkind (solar pathway lights)**: Liz pushed back to the collab platform Apr 14 — said concept requirements are beyond the payment scope, product hasn't arrived yet, and she's out of town Apr 16–19 (can't shoot until week of Apr 20). Asked them to have the brand email her directly.\n\nBatch of follow-ups sent Apr 14 after vacation: HelloFresh, Ollny, Govee, Bringnox, Rust-Oleum — all now waiting on brand.\n\nOne new inbound: xTool (laser cutting/engraving, 1M+ creator community) pitched a collab Apr 15 — 80W CO2 laser valued at ~$10K. Worth a look if it fits Liz's content.",
-    "emails_scanned": 17,
+    "summary": "Two substantive updates from today's Apr 15 scan:\n\n✍️ **SOJOS contract in motion**: Kenny replied to Ruby this morning — contract looks great, but he asked to waive the 1-week draft clause (Liz is traveling until Sat). Proposed 4/23 as the draft delivery date. Waiting on Ruby to confirm the revised timeline. Updated waiting_on to 'brand'.\n\n✅ **BHG x Walmart contract signed**: Adobe Acrobat Sign sent a completion notice — the Influencer Services License Agreement (Brand Licensing - 88191) is fully executed. Signers: Patrick Cremens (dotdashmdp.com) + Eileen Mchugh (people.inc). Moving to Content — product is already en route.\n\nAll other threads (Dreo, Govee, Bringnox, Rust-Oleum, HelloFresh, Ollny, Linkind, Whisker) were already logged in the last run. No new replies from any of those brands yet.",
+    "emails_scanned": 18,
     "deals_created": 0,
-    "deals_updated": 10,
+    "deals_updated": 2,
     "suggestions": [
-      {
-        "type": "urgent",
-        "brand": "Dreo",
-        "message": "Dreo's posting window is OPEN NOW (Apr 15–30). Still no reply from Yaki at Vanzo to the $3K quote sent Apr 1. Liz followed up Apr 14. If no response by Apr 17, this deal is probably dead — the window doesn't leave room for back-and-forth."
-      },
       {
         "type": "follow-up",
         "brand": "SOJOS",
-        "message": "Ruby sent the contract AND wants to know Liz's content concept. One reply can do both: sign/return the contract + share the concept direction. Liz should aim to get this done today (Apr 16 next action)."
+        "message": "Kenny's ask to waive the 1-week draft clause + move to 4/23 is reasonable, but if Ruby doesn't confirm by Apr 17 give her a nudge — Liz needs clarity on the timeline before she gets back on Saturday."
       },
       {
-        "type": "new-inbound",
-        "brand": "xTool",
-        "message": "xTool (laser cutting/engraving brand, 1M+ global creators) pitched a collab Apr 15 — Laura at gengchunhong@makeblock.com, subject 'xTool Collab // 80W CO2 Laser for Bigger Projects'. They're offering the xTool P3 CO2 laser (~$10K product value). Could be a great fit for DIY/home content — worth a reply if interested."
+        "type": "action",
+        "brand": "BHG x Walmart",
+        "message": "Contract is done! Once product arrives and Liz is back from travel (Apr 19+), she's clear to film. If Gretta hasn't given a specific brief or posting window, worth a quick check-in to confirm the outdoor living campaign details."
       }
     ]
   },
@@ -27,105 +22,23 @@
       "action": "update",
       "brand": "SOJOS",
       "stage": "contract",
-      "waiting_on": "us",
-      "next_action": "Review SOJOS contract and reply to Ruby with content concept",
-      "next_action_date": "2026-04-16",
-      "last_contact": "2026-04-15",
-      "contact_name": "Ruby",
-      "contact_email": "marketing202@sojosvision.com",
-      "notes": "[Apr 15]: Ruby sent contract attachment and asked Liz to confirm what content she wants to create. Liz had confirmed glasses received Apr 14 and asked for a signed agreement before shooting.",
-      "activity_note": "Apr 15: SOJOS contract received from Ruby — moved to Contract. Ruby also asking for content concept confirmation."
-    },
-    {
-      "action": "update",
-      "brand": "Whisker",
-      "stage": "approval",
       "waiting_on": "brand",
-      "next_action": "Follow up with Cheyenne on content approval",
+      "next_action": "Wait for Ruby to confirm revised 4/23 draft timeline",
       "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-14",
-      "contact_name": "Cheyenne Mabey",
-      "contact_email": "cmabey@whisker.com",
-      "notes": "[Apr 14]: Liz submitted content to Cheyenne for approval via Google Drive (https://drive.google.com/file/d/1R2annyoQlMilc5ySY_GMI_3m_Fku2kcA/). Deal: $2,000 for TikTok Reel + IG Reel, Litter-Robot 5 Pro (white). Contract signed Feb 27, product ordered Mar 4.",
-      "activity_note": "Apr 14: Liz submitted content to Cheyenne at Whisker for approval — moved to Approval"
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Kenny replied to Ruby — contract looks great overall, but requested to waive the 1-week draft clause since glasses just arrived and Liz is traveling until Sat Apr 19. Proposed sending draft by Apr 23 to allow time for revisions and posting by end of month.",
+      "activity_note": "Apr 15: Kenny replied to Ruby with contract revision request — asked to waive 1-week draft clause, proposed 4/23 deadline. Waiting on Ruby to confirm."
     },
     {
       "action": "update",
       "brand": "BHG x Walmart",
-      "last_contact": "2026-04-14",
-      "notes": "[Apr 14]: Liz sent shipping address to Gretta (BHG Collective, bhgcollective@people.inc) — product being shipped for outdoor living campaign. Address: 2241 Bird Ln, Batavia IL 60510.",
-      "activity_note": "Apr 14: Liz confirmed shipping address to Gretta at BHG Collective — product on its way"
-    },
-    {
-      "action": "update",
-      "brand": "Dreo",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Yaki at Vanzo Media — posting window closes Apr 30",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-14",
-      "contact_name": "Yaki",
-      "contact_email": "yakiii@vanzomedia.com",
-      "value": 3000,
-      "notes": "[Apr 14]: Liz sent follow-up to Yaki — no response to $3K quote from Apr 1. Posting window April 15–30 is now open. Deliverables: 1 IG Reel co-post with Dreo, link in bio 7 days, 1 Story with link. Via Vanzo Media. Kenny CC'd.",
-      "activity_note": "Apr 14: Liz sent follow-up to Yaki at Vanzo Media — no response to $3K quote from Apr 1. Posting window April 15–30 now OPEN."
-    },
-    {
-      "action": "update",
-      "brand": "Govee",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Muriel Tang",
-      "contact_email": "muriel.tang@vanzomedia.com",
-      "notes": "[Apr 14]: Liz followed up with Muriel at Vanzo Media asking if still interested in working together. Kenny CC'd. Via Vanzo Media (same agency as Dreo/Yaki).",
-      "activity_note": "Apr 14: Liz followed up with Muriel at Vanzo Media on Govee Instagram collab — waiting on response"
-    },
-    {
-      "action": "update",
-      "brand": "Bringnox",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Camellia Liang",
-      "contact_email": "xcamellia100@gmail.com",
-      "notes": "[Apr 14]: Liz sent follow-up to Camellia after vacation. Rate: $2K for IG Reel (no ad code; usage rights charged separately based on duration). Kenny CC'd.",
-      "activity_note": "Apr 14: Liz followed up with Camellia Liang on Bringnox IG Reel negotiation — awaiting response"
-    },
-    {
-      "action": "update",
-      "brand": "Rust-Oleum",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Jackie Walsh",
-      "contact_email": "jacqueline.walsh@rustoleum.com",
-      "notes": "[Apr 14]: Liz sent another bump to Jackie — 'bumping this up one more time to see if you received our last note.' Re: Walk-In Pantry Transformation collab. Kenny CC'd.",
-      "activity_note": "Apr 14: Liz sent another follow-up bump on Rust-Oleum Walk-In Pantry Transformation"
-    },
-    {
-      "action": "update",
-      "brand": "HelloFresh",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Hana Crnoja",
-      "contact_email": "hana@gotaskmetas.com",
-      "notes": "[Apr 14]: Liz followed up with Hana at GoTaskMetas asking if HelloFresh still has campaign availability. Previous response from Hana (Mar 10): 'Sure, we'll make sure to let you know about any opportunities.'",
-      "activity_note": "Apr 14: Liz followed up with Hana at GoTaskMetas on HelloFresh campaign availability"
-    },
-    {
-      "action": "update",
-      "brand": "Ollny",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Karen",
-      "contact_email": "marketing@ollny.com",
-      "notes": "[Apr 14]: Liz sent follow-up to Karen asking if still interested in the Spring Sanctuary collab. Rates sent Mar 27: IG Reel $3,000 / IG Story $2,000 / Reel+Story Bundle $4,000.",
-      "activity_note": "Apr 14: Liz followed up on Ollny Spring Sanctuary collab — awaiting response to rates sent Mar 27"
-    },
-    {
-      "action": "update",
-      "brand": "Linkind",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "notes": "[Apr 14]: Liz pushed back to collab platform — concept requirements are beyond the payment scope (has never had to provide shot-by-shot timing before filming). No product received yet. Out of town Apr 16–19 (Thu–Sun), cannot shoot until week of Apr 20 at earliest. Asked them to have the brand email Liz directly.",
-      "activity_note": "Apr 14: Liz pushed back on Linkind concept requirements — out of town Apr 16-19, can't shoot until Apr 20 week"
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film BHG outdoor living content once product arrives (Liz back from travel Apr 19)",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Adobe Acrobat Sign 'Completed' notification received — Influencer Services License Agreement (Talent) - Brand Licensing - 88191 fully executed by all parties. Signers: Patrick Cremens (dotdashmdp.com) + Eileen Mchugh (people.inc). Contract done, product en route, ready to film.",
+      "activity_note": "Apr 15: Adobe Sign completion received — BHG contract fully executed. Moved to Content."
     }
   ],
   "activities": []
