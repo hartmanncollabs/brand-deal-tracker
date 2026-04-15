@@ -60,8 +60,9 @@ export default function BrandiFeedback({ isOpen, onClose }: BrandiFeedbackProps)
 
   useEffect(() => {
     if (isOpen) {
+      // Sync any pending updates from Brandi's file, then fetch
+      fetch('/api/brandi/sync').then(() => fetchRuns());
       fetchFeedback();
-      fetchRuns();
     }
     return () => {
       if (pollIntervalRef.current) {
