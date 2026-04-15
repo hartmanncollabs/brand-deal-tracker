@@ -1,28 +1,57 @@
 [{
   "run_summary": {
-    "summary": "Two updates from the Apr 15 afternoon scan:\n\n🎉 **Whisker approved** — content got a minor flag (voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro') but Liz re-recorded same day and Cheyenne signed off. Liz confirmed posting early next week; Cheyenne said yes. Moving to Scheduled — invoice is right around the corner.\n\n📋 **xTool is a new one** — Laura from xTool (Makeblock) pitched a gifted collab for their xTool P3 80W CO2 laser system (~$10K product value). Liz replied this morning asking about deliverables and whether there's a paid budget. No response yet. Created the card since the product value far clears the $500 gifted threshold — and Liz is already engaged.",
-    "emails_scanned": 16,
+    "summary": "Big day on the pipeline 💼 — four updates across active deals:\n\n🎉 **BHG x Walmart — contract signed, officially in Content!** Liz signed the updated agreement on Apr 13 (net-45 payment terms approved after some back-and-forth). As of today, Gretta at People Inc is ordering outdoor table settings (6 place settings) to ship to Liz for the shoot. Tracking coming soon — time to start thinking about filming.\n\n📅 **Ollie's — content deadline April 29. Don't miss it.** Aviva sent the draft submission brief yesterday. E-gift card is on its way, but Liz needs to bring the Permission to Film Slip when visiting an Ollie's store. Critical: all content must be submitted for review BEFORE posting — Ollie's requires pre-approval, so no last-minute scrambles.\n\n✅ **Whisker approved** — Cheyenne flagged that the voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro.' Liz re-recorded same day and Cheyenne greenlit early next week. Posted content is right around the corner from invoicing.\n\n✨ **xTool is a new one** — Laura from xTool (Makeblock) pitched a gifted collab for their P3 80W CO2 laser (~$10K product value). Liz replied Apr 15 asking about deliverables and whether there's a paid budget. Ball is in their court.",
+    "emails_scanned": 20,
     "deals_created": 1,
-    "deals_updated": 1,
+    "deals_updated": 3,
     "suggestions": [
+      {
+        "type": "deadline",
+        "brand": "Ollie's",
+        "message": "Content deadline is April 29 — that's 2 weeks away! Remember to bring the Permission to Film Slip to the Ollie's store and submit your draft for review BEFORE posting. Ollie's doesn't do sales, so avoid any 'sale' language in the content."
+      },
+      {
+        "type": "action",
+        "brand": "BHG x Walmart",
+        "message": "Contract is signed, products are being ordered — once the table settings arrive, get the outdoor living shoot on the calendar. If you don't have a hard post deadline from Gretta yet, worth asking so we're not scrambling."
+      },
       {
         "type": "action",
         "brand": "Whisker",
-        "message": "Content is approved and Cheyenne greenlit early next week — get that Litter-Robot 5 Pro reel posted Monday or Tuesday (Apr 20-21) and you're straight to invoicing. 💸"
+        "message": "Content is approved and posting window is early next week (Apr 20-21). Get it live and send that invoice — you've earned it! 💸"
       },
       {
         "type": "follow-up",
         "brand": "xTool",
-        "message": "Liz asked Laura about paid budget and deliverables — if no reply by Apr 18 give her a nudge. Even if it ends up gifted-only, a $10K CO2 laser system is serious product value and could make for great content."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Ollny / Govee",
-        "message": "Liz followed up on both Apr 14 after 18+ days of silence (rates sent, no response). Might be worth setting a mental deadline — if neither brand responds by end of this week, consider moving them to stalled so the board stays clean."
+        "message": "Liz asked Laura about paid budget and deliverables Apr 15 — if no reply by Apr 18, nudge her. Even if it stays gifted-only, a $10K CO2 laser system makes for serious DIY content."
       }
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Receive products and film outdoor living content for BHG x Walmart campaign",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-15",
+      "contact_name": "Gretta Hegland",
+      "contact_email": "gretta.hegland@people.inc",
+      "notes": "[Apr 15]: Gretta (People Inc) ordering 6 outdoor table settings to ship to Liz — will share tracking soon. Confirmed for 6 place settings (Mahjong table).\n[Apr 14]: Liz provided shipping address: 2241 Bird Ln, Batavia IL 60510.\n[Apr 13]: Contract SIGNED ✅ — Liz signed updated agreement. Net-45 payment terms approved (originally net-60, Kenny negotiated net-30 → settled at net-45). Amplification rights and NIL usage were removed from the original contract after Liz flagged it Apr 10.\n[Apr 9]: Onboarding forms signed via Adobe Sign (initially sent to wrong email, resent and resolved same day).",
+      "activity_note": "Apr 13-15: Contract signed (net-45 terms). Products being ordered by People Inc for filming. Moved to Content."
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film content at Ollie's store (bring Permission to Film Slip) and submit draft for review before posting",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Draft Submission & Next Steps email from Aviva (on behalf of Ollie's Bargain Outlet). Key details:\n• E-gift card on the way to Liz\n• Must bring Permission to Film Slip when visiting an Ollie's store for filming\n• Content deadline: April 29, 2026 — review campaign brief in personal campaign manager\n• ALL content must be submitted for draft review/approval BEFORE posting\n• Do NOT make it sound like a sale — Ollie's doesn't have sales, prices are low every day\n• Campaign: Ollie's Frugal Finds 6 Month Program — Group 2",
+      "activity_note": "Apr 14: Ollie's sent content brief for Group 2 campaign. Deadline Apr 29 — e-gift card coming, film slip required at store, draft review required before posting."
+    },
     {
       "action": "update",
       "brand": "Whisker",
@@ -32,7 +61,7 @@
       "next_action_date": "2026-04-20",
       "last_contact": "2026-04-15",
       "notes": "[Apr 15]: Content approved by Cheyenne (Whisker) after voiceover fix — original said 'Litter-Robot 5', needed to say 'Litter-Robot 5 Pro'. Liz re-recorded same day. Cheyenne confirmed early next week posting is fine. Scheduling for week of Apr 20.",
-      "activity_note": "Apr 15: Content approved by Whisker after minor voiceover fix. Liz to post week of Apr 20 — moved to Scheduled."
+      "activity_note": "Apr 15: Content approved by Whisker after minor voiceover fix (Litter-Robot 5 → Litter-Robot 5 Pro). Liz to post week of Apr 20 — moved to Scheduled."
     },
     {
       "action": "create",
@@ -46,7 +75,7 @@
       "contact_email": "gengchunhong@xtool.com",
       "value": 0,
       "notes": "[Apr 15]: Liz replied to Laura — asked about collaboration goals, deliverables, usage rights, and whether there's a paid budget. Kenny cc'd. Waiting on response.\n[Apr 14]: Laura from xTool (Makeblock) reached out about gifted collab — xTool P3 80W CO2 laser system (~$10K product value). DIY/home decor/small business angle. Cuts 20mm basswood, 25mm acrylic in single pass. Brand has 1M+ creators globally, featured in CNET.",
-      "activity_note": "Apr 14/15: Laura from xTool pitched xTool P3 CO2 laser collab (~$10K product). Liz replied Apr 15 asking about deliverables and whether there's a paid budget. Created deal card — gifted/paid TBD."
+      "activity_note": "Apr 14/15: Laura from xTool pitched xTool P3 CO2 laser collab (~$10K product). Liz replied Apr 15 asking about deliverables and paid budget. Created deal card — gifted/paid TBD."
     }
   ],
   "activities": []
