@@ -463,7 +463,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
 
     // Parent card is the final month (month N), so children are months 1 through N-1
     if (totalMonths > 0 && nextMonthNumber >= totalMonths) {
-      console.error('All child portions created — parent card is the final month');
+      console.error('All child phases created — parent card is the final phase');
       return;
     }
 
@@ -482,7 +482,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
         contact_source: parentDeal.contact_source,
         waiting_on: 'us',
         follow_up_count: 0,
-        notes: `Month ${nextMonthNumber} of ${parentDeal.total_months} for ${parentDeal.brand}`,
+        notes: `Phase ${nextMonthNumber} of ${parentDeal.total_months} for ${parentDeal.brand}`,
         archived: false,
         is_multi_month: true,
         parent_deal_id: parentDealId,
@@ -496,7 +496,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       .single();
 
     if (error) {
-      console.error('Error creating monthly portion:', error);
+      console.error('Error creating phase:', error);
       return;
     }
 
@@ -504,7 +504,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
     await supabase.from('deal_activities').insert({
       deal_id: parentDealId,
       date: format(new Date(), 'yyyy-MM-dd'),
-      note: `Created Month ${nextMonthNumber} portion`,
+      note: `Created Phase ${nextMonthNumber}`,
     });
 
     setDeals((prev) => [data, ...prev]);
@@ -542,8 +542,8 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
     const { error } = await supabase
       .from('deals')
       .insert({
-        brand: `${spawnParentDeal.brand} — Month ${nextMonthNumber}`,
-        slug: `${spawnParentDeal.slug}-month-${nextMonthNumber}`,
+        brand: `${spawnParentDeal.brand} — Phase ${nextMonthNumber}`,
+        slug: `${spawnParentDeal.slug}-phase-${nextMonthNumber}`,
         stage: data.stage,
         priority: spawnParentDeal.priority,
         value: `$${data.value.toLocaleString()}`,
@@ -552,7 +552,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
         contact_source: spawnParentDeal.contact_source,
         waiting_on: 'us',
         follow_up_count: 0,
-        notes: data.notes || `Month ${nextMonthNumber} for ${spawnParentDeal.brand}`,
+        notes: data.notes || `Phase ${nextMonthNumber} for ${spawnParentDeal.brand}`,
         archived: false,
         is_multi_month: false,
         parent_deal_id: spawnParentDeal.id,
@@ -588,7 +588,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
     await supabase.from('deal_activities').insert({
       deal_id: spawnParentDeal.id,
       date: format(new Date(), 'yyyy-MM-dd'),
-      note: `Spawned Month ${nextMonthNumber} child card ($${data.value.toLocaleString()}) → ${data.stage}`,
+      note: `Spawned Phase ${nextMonthNumber} ($${data.value.toLocaleString()}) → ${data.stage}`,
     });
 
     // Refresh deals

@@ -419,7 +419,7 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                           </span>
                           <span className="truncate text-gray-700">
                             {isParent && '📅 '}
-                            {isChild && deal.month_number && `M${deal.month_number} `}
+                            {isChild && deal.month_number && `P${deal.month_number} `}
                             {deal.brand}
                           </span>
                         </div>
@@ -474,7 +474,7 @@ export default function CalendarView({ onBackToKanban }: CalendarViewProps) {
                     </span>
                     <span className="text-gray-700">
                       {isParent && '📅 '}
-                      {isChild && deal.month_number && `M${deal.month_number} `}
+                      {isChild && deal.month_number && `P${deal.month_number} `}
                       {deal.brand}
                     </span>
                   </div>

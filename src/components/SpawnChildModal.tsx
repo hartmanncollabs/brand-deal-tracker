@@ -40,7 +40,7 @@ export default function SpawnChildModal({
   if (!isOpen) return null;
 
   const monthNumber = existingChildCount + 1;
-  const childName = `${parentDeal.brand} — Month ${monthNumber}`;
+  const childName = `${parentDeal.brand} — Phase ${monthNumber}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -82,7 +82,7 @@ export default function SpawnChildModal({
       <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold text-gray-900">
-            Spawn Child Card
+            Add Phase
           </h2>
           <button
             onClick={onClose}
@@ -169,7 +169,7 @@ export default function SpawnChildModal({
               disabled={isSubmitting}
               className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 disabled:opacity-50"
             >
-              {isSubmitting ? 'Creating...' : 'Spawn Child'}
+              {isSubmitting ? 'Creating...' : 'Create Phase'}
             </button>
           </div>
         </form>

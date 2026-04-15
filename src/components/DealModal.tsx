@@ -469,25 +469,27 @@ export default function DealModal({
                 )}
               </div>
 
-              {/* Multi-Month Deal Section */}
+              {/* Multi-Phase Deal Section */}
               {!isChildDeal && (
                 <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="checkbox"
                       checked={formData.is_multi_month || false}
-                      onChange={(e) =>
-                        setFormData({ 
-                          ...formData, 
+                      onChange={(e) => {
+                        const updated = {
+                          ...formData,
                           is_multi_month: e.target.checked,
                           total_months: e.target.checked ? formData.total_months : null,
                           monthly_value: e.target.checked ? formData.monthly_value : null,
-                        })
-                      }
+                        };
+                        setFormData(updated);
+                        autoSave(updated);
+                      }}
                       className="rounded border-blue-400 text-blue-600 focus:ring-blue-500"
                     />
                     <span className="text-sm font-medium text-blue-800">
-                      📅 Multi-Month Deal
+                      📅 Multi-Phase Deal
                     </span>
                   </label>
                   {formData.is_multi_month && (
@@ -495,7 +497,7 @@ export default function DealModal({
                       <div className="grid grid-cols-2 gap-3">
                         <div>
                           <label className="block text-sm font-medium text-blue-700 mb-1">
-                            Total Months
+                            Total Phases
                           </label>
                           <input
                             type="number"
@@ -504,13 +506,14 @@ export default function DealModal({
                             onChange={(e) =>
                               setFormData({ ...formData, total_months: e.target.value ? parseInt(e.target.value) : null })
                             }
+                            onBlur={() => autoSave(formData)}
                             placeholder="6"
                             className="w-full px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white"
                           />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-blue-700 mb-1">
-                            Monthly Value ($)
+                            Per-Phase Value ($)
                           </label>
                           <input
                             type="number"
@@ -520,6 +523,7 @@ export default function DealModal({
                             onChange={(e) =>
                               setFormData({ ...formData, monthly_value: e.target.value ? parseFloat(e.target.value) : null })
                             }
+                            onBlur={() => autoSave(formData)}
                             placeholder="875.00"
                             className="w-full px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white"
                           />
@@ -539,25 +543,25 @@ export default function DealModal({
               {isChildDeal && parentDeal && (
                 <div className="p-3 bg-indigo-50 rounded-lg border border-indigo-200">
                   <p className="text-sm text-indigo-700">
-                    <span className="font-medium">📅 Monthly Portion</span> of {parentDeal.brand}
+                    <span className="font-medium">📅 Phase {formData.month_number}</span> of {parentDeal.brand}
                   </p>
                   <p className="text-xs text-indigo-600 mt-1">
-                    Month {formData.month_number} of {parentDeal.total_months}
+                    Phase {formData.month_number} of {parentDeal.total_months}
                   </p>
                 </div>
               )}
 
-              {/* Monthly Portions List (for parent deals) */}
+              {/* Phases List (for parent deals) */}
               {isParentDeal && !isNew && childDeals.length > 0 && (
                 <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
                   <p className="text-sm font-medium text-gray-700 mb-2">
-                    Monthly Portions ({completedMonths}/{formData.total_months || childDeals.length + 1} paid)
+                    Phases ({completedMonths}/{formData.total_months || childDeals.length + 1} paid)
                   </p>
                   <div className="space-y-1">
                     {childDeals.map((child) => (
                       <div key={child.id} className="flex justify-between text-xs">
                         <span className={child.stage === 'paid' ? 'text-green-600' : 'text-gray-600'}>
-                          Month {child.month_number}: {child.stage}
+                          Phase {child.month_number}: {child.stage}
                         </span>
                         <span className="text-gray-500">{child.value}</span>
                       </div>
@@ -565,7 +569,7 @@ export default function DealModal({
                     {/* Parent card is always the final month */}
                     <div className="flex justify-between text-xs">
                       <span className={formData.stage === 'paid' || formData.stage === 'complete' ? 'text-green-600 font-medium' : 'text-blue-600 font-medium'}>
-                        Month {formData.total_months || childDeals.length + 1} (this card): {STAGE_LABELS[formData.stage as DealStage] || formData.stage}
+                        Phase {formData.total_months || childDeals.length + 1} (this card): {STAGE_LABELS[formData.stage as DealStage] || formData.stage}
                       </span>
                       <span className="text-gray-500">{formData.monthly_value ? `$${formData.monthly_value.toLocaleString()}` : formData.value}</span>
                     </div>
@@ -578,19 +582,19 @@ export default function DealModal({
                 </div>
               )}
 
-              {/* Create Monthly Portion Button — children are months 1 to N-1, parent is month N */}
+              {/* Create Phase Button — children are phases 1 to N-1, parent is phase N */}
               {isParentDeal && !isNew && onCreateMonthlyPortion && !allChildrenSpawned && (
                 <button
                   type="button"
                   onClick={() => deal?.id && onCreateMonthlyPortion(deal.id)}
                   className="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 flex items-center justify-center gap-2"
                 >
-                  <span>Create Month {childDeals.length + 1} Portion</span>
+                  <span>Create Phase {childDeals.length + 1}</span>
                 </button>
               )}
               {isParentDeal && !isNew && allChildrenSpawned && (
                 <p className="text-sm text-blue-700 bg-blue-50 rounded-lg p-3 text-center">
-                  All child months created — this card is Month {formData.total_months} (final month)
+                  All phases created — this card is Phase {formData.total_months} (final phase)
                 </p>
               )}
 

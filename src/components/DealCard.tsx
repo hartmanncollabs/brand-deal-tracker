@@ -97,7 +97,7 @@ export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDra
           {isParentDeal && (
             <span
               className="text-blue-600 cursor-help text-xs"
-              title={`Multi-month: ${deal.total_months || '?'} months @ $${deal.monthly_value?.toLocaleString() || '?'}/mo${childCount !== undefined && deal.total_months && childCount >= deal.total_months - 1 ? ' — this card is the final month' : ''}`}
+              title={`Multi-phase: ${deal.total_months || '?'} phases @ $${deal.monthly_value?.toLocaleString() || '?'}/phase${childCount !== undefined && deal.total_months && childCount >= deal.total_months - 1 ? ' — this card is the final phase' : ''}`}
             >
               📅{deal.total_months || ''}
               {childCount !== undefined && deal.total_months && childCount >= deal.total_months - 1 && (
@@ -106,11 +106,11 @@ export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDra
             </span>
           )}
           {isChildDeal && deal.month_number && (
-            <span 
+            <span
               className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium"
-              title="Monthly portion"
+              title="Phase"
             >
-              M{deal.month_number}
+              P{deal.month_number}
             </span>
           )}
         </div>
