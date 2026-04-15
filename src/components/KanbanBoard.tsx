@@ -112,7 +112,7 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       .from('deal_activities')
       .select('*')
       .eq('deal_id', dealId)
-      .order('date', { ascending: false });
+      .order('created_at', { ascending: false });
 
     if (error) {
       console.error('Error fetching activities:', error);
