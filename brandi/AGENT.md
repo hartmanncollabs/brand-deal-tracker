@@ -57,46 +57,54 @@ Example: "3 deals in negotiation worth $12K potential. Ollie's Month 2 ready to 
 
 ## Pipeline Stage Playbook
 
-Brandi CAN and SHOULD update `waiting_on`, `next_action`, and `next_action_date` based on email activity. Use the rules below for each stage:
+Brandi CAN and SHOULD update `waiting_on`, `next_action`, `next_action_date`, and `stage` based on email activity. Use the rules below for each stage:
 
 ### Negotiation
 - Setting follow-ups until rate/deliverables are agreed
 - Liz sends → `waiting_on: "brand"`, next_action: "Wait for [contact] response on rate", next_action_date: 3-5 business days
 - Brand replies → `waiting_on: "us"`, next_action: "Review [contact]'s counter/proposal", next_action_date: today or tomorrow
+- **→ Move to Agreed** when both sides confirm rate AND deliverables in the thread
 
 ### Agreed
 - Waiting on contract for review
 - `waiting_on: "brand"`, next_action: "Follow up on contract", next_action_date: 1-2 days depending on thread context
+- **→ Move to Contract** when contract/agreement document is sent or received in the thread
 
 ### Contract
 - Reviewing contract or waiting on brand to accept revisions
 - We need to review → `waiting_on: "us"`, next_action: "Review contract and send revisions"
 - Brand needs to accept → `waiting_on: "brand"`, next_action: "Follow up on contract revisions", next_action_date: 1-2 days
+- **→ Move to Content** when contract is fully signed/accepted by both sides
 
 ### Content
 - Reminders to film, edit, and submit content based on collaboration timeline
 - **Leave mostly to Kenny** — schedules are fluid. Only update if a clear deadline is mentioned in the email thread
 - Future: may support sub-dates / multiple deadlines per card
+- **→ Move to Approval** when content is submitted to the brand for review (look for emails sending content links, drafts, or files for review)
 
 ### Approval
 - Waiting on brand approval
 - `waiting_on: "brand"`, next_action: "Check in on content approval", next_action_date: 2-3 days
 - If brand requests revisions → `waiting_on: "us"`, next_action: "Make revisions per [contact]'s feedback"
+- **→ Move to Scheduled** when brand explicitly approves the content
 
 ### Scheduled
 - Posting content on agreed date
 - If posting date mentioned in thread → next_action_date: that date, next_action: "Post content"
 - If no date specified → default 1 week from receiving approval (unless that exceeds a deadline in the thread)
+- **→ Move to Delivered** when content is confirmed posted (look for "posted", "live", "went up" language, or sharing of post links)
 
 ### Delivered
 - Next action is sending the invoice
 - next_action: "Send invoice", next_action_date: day after moving to delivered
 - Note: this doesn't always make it into email threads, often updated manually
+- **→ Move to Invoiced** when invoice is sent (look for invoice attachments, payment request emails, or "invoice sent" language)
 
 ### Invoiced
 - Waiting on payment
 - `waiting_on: "brand"`, next_action: "Follow up on payment"
 - next_action_date: 30-60 days depending on payment terms in thread/contract
+- **→ Move to Paid** when payment is confirmed received (look for payment confirmation, "payment sent", Venmo/PayPal/bank transfer notifications)
 
 ### Paid
 - Follow up to re-up the partnership
@@ -106,6 +114,7 @@ Brandi CAN and SHOULD update `waiting_on`, `next_action`, and `next_action_date`
   - Reels: longer (~6 months)
   - If thread indicates potential for quick renewal, set sooner
 - If no renewal potential → next_action: "Move to completed", next_action_date: 12/31 of current year
+- **→ Move to Complete** only at end of year or when Kenny explicitly says to close it
 
 ### General Rules
 - When Liz sends an email → she's done her part → `waiting_on: "brand"`

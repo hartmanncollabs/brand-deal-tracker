@@ -128,10 +128,10 @@ export async function GET() {
             continue;
           }
 
-          // Fetch full deal to prepend notes
+          // Fetch full deal to prepend notes and check stage
           const { data: fullDeal } = await supabaseAdmin
             .from('deals')
-            .select('notes')
+            .select('notes, stage')
             .eq('id', existing[0].id)
             .single();
 
@@ -143,6 +143,11 @@ export async function GET() {
           if (deal.next_action) updates.next_action = deal.next_action;
           if (deal.next_action_date) updates.next_action_date = deal.next_action_date;
           if (deal.last_contact) updates.last_contact = deal.last_contact;
+          // Stage change with timestamp tracking
+          if (deal.stage && deal.stage !== fullDeal?.stage) {
+            updates.stage = deal.stage;
+            updates.stage_changed_at = new Date().toISOString();
+          }
           // Prepend new notes to existing (most recent at top)
           if (deal.notes) {
             const existing_notes = fullDeal?.notes || '';
