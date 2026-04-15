@@ -125,6 +125,12 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
   useEffect(() => {
     // Sync any pending Brandi updates before loading deals
     fetch('/api/brandi/sync').finally(() => fetchDeals());
+
+    // Auto-refresh deals every 30 seconds to pick up changes from Brandi or other users
+    const interval = setInterval(() => {
+      fetch('/api/brandi/sync').finally(() => fetchDeals());
+    }, 30000);
+    return () => clearInterval(interval);
   }, [fetchDeals]);
 
   useEffect(() => {
