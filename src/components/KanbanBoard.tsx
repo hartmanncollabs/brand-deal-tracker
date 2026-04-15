@@ -677,29 +677,24 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
       </div>
 
       {/* Unsorted deals banner — deals with stages not in the kanban */}
-      {(() => {
-        const unsortedDeals = filteredDeals.filter(d => !STAGES.includes(d.stage));
-        if (unsortedDeals.length === 0) return null;
-        return (
-          <div className="mb-4 p-3 bg-amber-50 border-2 border-amber-300 rounded-lg">
-            <p className="text-sm font-semibold text-amber-800 mb-2">
-              {unsortedDeals.length} unsorted deal{unsortedDeals.length > 1 ? 's' : ''} — click to assign a stage
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {unsortedDeals.map((d) => (
-                <button
-                  key={d.id}
-                  onClick={() => handleDealClick(d)}
-                  className="px-3 py-1.5 bg-white border border-amber-300 rounded-lg text-sm hover:bg-amber-100 transition-colors"
-                >
-                  <span className="font-medium text-gray-900">{d.brand}</span>
-                  <span className="text-gray-500 ml-1.5 text-xs">({d.stage})</span>
-                </button>
-              ))}
-            </div>
-          </div>
-        );
-      })()}
+      <UnsortedBanner
+        deals={filteredDeals.filter(d => !STAGES.includes(d.stage))}
+        onDealClick={handleDealClick}
+        onBatchAssign={async (dealIds, stage) => {
+          for (const id of dealIds) {
+            await supabase
+              .from('deals')
+              .update({ stage, stage_changed_at: new Date().toISOString(), updated_at: new Date().toISOString() })
+              .eq('id', id);
+            await supabase.from('deal_activities').insert({
+              deal_id: id,
+              date: format(new Date(), 'yyyy-MM-dd'),
+              note: `Moved to ${STAGE_LABELS[stage]} (batch assign from unsorted)`,
+            });
+          }
+          setDeals(prev => prev.map(d => dealIds.includes(d.id) ? { ...d, stage } : d));
+        }}
+      />
 
       <DndContext
         sensors={sensors}
@@ -761,6 +756,122 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
           onSpawn={handleDoSpawn}
         />
       )}
+    </div>
+  );
+}
+
+// --- Unsorted Deals Banner ---
+
+function UnsortedBanner({
+  deals,
+  onDealClick,
+  onBatchAssign,
+}: {
+  deals: Deal[];
+  onDealClick: (deal: Deal) => void;
+  onBatchAssign: (dealIds: string[], stage: DealStage) => Promise<void>;
+}) {
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [batchStage, setBatchStage] = useState<DealStage>('negotiation');
+  const [isAssigning, setIsAssigning] = useState(false);
+
+  if (deals.length === 0) return null;
+
+  const allSelected = deals.length > 0 && selectedIds.size === deals.length;
+
+  const toggleSelect = (id: string) => {
+    setSelectedIds(prev => {
+      const next = new Set(Array.from(prev));
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const toggleAll = () => {
+    if (allSelected) {
+      setSelectedIds(new Set());
+    } else {
+      setSelectedIds(new Set(deals.map(d => d.id)));
+    }
+  };
+
+  const handleBatchAssign = async () => {
+    if (selectedIds.size === 0) return;
+    setIsAssigning(true);
+    await onBatchAssign(Array.from(selectedIds), batchStage);
+    setSelectedIds(new Set());
+    setIsAssigning(false);
+  };
+
+  return (
+    <div className="mb-4 p-3 bg-amber-50 border-2 border-amber-300 rounded-lg">
+      <div className="flex items-center justify-between mb-2">
+        <p className="text-sm font-semibold text-amber-800">
+          {deals.length} unsorted deal{deals.length > 1 ? 's' : ''}
+        </p>
+        {deals.length > 1 && (
+          <button
+            onClick={toggleAll}
+            className="text-xs text-amber-700 hover:text-amber-900 font-medium"
+          >
+            {allSelected ? 'Deselect all' : 'Select all'}
+          </button>
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-3">
+        {deals.map((d) => (
+          <button
+            key={d.id}
+            onClick={(e) => {
+              if (selectedIds.size > 0 || e.shiftKey) {
+                toggleSelect(d.id);
+              } else {
+                onDealClick(d);
+              }
+            }}
+            className={`px-3 py-1.5 border rounded-lg text-sm transition-colors ${
+              selectedIds.has(d.id)
+                ? 'bg-amber-200 border-amber-400'
+                : 'bg-white border-amber-300 hover:bg-amber-100'
+            }`}
+          >
+            {selectedIds.size > 0 && (
+              <input
+                type="checkbox"
+                checked={selectedIds.has(d.id)}
+                onChange={() => toggleSelect(d.id)}
+                className="mr-1.5 rounded border-amber-400"
+                onClick={(e) => e.stopPropagation()}
+              />
+            )}
+            <span className="font-medium text-gray-900">{d.brand}</span>
+            <span className="text-gray-500 ml-1.5 text-xs">({d.stage})</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Batch assign controls */}
+      <div className="flex items-center gap-2 pt-2 border-t border-amber-200">
+        <span className="text-xs text-amber-700 font-medium">Assign to:</span>
+        <select
+          value={batchStage}
+          onChange={(e) => setBatchStage(e.target.value as DealStage)}
+          className="text-sm border border-amber-300 rounded-lg px-2 py-1 bg-white focus:ring-2 focus:ring-amber-400"
+        >
+          {STAGES.map(s => (
+            <option key={s} value={s}>{STAGE_LABELS[s]}</option>
+          ))}
+        </select>
+        <button
+          onClick={handleBatchAssign}
+          disabled={selectedIds.size === 0 || isAssigning}
+          className="px-3 py-1 bg-amber-600 text-white text-sm rounded-lg hover:bg-amber-700 disabled:opacity-50 font-medium"
+        >
+          {isAssigning ? 'Assigning...' : `Move ${selectedIds.size > 0 ? selectedIds.size : 'selected'}`}
+        </button>
+      </div>
     </div>
   );
 }
