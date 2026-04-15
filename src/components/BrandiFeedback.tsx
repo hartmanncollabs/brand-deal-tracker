@@ -124,6 +124,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
 
   // Compute focus items
   const today = startOfDay(new Date());
+  // Outreach deals excluded from focus unless they have a next_action_date
   const overdueDeals = deals.filter(
     d => !d.archived && d.stage !== 'paused' && d.stage !== 'complete' &&
       d.next_action_date && isBefore(parseISO(d.next_action_date), today) &&
@@ -132,6 +133,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
 
   const staleDeals = deals.filter(
     d => !d.archived && d.stage !== 'paused' && d.stage !== 'complete' && d.stage !== 'paid' &&
+      d.stage !== 'outreach' && d.stage !== 'pitched' &&
       !d.next_action_date && d.waiting_on === 'brand' &&
       d.last_contact && isBefore(parseISO(d.last_contact), new Date(Date.now() - 7 * 86400000))
   );
