@@ -1,27 +1,98 @@
 [{
   "run_summary": {
-    "summary": "Scanned 2 emails from the last 24 hours — both are SENT emails from Liz on Apr 14, outbound follow-ups after she got back from vacation. Two active negotiations are in play and both have gone quiet while Liz was away:\n\n1. **Dreo** (via Vanzo Media) — Liz quoted $3K on Apr 1 for an IG misting fan campaign (1 Reel co-post + 1 Story + link in bio 7 days). No response from Yaki at Vanzo Media, so Liz followed up Apr 14. 🚨 Posting window is April 15–30 — that's RIGHT NOW. Someone needs to confirm or close this one fast.\n\n2. **Bringnox** — Liz has been going back and forth with Camellia Liang (xcamellia100@gmail.com) on an IG reel deal. Liz countered at $2K without an ad code (usage rights would be extra). Camellia came back with something and then things went quiet while Liz was traveling. Liz followed up Apr 14 to re-engage. No value confirmed yet.\n\nBoth deals need Kenny's attention to confirm status and next steps. If either brand isn't already in the tracker, it should be added.",
-    "emails_scanned": 2,
+    "summary": "Big day in the inbox! 17 messages scanned across 10+ threads — here's what's actionable:\n\n🚨 **SOJOS contract just landed** (Apr 15, 1am) — Ruby from SOJOS sent the contract after Liz asked for a signed agreement yesterday. Ruby also wants to know what content concept Liz has in mind. Glasses are already at the house. This needs Liz's attention TODAY.\n\n✅ **Whisker content submitted** — Liz sent the Litter-Robot content to Cheyenne at Whisker for approval yesterday (Apr 14). Drive link is live. Ball is in Whisker's court.\n\n📦 **BHG x Walmart moving forward** — Liz sent her shipping address to Gretta (BHG Collective) on Apr 14. Product is on its way for the outdoor living campaign.\n\n🔴 **Dreo posting window opened TODAY (Apr 15–30)** — Still no response from Yaki at Vanzo Media to the $3K quote from Apr 1. Liz followed up Apr 14. This one is urgent — the window closes Apr 30.\n\nAlso: Liz did a big batch of follow-ups on Apr 14 after getting back from vacation — Bringnox, Rust-Oleum, Govee, Ollny, Hello Fresh. All waiting on brand.\n\nOne new inbound: xTool (laser cutting/engraving brand, 1M+ creator community) reached out Apr 15 about an 80W CO2 laser collab. Worth a look if that fits Liz's content.",
+    "emails_scanned": 17,
     "deals_created": 0,
-    "deals_updated": 2
+    "deals_updated": 7,
+    "suggestions": [
+      {
+        "type": "new-inbound",
+        "brand": "xTool",
+        "message": "xTool (laser cutting/engraving, 1M+ creators) sent an inbound pitch today (Apr 15) from Laura at gengchunhong@makeblock.com — subject 'xTool Collab // 80W CO2 Laser for Bigger Projects'. Could be interesting if DIY/craft content fits Liz's feed. Worth replying to if interested."
+      },
+      {
+        "type": "urgent",
+        "brand": "Dreo",
+        "message": "Dreo posting window opened TODAY (Apr 15). Yaki at Vanzo Media still hasn't responded to the $3K quote from Apr 1. If no response by Apr 17, this deal may need to be closed out — the window only runs through Apr 30."
+      }
+    ]
   },
   "deals": [
     {
       "action": "update",
+      "brand": "SOJOS",
+      "stage": "contract",
+      "waiting_on": "us",
+      "next_action": "Review SOJOS contract and reply to Ruby with content concept",
+      "next_action_date": "2026-04-16",
+      "last_contact": "2026-04-15",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "notes": "[Apr 15]: Ruby sent contract attachment and asked Liz to confirm what content she wants to create. Liz had confirmed glasses received Apr 14 and asked for a signed agreement before shooting.",
+      "activity_note": "Apr 15: SOJOS contract received from Ruby — moved to Contract. Ruby also asking for content concept confirmation."
+    },
+    {
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Cheyenne on content approval",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-14",
+      "contact_name": "Cheyenne Mabey",
+      "contact_email": "cmabey@whisker.com",
+      "notes": "[Apr 14]: Liz submitted content to Cheyenne for approval via Google Drive (https://drive.google.com/file/d/1R2annyoQlMilc5ySY_GMI_3m_Fku2kcA/). Deal: $2,000 for TikTok Reel + IG Reel, Litter-Robot 5 Pro (white). Contract signed Feb 27, product ordered Mar 4.",
+      "activity_note": "Apr 14: Liz submitted content to Cheyenne at Whisker for approval — moved to Approval"
+    },
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Liz sent shipping address to Gretta (BHG Collective, bhgcollective@people.inc) — product being shipped for outdoor living campaign. Address: 2241 Bird Ln, Batavia IL 60510.",
+      "activity_note": "Apr 14: Liz confirmed shipping address to Gretta at BHG Collective — product on its way"
+    },
+    {
+      "action": "update",
       "brand": "Dreo",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Yaki at Vanzo Media — posting window closes Apr 30",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-14",
       "contact_name": "Yaki",
       "contact_email": "yakiii@vanzomedia.com",
-      "value": "$3,000",
-      "notes": "Via Vanzo Media (global influencer agency). Deliverables: 1 IG Reel co-post with DREO, Link in bio 7 days, 1 Story with link. Posting window: April 15–30. Liz quoted $3K on Apr 1, followed up Apr 14 after no response — Liz was on vacation. Kenny CC'd on latest email.",
-      "activity_note": "Apr 14: Liz sent follow-up to Yaki at Vanzo Media — no response to $3K quote from Apr 1. Posting window April 15–30 is URGENT. Kenny CC'd."
+      "value": 3000,
+      "notes": "[Apr 14]: Liz sent follow-up to Yaki — no response to $3K quote from Apr 1. Posting window April 15–30 is now open. Via Vanzo Media. Deliverables: 1 IG Reel co-post with DREO, Link in bio 7 days, 1 Story with link. Kenny CC'd.",
+      "activity_note": "Apr 14: Liz sent follow-up to Yaki at Vanzo Media — no response to $3K quote from Apr 1. Posting window April 15–30 now OPEN."
     },
     {
       "action": "update",
       "brand": "Bringnox",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
       "contact_name": "Camellia Liang",
       "contact_email": "xcamellia100@gmail.com",
-      "notes": "IG reel collaboration. Liz countered at $2K without ad code — usage rights would be charged separately based on length of time. Camellia replied (unclear ask) and then thread went quiet while Liz was traveling.",
-      "activity_note": "Apr 14: Liz sent follow-up to Camellia Liang after vacation — ongoing negotiation on IG reel at $2K (no ad code). Kenny CC'd. Awaiting Camellia's response."
+      "notes": "[Apr 14]: Liz sent follow-up to Camellia after vacation — ongoing negotiation on IG reel at $2K (no ad code; usage rights charged separately based on duration). Kenny CC'd.",
+      "activity_note": "Apr 14: Liz followed up with Camellia Liang on Bringnox IG reel negotiation — awaiting response"
+    },
+    {
+      "action": "update",
+      "brand": "Rust-Oleum",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Jackie Walsh",
+      "contact_email": "jacqueline.walsh@rustoleum.com",
+      "notes": "[Apr 14]: Liz sent another bump to Jackie Walsh — 'bumping this up one more time to see if you received our last note.' Subject: Walk-In Pantry Transformation collab. Kenny CC'd.",
+      "activity_note": "Apr 14: Liz sent follow-up bump to Jackie Walsh at Rust-Oleum re: Walk-In Pantry Transformation"
+    },
+    {
+      "action": "update",
+      "brand": "Govee",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Muriel Tang",
+      "contact_email": "muriel.tang@vanzomedia.com",
+      "notes": "[Apr 14]: Liz followed up with Muriel at Vanzo Media asking if still interested in working together. CC'd Kenny. Via Vanzo Media (same agency as Dreo/Yaki).",
+      "activity_note": "Apr 14: Liz followed up with Muriel at Vanzo Media on Govee Instagram collab — awaiting response"
     }
   ],
   "activities": []
