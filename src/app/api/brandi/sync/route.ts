@@ -16,6 +16,10 @@ interface PendingDeal {
   activity_note?: string;
   deal_type?: string;
   priority?: string;
+  waiting_on?: string;
+  next_action?: string;
+  next_action_date?: string;
+  last_contact?: string;
 }
 
 interface PendingUpdate {
@@ -85,7 +89,9 @@ export async function GET() {
               contact_name: deal.contact_name || null,
               contact_email: deal.contact_email || null,
               contact_source: deal.contact_source || 'Email (Brandi)',
-              waiting_on: 'us',
+              waiting_on: deal.waiting_on || 'us',
+              next_action: deal.next_action || null,
+              next_action_date: deal.next_action_date || null,
               follow_up_count: 0,
               notes: deal.notes || null,
               archived: false,
@@ -122,11 +128,28 @@ export async function GET() {
             continue;
           }
 
+          // Fetch full deal to prepend notes
+          const { data: fullDeal } = await supabaseAdmin
+            .from('deals')
+            .select('notes')
+            .eq('id', existing[0].id)
+            .single();
+
           const updates: Record<string, unknown> = { updated_at: new Date().toISOString() };
           if (deal.value) updates.value = deal.value;
           if (deal.contact_name) updates.contact_name = deal.contact_name;
           if (deal.contact_email) updates.contact_email = deal.contact_email;
-          if (deal.notes) updates.notes = deal.notes;
+          if (deal.waiting_on) updates.waiting_on = deal.waiting_on;
+          if (deal.next_action) updates.next_action = deal.next_action;
+          if (deal.next_action_date) updates.next_action_date = deal.next_action_date;
+          if (deal.last_contact) updates.last_contact = deal.last_contact;
+          // Prepend new notes to existing (most recent at top)
+          if (deal.notes) {
+            const existing_notes = fullDeal?.notes || '';
+            updates.notes = existing_notes
+              ? `${deal.notes}\n\n---\n\n${existing_notes}`
+              : deal.notes;
+          }
 
           await supabaseAdmin
             .from('deals')

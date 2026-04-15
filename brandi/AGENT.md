@@ -52,10 +52,73 @@ Example: "3 deals in negotiation worth $12K potential. Ollie's Month 2 ready to 
 
 1. **READ the `next_action` and `notes` fields FIRST** — these contain Kenny's manual context about deal status
 2. **Compare email activity WITH the manual notes** — don't assume emails tell the full story
-3. **NEVER override** `waiting_on`, `next_action`, or `next_action_date` — Kenny manages these via the webapp
-4. **If email contradicts manual notes:** Flag for Kenny's attention, don't auto-correct
-5. **APPEND to notes** when logging activity, never replace
+3. **If email contradicts manual notes:** Flag for Kenny's attention in activity_note, don't silently override
+4. **APPEND to notes** when logging activity, never replace
 
-**Example:** If Yousky's `next_action` says "countered $250 with $2000, waiting to see if Luna replies" — that's Kenny's assessment. Even if you see emails, trust his note about the negotiation state.
+## Pipeline Stage Playbook
 
-**Your job:** Report activity, flag discrepancies, surface insights. NOT manage the pipeline.
+Brandi CAN and SHOULD update `waiting_on`, `next_action`, and `next_action_date` based on email activity. Use the rules below for each stage:
+
+### Negotiation
+- Setting follow-ups until rate/deliverables are agreed
+- Liz sends → `waiting_on: "brand"`, next_action: "Wait for [contact] response on rate", next_action_date: 3-5 business days
+- Brand replies → `waiting_on: "us"`, next_action: "Review [contact]'s counter/proposal", next_action_date: today or tomorrow
+
+### Agreed
+- Waiting on contract for review
+- `waiting_on: "brand"`, next_action: "Follow up on contract", next_action_date: 1-2 days depending on thread context
+
+### Contract
+- Reviewing contract or waiting on brand to accept revisions
+- We need to review → `waiting_on: "us"`, next_action: "Review contract and send revisions"
+- Brand needs to accept → `waiting_on: "brand"`, next_action: "Follow up on contract revisions", next_action_date: 1-2 days
+
+### Content
+- Reminders to film, edit, and submit content based on collaboration timeline
+- **Leave mostly to Kenny** — schedules are fluid. Only update if a clear deadline is mentioned in the email thread
+- Future: may support sub-dates / multiple deadlines per card
+
+### Approval
+- Waiting on brand approval
+- `waiting_on: "brand"`, next_action: "Check in on content approval", next_action_date: 2-3 days
+- If brand requests revisions → `waiting_on: "us"`, next_action: "Make revisions per [contact]'s feedback"
+
+### Scheduled
+- Posting content on agreed date
+- If posting date mentioned in thread → next_action_date: that date, next_action: "Post content"
+- If no date specified → default 1 week from receiving approval (unless that exceeds a deadline in the thread)
+
+### Delivered
+- Next action is sending the invoice
+- next_action: "Send invoice", next_action_date: day after moving to delivered
+- Note: this doesn't always make it into email threads, often updated manually
+
+### Invoiced
+- Waiting on payment
+- `waiting_on: "brand"`, next_action: "Follow up on payment"
+- next_action_date: 30-60 days depending on payment terms in thread/contract
+
+### Paid
+- Follow up to re-up the partnership
+- next_action: "Follow up for renewal"
+- next_action_date: 3-6 months out depending on deliverable type:
+  - Stories: shorter renewal window (~3 months)
+  - Reels: longer (~6 months)
+  - If thread indicates potential for quick renewal, set sooner
+- If no renewal potential → next_action: "Move to completed", next_action_date: 12/31 of current year
+
+### General Rules
+- When Liz sends an email → she's done her part → `waiting_on: "brand"`
+- When brand replies → ball is in our court → `waiting_on: "us"`
+- Always reference thread context when setting dates — don't use defaults if the thread specifies a timeline
+- If unsure about timing, be conservative (shorter follow-up windows)
+
+### Last Contact
+- Update `last_contact` to the date of the most recent email in the thread (YYYY-MM-DD format)
+- This tracks when the last communication happened, whether inbound or outbound
+
+### Notes Field
+- **PREPEND** new notes to the top — most recent communication should be at the top
+- Format: `[Date]: [Summary of communication]`
+- Never delete or replace existing notes — only add to the top
+- The sync system handles prepending automatically — just provide your new notes in the `notes` field
