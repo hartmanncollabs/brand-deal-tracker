@@ -94,6 +94,13 @@ export default function DealModal({
     onSave(formData);
   };
 
+  // Auto-save helper for existing deals — saves silently without closing modal
+  const autoSave = (updatedData: Partial<Deal>) => {
+    if (!isNew && deal?.id) {
+      onSave(updatedData, true);
+    }
+  };
+
   const handleAddActivity = () => {
     if (newNote.trim() && deal?.id) {
       onAddActivity(deal.id, newNote.trim());
@@ -200,6 +207,7 @@ export default function DealModal({
                     onChange={(e) =>
                       setFormData({ ...formData, value: e.target.value })
                     }
+                    onBlur={() => autoSave(formData)}
                     placeholder="$1,000"
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   />
@@ -213,12 +221,11 @@ export default function DealModal({
                   </label>
                   <select
                     value={formData.stage || 'outreach'}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        stage: e.target.value as DealStage,
-                      })
-                    }
+                    onChange={(e) => {
+                      const updated = { ...formData, stage: e.target.value as DealStage };
+                      setFormData(updated);
+                      autoSave(updated);
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   >
                     {STAGES.map((s) => (
@@ -234,12 +241,11 @@ export default function DealModal({
                   </label>
                   <select
                     value={formData.deal_type || 'posted'}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        deal_type: e.target.value as DealType,
-                      })
-                    }
+                    onChange={(e) => {
+                      const updated = { ...formData, deal_type: e.target.value as DealType };
+                      setFormData(updated);
+                      autoSave(updated);
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="posted">📱 Posted</option>
@@ -253,12 +259,11 @@ export default function DealModal({
                   </label>
                   <select
                     value={formData.priority || 'medium'}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        priority: e.target.value as Priority,
-                      })
-                    }
+                    onChange={(e) => {
+                      const updated = { ...formData, priority: e.target.value as Priority };
+                      setFormData(updated);
+                      autoSave(updated);
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="low">Low</option>
@@ -272,12 +277,11 @@ export default function DealModal({
                   </label>
                   <select
                     value={formData.waiting_on || ''}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        waiting_on: (e.target.value || null) as WaitingOn,
-                      })
-                    }
+                    onChange={(e) => {
+                      const updated = { ...formData, waiting_on: (e.target.value || null) as WaitingOn };
+                      setFormData(updated);
+                      autoSave(updated);
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="">None</option>
@@ -305,6 +309,7 @@ export default function DealModal({
                     onChange={(e) =>
                       setFormData({ ...formData, contact_name: e.target.value })
                     }
+                    onBlur={() => autoSave(formData)}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -318,6 +323,7 @@ export default function DealModal({
                     onChange={(e) =>
                       setFormData({ ...formData, contact_email: e.target.value })
                     }
+                    onBlur={() => autoSave(formData)}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -333,6 +339,7 @@ export default function DealModal({
                   onChange={(e) =>
                     setFormData({ ...formData, contact_source: e.target.value })
                   }
+                  onBlur={() => autoSave(formData)}
                   placeholder="e.g., Picking Daisies Media"
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                 />
@@ -346,9 +353,11 @@ export default function DealModal({
                   <input
                     type="date"
                     value={formData.last_contact || ''}
-                    onChange={(e) =>
-                      setFormData({ ...formData, last_contact: e.target.value })
-                    }
+                    onChange={(e) => {
+                      const updated = { ...formData, last_contact: e.target.value };
+                      setFormData(updated);
+                      autoSave(updated);
+                    }}
                     className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -405,6 +414,7 @@ export default function DealModal({
                   onChange={(e) =>
                     setFormData({ ...formData, notes: e.target.value })
                   }
+                  onBlur={() => autoSave(formData)}
                   rows={3}
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
                 />
