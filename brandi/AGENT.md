@@ -131,3 +131,9 @@ Brandi CAN and SHOULD update `waiting_on`, `next_action`, `next_action_date`, an
 - Format: `[Date]: [Summary of communication]`
 - Never delete or replace existing notes — only add to the top
 - The sync system handles prepending automatically — just provide your new notes in the `notes` field
+
+### When NOT to Write Updates
+- If no relevant emails are found, write an empty array `[]` to `pending-updates.json` — do NOT create a run summary for empty scans
+- Before updating a deal, cross-check the current deal state in the existing `pending-updates.json` or from the last scan — if the user has already made the update (e.g., moved the card to the right stage, updated the value), don't duplicate their work
+- Only add a note/activity if there is substantive information from the email that the user might have missed — for example, if Kenny moved a deal to Contract but didn't note the contract terms mentioned in the email, add that context
+- The goal is signal, not noise — every entry in the run summary should be actionable or informative
