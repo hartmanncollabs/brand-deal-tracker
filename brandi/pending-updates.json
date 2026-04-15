@@ -1,1 +1,28 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Scanned 2 emails from the last 24 hours — both are SENT emails from Liz on Apr 14, outbound follow-ups after she got back from vacation. Two active negotiations are in play and both have gone quiet while Liz was away:\n\n1. **Dreo** (via Vanzo Media) — Liz quoted $3K on Apr 1 for an IG misting fan campaign (1 Reel co-post + 1 Story + link in bio 7 days). No response from Yaki at Vanzo Media, so Liz followed up Apr 14. 🚨 Posting window is April 15–30 — that's RIGHT NOW. Someone needs to confirm or close this one fast.\n\n2. **Bringnox** — Liz has been going back and forth with Camellia Liang (xcamellia100@gmail.com) on an IG reel deal. Liz countered at $2K without an ad code (usage rights would be extra). Camellia came back with something and then things went quiet while Liz was traveling. Liz followed up Apr 14 to re-engage. No value confirmed yet.\n\nBoth deals need Kenny's attention to confirm status and next steps. If either brand isn't already in the tracker, it should be added.",
+    "emails_scanned": 2,
+    "deals_created": 0,
+    "deals_updated": 2
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Dreo",
+      "contact_name": "Yaki",
+      "contact_email": "yakiii@vanzomedia.com",
+      "value": "$3,000",
+      "notes": "Via Vanzo Media (global influencer agency). Deliverables: 1 IG Reel co-post with DREO, Link in bio 7 days, 1 Story with link. Posting window: April 15–30. Liz quoted $3K on Apr 1, followed up Apr 14 after no response — Liz was on vacation. Kenny CC'd on latest email.",
+      "activity_note": "Apr 14: Liz sent follow-up to Yaki at Vanzo Media — no response to $3K quote from Apr 1. Posting window April 15–30 is URGENT. Kenny CC'd."
+    },
+    {
+      "action": "update",
+      "brand": "Bringnox",
+      "contact_name": "Camellia Liang",
+      "contact_email": "xcamellia100@gmail.com",
+      "notes": "IG reel collaboration. Liz countered at $2K without ad code — usage rights would be charged separately based on length of time. Camellia replied (unclear ask) and then thread went quiet while Liz was traveling.",
+      "activity_note": "Apr 14: Liz sent follow-up to Camellia Liang after vacation — ongoing negotiation on IG reel at $2K (no ad code). Kenny CC'd. Awaiting Camellia's response."
+    }
+  ],
+  "activities": []
+}]
