@@ -135,34 +135,49 @@ export async function GET() {
             continue;
           }
 
-          // Fetch full deal to prepend notes and check stage
+          // Fetch full deal to cross-check current state
           const { data: fullDeal } = await supabaseAdmin
             .from('deals')
-            .select('notes, stage')
+            .select('notes, stage, waiting_on, next_action, next_action_date, last_contact, value, contact_name, contact_email')
             .eq('id', existing[0].id)
             .single();
 
-          const updates: Record<string, unknown> = { updated_at: new Date().toISOString() };
-          if (deal.value) updates.value = deal.value;
-          if (deal.contact_name) updates.contact_name = deal.contact_name;
-          if (deal.contact_email) updates.contact_email = deal.contact_email;
-          if (deal.waiting_on) updates.waiting_on = deal.waiting_on;
-          if (deal.next_action) updates.next_action = deal.next_action;
-          if (deal.next_action_date) updates.next_action_date = deal.next_action_date;
-          if (deal.last_contact) updates.last_contact = deal.last_contact;
-          // Stage change with timestamp tracking
+          const updates: Record<string, unknown> = {};
+          const changes: string[] = [];
+
+          // Only update fields that are actually different from current state
+          if (deal.value && deal.value !== fullDeal?.value) { updates.value = deal.value; changes.push('value'); }
+          if (deal.contact_name && deal.contact_name !== fullDeal?.contact_name) { updates.contact_name = deal.contact_name; changes.push('contact'); }
+          if (deal.contact_email && deal.contact_email !== fullDeal?.contact_email) { updates.contact_email = deal.contact_email; changes.push('email'); }
+          if (deal.waiting_on && deal.waiting_on !== fullDeal?.waiting_on) { updates.waiting_on = deal.waiting_on; changes.push('waiting_on'); }
+          if (deal.next_action && deal.next_action !== fullDeal?.next_action) { updates.next_action = deal.next_action; changes.push('next_action'); }
+          if (deal.next_action_date && deal.next_action_date !== fullDeal?.next_action_date) { updates.next_action_date = deal.next_action_date; changes.push('next_action_date'); }
+          if (deal.last_contact && deal.last_contact !== fullDeal?.last_contact) { updates.last_contact = deal.last_contact; changes.push('last_contact'); }
+          // Stage change — only if actually different
           if (deal.stage && deal.stage !== fullDeal?.stage) {
             updates.stage = deal.stage;
             updates.stage_changed_at = new Date().toISOString();
+            changes.push(`stage → ${deal.stage}`);
           }
-          // Prepend new notes to existing (most recent at top)
+          // Prepend new notes (always add context even if other fields unchanged)
           if (deal.notes) {
             const existing_notes = fullDeal?.notes || '';
-            updates.notes = existing_notes
-              ? `${deal.notes}\n\n---\n\n${existing_notes}`
-              : deal.notes;
+            // Check if this note was already prepended (avoid duplicates)
+            if (!existing_notes.startsWith(deal.notes.substring(0, 30))) {
+              updates.notes = existing_notes
+                ? `${deal.notes}\n\n---\n\n${existing_notes}`
+                : deal.notes;
+              changes.push('notes');
+            }
           }
 
+          // Skip if nothing actually changed (user already handled it)
+          if (Object.keys(updates).length === 0) {
+            results.details.push(`${deal.brand}: already up to date, skipped`);
+            continue;
+          }
+
+          updates.updated_at = new Date().toISOString();
           await supabaseAdmin
             .from('deals')
             .update(updates)
@@ -177,7 +192,7 @@ export async function GET() {
             });
           }
           results.synced++;
-          results.details.push(`${deal.brand}: updated`);
+          results.details.push(`${deal.brand}: updated (${changes.join(', ')})`);
         }
       }
 
