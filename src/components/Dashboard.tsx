@@ -304,7 +304,7 @@ export default function Dashboard({ deals, onScrollToDeal, onSwitchToCalendar }:
       </div>
     </div>
 
-    <BrandiFeedback isOpen={showBrandiFeedback} onClose={() => setShowBrandiFeedback(false)} />
+    <BrandiFeedback isOpen={showBrandiFeedback} onClose={() => setShowBrandiFeedback(false)} deals={deals} onScrollToDeal={onScrollToDeal} />
     </>
   );
 }

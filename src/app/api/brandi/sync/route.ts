@@ -28,6 +28,7 @@ interface PendingUpdate {
     emails_scanned: number;
     deals_created: number;
     deals_updated: number;
+    suggestions?: { type: string; brand: string; message: string }[];
   };
   deals: PendingDeal[];
   activities: { deal_brand: string; note: string }[];
@@ -51,7 +52,13 @@ export async function GET() {
       if (update.run_summary) {
         const { error } = await supabaseAdmin
           .from('brandi_runs')
-          .insert(update.run_summary);
+          .insert({
+            summary: update.run_summary.summary,
+            emails_scanned: update.run_summary.emails_scanned,
+            deals_created: update.run_summary.deals_created,
+            deals_updated: update.run_summary.deals_updated,
+            suggestions: update.run_summary.suggestions || [],
+          });
         if (error) {
           results.errors++;
           results.details.push(`Run summary error: ${error.message}`);
