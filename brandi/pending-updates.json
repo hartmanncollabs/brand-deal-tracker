@@ -1,44 +1,52 @@
 [{
   "run_summary": {
-    "summary": "Two substantive updates from today's Apr 15 scan:\n\n✍️ **SOJOS contract in motion**: Kenny replied to Ruby this morning — contract looks great, but he asked to waive the 1-week draft clause (Liz is traveling until Sat). Proposed 4/23 as the draft delivery date. Waiting on Ruby to confirm the revised timeline. Updated waiting_on to 'brand'.\n\n✅ **BHG x Walmart contract signed**: Adobe Acrobat Sign sent a completion notice — the Influencer Services License Agreement (Brand Licensing - 88191) is fully executed. Signers: Patrick Cremens (dotdashmdp.com) + Eileen Mchugh (people.inc). Moving to Content — product is already en route.\n\nAll other threads (Dreo, Govee, Bringnox, Rust-Oleum, HelloFresh, Ollny, Linkind, Whisker) were already logged in the last run. No new replies from any of those brands yet.",
-    "emails_scanned": 18,
-    "deals_created": 0,
-    "deals_updated": 2,
+    "summary": "Two updates from the Apr 15 afternoon scan:\n\n🎉 **Whisker approved** — content got a minor flag (voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro') but Liz re-recorded same day and Cheyenne signed off. Liz confirmed posting early next week; Cheyenne said yes. Moving to Scheduled — invoice is right around the corner.\n\n📋 **xTool is a new one** — Laura from xTool (Makeblock) pitched a gifted collab for their xTool P3 80W CO2 laser system (~$10K product value). Liz replied this morning asking about deliverables and whether there's a paid budget. No response yet. Created the card since the product value far clears the $500 gifted threshold — and Liz is already engaged.",
+    "emails_scanned": 16,
+    "deals_created": 1,
+    "deals_updated": 1,
     "suggestions": [
       {
-        "type": "follow-up",
-        "brand": "SOJOS",
-        "message": "Kenny's ask to waive the 1-week draft clause + move to 4/23 is reasonable, but if Ruby doesn't confirm by Apr 17 give her a nudge — Liz needs clarity on the timeline before she gets back on Saturday."
+        "type": "action",
+        "brand": "Whisker",
+        "message": "Content is approved and Cheyenne greenlit early next week — get that Litter-Robot 5 Pro reel posted Monday or Tuesday (Apr 20-21) and you're straight to invoicing. 💸"
       },
       {
-        "type": "action",
-        "brand": "BHG x Walmart",
-        "message": "Contract is done! Once product arrives and Liz is back from travel (Apr 19+), she's clear to film. If Gretta hasn't given a specific brief or posting window, worth a quick check-in to confirm the outdoor living campaign details."
+        "type": "follow-up",
+        "brand": "xTool",
+        "message": "Liz asked Laura about paid budget and deliverables — if no reply by Apr 18 give her a nudge. Even if it ends up gifted-only, a $10K CO2 laser system is serious product value and could make for great content."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Ollny / Govee",
+        "message": "Liz followed up on both Apr 14 after 18+ days of silence (rates sent, no response). Might be worth setting a mental deadline — if neither brand responds by end of this week, consider moving them to stalled so the board stays clean."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "SOJOS",
-      "stage": "contract",
-      "waiting_on": "brand",
-      "next_action": "Wait for Ruby to confirm revised 4/23 draft timeline",
-      "next_action_date": "2026-04-17",
+      "brand": "Whisker",
+      "stage": "scheduled",
+      "waiting_on": "us",
+      "next_action": "Post Litter-Robot 5 Pro IG content",
+      "next_action_date": "2026-04-20",
       "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Kenny replied to Ruby — contract looks great overall, but requested to waive the 1-week draft clause since glasses just arrived and Liz is traveling until Sat Apr 19. Proposed sending draft by Apr 23 to allow time for revisions and posting by end of month.",
-      "activity_note": "Apr 15: Kenny replied to Ruby with contract revision request — asked to waive 1-week draft clause, proposed 4/23 deadline. Waiting on Ruby to confirm."
+      "notes": "[Apr 15]: Content approved by Cheyenne (Whisker) after voiceover fix — original said 'Litter-Robot 5', needed to say 'Litter-Robot 5 Pro'. Liz re-recorded same day. Cheyenne confirmed early next week posting is fine. Scheduling for week of Apr 20.",
+      "activity_note": "Apr 15: Content approved by Whisker after minor voiceover fix. Liz to post week of Apr 20 — moved to Scheduled."
     },
     {
-      "action": "update",
-      "brand": "BHG x Walmart",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film BHG outdoor living content once product arrives (Liz back from travel Apr 19)",
-      "next_action_date": "2026-04-21",
+      "action": "create",
+      "brand": "xTool",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Laura's response on deliverables and paid budget",
+      "next_action_date": "2026-04-18",
       "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Adobe Acrobat Sign 'Completed' notification received — Influencer Services License Agreement (Talent) - Brand Licensing - 88191 fully executed by all parties. Signers: Patrick Cremens (dotdashmdp.com) + Eileen Mchugh (people.inc). Contract done, product en route, ready to film.",
-      "activity_note": "Apr 15: Adobe Sign completion received — BHG contract fully executed. Moved to Content."
+      "contact_name": "Laura",
+      "contact_email": "gengchunhong@xtool.com",
+      "value": 0,
+      "notes": "[Apr 15]: Liz replied to Laura — asked about collaboration goals, deliverables, usage rights, and whether there's a paid budget. Kenny cc'd. Waiting on response.\n[Apr 14]: Laura from xTool (Makeblock) reached out about gifted collab — xTool P3 80W CO2 laser system (~$10K product value). DIY/home decor/small business angle. Cuts 20mm basswood, 25mm acrylic in single pass. Brand has 1M+ creators globally, featured in CNET.",
+      "activity_note": "Apr 14/15: Laura from xTool pitched xTool P3 CO2 laser collab (~$10K product). Liz replied Apr 15 asking about deliverables and whether there's a paid budget. Created deal card — gifted/paid TBD."
     }
   ],
   "activities": []
