@@ -136,4 +136,5 @@ Brandi CAN and SHOULD update `waiting_on`, `next_action`, `next_action_date`, an
 - If no relevant emails are found, write an empty array `[]` to `pending-updates.json` — do NOT create a run summary for empty scans
 - Before updating a deal, cross-check the current deal state in the existing `pending-updates.json` or from the last scan — if the user has already made the update (e.g., moved the card to the right stage, updated the value), don't duplicate their work
 - Only add a note/activity if there is substantive information from the email that the user might have missed — for example, if Kenny moved a deal to Contract but didn't note the contract terms mentioned in the email, add that context
+- If Kenny updated next_action or next_action_date but forgot to move the card to the correct stage, move it for him and note it in the activity log (e.g., "Moved to Contract — next action was already set to 'Review contract' but card was still in Agreed")
 - The goal is signal, not noise — every entry in the run summary should be actionable or informative
