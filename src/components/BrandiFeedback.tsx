@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useAuth } from './AuthProvider';
 import { format, parseISO } from 'date-fns';
@@ -33,14 +33,43 @@ export default function BrandiFeedback({ isOpen, onClose }: BrandiFeedbackProps)
   const [runs, setRuns] = useState<RunEntry[]>([]);
   const [newMessage, setNewMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isRunning, setIsRunning] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const pollIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const runCountRef = useRef(0);
+
+  const fetchRuns = useCallback(async () => {
+    const { data } = await supabase
+      .from('brandi_runs')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(20);
+    if (data) {
+      // If we're polling and a new run appeared, stop polling
+      if (isRunning && data.length > runCountRef.current) {
+        setIsRunning(false);
+        if (pollIntervalRef.current) {
+          clearInterval(pollIntervalRef.current);
+          pollIntervalRef.current = null;
+        }
+      }
+      runCountRef.current = data.length;
+      setRuns(data);
+    }
+  }, [isRunning]);
 
   useEffect(() => {
     if (isOpen) {
       fetchFeedback();
       fetchRuns();
     }
-  }, [isOpen]);
+    return () => {
+      if (pollIntervalRef.current) {
+        clearInterval(pollIntervalRef.current);
+        pollIntervalRef.current = null;
+      }
+    };
+  }, [isOpen, fetchRuns]);
 
   useEffect(() => {
     if (activeTab === 'feedback') {
@@ -56,13 +85,24 @@ export default function BrandiFeedback({ isOpen, onClose }: BrandiFeedbackProps)
     if (data) setEntries(data);
   };
 
-  const fetchRuns = async () => {
-    const { data } = await supabase
-      .from('brandi_runs')
-      .select('*')
-      .order('created_at', { ascending: false })
-      .limit(20);
-    if (data) setRuns(data);
+  const handleRunNow = () => {
+    setIsRunning(true);
+    setActiveTab('runs');
+    runCountRef.current = runs.length;
+
+    // Open the trigger page to start the run
+    window.open('https://claude.ai/code/scheduled/trig_01MXqTt6Hj3C8wz33mKmTvgS', '_blank');
+
+    // Poll for new results every 15 seconds for up to 10 minutes
+    if (pollIntervalRef.current) clearInterval(pollIntervalRef.current);
+    pollIntervalRef.current = setInterval(fetchRuns, 15000);
+    setTimeout(() => {
+      if (pollIntervalRef.current) {
+        clearInterval(pollIntervalRef.current);
+        pollIntervalRef.current = null;
+      }
+      setIsRunning(false);
+    }, 600000);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -96,20 +136,34 @@ export default function BrandiFeedback({ isOpen, onClose }: BrandiFeedbackProps)
           <div className="flex items-center gap-2">
             <span className="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium">Brandi</span>
             <h2 className="text-lg font-semibold text-gray-900">Agent Panel</h2>
+            {isRunning && (
+              <span className="flex items-center gap-1.5 px-2 py-0.5 bg-indigo-200 text-indigo-800 text-xs rounded-full font-medium animate-pulse">
+                <span className="h-2 w-2 bg-indigo-600 rounded-full animate-spin" style={{ animationDuration: '1s' }}></span>
+                Scanning...
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-2">
-            <a
-              href="https://claude.ai/code/scheduled/trig_01MXqTt6Hj3C8wz33mKmTvgS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2.5 py-1 bg-indigo-600 text-white text-xs rounded-lg hover:bg-indigo-700 transition-colors font-medium"
+            <button
+              onClick={handleRunNow}
+              disabled={isRunning}
+              className="flex items-center gap-1 px-2.5 py-1 bg-indigo-600 text-white text-xs rounded-lg hover:bg-indigo-700 disabled:opacity-50 transition-colors font-medium"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Run Now
-            </a>
+              {isRunning ? (
+                <>
+                  <div className="animate-spin rounded-full h-3.5 w-3.5 border-2 border-white border-t-transparent"></div>
+                  Running...
+                </>
+              ) : (
+                <>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Run Now
+                </>
+              )}
+            </button>
             <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-xl">&times;</button>
           </div>
         </div>
@@ -151,7 +205,16 @@ export default function BrandiFeedback({ isOpen, onClose }: BrandiFeedbackProps)
         {/* Runs Tab */}
         {activeTab === 'runs' && (
           <div className="flex-1 overflow-y-auto p-4 space-y-3 min-h-[200px]">
-            {runs.length === 0 ? (
+            {isRunning && (
+              <div className="bg-indigo-50 rounded-lg border-2 border-indigo-300 border-dashed p-4 flex items-center gap-3">
+                <div className="animate-spin rounded-full h-8 w-8 border-3 border-indigo-600 border-t-transparent flex-shrink-0"></div>
+                <div>
+                  <p className="text-sm font-medium text-indigo-800">Brandi is scanning Liz&apos;s emails...</p>
+                  <p className="text-xs text-indigo-600 mt-0.5">This usually takes 2-5 minutes. Results will appear here automatically.</p>
+                </div>
+              </div>
+            )}
+            {runs.length === 0 && !isRunning ? (
               <div className="text-center text-gray-400 py-8">
                 <p className="text-sm">No runs yet.</p>
                 <p className="text-xs mt-1">Click &quot;Run Now&quot; to trigger Brandi&apos;s first email scan.</p>
