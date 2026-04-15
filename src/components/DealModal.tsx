@@ -666,7 +666,7 @@ export default function DealModal({
                           <p className="text-gray-700">{activity.note}</p>
                         </div>
                         <span className="text-xs text-gray-400 whitespace-nowrap ml-2">
-                          {format(parseISO(activity.date), 'MMM d, yyyy')}
+                          {format(parseISO(activity.created_at), 'MMM d, h:mm a')}
                         </span>
                       </div>
                     </div>
