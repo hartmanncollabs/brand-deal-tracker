@@ -123,7 +123,8 @@ export default function KanbanBoard({ onSwitchToCalendar }: KanbanBoardProps) {
   }, []);
 
   useEffect(() => {
-    fetchDeals();
+    // Sync any pending Brandi updates before loading deals
+    fetch('/api/brandi/sync').finally(() => fetchDeals());
   }, [fetchDeals]);
 
   useEffect(() => {
