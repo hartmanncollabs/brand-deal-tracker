@@ -69,6 +69,7 @@ When a brand or agency reaches out to Liz with a collaboration opportunity (not 
 - Extract: brand name, contact person, email, proposed value/deliverables, product details
 - Notes: summarize the email — what they're offering, what they want, any deadlines
 - Do NOT just flag it as a suggestion — CREATE THE CARD so Kenny and Liz see it on the board immediately
+- **Gifted/seeding exceptions:** Generally skip gifted-only offers. BUT if the product value is significant ($500+), create the card anyway — Liz may want to explore the opportunity even without a cash payment. Note in the card that it's gifted/product-only so the team can decide.
 
 ### Negotiation
 - Setting follow-ups until rate/deliverables are agreed
