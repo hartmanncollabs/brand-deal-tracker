@@ -1,19 +1,24 @@
 [{
   "run_summary": {
-    "summary": "Big day in the inbox! 17 messages scanned across 10+ threads — here's what's actionable:\n\n🚨 **SOJOS contract just landed** (Apr 15, 1am) — Ruby from SOJOS sent the contract after Liz asked for a signed agreement yesterday. Ruby also wants to know what content concept Liz has in mind. Glasses are already at the house. This needs Liz's attention TODAY.\n\n✅ **Whisker content submitted** — Liz sent the Litter-Robot content to Cheyenne at Whisker for approval yesterday (Apr 14). Drive link is live. Ball is in Whisker's court.\n\n📦 **BHG x Walmart moving forward** — Liz sent her shipping address to Gretta (BHG Collective) on Apr 14. Product is on its way for the outdoor living campaign.\n\n🔴 **Dreo posting window opened TODAY (Apr 15–30)** — Still no response from Yaki at Vanzo Media to the $3K quote from Apr 1. Liz followed up Apr 14. This one is urgent — the window closes Apr 30.\n\nAlso: Liz did a big batch of follow-ups on Apr 14 after getting back from vacation — Bringnox, Rust-Oleum, Govee, Ollny, Hello Fresh. All waiting on brand.\n\nOne new inbound: xTool (laser cutting/engraving brand, 1M+ creator community) reached out Apr 15 about an 80W CO2 laser collab. Worth a look if that fits Liz's content.",
+    "summary": "Scanned 17 emails across 12+ threads — here's what's actionable:\n\n🚨 **SOJOS contract just landed (Apr 15)**: Ruby from SOJOS sent the contract attachment AND is asking what content Liz wants to create. Glasses are already at the house. This needs attention TODAY — moved to Contract.\n\n✅ **Whisker content submitted (Apr 14)**: Liz sent the Drive link to Cheyenne Mabey for approval. Ball is in Whisker's court — moved to Approval.\n\n📦 **BHG x Walmart moving forward**: Liz sent her shipping address to Gretta (BHG Collective) on Apr 14. Product is on its way for the outdoor living campaign.\n\n🔴 **Dreo is urgent**: Posting window opened TODAY (Apr 15–30) and Yaki at Vanzo still hasn't responded to the $3K quote from Apr 1. Liz followed up Apr 14. If no word by Apr 17, this deal may be dead — window's too tight.\n\n📋 **Linkind (solar pathway lights)**: Liz pushed back to the collab platform Apr 14 — said concept requirements are beyond the payment scope, product hasn't arrived yet, and she's out of town Apr 16–19 (can't shoot until week of Apr 20). Asked them to have the brand email her directly.\n\nBatch of follow-ups sent Apr 14 after vacation: HelloFresh, Ollny, Govee, Bringnox, Rust-Oleum — all now waiting on brand.\n\nOne new inbound: xTool (laser cutting/engraving, 1M+ creator community) pitched a collab Apr 15 — 80W CO2 laser valued at ~$10K. Worth a look if it fits Liz's content.",
     "emails_scanned": 17,
     "deals_created": 0,
-    "deals_updated": 7,
+    "deals_updated": 10,
     "suggestions": [
-      {
-        "type": "new-inbound",
-        "brand": "xTool",
-        "message": "xTool (laser cutting/engraving, 1M+ creators) sent an inbound pitch today (Apr 15) from Laura at gengchunhong@makeblock.com — subject 'xTool Collab // 80W CO2 Laser for Bigger Projects'. Could be interesting if DIY/craft content fits Liz's feed. Worth replying to if interested."
-      },
       {
         "type": "urgent",
         "brand": "Dreo",
-        "message": "Dreo posting window opened TODAY (Apr 15). Yaki at Vanzo Media still hasn't responded to the $3K quote from Apr 1. If no response by Apr 17, this deal may need to be closed out — the window only runs through Apr 30."
+        "message": "Dreo's posting window is OPEN NOW (Apr 15–30). Still no reply from Yaki at Vanzo to the $3K quote sent Apr 1. Liz followed up Apr 14. If no response by Apr 17, this deal is probably dead — the window doesn't leave room for back-and-forth."
+      },
+      {
+        "type": "follow-up",
+        "brand": "SOJOS",
+        "message": "Ruby sent the contract AND wants to know Liz's content concept. One reply can do both: sign/return the contract + share the concept direction. Liz should aim to get this done today (Apr 16 next action)."
+      },
+      {
+        "type": "new-inbound",
+        "brand": "xTool",
+        "message": "xTool (laser cutting/engraving brand, 1M+ global creators) pitched a collab Apr 15 — Laura at gengchunhong@makeblock.com, subject 'xTool Collab // 80W CO2 Laser for Bigger Projects'. They're offering the xTool P3 CO2 laser (~$10K product value). Could be a great fit for DIY/home content — worth a reply if interested."
       }
     ]
   },
@@ -61,28 +66,8 @@
       "contact_name": "Yaki",
       "contact_email": "yakiii@vanzomedia.com",
       "value": 3000,
-      "notes": "[Apr 14]: Liz sent follow-up to Yaki — no response to $3K quote from Apr 1. Posting window April 15–30 is now open. Via Vanzo Media. Deliverables: 1 IG Reel co-post with DREO, Link in bio 7 days, 1 Story with link. Kenny CC'd.",
+      "notes": "[Apr 14]: Liz sent follow-up to Yaki — no response to $3K quote from Apr 1. Posting window April 15–30 is now open. Deliverables: 1 IG Reel co-post with Dreo, link in bio 7 days, 1 Story with link. Via Vanzo Media. Kenny CC'd.",
       "activity_note": "Apr 14: Liz sent follow-up to Yaki at Vanzo Media — no response to $3K quote from Apr 1. Posting window April 15–30 now OPEN."
-    },
-    {
-      "action": "update",
-      "brand": "Bringnox",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Camellia Liang",
-      "contact_email": "xcamellia100@gmail.com",
-      "notes": "[Apr 14]: Liz sent follow-up to Camellia after vacation — ongoing negotiation on IG reel at $2K (no ad code; usage rights charged separately based on duration). Kenny CC'd.",
-      "activity_note": "Apr 14: Liz followed up with Camellia Liang on Bringnox IG reel negotiation — awaiting response"
-    },
-    {
-      "action": "update",
-      "brand": "Rust-Oleum",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "contact_name": "Jackie Walsh",
-      "contact_email": "jacqueline.walsh@rustoleum.com",
-      "notes": "[Apr 14]: Liz sent another bump to Jackie Walsh — 'bumping this up one more time to see if you received our last note.' Subject: Walk-In Pantry Transformation collab. Kenny CC'd.",
-      "activity_note": "Apr 14: Liz sent follow-up bump to Jackie Walsh at Rust-Oleum re: Walk-In Pantry Transformation"
     },
     {
       "action": "update",
@@ -91,8 +76,56 @@
       "last_contact": "2026-04-14",
       "contact_name": "Muriel Tang",
       "contact_email": "muriel.tang@vanzomedia.com",
-      "notes": "[Apr 14]: Liz followed up with Muriel at Vanzo Media asking if still interested in working together. CC'd Kenny. Via Vanzo Media (same agency as Dreo/Yaki).",
-      "activity_note": "Apr 14: Liz followed up with Muriel at Vanzo Media on Govee Instagram collab — awaiting response"
+      "notes": "[Apr 14]: Liz followed up with Muriel at Vanzo Media asking if still interested in working together. Kenny CC'd. Via Vanzo Media (same agency as Dreo/Yaki).",
+      "activity_note": "Apr 14: Liz followed up with Muriel at Vanzo Media on Govee Instagram collab — waiting on response"
+    },
+    {
+      "action": "update",
+      "brand": "Bringnox",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Camellia Liang",
+      "contact_email": "xcamellia100@gmail.com",
+      "notes": "[Apr 14]: Liz sent follow-up to Camellia after vacation. Rate: $2K for IG Reel (no ad code; usage rights charged separately based on duration). Kenny CC'd.",
+      "activity_note": "Apr 14: Liz followed up with Camellia Liang on Bringnox IG Reel negotiation — awaiting response"
+    },
+    {
+      "action": "update",
+      "brand": "Rust-Oleum",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Jackie Walsh",
+      "contact_email": "jacqueline.walsh@rustoleum.com",
+      "notes": "[Apr 14]: Liz sent another bump to Jackie — 'bumping this up one more time to see if you received our last note.' Re: Walk-In Pantry Transformation collab. Kenny CC'd.",
+      "activity_note": "Apr 14: Liz sent another follow-up bump on Rust-Oleum Walk-In Pantry Transformation"
+    },
+    {
+      "action": "update",
+      "brand": "HelloFresh",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Hana Crnoja",
+      "contact_email": "hana@gotaskmetas.com",
+      "notes": "[Apr 14]: Liz followed up with Hana at GoTaskMetas asking if HelloFresh still has campaign availability. Previous response from Hana (Mar 10): 'Sure, we'll make sure to let you know about any opportunities.'",
+      "activity_note": "Apr 14: Liz followed up with Hana at GoTaskMetas on HelloFresh campaign availability"
+    },
+    {
+      "action": "update",
+      "brand": "Ollny",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "contact_name": "Karen",
+      "contact_email": "marketing@ollny.com",
+      "notes": "[Apr 14]: Liz sent follow-up to Karen asking if still interested in the Spring Sanctuary collab. Rates sent Mar 27: IG Reel $3,000 / IG Story $2,000 / Reel+Story Bundle $4,000.",
+      "activity_note": "Apr 14: Liz followed up on Ollny Spring Sanctuary collab — awaiting response to rates sent Mar 27"
+    },
+    {
+      "action": "update",
+      "brand": "Linkind",
+      "waiting_on": "brand",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Liz pushed back to collab platform — concept requirements are beyond the payment scope (has never had to provide shot-by-shot timing before filming). No product received yet. Out of town Apr 16–19 (Thu–Sun), cannot shoot until week of Apr 20 at earliest. Asked them to have the brand email Liz directly.",
+      "activity_note": "Apr 14: Liz pushed back on Linkind concept requirements — out of town Apr 16-19, can't shoot until Apr 20 week"
     }
   ],
   "activities": []
