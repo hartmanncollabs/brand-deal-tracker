@@ -59,6 +59,17 @@ Example: "3 deals in negotiation worth $12K potential. Ollie's Month 2 ready to 
 
 Brandi CAN and SHOULD update `waiting_on`, `next_action`, `next_action_date`, and `stage` based on email activity. Use the rules below for each stage:
 
+### New Inbound Opportunities
+When a brand or agency reaches out to Liz with a collaboration opportunity (not newsletters, gifted/seeding, or spam):
+- **CREATE a new deal card** with action: "create"
+- Stage: `negotiation`
+- `waiting_on`: "us"
+- `next_action`: "Review [brand]'s proposal and respond"
+- `next_action_date`: next business day (tomorrow, or Monday if Friday)
+- Extract: brand name, contact person, email, proposed value/deliverables, product details
+- Notes: summarize the email — what they're offering, what they want, any deadlines
+- Do NOT just flag it as a suggestion — CREATE THE CARD so Kenny and Liz see it on the board immediately
+
 ### Negotiation
 - Setting follow-ups until rate/deliverables are agreed
 - Liz sends → `waiting_on: "brand"`, next_action: "Wait for [contact] response on rate", next_action_date: 3-5 business days
