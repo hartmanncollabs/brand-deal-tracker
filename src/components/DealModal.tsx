@@ -5,6 +5,25 @@ import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Prio
 import { format, parseISO } from 'date-fns';
 import { supabase } from '@/lib/supabase';
 
+// Renders text with URLs as clickable links
+function Linkify({ text, className }: { text: string; className?: string }) {
+  const urlRegex = /(https?:\/\/[^\s<>)"',]+)/g;
+  const parts = text.split(urlRegex);
+  return (
+    <span className={className}>
+      {parts.map((part, i) =>
+        urlRegex.test(part) ? (
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
+            {part.length > 50 ? part.substring(0, 50) + '...' : part}
+          </a>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </span>
+  );
+}
+
 interface DealModalProps {
   deal: Deal | null;
   activities: DealActivity[];
@@ -405,20 +424,12 @@ export default function DealModal({
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Notes
-                </label>
-                <textarea
-                  value={formData.notes || ''}
-                  onChange={(e) =>
-                    setFormData({ ...formData, notes: e.target.value })
-                  }
-                  onBlur={() => autoSave(formData)}
-                  rows={3}
-                  className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
+              <NotesField
+                value={formData.notes || ''}
+                onChange={(val) => setFormData({ ...formData, notes: val })}
+                onBlur={() => autoSave(formData)}
+                isNew={isNew}
+              />
 
               {/* Attachments Section */}
               <FileUploadSection
@@ -667,7 +678,7 @@ export default function DealModal({
                               Brandi
                             </span>
                           )}
-                          <p className="text-gray-700">{activity.note}</p>
+                          <p className="text-gray-700"><Linkify text={activity.note} /></p>
                         </div>
                         <span className="text-xs text-gray-400 whitespace-nowrap ml-2">
                           {format(parseISO(activity.created_at), 'MMM d, h:mm a')}
@@ -681,6 +692,53 @@ export default function DealModal({
           )}
         </div>
       </div>
+    </div>
+  );
+}
+
+// --- Notes Field with clickable links ---
+
+function NotesField({ value, onChange, onBlur, isNew }: {
+  value: string;
+  onChange: (val: string) => void;
+  onBlur: () => void;
+  isNew: boolean;
+}) {
+  const [isEditing, setIsEditing] = useState(isNew || !value);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    if (isEditing && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [isEditing]);
+
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">Notes</label>
+      {isEditing ? (
+        <textarea
+          ref={textareaRef}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          onBlur={() => { onBlur(); if (value) setIsEditing(false); }}
+          rows={4}
+          className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+        />
+      ) : (
+        <div
+          onClick={() => setIsEditing(true)}
+          className="w-full px-3 py-2 border rounded-lg cursor-text hover:bg-gray-50 min-h-[80px] text-sm text-gray-700 whitespace-pre-wrap"
+          title="Click to edit"
+        >
+          {value.split('\n').map((line, i) => (
+            <span key={i}>
+              {i > 0 && <br />}
+              <Linkify text={line} />
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
