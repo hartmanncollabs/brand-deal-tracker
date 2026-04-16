@@ -1,110 +1,27 @@
 [{
   "run_summary": {
-    "summary": "Busy Wednesday! Contract for BHG x Walmart is fully executed — all parties signed via Adobe Sign, Liz is already coordinating content logistics (table/chairs/Mahjong setup). Whisker content got a re-record, Cheyenne approved, and Liz is posting early next week. SOJOS Vision sent their contract over — needs review. Ollie's campaign activated with an Apr 29 content deadline and a filming permission slip coming. New inbound from xTool — $10K laser cutter, Liz responded asking about paid collab terms. Liz also sent follow-ups to Rust-Oleum, Govee, and Ollny — all updated to waiting_on brand. One dormant lead worth noting: Liz pinged HelloFresh's Hana to see if there's still campaign availability.",
-    "emails_scanned": 17,
-    "deals_created": 1,
-    "deals_updated": 7,
+    "summary": "Light day — one new email since yesterday's run. Hana at Taskmetas replied to Liz's HelloFresh follow-up: brand is still building their creator list and will reach out when opportunities open up. Updated last_contact and pushed the follow-up date out 6 weeks. Everything else was either already captured in yesterday's run (BHG, Whisker, xTool, SOJOS, Ollie's, Rust-Oleum, Govee, Ollny) or not deal-relevant (Remonte/Rieker are gifted-only; Hawke Media thread is about paid social ads management).",
+    "emails_scanned": 11,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
-        "type": "follow-up",
-        "brand": "HelloFresh",
-        "message": "Liz revived a dormant HelloFresh lead on Apr 14 — emailed Hana to check if there's still campaign availability. If HelloFresh is in the pipeline, update to waiting_on: brand and last_contact: 2026-04-14. If not, it may be worth creating a card so the follow-up doesn't get lost."
-      },
-      {
         "type": "note",
-        "brand": "BHG x Walmart",
-        "message": "Liz is asking about chair count for a table set — sounds like a Walmart outdoor/dining table is the featured product. The Mahjong reference might mean the content concept is a 'game night outdoors' setup. Worth flagging if the content brief has specific product constraints."
+        "brand": "HelloFresh",
+        "message": "HelloFresh has been in the 'still deciding' stage since early February. Now April 16 and Hana is still saying they're building the list. This is a very slow-moving lead — worth keeping but low priority. If nothing by late May, consider archiving."
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "xTool",
-      "stage": "negotiation",
+      "action": "update",
+      "brand": "HelloFresh",
       "waiting_on": "brand",
-      "next_action": "Review xTool's response on paid collab terms",
-      "next_action_date": "2026-04-18",
-      "last_contact": "2026-04-15",
-      "contact_name": "Laura",
-      "contact_email": "gengchunhong@makeblock.com",
-      "deal_type": "posted",
-      "notes": "[Apr 15]: New inbound from Laura at xTool — pitching xTool P3 CO2 Laser (~$10,000 product value), laser cutting/engraving. Liz replied same day asking for paid collab details (deliverables, usage rights, budget). Waiting on Laura's response.",
-      "activity_note": "Apr 15: New inbound — xTool P3 CO2 Laser ($10K product). Liz responded requesting paid collab details from Laura."
-    },
-    {
-      "action": "update",
-      "brand": "BHG x Walmart",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film and submit content draft for review",
-      "next_action_date": "2026-04-22",
-      "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Contract fully executed via Adobe Sign (Agreement #88191). All parties signed: People Inc./Gretta Hegland (agency), Patrick Cremens at DotDash MDP (brand), Elizabeth Hartmann. Liz already coordinating content logistics — asking about table/chairs count for shoot (Mahjong setup).",
-      "activity_note": "Apr 15: Contract #88191 fully signed by all parties via Adobe Sign — moved to Content. Liz already planning shoot logistics."
-    },
-    {
-      "action": "update",
-      "brand": "Whisker",
-      "stage": "scheduled",
-      "waiting_on": "us",
-      "next_action": "Post Whisker content",
-      "next_action_date": "2026-04-20",
-      "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Content re-recorded after feedback, Cheyenne Mabey approved. Liz asked to post early next week — Cheyenne confirmed OK.",
-      "activity_note": "Apr 15: Re-recorded content approved by Cheyenne — moved to Scheduled. Posting target: early next week (Apr 20)."
-    },
-    {
-      "action": "update",
-      "brand": "SOJOS Vision",
-      "stage": "contract",
-      "waiting_on": "us",
-      "next_action": "Review SOJOS contract",
-      "next_action_date": "2026-04-16",
-      "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Contract received from Ruby at SOJOS Vision with attachment (Re: SOJOS Sunglasses Collab). Ruby also asked Liz to specify what kind of content she'd like to create.",
-      "activity_note": "Apr 15: Contract received from Ruby at SOJOS Vision — moved to Contract. Needs review."
-    },
-    {
-      "action": "update",
-      "brand": "Ollie's Bargain Outlet",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film content at Ollie's store and submit draft for review",
-      "next_action_date": "2026-04-29",
-      "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Campaign activation email from Aviva at Ollie's (Frugal Finds: 6 Month Program - Group 2). E-gift card on the way. Must bring Permission to Film Slip when filming at store location. Content draft due Apr 29 — all content must be approved before posting. Do NOT make content sound like a sale (Ollie's prices are low every day).",
-      "activity_note": "Apr 15: Campaign activated — content deadline Apr 29, e-gift card en route, Permission to Film Slip needed for store filming."
-    },
-    {
-      "action": "update",
-      "brand": "Rust-Oleum",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "next_action": "Follow up if no response from Jackie",
-      "next_action_date": "2026-04-21",
-      "notes": "[Apr 14]: Liz sent final bump to Jackie Walsh at Rust-Oleum (Walk-In Pantry Transformation). Waiting on response.",
-      "activity_note": "Apr 14: Liz sent final follow-up bump to Jackie Walsh — waiting on Rust-Oleum."
-    },
-    {
-      "action": "update",
-      "brand": "Govee",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "next_action": "Follow up if no response from Muriel",
-      "next_action_date": "2026-04-21",
-      "notes": "[Apr 14]: Liz followed up with Muriel at Vanzo Media about Govee Instagram collab — checking if there's still interest.",
-      "activity_note": "Apr 14: Liz followed up with Muriel at Govee/Vanzo Media — waiting on response."
-    },
-    {
-      "action": "update",
-      "brand": "Ollny",
-      "waiting_on": "brand",
-      "last_contact": "2026-04-14",
-      "next_action": "Follow up if no response from Karen",
-      "next_action_date": "2026-04-21",
-      "notes": "[Apr 14]: Liz followed up with Karen at Ollny Marketing about Spring Sanctuary Instagram collab — checking if interest is still there.",
-      "activity_note": "Apr 14: Liz followed up with Ollny (Karen) — Spring Sanctuary collab, waiting on response."
+      "next_action": "Wait for Hana at Taskmetas to confirm creator list is finalized",
+      "next_action_date": "2026-05-28",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Hana at Taskmetas replied — HelloFresh brand is still making their creator list. She'll reach out when there are updates for us.",
+      "activity_note": "Apr 16: Hana replied — HelloFresh still building creator list, no timeline given. Next check-in: late May."
     }
   ],
   "activities": []
