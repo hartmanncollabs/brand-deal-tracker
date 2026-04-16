@@ -1,10 +1,15 @@
 [{
   "run_summary": {
-    "summary": "Scanned 6 more emails — 1 deal updated (Flexsteel), 0 new deals. Key update: Kenny already replied to Ian (Popfly) with the full Flexsteel filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2 footage; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12). Posts 1 week apart. FYI: Hawke Media 'Expert Transition' thread is an internal account manager change (NOT a brand deal) — Carolina is out, Alisa Gofman is Liz's new paid-social contact, call confirmed Wed Apr 22 at 10am PST. Everything else from the last run still stands: Dreo window closes Apr 30 (urgent), JLab payment due Apr 20, xTool decision needed, Ollie's needs the Permission to Film Slip, Bark payment due Apr 24.",
-    "emails_scanned": 6,
+    "summary": "Scanned 4 emails — 1 new actionable update: Aqara. Mariah (socialmediacollabs.com) just asked 'Did this go live by chance?' — Liz said she'd post the Aqara Reel 'this weekend' (Apr 11-12) on Apr 9, and it's now Apr 16 with no confirmation of posting in the thread. Liz needs to either confirm it went live or post it today. Other emails: xTool and HelloFresh already captured last run (no new info), one generic influencer survey (skipped). Carrying forward all previous pending updates. Reminders still active: Dreo window closes Apr 30 (urgent), JLab $2K payment due 4/20, xTool decision still needed.",
+    "emails_scanned": 4,
     "deals_created": 0,
     "deals_updated": 1,
     "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Aqara",
+        "message": "Mariah (socialmediacollabs.com) just asked 'Did this go live by chance?' Liz said she'd post the Aqara Reel on Apr 11-12 and it's been 7 days. Either confirm it's live or post it today. Once posted: reply to Mariah, move the deal to Delivered, and send the $1,500 invoice."
+      },
       {
         "type": "urgent",
         "brand": "Dreo",
@@ -33,6 +38,16 @@
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "Aqara",
+      "waiting_on": "us",
+      "next_action": "Reply to Mariah (socialmediacollabs.com) to confirm if content went live — if not yet posted, post the Aqara Reel today and tag brand as collaborator",
+      "next_action_date": "2026-04-16",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Mariah (socialmediacollabs.com) asked 'Did this go live by chance?' — Liz had planned to post 'this weekend' (Apr 11-12) after brand approved edits on Apr 9. No post confirmation in thread. Brand wants to be tagged as collaborator. Deal: $1,500 for 1 Reel + TikTok crosspost with 5-year organic usage rights.",
+      "activity_note": "Apr 16: Mariah asked if Aqara content went live — Liz planned to post Apr 11-12, no confirmation in thread. Post or confirm ASAP."
+    },
     {
       "action": "update",
       "brand": "Flexsteel",
