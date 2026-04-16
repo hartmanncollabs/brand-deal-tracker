@@ -1,14 +1,29 @@
 [{
   "run_summary": {
-    "summary": "Flexsteel pipeline moving 💼 Ian Saunders (Popfly) sent the campaign link today for Liz to upload video drafts — the Zecliner deal is officially in content mode. Ian asked for a draft upload timeline and posting schedule (posts 1 week apart). Invoicing also goes through the Popfly platform once the project wraps. Ball is squarely in our court to get drafts started and share a timeline with Ian ASAP. Separately, the two gifted-only shoe campaigns that came in (Remonte, Rieker) are product exchange only — no cash — so skipping those.",
-    "emails_scanned": 10,
-    "deals_created": 0,
-    "deals_updated": 1,
+    "summary": "Busy session 💼 — 7 deals touched, 1 new. xTool came back gifted-only ($10K P3 laser, no cash) after Liz asked about paid — ball's in our court to decide. Dreo is most urgent: posting window Apr 15-30 is LIVE and Yaki (Vanzo Media) still hasn't responded to Liz's Apr 14 follow-up. JLab March campaign payment ($2K) is due in 4 days on 4/20 and hasn't landed yet. Ollie's Group 2 campaign is a go — e-gift card on the way, but Liz needs to download the Permission to Film Slip before showing up at the store. Aleve looks good — concept approved, filming in progress. HelloFresh still in limbo (2 months now), brand still building creator list. Bark payment ($750) due 4/24.",
+    "emails_scanned": 14,
+    "deals_created": 1,
+    "deals_updated": 7,
     "suggestions": [
       {
+        "type": "urgent",
+        "brand": "Dreo",
+        "message": "Posting window closes April 30 and Yaki (yakiii@vanzomedia.com) hasn't responded since Liz's Apr 14 follow-up. Liz quoted $3K on Apr 1. If no response by Friday Apr 18, this deal is likely dead. One more nudge ASAP — or decide to walk away."
+      },
+      {
+        "type": "urgent",
+        "brand": "JLab",
+        "message": "March campaign payment ($2,000) is due 4/20/26 — 4 days from now. No payment received as of Apr 13. Worth a quick check-in with your JLab contact to confirm it's coming."
+      },
+      {
         "type": "action-needed",
-        "brand": "Flexsteel",
-        "message": "Ian (ian@popfly.com) is waiting on two things: (1) a timeline for when Liz will upload her first two video drafts to the Popfly campaign link, and (2) her posting schedule — he wants posts 1 week apart. Worth replying today or tomorrow to give him those dates. Also a heads up: once the project is done, the invoice gets submitted through the Popfly platform too (not via email)."
+        "brand": "Ollie's",
+        "message": "Ollie's sent the Permission to Film Slip — download it and bring a printed copy to the store before filming. Also check the restricted store locations list. Don't show up without the slip!"
+      },
+      {
+        "type": "decision-needed",
+        "brand": "xTool",
+        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision time: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
       }
     ]
   },
@@ -22,8 +37,88 @@
       "next_action_date": "2026-04-17",
       "last_contact": "2026-04-16",
       "value": 5000,
-      "notes": "[Apr 16]: Ian (Popfly) sent campaign link to upload video drafts for brand review/approval. Invoice also submitted through Popfly platform at project completion. Asked for: (1) timeline for first two drafts, (2) posting schedule — wants posts 1 week apart. Zecliner (ceramic, lift chair) being shipped by Steinhafels.",
+      "notes": "[Apr 16]: Ian (Popfly) sent campaign link to upload video drafts for brand review/approval. Invoice also submitted through Popfly platform at project completion. Asked for: (1) timeline for first two drafts, (2) posting schedule — wants posts 1 week apart (e.g. Video 1 on a Tuesday, Video 2 the following Tuesday). Zecliner (ceramic, lift chair) being shipped to Steinhafels' address.",
       "activity_note": "Apr 16: Ian (Popfly) sent campaign draft link — submit drafts there + share posting schedule (1 week between posts)"
+    },
+    {
+      "action": "create",
+      "brand": "xTool",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide whether to accept xTool gifted collab (P3 laser, $10K value) or push for paid component — if yes, reply to Laura with content vision",
+      "next_action_date": "2026-04-18",
+      "last_contact": "2026-04-16",
+      "value": 0,
+      "contact_name": "Laura",
+      "contact_email": "gengchunhong@xtool.com",
+      "notes": "[Apr 16]: Laura replied — P3 laser ($10K value) offered as gifted/in-kind only. No cash budget. She wants Liz's content vision first: 'We'd like to start from your vision and then build the collaboration together.' Liz had asked about paid options and deliverables.\n[Apr 16]: Liz replied to Laura asking about paid collab budget, deliverables, and goals — cc'd Kenny.",
+      "activity_note": "Apr 16: xTool (Laura) replied — gifted/in-kind only, $10K P3 laser. No cash. Waiting on our decision."
+    },
+    {
+      "action": "update",
+      "brand": "HelloFresh",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Hana if no creator list decision by early May",
+      "next_action_date": "2026-05-07",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Hana (Taskmetas) replied to Liz's Apr 15 follow-up — brand is still building their creator list, no decision yet. Deal has been in limbo since Feb 25 (2 months). Still alive.",
+      "activity_note": "Apr 16: Hana confirmed HelloFresh still finalizing creator list — no decision yet, been stalled 2 months"
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Download Permission to Film Slip and schedule filming at Ollie's store (check restricted locations list first)",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Ollie's Group 2 Campaign kicked off — e-gift card sent to Liz. Must download and bring printed Permission to Film Slip to the store before filming. Certain store locations restricted (check Ollie's list before going). Draft submission portal sent separately.",
+      "activity_note": "Apr 14: Ollie's Group 2 Campaign started — e-gift card sent, Permission to Film Slip required before store visit"
+    },
+    {
+      "action": "update",
+      "brand": "Dreo",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Yaki again if no response by Apr 18 — posting window closes Apr 30",
+      "next_action_date": "2026-04-18",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Liz followed up with Yaki (Vanzo Media / Dreo misting fan) after being on vacation — no response since Liz quoted $3K on Apr 1. Posting window is Apr 15-30. Window is NOW OPEN and time is running out.",
+      "activity_note": "Apr 14: Liz followed up on Dreo — posting window Apr 15-30 is live, no response from Yaki (yakiii@vanzomedia.com) since Apr 1 quote"
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Finish filming and submit video drafts to Aleve for approval",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-13",
+      "notes": "[Apr 13]: Agency confirmed Aleve concept approved — Liz actively filming. 2 videos expected by end of week (approx Apr 18), 3rd video may take longer but Aleve said they can be flexible. Deal: 3x Instagram Reels @Aleve_US for $12,000.",
+      "activity_note": "Apr 13: Aleve concept approved — Liz filming 2 videos now, 3rd needs more time (brand is flexible per agency)"
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on March campaign payment ($2,000 due 4/20/26) — not yet received as of Apr 13",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-13",
+      "notes": "[Apr 13]: Agency status check — JLab March campaign ($2,000, due 4/20/26) payment not yet received. April-May campaign ($4,000, 2 Reels + Stories) — April content approved, May pending. Liz confirmed Apr 13: no JLab payment received yet.",
+      "activity_note": "Apr 13: JLab March payment ($2K due 4/20/26) not received yet per agency check-in; April content approved"
+    },
+    {
+      "action": "update",
+      "brand": "Bark",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on payment if not received by 4/24/26",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-10",
+      "notes": "[Apr 10]: Agency status check — Bark payment ($750, due 4/24/26) not yet received. Deal: 1 TikTok + whitelisting. Liz noted payment expected 'in a few weeks.'",
+      "activity_note": "Apr 10: Bark payment ($750) due 4/24/26 — not yet received per agency check-in"
     }
   ],
   "activities": []
