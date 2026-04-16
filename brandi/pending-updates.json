@@ -1,49 +1,29 @@
 [{
   "run_summary": {
-    "summary": "Pipeline check-in 💼 xTool's Laura replied today — the P3 ($10K laser) is in-kind only, no cash, and she's asking Liz to pitch her creative vision before they finalize. Ball is in our court to share project ideas AND push for paid compensation. BHG x Walmart is rolling — Gretta ordered the outdoor table + 6 chairs on Apr 15 and is shipping to Batavia; waiting on delivery before filming. HelloFresh came back with another 'still building the list' reply to Liz's Apr 14 follow-up — keeping that thread warm but it's slow-moving.",
+    "summary": "Flexsteel pipeline moving 💼 Ian Saunders (Popfly) sent the campaign link today for Liz to upload video drafts — the Zecliner deal is officially in content mode. Ian asked for a draft upload timeline and posting schedule (posts 1 week apart). Invoicing also goes through the Popfly platform once the project wraps. Ball is squarely in our court to get drafts started and share a timeline with Ian ASAP. Separately, the two gifted-only shoe campaigns that came in (Remonte, Rieker) are product exchange only — no cash — so skipping those.",
     "emails_scanned": 10,
     "deals_created": 0,
-    "deals_updated": 3,
+    "deals_updated": 1,
     "suggestions": [
       {
         "type": "action-needed",
-        "brand": "xTool",
-        "message": "Laura (gengchunhong@xtool.com) replied this morning — the P3 is in-kind only (~$10K machine, no cash offered). She wants to hear Liz's creative ideas and project direction before locking in terms. Recommend replying with 2-3 DIY/craft concepts that would show off the P3 and making a case for paid compensation alongside the machine. She sounds collaborative and open to building around Liz's vision — good opening to negotiate."
+        "brand": "Flexsteel",
+        "message": "Ian (ian@popfly.com) is waiting on two things: (1) a timeline for when Liz will upload her first two video drafts to the Popfly campaign link, and (2) her posting schedule — he wants posts 1 week apart. Worth replying today or tomorrow to give him those dates. Also a heads up: once the project is done, the invoice gets submitted through the Popfly platform too (not via email)."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "xTool",
-      "stage": "negotiation",
+      "brand": "Flexsteel",
+      "stage": "content",
       "waiting_on": "us",
-      "next_action": "Reply to Laura with creative project ideas for P3 collab and negotiate paid terms",
+      "next_action": "Upload video drafts to Popfly campaign link and reply to Ian with draft timeline + posting schedule (posts 1 week apart)",
       "next_action_date": "2026-04-17",
       "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Laura (xTool) replied — P3 (~$10K) offered in-kind only, no cash. She's asking Liz to share her creative direction and project ideas first, then they'll build the collab together. Good opportunity to pitch direction + push for paid component.",
-      "activity_note": "Apr 16: Laura (xTool) replied asking for Liz's creative vision for the P3 — in-kind collab, awaiting our pitch"
-    },
-    {
-      "action": "update",
-      "brand": "BHG x Walmart",
-      "stage": "content",
-      "waiting_on": "brand",
-      "next_action": "Wait for outdoor table + chairs to arrive, then schedule filming",
-      "next_action_date": "2026-04-30",
-      "last_contact": "2026-04-15",
-      "notes": "[Apr 15]: Gretta placing order for outdoor table + 6 chairs (6-person setting), shipping to Liz at Batavia IL. Contract signed Apr 13 (net-45 terms). Product expected within ~2 weeks.",
-      "activity_note": "Apr 15: Gretta ordered outdoor table + 6 chairs — waiting on product delivery before filming"
-    },
-    {
-      "action": "update",
-      "brand": "HelloFresh",
-      "waiting_on": "brand",
-      "next_action": "Wait for HelloFresh/Taskmetas creator list decision",
-      "next_action_date": "2026-05-16",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Hana (Taskmetas) replied to Liz's Apr 14 follow-up — brand still finalizing creator list, will reach out when ready.",
-      "activity_note": "Apr 16: Hana (Taskmetas) replied to Liz's follow-up — HelloFresh still building creator list"
+      "value": 5000,
+      "notes": "[Apr 16]: Ian (Popfly) sent campaign link to upload video drafts for brand review/approval. Invoice also submitted through Popfly platform at project completion. Asked for: (1) timeline for first two drafts, (2) posting schedule — wants posts 1 week apart. Zecliner (ceramic, lift chair) being shipped by Steinhafels.",
+      "activity_note": "Apr 16: Ian (Popfly) sent campaign draft link — submit drafts there + share posting schedule (1 week between posts)"
     }
   ],
   "activities": []
