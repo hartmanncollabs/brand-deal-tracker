@@ -1,1 +1,59 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Active day across the pipeline! 💼 Whisker content got the green light — Liz fixed the Litter-Robot voiceover and Cheyenne approved posting early next week. Flexsteel's Ian Saunders (popfly) emailed today asking for Liz's draft upload timeline and posting schedule — needs a reply ASAP since he's waiting. Ollie's sent full campaign setup with the e-gift card and filming instructions; content deadline is April 29 and the Permission to Film Slip must come with Liz to the store. Also spotted a very active BHG x Walmart deal (contract signed Apr 13, outdoor furniture ordered) that may not be on the board yet — flagged below.",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 3,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Ian Saunders (ian@popfly.com) emailed today asking when Liz can upload her first two video drafts to the popfly campaign link, and what the posting schedule looks like. He specifically asked for posts to go 1 week apart (e.g., Video 1 on a Tuesday, Video 2 the following Tuesday). Reply to Ian today or tomorrow — he's waiting on us."
+      },
+      {
+        "type": "heads-up",
+        "brand": "BHG x Walmart",
+        "message": "Saw a very active BHG x Walmart thread: contract was signed April 13 (net-45 terms, brand covers product + shipping costs), outdoor table + 6 chairs ordered by Gretta Hegland (gretta.hegland@people.inc), $2,500 deal for outdoor living content. If this isn't already on the board, I can create the card — just say the word!"
+      },
+      {
+        "type": "heads-up",
+        "brand": "Hawke Media",
+        "message": "Liz rescheduled her Amazon ads strategy call with Alisa Gofman (Hawke Media). She declined Tuesday Apr 21 due to a filming conflict — no new time confirmed yet. Worth booking an alternate time soon."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "scheduled",
+      "waiting_on": "us",
+      "next_action": "Post Litter-Robot 5 Pro content to TikTok and Instagram",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Content approved by Cheyenne (Whisker) — voiceover said 'Litter-Robot 5' instead of the correct model name; Liz re-recorded and got approval to post 'early next week.'",
+      "activity_note": "Apr 15: Content approved by Whisker after voiceover fix — Cheyenne said 'Yes, that would be fine' to posting early next week"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Reply to Ian (popfly) with draft upload timeline and posting schedule",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Ian Saunders (ian@popfly.com) sent the popfly campaign link for uploading video drafts. He asked when Liz can upload drafts and what the posting schedule will be — posts should go 1 week apart (e.g., Video 1 Tuesday, Video 2 following Tuesday). Invoice submission also goes through the campaign link once complete.",
+      "activity_note": "Apr 16: Ian (popfly) sent campaign upload link — awaiting our draft timeline and posting schedule"
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's Bargain Outlet",
+      "waiting_on": "us",
+      "next_action": "Film first two videos and submit drafts via campaign link — bring Permission to Film Slip to Ollie's store",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-14",
+      "notes": "[Apr 14]: Campaign setup from Aviva (Ollie's team, via mavrck). E-gift card on the way. Key reminders: bring Permission to Film Slip when visiting a store location; do NOT make content sound like a sale ('prices are low every day'); submit all drafts for approval before posting. Content deadline: April 29. Invoice can be submitted through the campaign manager once complete.",
+      "activity_note": "Apr 14: Ollie's sent campaign setup — e-gift card + filming instructions received. Content deadline: Apr 29"
+    }
+  ],
+  "activities": []
+}]
