@@ -1,10 +1,15 @@
 [{
   "run_summary": {
-    "summary": "Aqara Reel confirmed live — Liz replied to Mariah on Apr 16 at 2:47pm with the Instagram link (instagram.com/reel/DXDLWFnjWeI). Deal moves to Delivered; $1,500 invoice is now due. Other emails this scan: Later/Mavrck survey (skipped — just a creator survey, not a deal), Hawke Media scheduling thread (Liz rescheduled from Tuesday to Wednesday — Apr 22 10am PST sync confirmed, not a brand deal). All other pending updates carried forward from previous run.",
-    "emails_scanned": 7,
+    "summary": "10 emails scanned. One new piece of info: Ian Saunders (Popfly) replied at 2:58 PM to Kenny's schedule update — asked which Steinhafels location they plan to visit, and flagged that the May 12 Video 3 timeline is 'a little farther out than we were hoping,' asking whether it can be turned around sooner. Updated Flexsteel next_action accordingly. All other deals carried forward from today's earlier run: Aqara moved to Delivered (reel confirmed live), xTool gifted deal pending decision, HelloFresh still stalled, Dreo window closing Apr 30, JLab payment due Apr 20, Ollie's filming prep needed.",
+    "emails_scanned": 10,
     "deals_created": 0,
     "deals_updated": 1,
     "suggestions": [
+      {
+        "type": "action-needed",
+        "brand": "Flexsteel",
+        "message": "Ian (ian@popfly.com) asked two things in his 2:58 PM reply: (1) which Steinhafels location you're planning to visit, and (2) whether Video 3 can be filmed before May 12 — he said that timing is later than hoped. Quick reply needed today or tomorrow."
+      },
       {
         "type": "urgent",
         "brand": "Aqara",
@@ -40,6 +45,17 @@
   "deals": [
     {
       "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Reply to Ian (ian@popfly.com) with which Steinhafels location you're visiting; address whether Video 3 can be filmed before May 12 — he flagged May 12 is later than preferred",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16 2:58 PM]: Ian (Popfly) replied to Kenny's schedule — asked WHICH Steinhafels location, and said May 12 for Video 3 is 'a little farther out than we were hoping' — wants to know if it can be moved sooner.\n[Apr 16]: Kenny replied to Ian confirming filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12, film that following week). Posts go live 1 week apart. Invoice submitted via Popfly at project completion.",
+      "activity_note": "Apr 16 (afternoon): Ian asked which Steinhafels location + concerned Video 3 May 12 timeline is later than preferred — response needed"
+    },
+    {
+      "action": "update",
       "brand": "Aqara",
       "stage": "delivered",
       "waiting_on": "us",
@@ -48,17 +64,6 @@
       "last_contact": "2026-04-16",
       "notes": "[Apr 16]: Liz replied to Mariah confirming Reel is live — shared Instagram link (instagram.com/reel/DXDLWFnjWeI). Invoice for $1,500 now due (1 Reel + TikTok crosspost, 5-year organic usage rights).\n[Apr 16]: Mariah (socialmediacollabs.com) asked 'Did this go live by chance?' — Liz had planned to post 'this weekend' (Apr 11-12) after brand approved edits on Apr 9. Brand wants to be tagged as collaborator.",
       "activity_note": "Apr 16: Liz confirmed Aqara Reel is live to Mariah (instagram.com/reel/DXDLWFnjWeI) — moved to Delivered, $1,500 invoice due now"
-    },
-    {
-      "action": "update",
-      "brand": "Flexsteel",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film Video 1 (aim for Tue Apr 21) and upload draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2 footage",
-      "next_action_date": "2026-04-21",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Kenny replied to Ian confirming filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12, film that following week). Posts go live 1 week apart. Invoice submitted via Popfly at project completion.",
-      "activity_note": "Apr 16: Kenny confirmed filming/draft schedule to Ian — Video 1 by ~Apr 25, Video 2 by ~Apr 28 (post Steinhafels Apr 23), Video 3 after May 12"
     },
     {
       "action": "create",
