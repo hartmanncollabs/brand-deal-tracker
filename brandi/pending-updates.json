@@ -1,1 +1,79 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Big day in the pipeline! 🔥 Signed contract alert for BHG x Walmart — Adobe Sign confirmed all parties finished, so that one moves to Content. Gretta (People Inc.) is already ordering a 6-place table setting for filming. Whisker content got approved after a quick voiceover fix (Litter-Robot 5 → 5 Pro) — cleared to post early next week. Ollie's sent over campaign next steps with a hard April 29 draft deadline and key filming rules (Permission to Film Slip required at stores). New inbound from xTool offering their P3 laser machine (~$10K) as in-kind collab — created a card since the product value is significant, though no cash confirmed yet. HelloFresh is still deciding — Hana at Taskmetas says the brand is finalizing its creator list.",
+    "emails_scanned": 12,
+    "deals_created": 1,
+    "deals_updated": 4,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "xTool",
+        "message": "Liz already asked Laura about a paid budget and xTool came back saying they're 'mainly in-kind.' There's still room to negotiate — worth replying with creative P3 content ideas AND circling back on whether any cash is possible for a $10K machine campaign. The tone from Laura is warm and collaborative, good moment to push."
+      },
+      {
+        "type": "action",
+        "brand": "Expert Transition (Hawke Media)",
+        "message": "Liz rescheduled a Tuesday content filming appointment with Alisa Gofman at Hawke Media (ccontrone@hawkemedia.com originally set this up). No new filming date was confirmed in the email — worth locking in a replacement date so you don't lose momentum on that deal."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "xTool",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Reply to Laura with creative content ideas for the P3 laser machine; ask again about any paid component",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-16",
+      "contact_name": "Laura",
+      "contact_email": "gengchunhong@xtool.com",
+      "value": 0,
+      "notes": "[Apr 16]: Laura (xTool) replied — offering P3 laser machine (~$10K value) as in-kind/gifted collab. Said they are 'currently mainly working on an in-kind collaboration basis (machine exchange).' No cash budget confirmed. Wants to hear Liz's creative vision for the P3 first and build from there. GIFTED/IN-KIND ONLY (for now) — team to decide if worth pursuing.\n[Apr 15]: xTool inbound — Laura from xTool (gengchunhong@makeblock.com) reached out about 80W CO2 Laser collab. Liz responded expressing interest, cc'd Kenny, asked about deliverables, usage rights, and paid budget availability.",
+      "activity_note": "Apr 15-16: xTool inbound re: laser collab — offered P3 machine (~$10K gifted). Liz responded, xTool countered with in-kind only. Created deal card."
+    },
+    {
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "scheduled",
+      "waiting_on": "us",
+      "next_action": "Post Whisker / Litter-Robot 5 Pro content",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Content approved by Cheyenne (Whisker) after quick voiceover fix — original said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro.' Liz re-recorded, Cheyenne confirmed it's fine and cleared posting for early next week. Content link submitted via Google Drive.",
+      "activity_note": "Apr 15: Content approved with fix (Litter-Robot 5 Pro voiceover) — moved to Scheduled, clear to post week of Apr 20"
+    },
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "stage": "content",
+      "waiting_on": "brand",
+      "next_action": "Film BHG x Walmart content when products arrive",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Contract #88191 (Influencer Services License Agreement – Brand Licensing) fully executed via Adobe Sign — all parties signed: Liz Hartmann, People Inc. (Eileen Mchugh, emchugh@people.inc), Dotdash Meredith (Patrick Cremens, patrick.cremens@dotdashmdp.com). Gretta Hegland (People Inc.) ordering 6-place table setting for content filming and shipping to Batavia IL address.",
+      "activity_note": "Apr 15: BHG x Walmart contract signed by all parties (Adobe Sign). Products ordered for filming. Moved Contract → Content."
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's",
+      "waiting_on": "us",
+      "next_action": "Submit Ollie's content draft for review",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Ollie's campaign update — Frugal Finds 6-Month Program Group 2. Draft submission deadline: April 29. E-gift card en route to Liz. KEY RULES: (1) Must bring Permission to Film Slip when visiting any Ollie's store location for filming. (2) Some store locations are restricted — do NOT film there (list provided via link). (3) Do NOT say 'sale' in content — Ollie's prices are low every day, they don't have sales. All content must be submitted for approval before posting. Contact: Aviva (on behalf of Ollie's Bargain Outlet team).",
+      "activity_note": "Apr 15: Ollie's sent campaign next steps — hard draft deadline Apr 29, filming rules (Permission to Film Slip required), e-gift card sent"
+    },
+    {
+      "action": "update",
+      "brand": "HelloFresh",
+      "waiting_on": "brand",
+      "next_action": "Wait for HelloFresh/Taskmetas to confirm creator selection",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Hana Crnoja (Taskmetas / gotaskmetas.com) — 'The brand is still making its creator list. We'll reach out as soon as I have updates regarding opportunities for you.' Ball is on HelloFresh's side.",
+      "activity_note": "Apr 15: HelloFresh still finalizing creator list — Hana will follow up when brand decides"
+    }
+  ],
+  "activities": []
+}]
