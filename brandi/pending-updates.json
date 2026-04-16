@@ -1,9 +1,9 @@
 [{
   "run_summary": {
-    "summary": "Busy session 💼 — 7 deals touched, 1 new. xTool came back gifted-only ($10K P3 laser, no cash) after Liz asked about paid — ball's in our court to decide. Dreo is most urgent: posting window Apr 15-30 is LIVE and Yaki (Vanzo Media) still hasn't responded to Liz's Apr 14 follow-up. JLab March campaign payment ($2K) is due in 4 days on 4/20 and hasn't landed yet. Ollie's Group 2 campaign is a go — e-gift card on the way, but Liz needs to download the Permission to Film Slip before showing up at the store. Aleve looks good — concept approved, filming in progress. HelloFresh still in limbo (2 months now), brand still building creator list. Bark payment ($750) due 4/24.",
-    "emails_scanned": 14,
-    "deals_created": 1,
-    "deals_updated": 7,
+    "summary": "Scanned 6 more emails — 1 deal updated (Flexsteel), 0 new deals. Key update: Kenny already replied to Ian (Popfly) with the full Flexsteel filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2 footage; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12). Posts 1 week apart. FYI: Hawke Media 'Expert Transition' thread is an internal account manager change (NOT a brand deal) — Carolina is out, Alisa Gofman is Liz's new paid-social contact, call confirmed Wed Apr 22 at 10am PST. Everything else from the last run still stands: Dreo window closes Apr 30 (urgent), JLab payment due Apr 20, xTool decision needed, Ollie's needs the Permission to Film Slip, Bark payment due Apr 24.",
+    "emails_scanned": 6,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
         "type": "urgent",
@@ -13,7 +13,12 @@
       {
         "type": "urgent",
         "brand": "JLab",
-        "message": "March campaign payment ($2,000) is due 4/20/26 — 4 days from now. No payment received as of Apr 13. Worth a quick check-in with your JLab contact to confirm it's coming."
+        "message": "March campaign payment ($2,000) is due 4/20/26. No payment received as of Apr 13 — worth a quick check-in with your JLab contact to confirm it's coming."
+      },
+      {
+        "type": "decision-needed",
+        "brand": "xTool",
+        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision time: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
       },
       {
         "type": "action-needed",
@@ -21,9 +26,9 @@
         "message": "Ollie's sent the Permission to Film Slip — download it and bring a printed copy to the store before filming. Also check the restricted store locations list. Don't show up without the slip!"
       },
       {
-        "type": "decision-needed",
-        "brand": "xTool",
-        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision time: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
+        "type": "fyi",
+        "brand": "Hawke Media (paid social)",
+        "message": "The 'Expert Transition' thread is an internal Hawke Media handoff — NOT a brand deal. Carolina stepped away; Alisa Gofman (agofman@hawkemedia.com) is now your paid social contact. You confirmed a sync call Wednesday Apr 22 at 10am PST."
       }
     ]
   },
@@ -33,12 +38,11 @@
       "brand": "Flexsteel",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Upload video drafts to Popfly campaign link and reply to Ian with draft timeline + posting schedule (posts 1 week apart)",
-      "next_action_date": "2026-04-17",
+      "next_action": "Film Video 1 (aim for Tue Apr 21) and upload draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2 footage",
+      "next_action_date": "2026-04-21",
       "last_contact": "2026-04-16",
-      "value": 5000,
-      "notes": "[Apr 16]: Ian (Popfly) sent campaign link to upload video drafts for brand review/approval. Invoice also submitted through Popfly platform at project completion. Asked for: (1) timeline for first two drafts, (2) posting schedule — wants posts 1 week apart (e.g. Video 1 on a Tuesday, Video 2 the following Tuesday). Zecliner (ceramic, lift chair) being shipped to Steinhafels' address.",
-      "activity_note": "Apr 16: Ian (Popfly) sent campaign draft link — submit drafts there + share posting schedule (1 week between posts)"
+      "notes": "[Apr 16]: Kenny replied to Ian confirming filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12, film that following week). Posts go live 1 week apart. Invoice submitted via Popfly at project completion.",
+      "activity_note": "Apr 16: Kenny confirmed filming/draft schedule to Ian — Video 1 by ~Apr 25, Video 2 by ~Apr 28 (post Steinhafels Apr 23), Video 3 after May 12"
     },
     {
       "action": "create",
