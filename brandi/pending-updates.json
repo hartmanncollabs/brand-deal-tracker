@@ -1,39 +1,39 @@
 [{
   "run_summary": {
-    "summary": "Scanned 4 emails — 1 new actionable update: Aqara. Mariah (socialmediacollabs.com) just asked 'Did this go live by chance?' — Liz said she'd post the Aqara Reel 'this weekend' (Apr 11-12) on Apr 9, and it's now Apr 16 with no confirmation of posting in the thread. Liz needs to either confirm it went live or post it today. Other emails: xTool and HelloFresh already captured last run (no new info), one generic influencer survey (skipped). Carrying forward all previous pending updates. Reminders still active: Dreo window closes Apr 30 (urgent), JLab $2K payment due 4/20, xTool decision still needed.",
-    "emails_scanned": 4,
+    "summary": "Aqara Reel confirmed live — Liz replied to Mariah on Apr 16 at 2:47pm with the Instagram link (instagram.com/reel/DXDLWFnjWeI). Deal moves to Delivered; $1,500 invoice is now due. Other emails this scan: Later/Mavrck survey (skipped — just a creator survey, not a deal), Hawke Media scheduling thread (Liz rescheduled from Tuesday to Wednesday — Apr 22 10am PST sync confirmed, not a brand deal). All other pending updates carried forward from previous run.",
+    "emails_scanned": 7,
     "deals_created": 0,
     "deals_updated": 1,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Aqara",
-        "message": "Mariah (socialmediacollabs.com) just asked 'Did this go live by chance?' Liz said she'd post the Aqara Reel on Apr 11-12 and it's been 7 days. Either confirm it's live or post it today. Once posted: reply to Mariah, move the deal to Delivered, and send the $1,500 invoice."
+        "message": "Reel is confirmed live as of Apr 16! Liz shared the link with Mariah (socialmediacollabs.com). Send the $1,500 invoice to Mariah TODAY — don't let this sit."
       },
       {
         "type": "urgent",
         "brand": "Dreo",
-        "message": "Posting window closes April 30 and Yaki (yakiii@vanzomedia.com) hasn't responded since Liz's Apr 14 follow-up. Liz quoted $3K on Apr 1. If no response by Friday Apr 18, this deal is likely dead. One more nudge ASAP — or decide to walk away."
+        "message": "Posting window closes April 30 and Yaki (yakiii@vanzomedia.com) hasn't responded since Liz's Apr 14 follow-up. Liz quoted $3K on Apr 1. Today is Apr 16 — if no response by Friday Apr 18, this deal is likely dead. One more nudge or walk away."
       },
       {
         "type": "urgent",
         "brand": "JLab",
-        "message": "March campaign payment ($2,000) is due 4/20/26. No payment received as of Apr 13 — worth a quick check-in with your JLab contact to confirm it's coming."
+        "message": "March campaign payment ($2,000) is due 4/20/26 — 4 days away. No payment received as of Apr 13. Worth a quick check-in with your JLab contact today."
       },
       {
         "type": "decision-needed",
         "brand": "xTool",
-        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision time: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
+        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
       },
       {
         "type": "action-needed",
         "brand": "Ollie's",
-        "message": "Ollie's sent the Permission to Film Slip — download it and bring a printed copy to the store before filming. Also check the restricted store locations list. Don't show up without the slip!"
+        "message": "Ollie's sent the Permission to Film Slip — download it and bring a printed copy to the store before filming. Check the restricted store locations list too. Don't show up without the slip!"
       },
       {
         "type": "fyi",
         "brand": "Hawke Media (paid social)",
-        "message": "The 'Expert Transition' thread is an internal Hawke Media handoff — NOT a brand deal. Carolina stepped away; Alisa Gofman (agofman@hawkemedia.com) is now your paid social contact. You confirmed a sync call Wednesday Apr 22 at 10am PST."
+        "message": "Liz rescheduled the Hawke Media sync from Tuesday Apr 21 to Wednesday Apr 22 at 10am PST (confirmed with Alisa Gofman). Alisa is Liz's new paid social contact at agofman@hawkemedia.com."
       }
     ]
   },
@@ -41,12 +41,13 @@
     {
       "action": "update",
       "brand": "Aqara",
+      "stage": "delivered",
       "waiting_on": "us",
-      "next_action": "Reply to Mariah (socialmediacollabs.com) to confirm if content went live — if not yet posted, post the Aqara Reel today and tag brand as collaborator",
-      "next_action_date": "2026-04-16",
+      "next_action": "Send $1,500 invoice to Mariah at socialmediacollabs.com — Reel is confirmed live",
+      "next_action_date": "2026-04-17",
       "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Mariah (socialmediacollabs.com) asked 'Did this go live by chance?' — Liz had planned to post 'this weekend' (Apr 11-12) after brand approved edits on Apr 9. No post confirmation in thread. Brand wants to be tagged as collaborator. Deal: $1,500 for 1 Reel + TikTok crosspost with 5-year organic usage rights.",
-      "activity_note": "Apr 16: Mariah asked if Aqara content went live — Liz planned to post Apr 11-12, no confirmation in thread. Post or confirm ASAP."
+      "notes": "[Apr 16]: Liz replied to Mariah confirming Reel is live — shared Instagram link (instagram.com/reel/DXDLWFnjWeI). Invoice for $1,500 now due (1 Reel + TikTok crosspost, 5-year organic usage rights).\n[Apr 16]: Mariah (socialmediacollabs.com) asked 'Did this go live by chance?' — Liz had planned to post 'this weekend' (Apr 11-12) after brand approved edits on Apr 9. Brand wants to be tagged as collaborator.",
+      "activity_note": "Apr 16: Liz confirmed Aqara Reel is live to Mariah (instagram.com/reel/DXDLWFnjWeI) — moved to Delivered, $1,500 invoice due now"
     },
     {
       "action": "update",
