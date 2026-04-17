@@ -1,10 +1,20 @@
 [{
   "run_summary": {
-    "summary": "Apr 17 scan (third pass). One new update: SOJOS — Ruby replied confirming she updated the contract with Kenny's requested dates (Video 1 draft by Apr 23, Video 2 in May). Contract is ready for Kenny/Liz to review and sign. Aqara and Flexsteel updates carried forward from second-pass run (Aqara reel confirmed live, ready to invoice; Flexsteel timeline notes from Ian/Popfly). Skipped: HULALA HOME (gifted/product-only, no cash value mentioned).",
-    "emails_scanned": 4,
+    "summary": "Apr 17 scan (fourth pass). Two new findings: BHG x Walmart — Gretta (people.inc) confirmed product shipment, most items arriving TODAY (Apr 17) with 3 more Saturday Apr 18, someone must be home to receive the table; Expert via Hawke Media — new contact Alisa Gofman replacing Carolina, call scheduled Wednesday Apr 22 at 10am PST. SOJOS, Aqara, and Flexsteel carried forward from previous passes (still pending application).",
+    "emails_scanned": 5,
     "deals_created": 0,
-    "deals_updated": 3,
+    "deals_updated": 2,
     "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "BHG x Walmart",
+        "message": "🚨 Products arriving TODAY (Apr 17) and Saturday Apr 18 — someone needs to be home to receive the table! Gretta will share tracking details this morning."
+      },
+      {
+        "type": "action",
+        "brand": "Expert (Hawke Media)",
+        "message": "Call confirmed with new Hawke Media contact Alisa Gofman — Wednesday Apr 22 at 10am PST. She's replacing Carolina. Make sure to add it to the calendar!"
+      },
       {
         "type": "action",
         "brand": "SOJOS",
@@ -23,6 +33,27 @@
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Receive product delivery — most items arriving today (Apr 17), 3 more Sat Apr 18. Someone must be home for table delivery.",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Gretta Hegland (people.inc) confirmed product shipment for BHG x Walmart Spring Social Campaign. Most items arriving Apr 17 (today), 3 more arriving Apr 18 (Saturday). Someone needs to be home to receive the table. Gretta said she'll share tracking details Friday morning. Contact: gretta.hegland@people.inc",
+      "activity_note": "Apr 16: Gretta (people.inc) confirmed product shipment — most arriving Apr 17, 3 more Apr 18. Someone must be home to receive the table."
+    },
+    {
+      "action": "update",
+      "brand": "Hawke Media",
+      "waiting_on": "us",
+      "next_action": "Call with Alisa Gofman (Hawke Media) — Wednesday Apr 22 at 10am PST",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: New Hawke Media contact Alisa Gofman (Analyst, Paid Social — agofman@hawkemedia.com, 310.451.7295, 2415 Michigan Ave, Santa Monica CA) replacing Carolina. Call confirmed for Wednesday Apr 22 at 10am PST. Note: ad account access was previously granted under Carolina — Liz has screenshot confirming access still active.",
+      "activity_note": "Apr 16: Transition call scheduled with new Hawke Media contact Alisa Gofman — Wednesday Apr 22 at 10am PST. Replacing Carolina as primary contact."
+    },
     {
       "action": "update",
       "brand": "SOJOS",
