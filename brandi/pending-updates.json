@@ -1,149 +1,33 @@
 [{
   "run_summary": {
-    "summary": "10 emails scanned. One new piece of info: Ian Saunders (Popfly) replied at 2:58 PM to Kenny's schedule update — asked which Steinhafels location they plan to visit, and flagged that the May 12 Video 3 timeline is 'a little farther out than we were hoping,' asking whether it can be turned around sooner. Updated Flexsteel next_action accordingly. All other deals carried forward from today's earlier run: Aqara moved to Delivered (reel confirmed live), xTool gifted deal pending decision, HelloFresh still stalled, Dreo window closing Apr 30, JLab payment due Apr 20, Ollie's filming prep needed.",
+    "summary": "Follow-up scan, Apr 17. Two new items since this morning's run: SOJOS Ruby confirmed she updated the collaboration agreement with the dates Kenny proposed (draft 4/23, Video 2 in May) — needs review and signature today. BHG x Walmart: Gretta confirmed products arriving today and Saturday, including a table that requires someone home to receive. Also skipped a gifted-only inbound from HULALA HOME (no cash value).",
     "emails_scanned": 10,
     "deals_created": 0,
     "deals_updated": 1,
     "suggestions": [
       {
-        "type": "action-needed",
-        "brand": "Flexsteel",
-        "message": "Ian (ian@popfly.com) asked two things in his 2:58 PM reply: (1) which Steinhafels location you're planning to visit, and (2) whether Video 3 can be filmed before May 12 — he said that timing is later than hoped. Quick reply needed today or tomorrow."
-      },
-      {
         "type": "urgent",
-        "brand": "Aqara",
-        "message": "Reel is confirmed live as of Apr 16! Liz shared the link with Mariah (socialmediacollabs.com). Send the $1,500 invoice to Mariah TODAY — don't let this sit."
-      },
-      {
-        "type": "urgent",
-        "brand": "Dreo",
-        "message": "Posting window closes April 30 and Yaki (yakiii@vanzomedia.com) hasn't responded since Liz's Apr 14 follow-up. Liz quoted $3K on Apr 1. Today is Apr 16 — if no response by Friday Apr 18, this deal is likely dead. One more nudge or walk away."
-      },
-      {
-        "type": "urgent",
-        "brand": "JLab",
-        "message": "March campaign payment ($2,000) is due 4/20/26 — 4 days away. No payment received as of Apr 13. Worth a quick check-in with your JLab contact today."
-      },
-      {
-        "type": "decision-needed",
-        "brand": "xTool",
-        "message": "Laura confirmed the P3 laser ($10K product value) is gifted/in-kind only — no cash budget right now. She's asking for Liz's content vision before locking anything in. Decision: accept the gifted deal, counter for a paid add-on, or pass? If yes, reply to gengchunhong@xtool.com with your content ideas."
-      },
-      {
-        "type": "action-needed",
-        "brand": "Ollie's",
-        "message": "Ollie's sent the Permission to Film Slip — download it and bring a printed copy to the store before filming. Check the restricted store locations list too. Don't show up without the slip!"
+        "brand": "SOJOS",
+        "message": "Ruby (sojosvision.com) updated the collaboration agreement with the new timeline Kenny requested — draft by 4/23, Video 2 in May. Check the updated agreement now, sign it, and return to Ruby. Draft is only 6 days away."
       },
       {
         "type": "fyi",
-        "brand": "Hawke Media (paid social)",
-        "message": "Liz rescheduled the Hawke Media sync from Tuesday Apr 21 to Wednesday Apr 22 at 10am PST (confirmed with Alisa Gofman). Alisa is Liz's new paid social contact at agofman@hawkemedia.com."
+        "brand": "BHG x Walmart",
+        "message": "Gretta (people.inc) confirmed most BHG x Walmart Spring Social Campaign items arrive today (Apr 17), with 3 more arriving Saturday Apr 19 — including the table, which requires someone home to receive. Tracking details coming from Gretta this morning."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "Flexsteel",
-      "stage": "content",
+      "brand": "SOJOS",
+      "stage": "contract",
       "waiting_on": "us",
-      "next_action": "Reply to Ian (ian@popfly.com) with which Steinhafels location you're visiting; address whether Video 3 can be filmed before May 12 — he flagged May 12 is later than preferred",
+      "next_action": "Review updated SOJOS agreement and sign/return to Ruby — first video draft due 4/23",
       "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16 2:58 PM]: Ian (Popfly) replied to Kenny's schedule — asked WHICH Steinhafels location, and said May 12 for Video 3 is 'a little farther out than we were hoping' — wants to know if it can be moved sooner.\n[Apr 16]: Kenny replied to Ian confirming filming schedule — Video 1 filming Tue Apr 21, draft to Popfly by ~Apr 25; Steinhafels visit Apr 23 for Video 2; Video 2 draft ~Apr 28; Video 3 after parents return from FL (~May 12, film that following week). Posts go live 1 week apart. Invoice submitted via Popfly at project completion.",
-      "activity_note": "Apr 16 (afternoon): Ian asked which Steinhafels location + concerned Video 3 May 12 timeline is later than preferred — response needed"
-    },
-    {
-      "action": "update",
-      "brand": "Aqara",
-      "stage": "delivered",
-      "waiting_on": "us",
-      "next_action": "Send $1,500 invoice to Mariah at socialmediacollabs.com — Reel is confirmed live",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Liz replied to Mariah confirming Reel is live — shared Instagram link (instagram.com/reel/DXDLWFnjWeI). Invoice for $1,500 now due (1 Reel + TikTok crosspost, 5-year organic usage rights).\n[Apr 16]: Mariah (socialmediacollabs.com) asked 'Did this go live by chance?' — Liz had planned to post 'this weekend' (Apr 11-12) after brand approved edits on Apr 9. Brand wants to be tagged as collaborator.",
-      "activity_note": "Apr 16: Liz confirmed Aqara Reel is live to Mariah (instagram.com/reel/DXDLWFnjWeI) — moved to Delivered, $1,500 invoice due now"
-    },
-    {
-      "action": "create",
-      "brand": "xTool",
-      "stage": "negotiation",
-      "waiting_on": "us",
-      "next_action": "Decide whether to accept xTool gifted collab (P3 laser, $10K value) or push for paid component — if yes, reply to Laura with content vision",
-      "next_action_date": "2026-04-18",
-      "last_contact": "2026-04-16",
-      "value": 0,
-      "contact_name": "Laura",
-      "contact_email": "gengchunhong@xtool.com",
-      "notes": "[Apr 16]: Laura replied — P3 laser ($10K value) offered as gifted/in-kind only. No cash budget. She wants Liz's content vision first: 'We'd like to start from your vision and then build the collaboration together.' Liz had asked about paid options and deliverables.\n[Apr 16]: Liz replied to Laura asking about paid collab budget, deliverables, and goals — cc'd Kenny.",
-      "activity_note": "Apr 16: xTool (Laura) replied — gifted/in-kind only, $10K P3 laser. No cash. Waiting on our decision."
-    },
-    {
-      "action": "update",
-      "brand": "HelloFresh",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Hana if no creator list decision by early May",
-      "next_action_date": "2026-05-07",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Hana (Taskmetas) replied to Liz's Apr 15 follow-up — brand is still building their creator list, no decision yet. Deal has been in limbo since Feb 25 (2 months). Still alive.",
-      "activity_note": "Apr 16: Hana confirmed HelloFresh still finalizing creator list — no decision yet, been stalled 2 months"
-    },
-    {
-      "action": "update",
-      "brand": "Ollie's",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Download Permission to Film Slip and schedule filming at Ollie's store (check restricted locations list first)",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-14",
-      "notes": "[Apr 14]: Ollie's Group 2 Campaign kicked off — e-gift card sent to Liz. Must download and bring printed Permission to Film Slip to the store before filming. Certain store locations restricted (check Ollie's list before going). Draft submission portal sent separately.",
-      "activity_note": "Apr 14: Ollie's Group 2 Campaign started — e-gift card sent, Permission to Film Slip required before store visit"
-    },
-    {
-      "action": "update",
-      "brand": "Dreo",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Yaki again if no response by Apr 18 — posting window closes Apr 30",
-      "next_action_date": "2026-04-18",
-      "last_contact": "2026-04-14",
-      "notes": "[Apr 14]: Liz followed up with Yaki (Vanzo Media / Dreo misting fan) after being on vacation — no response since Liz quoted $3K on Apr 1. Posting window is Apr 15-30. Window is NOW OPEN and time is running out.",
-      "activity_note": "Apr 14: Liz followed up on Dreo — posting window Apr 15-30 is live, no response from Yaki (yakiii@vanzomedia.com) since Apr 1 quote"
-    },
-    {
-      "action": "update",
-      "brand": "Aleve",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Finish filming and submit video drafts to Aleve for approval",
-      "next_action_date": "2026-04-20",
-      "last_contact": "2026-04-13",
-      "notes": "[Apr 13]: Agency confirmed Aleve concept approved — Liz actively filming. 2 videos expected by end of week (approx Apr 18), 3rd video may take longer but Aleve said they can be flexible. Deal: 3x Instagram Reels @Aleve_US for $12,000.",
-      "activity_note": "Apr 13: Aleve concept approved — Liz filming 2 videos now, 3rd needs more time (brand is flexible per agency)"
-    },
-    {
-      "action": "update",
-      "brand": "JLab",
-      "stage": "invoiced",
-      "waiting_on": "brand",
-      "next_action": "Follow up on March campaign payment ($2,000 due 4/20/26) — not yet received as of Apr 13",
-      "next_action_date": "2026-04-20",
-      "last_contact": "2026-04-13",
-      "notes": "[Apr 13]: Agency status check — JLab March campaign ($2,000, due 4/20/26) payment not yet received. April-May campaign ($4,000, 2 Reels + Stories) — April content approved, May pending. Liz confirmed Apr 13: no JLab payment received yet.",
-      "activity_note": "Apr 13: JLab March payment ($2K due 4/20/26) not received yet per agency check-in; April content approved"
-    },
-    {
-      "action": "update",
-      "brand": "Bark",
-      "stage": "invoiced",
-      "waiting_on": "brand",
-      "next_action": "Follow up on payment if not received by 4/24/26",
-      "next_action_date": "2026-04-24",
-      "last_contact": "2026-04-10",
-      "notes": "[Apr 10]: Agency status check — Bark payment ($750, due 4/24/26) not yet received. Deal: 1 TikTok + whitelisting. Liz noted payment expected 'in a few weeks.'",
-      "activity_note": "Apr 10: Bark payment ($750) due 4/24/26 — not yet received per agency check-in"
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Ruby confirmed she updated the collaboration agreement per Kenny's request — new dates: Video 1 draft 4/23, Video 2 in May. Agreement ready to review and sign. Reply to marketing202@sojosvision.com.",
+      "activity_note": "Apr 17: Ruby (SOJOS) updated agreement with new timeline — review and sign now, draft due 4/23"
     }
   ],
   "activities": []
