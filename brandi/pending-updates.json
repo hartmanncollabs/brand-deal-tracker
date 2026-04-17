@@ -1,6 +1,6 @@
 [{
   "run_summary": {
-    "summary": "Three deals with activity today. Aqara Cameras is ready to invoice — the reel went live Apr 16 and the brand confirmed it. SOJOS Vision updated their contract per Kenny's revision request, so the updated version needs a review. New inbound: Goldfish Swim School reached out via the Creator Opportunity platform with a paid family/parenting campaign — they want a decision in the next 3-5 days.",
+    "summary": "Three deals with activity. Aqara Cameras is ready to invoice — the reel went live Apr 16 and the brand confirmed it. SOJOS Vision is moving to Content — Liz signed the contract today and is starting content creation early next week. New inbound: Goldfish Swim School reached out via the Creator Opportunity platform with a paid family/parenting campaign — they want a decision in the next 3-5 days.",
     "emails_scanned": 6,
     "deals_created": 1,
     "deals_updated": 2,
@@ -11,9 +11,9 @@
         "message": "The Aqara reel is live — time to send that invoice! 💸"
       },
       {
-        "type": "contract-review",
+        "type": "stage-update",
         "brand": "SOJOS Vision",
-        "message": "Ruby updated the SOJOS contract per Kenny's revision request on the draft due date language — worth reviewing today or tomorrow."
+        "message": "Liz signed the SOJOS contract today and told Ruby she'll start content early next week — moved to Content. 🎬"
       },
       {
         "type": "new-opportunity",
@@ -37,13 +37,13 @@
     {
       "action": "update",
       "brand": "SOJOS Vision",
-      "stage": "contract",
+      "stage": "content",
       "waiting_on": "us",
-      "next_action": "Review updated contract from Ruby",
-      "next_action_date": "2026-04-18",
+      "next_action": "Film content for SOJOS Sunglasses — starting early next week",
+      "next_action_date": "2026-04-20",
       "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Ruby (marketing202@sojosvision.com) updated contract per Kenny's revision request — language around draft due date relative to product receipt was clarified. Review updated version.",
-      "activity_note": "Apr 17: Ruby updated SOJOS contract per Kenny's revision request on draft due date language — waiting on our review."
+      "notes": "[Apr 17]: Liz signed contract and returned to Ruby (marketing202@sojosvision.com) — will start on content early next week. Ruby had updated draft due date language per Kenny's revision request.",
+      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. Starting content creation week of Apr 20."
     },
     {
       "action": "create",
