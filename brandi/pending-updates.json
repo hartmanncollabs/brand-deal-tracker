@@ -1,33 +1,46 @@
 [{
   "run_summary": {
-    "summary": "Active day across the pipeline! Aqara Cameras reel is live — ready to invoice for $1,500. SOJOS Vision contract signed today with a first draft deadline of Apr 23 (Kenny negotiated this explicitly). BHG x Walmart is off to the races — first delivery received today, more arriving Saturday, Mahjong girls' night concept ready to film. New inbound: Goldfish Swim School paid family/parenting campaign with a 3-5 day decision window.",
-    "emails_scanned": 4,
+    "summary": "Big day in the pipeline! Liz signed the SOJOS contract this morning and is starting content early next week — first draft deadline is Apr 23 (Kenny negotiated this explicitly). Aqara Cameras reel is confirmed live — brand reached out to verify and Liz shared the link, so it's ready to invoice. BHG x Walmart products are arriving — first delivery today, 3 more on Saturday, so all outdoor dining set items should be in hand by the weekend. New inbound: Goldfish Swim School paid family/parenting campaign through CreatorOpportunity — 3-5 day decision window, so needs a look today or tomorrow.",
+    "emails_scanned": 5,
     "deals_created": 1,
     "deals_updated": 3,
     "suggestions": [
       {
-        "type": "invoice",
-        "brand": "Aqara Cameras",
-        "message": "Reel is live and the brand confirmed it Apr 16 — invoice for $1,500 is ready to go! 💸"
-      },
-      {
         "type": "deadline",
         "brand": "SOJOS Vision",
-        "message": "Kenny negotiated a hard first draft deadline of Apr 23 with Ruby. That's Thursday — Liz should start filming ASAP. 🎬"
+        "message": "Kenny negotiated a hard first draft deadline of Apr 23 with Ruby — that's Thursday! Liz confirmed she'll start early next week. 🎬"
+      },
+      {
+        "type": "invoice",
+        "brand": "Aqara Cameras",
+        "message": "Reel is live and brand confirmed it Apr 16 — time to send that invoice! 💸"
       },
       {
         "type": "action",
         "brand": "BHG x Walmart",
-        "message": "First delivery received today, rest arriving Saturday (Apr 19). All products in hand by the weekend — great time to schedule the outdoor shoot! 🛋️"
+        "message": "First delivery arrived today, 3 more coming Saturday Apr 19. All products in hand by the weekend — great time to schedule the outdoor dining shoot! 🛋️"
       },
       {
         "type": "new-opportunity",
         "brand": "Goldfish Swim School",
-        "message": "National swim school franchise with a paid family/parenting campaign — fits Liz's niche well. Decision window closes in 3-5 days, so needs a look today or tomorrow. 🏊"
+        "message": "National swim school franchise with a paid family/parenting campaign — fits Liz's niche. Decision window is 3-5 days from today, so needs a look ASAP. 🏊"
       }
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS Vision",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film first video draft for SOJOS Sunglasses (due Apr 23)",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-17",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "notes": "[Apr 17]: Liz signed the contract and returned it to Ruby. Kenny negotiated: first draft due Apr 23, second video planned for May. Sunglasses already received. Deal is 2 videos total.",
+      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. First draft deadline Apr 23, second video in May."
+    },
     {
       "action": "update",
       "brand": "Aqara Cameras",
@@ -36,35 +49,21 @@
       "next_action": "Send invoice",
       "next_action_date": "2026-04-17",
       "last_contact": "2026-04-16",
-      "value": 1500,
-      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/?igsh=dDM2cGl6dTE3cjB5. Brand rep (misslizdidit@socialmediacollabs.com) asked if it went live; Liz confirmed and shared the link.",
-      "activity_note": "Apr 16: Reel confirmed posted — moved to Delivered. Invoice for $1,500 ready to send."
-    },
-    {
-      "action": "update",
-      "brand": "SOJOS Vision",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film first draft for SOJOS Sunglasses (draft due Apr 23)",
-      "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-17",
-      "contact_name": "Ruby",
-      "contact_email": "marketing202@sojosvision.com",
-      "notes": "[Apr 17]: Liz signed contract and returned to Ruby (marketing202@sojosvision.com). Agreed schedule: first draft due Apr 23, second video planned for May. Sunglasses already in hand. Deal is 2 videos total.",
-      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. First draft deadline Apr 23, second video in May."
+      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/. Brand manager (misslizdidit@socialmediacollabs.com) asked if it went live; Liz confirmed and shared the link. Brand approved content on Apr 9 and requested collaborator tag.",
+      "activity_note": "Apr 16: Reel confirmed posted and brand notified — moved to Delivered. Ready to invoice."
     },
     {
       "action": "update",
       "brand": "BHG x Walmart",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Film outdoor living content — all products should be in by Apr 19",
+      "next_action": "Film outdoor dining content — all products in hand by Apr 19",
       "next_action_date": "2026-04-20",
       "last_contact": "2026-04-17",
       "contact_name": "Gretta Hegland",
       "contact_email": "gretta.hegland@people.inc",
-      "notes": "[Apr 17]: First delivery received today (Kenny confirmed). Remaining shipments arriving Sat Apr 19. Products include Southlake 7-piece outdoor dining set + dinnerware (ordered for 6) — Mahjong girls' night concept. Contract signed Apr 13 (net-45 payment terms). Billing contact: Eileen Mchugh (emchugh@people.inc).",
-      "activity_note": "Apr 17: First product delivery received. Rest arrives Apr 19 — ready to film outdoor content."
+      "notes": "[Apr 17]: Gretta confirmed first delivery arriving today (Apr 17), 3 more on Saturday Apr 19. Table requires someone home to receive. Tracking details to follow tomorrow morning.",
+      "activity_note": "Apr 17: Product deliveries underway — first batch today, remainder Sat Apr 19. Ready to film by next week."
     },
     {
       "action": "create",
@@ -76,7 +75,7 @@
       "last_contact": "2026-04-17",
       "contact_name": "Lilly",
       "contact_email": "lilly@creatoropportunity.com",
-      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim' with Goldfish Swim School (national franchise). Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — can propose own terms via platform form. Looking to review options in next 3-5 days. Note: bulk platform outreach (PROMOTIONS label), not a personal pitch."
+      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim' with Goldfish Swim School (national franchise). Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — can propose own terms via platform form. Looking to review options in next 3-5 days. Note: bulk platform outreach (landed in Promotions), not a personal pitch."
     }
   ],
   "activities": []
