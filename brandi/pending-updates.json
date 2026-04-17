@@ -1,23 +1,39 @@
 [{
   "run_summary": {
-    "summary": "Apr 17 follow-up scan (second pass). Two actionable items: Aqara Cameras reel confirmed live on Apr 16 — Liz shared the Instagram link in reply to the brand, so that deal is ready to invoice. Flexsteel thread is very active: Ian (Popfly) sent a campaign link for uploading video drafts and submitting the invoice, Kenny shared a filming timeline (Video 1 draft ~Apr 25, Video 2 draft ~Apr 28–May 2, Video 3 with parents ~week of May 15), and Ian is pushing back asking if the last video can be done before May 12. Added the Popfly link and full timeline to notes — good to have this on the card when it's time to invoice. Skipped: HULALA HOME (gifted only), SOJOS (already captured in earlier run today), BHG x Walmart (already captured in earlier run today).",
-    "emails_scanned": 9,
+    "summary": "Apr 17 scan (third pass). One new update: SOJOS — Ruby replied confirming she updated the contract with Kenny's requested dates (Video 1 draft by Apr 23, Video 2 in May). Contract is ready for Kenny/Liz to review and sign. Aqara and Flexsteel updates carried forward from second-pass run (Aqara reel confirmed live, ready to invoice; Flexsteel timeline notes from Ian/Popfly). Skipped: HULALA HOME (gifted/product-only, no cash value mentioned).",
+    "emails_scanned": 4,
     "deals_created": 0,
-    "deals_updated": 2,
+    "deals_updated": 3,
     "suggestions": [
       {
         "type": "action",
-        "brand": "Aqara Cameras",
-        "message": "Reel went live Apr 16 — Liz confirmed and shared the link. Time to send the invoice! Moving to Delivered."
+        "brand": "SOJOS",
+        "message": "Ruby updated the agreement with Kenny's requested dates — Video 1 draft by Apr 23, Video 2 in May. Review and sign the updated contract ASAP so Liz can start filming!"
+      },
+      {
+        "type": "action",
+        "brand": "Aqara",
+        "message": "Reel went live Apr 16 — Liz confirmed and shared the link. Time to send the invoice!"
       },
       {
         "type": "fyi",
         "brand": "Flexsteel",
-        "message": "Ian (Popfly) is nudging on the last video timeline — he's hoping it can wrap before May 12 (when Kenny's parents fly home). Kenny told him ~May 15 week. Worth a quick reply to Ian on which Steinhafels location they're visiting on Apr 23."
+        "message": "Ian (Popfly) is nudging on the last video timeline — he's hoping it can wrap before May 12 (when Kenny's parents fly home). Kenny told him ~May 15 week. Worth a quick reply to Ian on which Steinhafels location they're visiting Apr 23."
       }
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "contract",
+      "waiting_on": "us",
+      "next_action": "Review updated SOJOS agreement and sign — Ruby revised dates to Video 1 draft 4/23, Video 2 in May",
+      "next_action_date": "2026-04-18",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Ruby confirmed contract updated with Kenny's requested dates (Video 1 draft by 4/23, Video 2 in May). Ready to review and sign.",
+      "activity_note": "Apr 17: Ruby (SOJOS) replied confirming contract updated per Kenny's request — new dates: Video 1 draft 4/23, Video 2 in May. Waiting on us to sign."
+    },
     {
       "action": "update",
       "brand": "Aqara",
