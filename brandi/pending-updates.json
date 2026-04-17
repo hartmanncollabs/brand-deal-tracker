@@ -1,24 +1,29 @@
 [{
   "run_summary": {
-    "summary": "Three deals with activity. Aqara Cameras is ready to invoice — the reel went live Apr 16 and the brand confirmed it. SOJOS Vision is moving to Content — Liz signed the contract today and is starting content creation early next week. New inbound: Goldfish Swim School reached out via the Creator Opportunity platform with a paid family/parenting campaign — they want a decision in the next 3-5 days.",
-    "emails_scanned": 6,
+    "summary": "Active day across the pipeline! Aqara Cameras reel is live — ready to invoice for $1,500. SOJOS Vision contract signed today with a first draft deadline of Apr 23 (Kenny negotiated this explicitly). BHG x Walmart is off to the races — first delivery received today, more arriving Saturday, Mahjong girls' night concept ready to film. New inbound: Goldfish Swim School paid family/parenting campaign with a 3-5 day decision window.",
+    "emails_scanned": 4,
     "deals_created": 1,
-    "deals_updated": 2,
+    "deals_updated": 3,
     "suggestions": [
       {
         "type": "invoice",
         "brand": "Aqara Cameras",
-        "message": "The Aqara reel is live — time to send that invoice! 💸"
+        "message": "Reel is live and the brand confirmed it Apr 16 — invoice for $1,500 is ready to go! 💸"
       },
       {
-        "type": "stage-update",
+        "type": "deadline",
         "brand": "SOJOS Vision",
-        "message": "Liz signed the SOJOS contract today and told Ruby she'll start content early next week — moved to Content. 🎬"
+        "message": "Kenny negotiated a hard first draft deadline of Apr 23 with Ruby. That's Thursday — Liz should start filming ASAP. 🎬"
+      },
+      {
+        "type": "action",
+        "brand": "BHG x Walmart",
+        "message": "First delivery received today, rest arriving Saturday (Apr 19). All products in hand by the weekend — great time to schedule the outdoor shoot! 🛋️"
       },
       {
         "type": "new-opportunity",
         "brand": "Goldfish Swim School",
-        "message": "Paid family/parenting campaign from a national swim school franchise — aligns well with Liz's content. Tight 3-5 day decision window, so needs a look today."
+        "message": "National swim school franchise with a paid family/parenting campaign — fits Liz's niche well. Decision window closes in 3-5 days, so needs a look today or tomorrow. 🏊"
       }
     ]
   },
@@ -31,19 +36,35 @@
       "next_action": "Send invoice",
       "next_action_date": "2026-04-17",
       "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/?igsh=dDM2cGl6dTE3cjB5 — brand (via socialmediacollabs.com) asked if it went live, Liz confirmed and shared link",
-      "activity_note": "Apr 16: Reel confirmed posted — moved to Delivered. Send invoice now."
+      "value": 1500,
+      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/?igsh=dDM2cGl6dTE3cjB5. Brand rep (misslizdidit@socialmediacollabs.com) asked if it went live; Liz confirmed and shared the link.",
+      "activity_note": "Apr 16: Reel confirmed posted — moved to Delivered. Invoice for $1,500 ready to send."
     },
     {
       "action": "update",
       "brand": "SOJOS Vision",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Film content for SOJOS Sunglasses — starting early next week",
+      "next_action": "Film first draft for SOJOS Sunglasses (draft due Apr 23)",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-17",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "notes": "[Apr 17]: Liz signed contract and returned to Ruby (marketing202@sojosvision.com). Agreed schedule: first draft due Apr 23, second video planned for May. Sunglasses already in hand. Deal is 2 videos total.",
+      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. First draft deadline Apr 23, second video in May."
+    },
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film outdoor living content — all products should be in by Apr 19",
       "next_action_date": "2026-04-20",
       "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Liz signed contract and returned to Ruby (marketing202@sojosvision.com) — will start on content early next week. Ruby had updated draft due date language per Kenny's revision request.",
-      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. Starting content creation week of Apr 20."
+      "contact_name": "Gretta Hegland",
+      "contact_email": "gretta.hegland@people.inc",
+      "notes": "[Apr 17]: First delivery received today (Kenny confirmed). Remaining shipments arriving Sat Apr 19. Products include Southlake 7-piece outdoor dining set + dinnerware (ordered for 6) — Mahjong girls' night concept. Contract signed Apr 13 (net-45 payment terms). Billing contact: Eileen Mchugh (emchugh@people.inc).",
+      "activity_note": "Apr 17: First product delivery received. Rest arrives Apr 19 — ready to film outdoor content."
     },
     {
       "action": "create",
@@ -55,7 +76,7 @@
       "last_contact": "2026-04-17",
       "contact_name": "Lilly",
       "contact_email": "lilly@creatoropportunity.com",
-      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim'. Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — submit interest via platform form to propose own terms. Reviewing options in next 3-5 days. Note: bulk platform outreach, not direct personal contact."
+      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim' with Goldfish Swim School (national franchise). Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — can propose own terms via platform form. Looking to review options in next 3-5 days. Note: bulk platform outreach (PROMOTIONS label), not a personal pitch."
     }
   ],
   "activities": []
