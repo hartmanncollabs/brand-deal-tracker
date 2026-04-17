@@ -1,1 +1,62 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Three deals with activity today. Aqara Cameras is ready to invoice — the reel went live Apr 16 and the brand confirmed it. SOJOS Vision updated their contract per Kenny's revision request, so the updated version needs a review. New inbound: Goldfish Swim School reached out via the Creator Opportunity platform with a paid family/parenting campaign — they want a decision in the next 3-5 days.",
+    "emails_scanned": 6,
+    "deals_created": 1,
+    "deals_updated": 2,
+    "suggestions": [
+      {
+        "type": "invoice",
+        "brand": "Aqara Cameras",
+        "message": "The Aqara reel is live — time to send that invoice! 💸"
+      },
+      {
+        "type": "contract-review",
+        "brand": "SOJOS Vision",
+        "message": "Ruby updated the SOJOS contract per Kenny's revision request on the draft due date language — worth reviewing today or tomorrow."
+      },
+      {
+        "type": "new-opportunity",
+        "brand": "Goldfish Swim School",
+        "message": "Paid family/parenting campaign from a national swim school franchise — aligns well with Liz's content. Tight 3-5 day decision window, so needs a look today."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Aqara Cameras",
+      "stage": "delivered",
+      "waiting_on": "us",
+      "next_action": "Send invoice",
+      "next_action_date": "2026-04-17",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/?igsh=dDM2cGl6dTE3cjB5 — brand (via socialmediacollabs.com) asked if it went live, Liz confirmed and shared link",
+      "activity_note": "Apr 16: Reel confirmed posted — moved to Delivered. Send invoice now."
+    },
+    {
+      "action": "update",
+      "brand": "SOJOS Vision",
+      "stage": "contract",
+      "waiting_on": "us",
+      "next_action": "Review updated contract from Ruby",
+      "next_action_date": "2026-04-18",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Ruby (marketing202@sojosvision.com) updated contract per Kenny's revision request — language around draft due date relative to product receipt was clarified. Review updated version.",
+      "activity_note": "Apr 17: Ruby updated SOJOS contract per Kenny's revision request on draft due date language — waiting on our review."
+    },
+    {
+      "action": "create",
+      "brand": "Goldfish Swim School",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide whether to submit interest via Creator Opportunity platform",
+      "next_action_date": "2026-04-18",
+      "last_contact": "2026-04-17",
+      "contact_name": "Lilly",
+      "contact_email": "lilly@creatoropportunity.com",
+      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim'. Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — submit interest via platform form to propose own terms. Reviewing options in next 3-5 days. Note: bulk platform outreach, not direct personal contact."
+    }
+  ],
+  "activities": []
+}]
