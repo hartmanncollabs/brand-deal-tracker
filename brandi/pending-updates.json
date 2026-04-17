@@ -1,88 +1,17 @@
 [{
   "run_summary": {
-    "summary": "Apr 17 scan (fourth pass). Two new findings: BHG x Walmart — Gretta (people.inc) confirmed product shipment, most items arriving TODAY (Apr 17) with 3 more Saturday Apr 18, someone must be home to receive the table; Expert via Hawke Media — new contact Alisa Gofman replacing Carolina, call scheduled Wednesday Apr 22 at 10am PST. SOJOS, Aqara, and Flexsteel carried forward from previous passes (still pending application).",
-    "emails_scanned": 5,
+    "summary": "Apr 17 scan (fifth pass). One new inbound: Goldfish Swim School paid campaign outreach via CreatorOpportunity.com (a creator agency). All previously flagged deals (Aqara, SOJOS, BHG x Walmart, Hawke Media, Flexsteel) already captured in earlier passes today — no new activity on those threads.",
+    "emails_scanned": 6,
     "deals_created": 0,
-    "deals_updated": 2,
+    "deals_updated": 0,
     "suggestions": [
       {
-        "type": "urgent",
-        "brand": "BHG x Walmart",
-        "message": "🚨 Products arriving TODAY (Apr 17) and Saturday Apr 18 — someone needs to be home to receive the table! Gretta will share tracking details this morning."
-      },
-      {
-        "type": "action",
-        "brand": "Expert (Hawke Media)",
-        "message": "Call confirmed with new Hawke Media contact Alisa Gofman — Wednesday Apr 22 at 10am PST. She's replacing Carolina. Make sure to add it to the calendar!"
-      },
-      {
-        "type": "action",
-        "brand": "SOJOS",
-        "message": "Ruby updated the agreement with Kenny's requested dates — Video 1 draft by Apr 23, Video 2 in May. Review and sign the updated contract ASAP so Liz can start filming!"
-      },
-      {
-        "type": "action",
-        "brand": "Aqara",
-        "message": "Reel went live Apr 16 — Liz confirmed and shared the link. Time to send the invoice!"
-      },
-      {
-        "type": "fyi",
-        "brand": "Flexsteel",
-        "message": "Ian (Popfly) is nudging on the last video timeline — he's hoping it can wrap before May 12 (when Kenny's parents fly home). Kenny told him ~May 15 week. Worth a quick reply to Ian on which Steinhafels location they're visiting Apr 23."
+        "type": "opportunity",
+        "brand": "Goldfish Swim School",
+        "message": "New paid campaign inbound via CreatorOpportunity.com (Cassie/Lilly at cassie@creatoropportunity.com / lilly@creatoropportunity.com). Campaign: 'Let's Talk Parenting, Safety & Swim.' Deliverables negotiable — 1 IG Reel/Post OR TikTok OR YouTube, 1-year content licensing. No specific rate offered; must apply via their form. Reviewing interest in 3–5 days (by ~Apr 22). Came in through the Promotions tab as a mass creator outreach — worth a look if swim/family content fits the calendar, but low priority vs. active deals."
       }
     ]
   },
-  "deals": [
-    {
-      "action": "update",
-      "brand": "BHG x Walmart",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Receive product delivery — most items arriving today (Apr 17), 3 more Sat Apr 18. Someone must be home for table delivery.",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Gretta Hegland (people.inc) confirmed product shipment for BHG x Walmart Spring Social Campaign. Most items arriving Apr 17 (today), 3 more arriving Apr 18 (Saturday). Someone needs to be home to receive the table. Gretta said she'll share tracking details Friday morning. Contact: gretta.hegland@people.inc",
-      "activity_note": "Apr 16: Gretta (people.inc) confirmed product shipment — most arriving Apr 17, 3 more Apr 18. Someone must be home to receive the table."
-    },
-    {
-      "action": "update",
-      "brand": "Hawke Media",
-      "waiting_on": "us",
-      "next_action": "Call with Alisa Gofman (Hawke Media) — Wednesday Apr 22 at 10am PST",
-      "next_action_date": "2026-04-22",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: New Hawke Media contact Alisa Gofman (Analyst, Paid Social — agofman@hawkemedia.com, 310.451.7295, 2415 Michigan Ave, Santa Monica CA) replacing Carolina. Call confirmed for Wednesday Apr 22 at 10am PST. Note: ad account access was previously granted under Carolina — Liz has screenshot confirming access still active.",
-      "activity_note": "Apr 16: Transition call scheduled with new Hawke Media contact Alisa Gofman — Wednesday Apr 22 at 10am PST. Replacing Carolina as primary contact."
-    },
-    {
-      "action": "update",
-      "brand": "SOJOS",
-      "stage": "contract",
-      "waiting_on": "us",
-      "next_action": "Review updated SOJOS agreement and sign — Ruby revised dates to Video 1 draft 4/23, Video 2 in May",
-      "next_action_date": "2026-04-18",
-      "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Ruby confirmed contract updated with Kenny's requested dates (Video 1 draft by 4/23, Video 2 in May). Ready to review and sign.",
-      "activity_note": "Apr 17: Ruby (SOJOS) replied confirming contract updated per Kenny's request — new dates: Video 1 draft 4/23, Video 2 in May. Waiting on us to sign."
-    },
-    {
-      "action": "update",
-      "brand": "Aqara",
-      "stage": "delivered",
-      "waiting_on": "us",
-      "next_action": "Send invoice to Aqara",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Reel confirmed live — Liz replied to brand confirming post went up and shared the link: instagram.com/reel/DXDLWFnjWeI/ Brand had checked in asking if it went live.",
-      "activity_note": "Apr 16: Reel went live — Liz confirmed in email and shared link. Moving to Delivered; ready to send invoice."
-    },
-    {
-      "action": "update",
-      "brand": "Flexsteel",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Ian Saunders (ian@popfly.com, Popfly agency) sent campaign upload link for submitting video drafts for review AND invoice once project is complete. Kenny shared filming timeline with Ian: Liz home weekend Apr 18–19, filming Video 1 early week of Apr 21, Steinhafels visit Apr 23, Video 1 draft by ~Apr 25, Video 2 draft early week of Apr 28–May 2 (after Steinhafels visit). Video 3 with parents planned for week of May 15 (parents fly home May 12). Ian asked which Steinhafels and hopes last video can be turned around sooner than May 12. Posting schedule: 1 week apart. Invoice submission link: app.popfly.com (Popfly campaign portal).",
-      "activity_note": "Apr 16: Ian (Popfly) shared campaign upload link for drafts and invoice. Kenny confirmed timeline — Video 1 draft ~Apr 25, Video 2 ~Apr 28–May 2, Video 3 ~May 15."
-    }
-  ],
+  "deals": [],
   "activities": []
 }]
