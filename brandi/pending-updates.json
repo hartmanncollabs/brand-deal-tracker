@@ -1,33 +1,40 @@
 [{
   "run_summary": {
-    "summary": "Follow-up scan, Apr 17. Two new items since this morning's run: SOJOS Ruby confirmed she updated the collaboration agreement with the dates Kenny proposed (draft 4/23, Video 2 in May) — needs review and signature today. BHG x Walmart: Gretta confirmed products arriving today and Saturday, including a table that requires someone home to receive. Also skipped a gifted-only inbound from HULALA HOME (no cash value).",
-    "emails_scanned": 10,
+    "summary": "Apr 17 follow-up scan (second pass). Two actionable items: Aqara Cameras reel confirmed live on Apr 16 — Liz shared the Instagram link in reply to the brand, so that deal is ready to invoice. Flexsteel thread is very active: Ian (Popfly) sent a campaign link for uploading video drafts and submitting the invoice, Kenny shared a filming timeline (Video 1 draft ~Apr 25, Video 2 draft ~Apr 28–May 2, Video 3 with parents ~week of May 15), and Ian is pushing back asking if the last video can be done before May 12. Added the Popfly link and full timeline to notes — good to have this on the card when it's time to invoice. Skipped: HULALA HOME (gifted only), SOJOS (already captured in earlier run today), BHG x Walmart (already captured in earlier run today).",
+    "emails_scanned": 9,
     "deals_created": 0,
-    "deals_updated": 1,
+    "deals_updated": 2,
     "suggestions": [
       {
-        "type": "urgent",
-        "brand": "SOJOS",
-        "message": "Ruby (sojosvision.com) updated the collaboration agreement with the new timeline Kenny requested — draft by 4/23, Video 2 in May. Check the updated agreement now, sign it, and return to Ruby. Draft is only 6 days away."
+        "type": "action",
+        "brand": "Aqara Cameras",
+        "message": "Reel went live Apr 16 — Liz confirmed and shared the link. Time to send the invoice! Moving to Delivered."
       },
       {
         "type": "fyi",
-        "brand": "BHG x Walmart",
-        "message": "Gretta (people.inc) confirmed most BHG x Walmart Spring Social Campaign items arrive today (Apr 17), with 3 more arriving Saturday Apr 19 — including the table, which requires someone home to receive. Tracking details coming from Gretta this morning."
+        "brand": "Flexsteel",
+        "message": "Ian (Popfly) is nudging on the last video timeline — he's hoping it can wrap before May 12 (when Kenny's parents fly home). Kenny told him ~May 15 week. Worth a quick reply to Ian on which Steinhafels location they're visiting on Apr 23."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "SOJOS",
-      "stage": "contract",
+      "brand": "Aqara",
+      "stage": "delivered",
       "waiting_on": "us",
-      "next_action": "Review updated SOJOS agreement and sign/return to Ruby — first video draft due 4/23",
+      "next_action": "Send invoice to Aqara",
       "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Ruby confirmed she updated the collaboration agreement per Kenny's request — new dates: Video 1 draft 4/23, Video 2 in May. Agreement ready to review and sign. Reply to marketing202@sojosvision.com.",
-      "activity_note": "Apr 17: Ruby (SOJOS) updated agreement with new timeline — review and sign now, draft due 4/23"
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Reel confirmed live — Liz replied to brand confirming post went up and shared the link: instagram.com/reel/DXDLWFnjWeI/ Brand had checked in asking if it went live.",
+      "activity_note": "Apr 16: Reel went live — Liz confirmed in email and shared link. Moving to Delivered; ready to send invoice."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "last_contact": "2026-04-16",
+      "notes": "[Apr 16]: Ian Saunders (ian@popfly.com, Popfly agency) sent campaign upload link for submitting video drafts for review AND invoice once project is complete. Kenny shared filming timeline with Ian: Liz home weekend Apr 18–19, filming Video 1 early week of Apr 21, Steinhafels visit Apr 23, Video 1 draft by ~Apr 25, Video 2 draft early week of Apr 28–May 2 (after Steinhafels visit). Video 3 with parents planned for week of May 15 (parents fly home May 12). Ian asked which Steinhafels and hopes last video can be turned around sooner than May 12. Posting schedule: 1 week apart. Invoice submission link: app.popfly.com (Popfly campaign portal).",
+      "activity_note": "Apr 16: Ian (Popfly) shared campaign upload link for drafts and invoice. Kenny confirmed timeline — Video 1 draft ~Apr 25, Video 2 ~Apr 28–May 2, Video 3 ~May 15."
     }
   ],
   "activities": []
