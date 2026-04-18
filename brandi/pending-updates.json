@@ -1,81 +1,32 @@
 [{
   "run_summary": {
-    "summary": "Big day in the pipeline! Liz signed the SOJOS contract this morning and is starting content early next week — first draft deadline is Apr 23 (Kenny negotiated this explicitly). Aqara Cameras reel is confirmed live — brand reached out to verify and Liz shared the link, so it's ready to invoice. BHG x Walmart products are arriving — first delivery today, 3 more on Saturday, so all outdoor dining set items should be in hand by the weekend. New inbound: Goldfish Swim School paid family/parenting campaign through CreatorOpportunity — 3-5 day decision window, so needs a look today or tomorrow.",
+    "summary": "Flexsteel Popfly thread picked up from Apr 17 — this was missed from main. Ian Saunders confirmed the filming delay to May 13/14 is totally fine and said the end-of-May posting deadline still holds. He did ask about the Popfly 'apply' button. Kenny replied at 1:10 PM that he hadn't done it yet but would do it 'later today' (Apr 17). It's now Apr 18 — no confirmation in the thread that it got done. This is a real blocker: drafts can't be uploaded to Popfly until Kenny hits apply. Needs a check-in today.",
     "emails_scanned": 5,
-    "deals_created": 1,
-    "deals_updated": 3,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
-        "type": "deadline",
-        "brand": "SOJOS Vision",
-        "message": "Kenny negotiated a hard first draft deadline of Apr 23 with Ruby — that's Thursday! Liz confirmed she'll start early next week. 🎬"
-      },
-      {
-        "type": "invoice",
-        "brand": "Aqara Cameras",
-        "message": "Reel is live and brand confirmed it Apr 16 — time to send that invoice! 💸"
-      },
-      {
         "type": "action",
-        "brand": "BHG x Walmart",
-        "message": "First delivery arrived today, 3 more coming Saturday Apr 19. All products in hand by the weekend — great time to schedule the outdoor dining shoot! 🛋️"
+        "brand": "Flexsteel",
+        "message": "Kenny told Ian he'd hit 'apply' on the Popfly campaign link by end of day Apr 17. It's Apr 18 and there's no follow-up in the thread — can you confirm that got done? Drafts can't be uploaded until it is. 📋"
       },
       {
-        "type": "new-opportunity",
-        "brand": "Goldfish Swim School",
-        "message": "National swim school franchise with a paid family/parenting campaign — fits Liz's niche. Decision window is 3-5 days from today, so needs a look ASAP. 🏊"
+        "type": "deadline",
+        "brand": "Flexsteel",
+        "message": "Ian confirmed filming delay to May 13/14 is totally understandable — end-of-May posting deadline still intact. Just need that Popfly apply button hit so you're set up when filming happens. 🎬"
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "SOJOS Vision",
-      "stage": "content",
+      "brand": "Flexsteel",
       "waiting_on": "us",
-      "next_action": "Film first video draft for SOJOS Sunglasses (due Apr 23)",
-      "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-17",
-      "contact_name": "Ruby",
-      "contact_email": "marketing202@sojosvision.com",
-      "notes": "[Apr 17]: Liz signed the contract and returned it to Ruby. Kenny negotiated: first draft due Apr 23, second video planned for May. Sunglasses already received. Deal is 2 videos total.",
-      "activity_note": "Apr 17: Liz signed SOJOS contract — moved to Content. First draft deadline Apr 23, second video in May."
-    },
-    {
-      "action": "update",
-      "brand": "Aqara Cameras",
-      "stage": "delivered",
-      "waiting_on": "us",
-      "next_action": "Send invoice",
-      "next_action_date": "2026-04-17",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/. Brand manager (misslizdidit@socialmediacollabs.com) asked if it went live; Liz confirmed and shared the link. Brand approved content on Apr 9 and requested collaborator tag.",
-      "activity_note": "Apr 16: Reel confirmed posted and brand notified — moved to Delivered. Ready to invoice."
-    },
-    {
-      "action": "update",
-      "brand": "BHG x Walmart",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film outdoor dining content — all products in hand by Apr 19",
-      "next_action_date": "2026-04-20",
-      "last_contact": "2026-04-17",
-      "contact_name": "Gretta Hegland",
-      "contact_email": "gretta.hegland@people.inc",
-      "notes": "[Apr 17]: Gretta confirmed first delivery arriving today (Apr 17), 3 more on Saturday Apr 19. Table requires someone home to receive. Tracking details to follow tomorrow morning.",
-      "activity_note": "Apr 17: Product deliveries underway — first batch today, remainder Sat Apr 19. Ready to film by next week."
-    },
-    {
-      "action": "create",
-      "brand": "Goldfish Swim School",
-      "stage": "negotiation",
-      "waiting_on": "us",
-      "next_action": "Decide whether to submit interest via Creator Opportunity platform",
+      "next_action": "Confirm Kenny hit 'apply' on Popfly campaign link (committed Apr 17) — required before drafts can be uploaded",
       "next_action_date": "2026-04-18",
       "last_contact": "2026-04-17",
-      "contact_name": "Lilly",
-      "contact_email": "lilly@creatoropportunity.com",
-      "notes": "[Apr 17]: Inbound paid campaign via creatoropportunity.com — 'Let's Talk Parenting, Safety & Swim' with Goldfish Swim School (national franchise). Deliverables: 1 IG Post/Reel OR TikTok OR YouTube + 1-year content licensing. Rate TBD — can propose own terms via platform form. Looking to review options in next 3-5 days. Note: bulk platform outreach (landed in Promotions), not a personal pitch."
+      "notes": "[Apr 17]: Ian Saunders (ian@popfly.com) confirmed filming delay to May 13/14 at Steinhafels (Downers Grove, IL) is 'totally understandable' — end-of-May posting deadline still holds per agreement. Ian asked if Kenny had hit 'apply' on the Popfly campaign link (required to enable draft uploads). Kenny replied at 1:10 PM: 'I hadn't tried that yet, but will get that set up later today.' As of Apr 18, no confirmation in thread.",
+      "activity_note": "Apr 17: Ian confirmed flexibility on filming timeline (May 13/14 OK). Kenny committed to hitting Popfly 'apply' by end of day Apr 17 — unconfirmed as of Apr 18."
     }
   ],
   "activities": []
