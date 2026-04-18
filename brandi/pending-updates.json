@@ -79,4 +79,34 @@
     }
   ],
   "activities": []
+},
+{
+  "run_summary": {
+    "summary": "Flexsteel thread is active — Kenny updated Ian Saunders (Popfly) on a filming delay for the 3rd video. Dad's pacemaker surgery is end of April with a follow-up May 11 in Naples, so the earliest they can film the reveal at Steinhafels (Downers Grove, IL) is May 13/14. Ian said that's totally understandable — end-of-May deadline still holds per the agreement. One urgent action item Kenny committed to: hitting 'apply' on the Popfly campaign link so drafts can be uploaded. He said he'd do it Apr 17 — check in if that hasn't happened yet.",
+    "emails_scanned": 3,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "action",
+        "brand": "Flexsteel",
+        "message": "Kenny told Ian he'd hit 'apply' on the Popfly campaign link by end of day Apr 17 — needed before any draft can be uploaded. Check that it's done! 📋"
+      },
+      {
+        "type": "deadline",
+        "brand": "Flexsteel",
+        "message": "3rd video filming pushed to May 13/14 at Steinhafels Downers Grove. End-of-May posting deadline per agreement — still on track, just barely. 🎬"
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Kenny emailed Ian Saunders (Popfly) — filming 3rd video delayed due to dad's pacemaker surgery (end of April) + follow-up doctor appt May 11 in Naples. Earliest filming: May 13/14 at Steinhafels in Downers Grove, IL. Kenny noted agreement allows until end of May to post 3rd video. Ian confirmed flexibility ('totally understandable'). Ian asked Kenny to hit 'apply' on Popfly campaign link so drafts can be uploaded to platform; Kenny said he'll do it today (Apr 17).",
+      "activity_note": "Apr 17: 3rd video filming delayed to May 13/14 — dad's medical schedule. Ian OK with timeline, end-of-May deadline still intact. Kenny to apply on Popfly platform."
+    }
+  ],
+  "activities": []
 }]
