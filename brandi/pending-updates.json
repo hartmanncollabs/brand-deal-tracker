@@ -1,1 +1,29 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Caught active Flexsteel thread from yesterday — Kenny's back-and-forth with Ian Saunders (Popfly agency) has some key details worth tracking. The 3-video series has a full filming timeline now: Video 1 draft ~Apr 25, Video 2 draft ~Apr 28, Video 3 filming May 13-14 (contract gives until end of May). One potential loose end: Ian asked Kenny to register on Popfly's campaign platform so drafts can be uploaded for brand review — Kenny said he'd do it 'later today' (Apr 17). Worth confirming that got done before Video 1 draft is due.",
+    "emails_scanned": 2,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "Flexsteel / Popfly",
+        "message": "Kenny said he'd register on Popfly's campaign platform on Apr 17 — worth a quick check that it's done before the Video 1 draft is due (~Apr 25). Without that, they won't be able to submit the draft for brand review."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Confirm Popfly platform registration done, then film Video 1 (draft due ~Apr 25)",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Kenny replied to Ian Saunders (Popfly) confirming filming timeline. 3-video series plan: Video 1 draft ~Apr 25 (filming early week of Apr 21), Video 2 draft ~Apr 28 (after Steinhafels visit in Downers Grove, IL on Apr 24), Video 3 filming May 13-14 (Kenny's dad has pacemaker follow-up May 11, parents fly home May 12 — contract allows until end of May). Ian asked Kenny to register/apply on Popfly's campaign platform so drafts can be uploaded there for review — Kenny said 'I hadn't tried that yet, but will get that set up later today.' Confirm that was completed.",
+      "activity_note": "Apr 17: Active thread with Ian Saunders (Popfly agency) — filming timeline confirmed across all 3 videos. Popfly platform registration outstanding as of Apr 17."
+    }
+  ],
+  "activities": []
+}]
