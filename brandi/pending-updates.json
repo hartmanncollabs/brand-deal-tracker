@@ -1,104 +1,24 @@
 [{
   "run_summary": {
-    "summary": "Big week on the pipeline! SOJOS contract is signed and Liz is starting content next week — Draft 1 due 4/23. Aqara reel is live, invoice needs to go out NOW. Ollie's Group 2 has a hard draft deadline of 4/29 (11 days — don't sleep on it!). Flexsteel's 3rd video pushed to May 13-14 due to family medical scheduling — Ian at Popfly is totally fine with it. Kenny still needs to hit 'apply' on the Popfly campaign link. New inbound from a broker: Goldfish Swim School paid partnership opportunity with a 3-5 day response window. BHG x Walmart products arrived this weekend — filming can kick off Monday.",
-    "emails_scanned": 10,
-    "deals_created": 1,
-    "deals_updated": 6,
+    "summary": "Quiet morning on the brand deal front — 8 emails in, mostly personal (Amazon delivery, Venmo, Fast-Growing-Trees newsletter). One item worth flagging before filming starts: Walmart Creator notified Liz that the WalmartCreator.com platform contract terms have been updated. Smart to do a quick review before posting the BHG x Walmart Spring Social content so nothing surprises you on compliance or payment terms.",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
-        "type": "invoice",
-        "brand": "Aqara",
-        "message": "Reel is confirmed live as of Apr 16 (https://www.instagram.com/reel/DXDLWFnjWeI/) — if the invoice hasn't gone out yet, it should go today!"
-      },
-      {
-        "type": "deadline",
-        "brand": "Ollie's Bargain Outlet",
-        "message": "Group 2 content draft must be submitted for review by April 29 — that's 11 days. Don't forget to bring the Permission to Film Slip to the store."
-      },
-      {
         "type": "action",
-        "brand": "Flexsteel",
-        "message": "Kenny said he'd apply to the Popfly campaign platform 'later today' (Apr 17) — just making sure that got done before the weekend!"
-      },
-      {
-        "type": "follow-up",
-        "brand": "JLab",
-        "message": "Liz mentioned on Apr 13 that JLab payment hadn't arrived yet. Worth checking if it came through this week."
+        "brand": "BHG x Walmart",
+        "message": "Walmart Creator updated their platform contract terms today (Apr 18). Worth a quick read before filming and posting the Spring Social content — could touch exclusivity, usage rights, or payment terms."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "SOJOS Sunglasses",
-      "stage": "content",
-      "waiting_on": "us",
-      "next_action": "Film and submit draft for first SOJOS Sunglasses video (due 4/23)",
-      "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Contract signed and returned by Liz. Kenny negotiated removal of 1-week draft clause — Ruby updated the agreement and confirmed. Draft #1 due 4/23, Draft #2 later in May. Sunglasses already received.",
-      "activity_note": "Apr 17: Liz signed and returned contract to Ruby at SOJOS — moving to Content. Draft #1 due 4/23, Draft #2 in May."
-    },
-    {
-      "action": "create",
-      "brand": "Goldfish Swim School",
-      "stage": "negotiation",
-      "deal_type": "posted",
-      "contact_name": "Cassie",
-      "contact_email": "cassie@creatoropportunity.com",
-      "waiting_on": "us",
-      "next_action": "Submit interest via Goldfish Swim School campaign form (link in email from Cassie)",
-      "next_action_date": "2026-04-21",
-      "last_contact": "2026-04-17",
-      "notes": "[Apr 17]: Paid opportunity via creatoropportunity.com broker (Cassie). Campaign: 'Let's Talk Parenting, Safety & Swim' with Goldfish Swim School national franchise. Deliverables: 1 IG Reel/Post OR 1 TikTok OR 1 YouTube + 1-year content licensing. Terms are negotiable — can propose own deliverables. 3-5 day review window. Do NOT reply to email — must submit interest through campaign form link in email. No rate listed upfront.",
-      "activity_note": "Apr 17: New inbound — Goldfish Swim School paid partnership via creatoropportunity.com broker. Family/parenting/swim safety angle. Apply through campaign form by ~Apr 21."
-    },
-    {
-      "action": "update",
-      "brand": "Aqara",
-      "stage": "delivered",
-      "waiting_on": "us",
-      "next_action": "Send invoice to Aqara",
-      "next_action_date": "2026-04-18",
-      "last_contact": "2026-04-16",
-      "notes": "[Apr 16]: Reel confirmed live — https://www.instagram.com/reel/DXDLWFnjWeI/ — agency (socialmediacollabs.com) confirmed receipt.",
-      "activity_note": "Apr 16: Reel confirmed posted by Liz — moving to Delivered. Invoice needs to go out."
-    },
-    {
-      "action": "update",
       "brand": "BHG x Walmart",
-      "last_contact": "2026-04-16",
-      "next_action": "Products received — film BHG x Walmart Spring Social content",
-      "next_action_date": "2026-04-21",
-      "notes": "[Apr 16]: Products shipping from Gretta Hegland (people.inc) — most arriving Apr 17, 3 more + table arriving Apr 18. Table delivery requires someone home. Gretta sharing tracking Apr 17 morning.",
-      "activity_note": "Apr 16: Products shipping — most arrived Apr 17, remainder Apr 18. Table needs someone home. Ready to film after receipt."
-    },
-    {
-      "action": "update",
-      "brand": "Flexsteel",
-      "last_contact": "2026-04-17",
-      "next_action": "Apply to Popfly campaign platform (Ian's link), then film 3rd video May 13-14 at Steinhafels (Downers Grove, IL)",
-      "next_action_date": "2026-05-13",
-      "notes": "[Apr 17]: 3rd video filming pushed to May 13-14 due to dad's pacemaker replacement + follow-up appointment in Naples, FL. Filming at Steinhafels, Downers Grove IL. Contract allows posting through end of May. Ian at Popfly confirmed no problem. Kenny needs to hit 'apply' on Popfly campaign link to get into the upload platform.",
-      "activity_note": "Apr 17: 3rd video delay to May 13-14 — dad's pacemaker. Ian (Popfly) confirmed OK. Post deadline end of May. Kenny to apply to Popfly platform."
-    },
-    {
-      "action": "update",
-      "brand": "Ollie's Bargain Outlet",
-      "last_contact": "2026-04-14",
-      "next_action": "Submit Ollie's Group 2 content draft for review (hard deadline 4/29)",
-      "next_action_date": "2026-04-29",
-      "notes": "[Apr 14]: Draft Submission brief received for Group 2 campaign (Ollie's Frugal Finds: 6 Month Program). Content MUST be submitted for approval before posting, deadline 2026-04-29. Must bring Permission to Film Slip to store. E-gift card en route. Do NOT make it sound like a sale — Ollie's prices are low every day. Do not film at excluded store locations (see email link). Contact: Aviva on behalf of Ollie's Bargain Outlet.",
-      "activity_note": "Apr 14: Group 2 draft brief received from Aviva at Ollie's. Hard deadline 4/29. Permission to Film Slip required. Review excluded store list before filming."
-    },
-    {
-      "action": "update",
-      "brand": "Aleve",
-      "last_contact": "2026-04-13",
-      "next_action": "Submit Aleve video drafts (2 videos targeted this week, 3rd to follow — brand confirmed flexible)",
-      "next_action_date": "2026-04-18",
-      "notes": "[Apr 13]: Concept approved and uploaded. Liz working on 2 videos by end of week of Apr 18. 3rd video may need more time — brand confirmed they can be flexible on timing.",
-      "activity_note": "Apr 13: Concept approved. Liz targeting 2 videos by Apr 18, 3rd to follow (brand is flexible)."
+      "last_contact": "2026-04-18",
+      "notes": "[Apr 18]: Walmart Creator platform updated WalmartCreator.com contract terms — review new terms before filming/posting Spring Social content (link in email from notifications@app.impact.com).",
+      "activity_note": "Apr 18: Walmart Creator platform contract terms changed — review before posting BHG x Walmart Spring Social content."
     }
   ],
   "activities": []
