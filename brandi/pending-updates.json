@@ -1,1 +1,113 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Big week of movement! 🤝 SOJOS signed and sealed — Liz returned the contract Apr 17 and is filming early next week. Aqara reel went live (confirmed Apr 16), ready to invoice. BHG x Walmart is officially in Content mode — contract signed Apr 13 (net-45, no amplification) and products started arriving today. Flexsteel got their campaign portal link and filming is targeted for week of Apr 28. Ollie's has a hard content deadline of April 29 — that's 10 days away! Also a new paid opportunity came in from Goldfish Swim School via Creator Opportunity platform — they need a response within 3-5 days (sent Apr 17).",
+    "emails_scanned": 26,
+    "deals_created": 1,
+    "deals_updated": 7,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Goldfish Swim School",
+        "message": "New paid campaign opportunity via Creator Opportunity platform — they're reviewing in 3-5 days (sent Apr 17), so the window may close by Apr 21-22. Worth a quick look to decide if Liz wants to apply."
+      },
+      {
+        "type": "invoice",
+        "brand": "Aqara Cameras",
+        "message": "Aqara reel is live! Time to send that $1,500 invoice if you haven't already."
+      },
+      {
+        "type": "deadline",
+        "brand": "Ollie's Bargain Outlet",
+        "message": "Content deadline is April 29 — 10 days out. Don't forget the Permission to Film Slip for the store visit, and drafts must be submitted via campaign manager before posting."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film content for SOJOS Sunglasses collab",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Contract signed and returned to Ruby. Liz said she'll start filming early next week. Sunglasses already received. Timeline flexible per Ruby (within 1 week of receiving frames). Ruby had updated contract language around the draft due date after Kenny flagged the ambiguity.",
+      "activity_note": "Apr 17: Liz signed and returned contract — moved from Contract to Content. Filming starts week of Apr 21."
+    },
+    {
+      "action": "update",
+      "brand": "Aqara",
+      "stage": "delivered",
+      "waiting_on": "us",
+      "next_action": "Send invoice for Aqara Cameras reel ($1,500)",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-16",
+      "value": 1500,
+      "notes": "[Apr 16]: Reel confirmed live on Instagram — https://www.instagram.com/reel/DXDLWFnjWeI/ — Manager (Mariah) checked in Apr 16, Liz confirmed it went live. Ready to invoice.",
+      "activity_note": "Apr 16: Reel confirmed live — moved to Delivered. Invoice for $1,500 is next step."
+    },
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Film BHG x Walmart outdoor dining content once all products arrive",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Products arriving today and Saturday — Southlake 7-Piece Outdoor Dining Set, Black & White Market Umbrella, BHG Carmen Urn Planters (table needs someone home to receive). Contract signed Apr 13 — net-45 payment terms, no amplification/NIL rights. Content concept: backyard Mahjong girls' night with outdoor dining setup. Contacts: Gretta Hegland (gretta.hegland@people.inc) + Eileen Mchugh (emchugh@people.inc) at People Inc.",
+      "activity_note": "Apr 13: Contract signed (net-45, no amplification) — moved from Contract to Content. Products ordered and arriving Apr 17–19."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply to campaign upload portal, then film first Flexsteel/Steinhafels video",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-17",
+      "notes": "[Apr 17]: Kenny applying to campaign upload portal (Ian sent link Apr 16). Filming planned week of Apr 28 — Liz home that weekend. Store visit at Steinhafels in Downers Grove, IL. Note: father-in-law's pacemaker procedure end of April + parents fly home May 12 may affect timing for the Steinhafels in-store video. Ian said no problem shifting timeline. W-9 submitted Apr 13. Rate: $2,500/post.",
+      "activity_note": "Apr 16–17: Campaign upload link received from Ian. Kenny applying to portal today. Filming week of Apr 28."
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's Bargain Outlet",
+      "waiting_on": "us",
+      "next_action": "Film and submit Ollie's content draft for review",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: HARD DEADLINE — content must be submitted via campaign manager by April 29, 2026. e-Gift card sent for this round (Group 2 — 6 Month Program). Permission to Film Slip required for in-store filming (bring to Ollie's location). Reminder from Ollie's: do NOT make it sound like a sale — 'Ollie's doesn't have sales, our prices are low every day.' All content must be submitted for approval before posting.",
+      "activity_note": "Apr 15: Ollie's sent next steps email — content deadline April 29. Permission to Film Slip required."
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Submit all 3 Aleve video drafts for review",
+      "next_action_date": "2026-04-20",
+      "last_contact": "2026-04-13",
+      "notes": "[Apr 13]: Working on 3 videos — 2 planned by end of week of Apr 14, 3rd by 'next week latest' (Apr 20 week). Manager confirmed approved concept uploaded to content drive.",
+      "activity_note": "Apr 13: Liz confirmed working on 3 Aleve videos, targeting completion by Apr 20."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-13",
+      "notes": "[Apr 13]: Manager checking if JLab payment arrived (as of Apr 10, payment expected 'in a few weeks'). Still pending as of Apr 13.",
+      "activity_note": "Apr 13: Payment still outstanding per manager check-in."
+    },
+    {
+      "action": "create",
+      "brand": "Goldfish Swim School",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Review Goldfish Swim School campaign and apply through Creator Opportunity platform if interested",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-17",
+      "value": null,
+      "contact_name": "Cassie / Lilly",
+      "contact_email": "lilly@creatoropportunity.com",
+      "notes": "[Apr 17]: Inbound via Creator Opportunity platform (cassie@creatoropportunity.com). Paid campaign — 'Let's Talk Parenting, Safety & Swim.' National swim school franchise. Deliverables (negotiable): 1 IG Post/Reel OR 1 TikTok OR 1 YouTube + 1-year content licensing. Timeline flexible. Must apply through platform link (do not reply to email). Decision window: 3-5 days from Apr 17 (closing ~Apr 21-22). No rate specified — negotiate after applying.",
+      "activity_note": "Apr 17: New inbound paid campaign opportunity via Creator Opportunity platform. Family/parenting angle — good fit for Liz's audience."
+    }
+  ],
+  "activities": []
+}]
