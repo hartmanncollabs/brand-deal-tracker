@@ -1,1 +1,47 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Scanned 5 emails from the last 24 hours. Two actionable items: (1) A new Bedsure collab opportunity via MakeWonder MCN — Liz quoted $4,500 on Apr 13 and followed up today with no response yet. Created the card so it doesn't fall off the radar. (2) The Flexsteel campaign thread is active — Liz confirmed the Popfly application today. Key production detail that needs to be on the board: 3rd video filming is locked for May 13–14 due to Kenny's dad's pacemaker follow-up on May 11, and Ian agreed that's fine. The agreement deadline is end of May for the 3rd post. If the Flexsteel Phase 3 child card is in Content, set next_action_date to May 13.",
+    "emails_scanned": 5,
+    "deals_created": 1,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "Bedsure",
+        "message": "Liz sent her rates to Iris (MakeWonder MCN) on Apr 13 and followed up again today. If Iris doesn't reply by Apr 23, it may be worth one more nudge or moving on. The $4,500 bundle quote is on the table."
+      },
+      {
+        "type": "deadline",
+        "brand": "Flexsteel",
+        "message": "The Flexsteel Phase 3 child card (if it exists) should have next_action_date set to May 13 — that's the filming day. Ian has accepted this timeline and the agreement deadline is end of May for the 3rd post. Don't let that slip!"
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Bedsure",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Iris if no reply by Apr 23",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-20",
+      "value": 4500,
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 20]: Liz followed up to confirm Iris received rate quote — still no response since Apr 13.\n[Apr 13]: Liz quoted $4,500 bundle (1 IG Reel + 14-day link in bio + paid usage rights). Liz's itemized rates: $2,500/Reel + $1,000/30-day paid usage. Bundle offer includes link in bio.\n[Initial outreach]: Iris from MakeWonder MCN offered a paid collab + free Bedsure sheet set.",
+      "activity_note": "Apr 20: New deal created — Bedsure collab via MakeWonder MCN. Liz quoted $4,500 on Apr 13, followed up today with no brand response yet."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "brand",
+      "next_action": "Confirm Popfly enrollment with Ian; film 3rd video May 13-14",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20]: Liz confirmed Popfly application submitted. Also applying to Hydroflask campaign on Popfly marketplace.\n[Apr 17–20 thread]: 3rd video filming locked for May 13–14 (Kenny's dad has pacemaker follow-up May 11 in Naples). Ian acknowledged and accepted the timeline. Location: Steinhafels in Downers Grove, IL. Agreement deadline = end of May for 3rd video post.",
+      "activity_note": "Apr 20: Popfly platform application confirmed. 3rd video filming set for May 13-14; Ian accepted the timeline. End-of-May deadline for 3rd post per the agreement."
+    }
+  ],
+  "activities": []
+}]
