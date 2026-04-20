@@ -133,6 +133,22 @@ When a brand or agency reaches out to Liz with a collaboration opportunity (not 
 - When brand replies → ball is in our court → `waiting_on: "us"`
 - Always reference thread context when setting dates — don't use defaults if the thread specifies a timeline
 - If unsure about timing, be conservative (shorter follow-up windows)
+- **NEVER move a card backward in the pipeline** (e.g., from invoiced → content, from paid → negotiation). If you see activity that seems to contradict a card's current stage, add a note — do NOT move it backward. Only move cards FORWARD.
+
+### Parent vs Child Card Rules (Multi-Phase Deals)
+
+**This is critical.** Multi-phase deals have a parent card and child cards. They serve different purposes:
+
+- **Parent card** = the overall campaign/collaboration. Tracks campaign-wide tasks: signing up for the campaign, overall negotiations, contract scope, relationship status.
+- **Child cards** (Phase 1, Phase 2, etc.) = individual deliverable phases. Each child tracks its own content creation → approval → posting → invoicing → payment cycle independently.
+
+**Rules for Brandi:**
+1. **Campaign-wide updates go on the PARENT card only** — things like: signing up for a platform, campaign enrollment, overall contract discussions, relationship-level follow-ups. NEVER apply campaign-wide tasks to child cards.
+2. **Deliverable-specific updates go on the CHILD card** — things like: specific content due dates, individual phase approvals, per-phase invoicing, per-phase payment.
+3. **NEVER update child card next_action/next_action_date with campaign-wide tasks** — if the email is about signing up for a campaign or a general campaign update, that goes on the parent. Child cards have their own content timelines.
+4. **NEVER move child cards based on campaign-wide activity** — a child card in "invoiced" should not be moved to "content" because a new campaign phase started. Each child progresses through the pipeline independently.
+5. **When matching emails to cards:** If the email is about the overall brand relationship or campaign scope → update the parent. If the email is about a specific deliverable, phase, or content piece → update the matching child card.
+6. **If unsure whether something is campaign-wide or phase-specific → default to updating the parent card only.** It's safer to put info on the parent than to accidentally overwrite a child card's progress.
 
 ### Last Contact
 - Update `last_contact` to the date of the most recent email in the thread (YYYY-MM-DD format)
