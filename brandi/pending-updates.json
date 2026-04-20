@@ -1,7 +1,7 @@
 [{
   "run_summary": {
-    "summary": "Catch-up run covering Apr 18–20 — previous Brandi sessions ran on a detached git HEAD and never reached main or the database. Two new deals: Linkind ($2K IG Reel, concept pending approval) and Bedsure ($4.5K quote, waiting on brand). Key updates: SOJOS Reel 1 draft is due TOMORROW (Apr 23) — Ruby confirmed and resent final requirements today. Flexsteel Popfly enrollment confirmed Apr 20 + Phase 3 filming locked for May 13–14. Ollie's Group 2 hard deadline Apr 29. Aleve videos were targeting this week (may be overdue). BHG x Walmart Walmart Creator contract terms updated Apr 18.",
-    "emails_scanned": 10,
+    "summary": "Catch-up run covering Apr 18–20 — previous Brandi sessions ran on a detached git HEAD and never reached main or the database. Two new deals: Linkind ($2K IG Reel, concept back-and-forth continuing) and Bedsure ($4.5K quote, still no response from Iris). Key urgents: SOJOS Reel 1 draft due Apr 23 (tomorrow). Flexsteel/Popfly hit a snag Apr 20 evening — campaign application requires full IG business manager access and Kenny pushed back; Ian hasn't responded yet. Ollie's Group 2 hard deadline Apr 29. FYI: xTool (Makeblock) reached out Apr 14–20 about an in-kind collab for a $10K CO2 laser — Liz declined Apr 20 (no cash budget, prioritizing paid deals only). No card created.",
+    "emails_scanned": 12,
     "deals_created": 2,
     "deals_updated": 6,
     "suggestions": [
@@ -9,6 +9,11 @@
         "type": "urgent",
         "brand": "SOJOS Vision",
         "message": "Reel 1 draft is due TOMORROW (Apr 23) to Ruby at marketing202@sojosvision.com! Final requirements per Ruby's Apr 20 email: video ≥10 sec (updated from earlier ≥15 sec brief), close-ups of sunglasses ≥ half the video, outdoor/car background, tag @sojosvision, hashtags #sojos and #amazonsunglasses, include MISSLIZSOJOS (10% off) in caption. Ruby approves within 24 hours of receiving draft."
+      },
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Popfly campaign application is BLOCKED — platform requires full 'managerial access' to Liz's Instagram business account (via FB Business Manager) to apply. Kenny pushed back Apr 20 at 6:09pm, asking Ian if they can narrow the permission scope or use whitelisting instead. Ian hasn't responded yet. Needs to be resolved before the application can be completed. Ian also asked what time they plan to head to Steinhafels (store needs advance notice) — no answer yet."
       },
       {
         "type": "deadline",
@@ -54,7 +59,7 @@
       "last_contact": "2026-04-20",
       "value": 2000,
       "contact_email": "misslizdidit@socialmediacollabs.com",
-      "notes": "[Apr 20 PM]: Brand requested time breakdown for concept — Liz replied with detailed plan: Top 3 Tips theme, Linkind as #1 tip, lights featured 50%+ of video (assembly, app screen recordings, day/night footage, key features). Awaiting final concept approval.\n[Apr 20 AM]: Liz followed up asking if concept was approved; said ready to film today.\n[Apr 14]: Platform requested detailed concept by following morning. Liz pushed back — requirements too detailed for $2K, product not received, out of town Apr 17–20.\n[Apr 6]: Contract revisions — Liz asked to extend posting deadline (was Apr 15) and cap revisions at 2 max. Platform said 'no problem' but no written confirmation of new deadline.\n[Apr 1]: Contract sent for review.\n[Mar 31]: Deal agreed via socialmediacollabs.com — $2,000 for 1x 60–90 sec dedicated IG Reel reviewing Linkind SP6 Smart Solar Pathway Lights.",
+      "notes": "[Apr 20 PM]: Brand requested time breakdown for concept — Liz replied with detailed plan: Top 3 Tips theme, Linkind as #1 tip, lights featured 50%+ of video (assembly, app screen recordings, day/night footage, key features). Liz confirmed she can't provide exact timing without shooting but guarantees lights will be main focus. Awaiting final concept approval.\n[Apr 20 AM]: Liz followed up asking if concept was approved; said ready to film today.\n[Apr 14]: Platform requested detailed concept by following morning. Liz pushed back — requirements too detailed for $2K, product not received, out of town Apr 17–20.\n[Apr 6]: Contract revisions — Liz asked to extend posting deadline (was Apr 15) and cap revisions at 2 max. Platform said 'no problem' but no written confirmation of new deadline.\n[Apr 1]: Contract sent for review.\n[Mar 31]: Deal agreed via socialmediacollabs.com — $2,000 for 1x 60–90 sec dedicated IG Reel reviewing Linkind SP6 Smart Solar Pathway Lights.",
       "activity_note": "Apr 20: New deal — $2,000 Linkind IG Reel via socialmediacollabs.com. Agreed Mar 31, contract revised Apr 6. Concept approval pending; original Apr 15 deadline passed with no confirmed extension."
     },
     {
@@ -76,11 +81,11 @@
       "action": "update",
       "brand": "Flexsteel",
       "waiting_on": "brand",
-      "next_action": "Film Phase 3 video at Steinhafels in Downers Grove, IL — May 13–14; post by end of May per agreement",
-      "next_action_date": "2026-05-13",
+      "next_action": "Resolve Popfly IG business manager access issue with Ian — Kenny pushed back on full managerial access requirement (Apr 20 PM); also confirm Steinhafels store visit time when Ian asks",
+      "next_action_date": "2026-04-21",
       "last_contact": "2026-04-20",
-      "notes": "[Apr 20]: Popfly application submitted — welcome email received. Also applying to HydroFlask campaign on Popfly marketplace.\n[Apr 17–20 thread]: Phase 3 filming locked for May 13–14 — Kenny's dad has pacemaker follow-up May 11 in Naples; filming with him after he returns May 12. Ian Saunders at Popfly (ian@popfly.com) accepted the timeline. Location: Steinhafels, Downers Grove IL. Agreement deadline: end of May for post.",
-      "activity_note": "Apr 20: Popfly enrollment confirmed (welcome email received). Phase 3 filming locked May 13–14; Ian accepted. End-of-May post deadline per agreement."
+      "notes": "[Apr 20 PM]: Popfly campaign application hit a snag — platform requires 'full managerial access' to Liz's Instagram business account (via FB Business Manager) to apply. Kenny emailed Ian pushing back: scope too broad, concerned about accidental algo changes, willing to provide insights/whitelisting but not full managerial rights. Waiting for Ian's response. Ian also asked what time they plan to visit Steinhafels (no answer yet — store needs advance notice).\n[Apr 20 AM]: Signed up for Popfly — welcome email received. Also planning to apply to HydroFlask campaign on marketplace.\n[Apr 17–20 thread]: Phase 3 filming locked for May 13–14 — Kenny's dad has pacemaker follow-up May 11 in Naples; filming with him after he returns May 12. Ian Saunders at Popfly (ian@popfly.com) accepted the timeline. Location: Steinhafels, Downers Grove IL. Agreement deadline: end of May for post.",
+      "activity_note": "Apr 20 PM: Popfly application blocked — platform requires full IG business manager access. Kenny pushed back, waiting for Ian's response on narrowing permission scope."
     },
     {
       "action": "update",
