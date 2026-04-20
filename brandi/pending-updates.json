@@ -1,1 +1,114 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Catch-up run covering Apr 18–20 — previous Brandi sessions ran on a detached git HEAD and never reached main or the database. Two new deals: Linkind ($2K IG Reel, concept pending approval) and Bedsure ($4.5K quote, waiting on brand). Key updates: SOJOS Reel 1 draft is due TOMORROW (Apr 23) — Ruby confirmed and resent final requirements today. Flexsteel Popfly enrollment confirmed Apr 20 + Phase 3 filming locked for May 13–14. Ollie's Group 2 hard deadline Apr 29. Aleve videos were targeting this week (may be overdue). BHG x Walmart Walmart Creator contract terms updated Apr 18.",
+    "emails_scanned": 10,
+    "deals_created": 2,
+    "deals_updated": 6,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "SOJOS Vision",
+        "message": "Reel 1 draft is due TOMORROW (Apr 23) to Ruby at marketing202@sojosvision.com! Final requirements per Ruby's Apr 20 email: video ≥10 sec (updated from earlier ≥15 sec brief), close-ups of sunglasses ≥ half the video, outdoor/car background, tag @sojosvision, hashtags #sojos and #amazonsunglasses, include MISSLIZSOJOS (10% off) in caption. Ruby approves within 24 hours of receiving draft."
+      },
+      {
+        "type": "deadline",
+        "brand": "Ollie's Bargain Outlet",
+        "message": "Group 2 content hard deadline is April 29 — 9 days from today. Bring Permission to Film Slip to the store. Draft must be submitted via campaign manager before posting. Don't make it sound like a sale."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Linkind",
+        "message": "Liz sent a detailed concept breakdown Apr 20 (Top 3 Tips theme, Linkind as #1, lights 50%+ screen time). Waiting on brand's final concept approval. Original Apr 15 deadline passed with no confirmed extension in writing — if no response by Apr 22, follow up."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Bedsure",
+        "message": "Liz sent $4,500 bundle quote to Iris (MakeWonder MCN) Apr 13, followed up Apr 20 — still no response. If Iris doesn't reply by Apr 23, worth one more nudge or moving on."
+      },
+      {
+        "type": "warning",
+        "brand": "Brandi",
+        "message": "FYI — previous Brandi runs from Apr 18–20 were committed to a detached git HEAD instead of main. 29 commits are orphaned and never reached origin/main or Supabase. To review: run 'git log --oneline b52c6bf --not main' from the repo. Notable orphaned code changes: 'Label last contact date and add next action date to deal cards', 'Always log activity when Brandi changes deal fields', 'Enforce forward-only stage moves in sync route'. Kenny may want to cherry-pick those into main."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS Vision",
+      "waiting_on": "us",
+      "next_action": "Film Reel 1 and submit draft to Ruby for approval (due Apr 23)",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20]: Ruby confirmed signed contract received + resent final Reel 1 requirements: video ≥10 sec (updated from ≥15 sec in earlier brief), close-up shots of sunglasses ≥ half video, outdoor/car background, tag @sojosvision, hashtags #sojos and #amazonsunglasses, MISSLIZSOJOS 10% off code in caption. Submit draft to Ruby before posting — 24hr approval turnaround.",
+      "activity_note": "Apr 20: Ruby confirmed contract received + resent final Reel 1 requirements. Draft due Apr 23 — filming ASAP."
+    },
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "deal_type": "posted",
+      "waiting_on": "brand",
+      "next_action": "Follow up on concept approval if no response by Apr 22 — ready to film once approved",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-20",
+      "value": 2000,
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "notes": "[Apr 20 PM]: Brand requested time breakdown for concept — Liz replied with detailed plan: Top 3 Tips theme, Linkind as #1 tip, lights featured 50%+ of video (assembly, app screen recordings, day/night footage, key features). Awaiting final concept approval.\n[Apr 20 AM]: Liz followed up asking if concept was approved; said ready to film today.\n[Apr 14]: Platform requested detailed concept by following morning. Liz pushed back — requirements too detailed for $2K, product not received, out of town Apr 17–20.\n[Apr 6]: Contract revisions — Liz asked to extend posting deadline (was Apr 15) and cap revisions at 2 max. Platform said 'no problem' but no written confirmation of new deadline.\n[Apr 1]: Contract sent for review.\n[Mar 31]: Deal agreed via socialmediacollabs.com — $2,000 for 1x 60–90 sec dedicated IG Reel reviewing Linkind SP6 Smart Solar Pathway Lights.",
+      "activity_note": "Apr 20: New deal — $2,000 Linkind IG Reel via socialmediacollabs.com. Agreed Mar 31, contract revised Apr 6. Concept approval pending; original Apr 15 deadline passed with no confirmed extension."
+    },
+    {
+      "action": "create",
+      "brand": "Bedsure",
+      "stage": "negotiation",
+      "deal_type": "posted",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Iris if no reply by Apr 23",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-20",
+      "value": 4500,
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 20]: Liz followed up to confirm Iris received rate quote — still no response since Apr 13.\n[Apr 13]: Liz quoted $4,500 bundle (1 IG Reel + 14-day link in bio + 90-day paid usage rights). Itemized: $2,500/Reel + $1,000/30-day paid usage. CC'd Kenny.\n[Apr 10–13]: Iris from MakeWonder MCN (official Bedsure partner agency) reached out about paid collab + free Bedsure sheet set. Deliverables: 1 IG Reel, 90-day paid ads usage, brand tag + hashtag, 2-week link in bio.",
+      "activity_note": "Apr 20: New deal — Bedsure collab via MakeWonder MCN (Iris). Liz quoted $4,500 on Apr 13, followed up Apr 20 — no response yet."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "brand",
+      "next_action": "Film Phase 3 video at Steinhafels in Downers Grove, IL — May 13–14; post by end of May per agreement",
+      "next_action_date": "2026-05-13",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20]: Popfly application submitted — welcome email received. Also applying to HydroFlask campaign on Popfly marketplace.\n[Apr 17–20 thread]: Phase 3 filming locked for May 13–14 — Kenny's dad has pacemaker follow-up May 11 in Naples; filming with him after he returns May 12. Ian Saunders at Popfly (ian@popfly.com) accepted the timeline. Location: Steinhafels, Downers Grove IL. Agreement deadline: end of May for post.",
+      "activity_note": "Apr 20: Popfly enrollment confirmed (welcome email received). Phase 3 filming locked May 13–14; Ian accepted. End-of-May post deadline per agreement."
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's Bargain Outlet",
+      "waiting_on": "us",
+      "next_action": "Submit Group 2 content draft for review (hard deadline Apr 29)",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-15",
+      "notes": "[Apr 15]: Group 2 hard deadline — content must be submitted via campaign manager by April 29. E-gift card en route. Bring Permission to Film Slip to store for in-store filming. Do NOT make it sound like a sale — 'Ollie's doesn't have sales, our prices are low every day.' Contact: Aviva.",
+      "activity_note": "Apr 15: Ollie's Group 2 brief received — hard content deadline April 29. Permission to Film Slip required."
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Submit remaining Aleve video drafts (3 total — brand confirmed flexible on timing)",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-13",
+      "notes": "[Apr 13]: Concept approved and uploaded to content drive. Liz targeting 2 videos by end of week of Apr 14–18, 3rd by Apr 20. Brand confirmed flexible on timing for 3rd video.",
+      "activity_note": "Apr 13: Aleve concept approved — 3 videos in progress. 2 targeting Apr 18, 3rd flexible per brand."
+    },
+    {
+      "action": "update",
+      "brand": "BHG x Walmart",
+      "last_contact": "2026-04-18",
+      "notes": "[Apr 18]: Walmart Creator updated platform contract terms at WalmartCreator.com — worth a quick review before filming and posting Spring Social content.",
+      "activity_note": "Apr 18: Walmart Creator platform contract terms updated — review before posting BHG x Walmart Spring Social content."
+    }
+  ],
+  "activities": []
+}]
