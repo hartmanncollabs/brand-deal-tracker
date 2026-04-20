@@ -1,10 +1,15 @@
 [{
   "run_summary": {
-    "summary": "Scanned 5 emails from the last 24 hours. Two actionable items: (1) A new Bedsure collab opportunity via MakeWonder MCN — Liz quoted $4,500 on Apr 13 and followed up today with no response yet. Created the card so it doesn't fall off the radar. (2) The Flexsteel campaign thread is active — Liz confirmed the Popfly application today. Key production detail that needs to be on the board: 3rd video filming is locked for May 13–14 due to Kenny's dad's pacemaker follow-up on May 11, and Ian agreed that's fine. The agreement deadline is end of May for the 3rd post. If the Flexsteel Phase 3 child card is in Content, set next_action_date to May 13.",
+    "summary": "Scanned 5 emails today. One new actionable deal found: Linkind SP6 Smart Solar Pathway Lights — a $2,000 IG Reel deal via socialmediacollabs.com platform that was agreed on Mar 31 but wasn't on the board. Contract went through revisions in early April (Liz asked to extend the Apr 15 posting deadline and cap revisions at 2 rounds). Platform asked for a content concept on Apr 14; Liz pushed back on the detailed requirements. Today she followed up asking if the concept was approved and said she's ready to film — but the original deadline was Apr 15, which is already past. This needs attention ASAP. Also retaining prior pending items: Bedsure collab (Liz quoted $4,500 on Apr 13, followed up again today with no response from Iris) and Flexsteel update (Popfly enrollment confirmed today + Phase 3 filming locked for May 13–14). Popfly welcome email confirms Liz's enrollment. Picking Daisies Media email was their weekly agency newsletter — skipped.",
     "emails_scanned": 5,
-    "deals_created": 1,
+    "deals_created": 2,
     "deals_updated": 1,
     "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Linkind",
+        "message": "The original posting deadline in the Linkind contract was April 15 — it's already past. Liz asked to extend it on Apr 6 and the platform said 'no problem,' but there's no confirmation of the new deadline in the thread. Liz is ready to film today (Apr 20). Someone should confirm the extended deadline with the platform before she shoots."
+      },
       {
         "type": "follow-up",
         "brand": "Bedsure",
@@ -13,11 +18,24 @@
       {
         "type": "deadline",
         "brand": "Flexsteel",
-        "message": "The Flexsteel Phase 3 child card (if it exists) should have next_action_date set to May 13 — that's the filming day. Ian has accepted this timeline and the agreement deadline is end of May for the 3rd post. Don't let that slip!"
+        "message": "Flexsteel Phase 3 child card should have next_action_date set to May 13 — that's the filming day at Steinhafels in Downers Grove, IL. Ian accepted the timeline and the agreement deadline is end of May for the 3rd post."
       }
     ]
   },
   "deals": [
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "waiting_on": "brand",
+      "next_action": "Confirm extended posting deadline with platform, then film — URGENT (original deadline was Apr 15)",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-20",
+      "value": 2000,
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "notes": "[Apr 20]: Liz followed up asking if concept was approved — said she can film today.\n[Apr 14]: Platform requested detailed content concept by following morning (guidelines in Google Drive). Liz pushed back — requirements too detailed for $2,000 payment, product not yet received, out of town Apr 17–20. Asked platform to have brand email directly if needed.\n[Apr 6]: Contract revisions: Liz asked (1) extend posting deadline from Apr 15 and (2) cap revision rounds at 2 max (contract said minimum 2 rounds + reshoot). Platform responded 'no problem' but no written confirmation of new deadline.\n[Apr 1]: Contract sent for review by platform.\n[Mar 31]: Deal offered via socialmediacollabs.com — $2,000 for 1x 60–90 sec dedicated IG Reel reviewing Linkind SP6 Smart Solar Pathway Lights. Liz accepted same day.",
+      "activity_note": "Apr 20: Catch-up — $2,000 Linkind IG Reel deal agreed Mar 31 via socialmediacollabs.com but wasn't on the board. Contract revised Apr 6 (deadline extension + revision cap). Concept approval pending; original Apr 15 deadline already passed — urgent to confirm new deadline before filming."
+    },
     {
       "action": "create",
       "brand": "Bedsure",
@@ -29,7 +47,7 @@
       "value": 4500,
       "contact_name": "Iris",
       "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 20]: Liz followed up to confirm Iris received rate quote — still no response since Apr 13.\n[Apr 13]: Liz quoted $4,500 bundle (1 IG Reel + 14-day link in bio + paid usage rights). Liz's itemized rates: $2,500/Reel + $1,000/30-day paid usage. Bundle offer includes link in bio.\n[Initial outreach]: Iris from MakeWonder MCN offered a paid collab + free Bedsure sheet set.",
+      "notes": "[Apr 20]: Liz followed up to confirm Iris received rate quote — still no response since Apr 13.\n[Apr 13]: Liz quoted $4,500 bundle (1 IG Reel + 14-day link in bio + paid usage rights). Itemized rates: $2,500/Reel + $1,000/30-day paid usage.\n[Apr 10–13]: Iris from MakeWonder MCN followed up on paid collab + free Bedsure sheet set offer.",
       "activity_note": "Apr 20: New deal created — Bedsure collab via MakeWonder MCN. Liz quoted $4,500 on Apr 13, followed up today with no brand response yet."
     },
     {
@@ -39,8 +57,8 @@
       "next_action": "Confirm Popfly enrollment with Ian; film 3rd video May 13-14",
       "next_action_date": "2026-04-22",
       "last_contact": "2026-04-20",
-      "notes": "[Apr 20]: Liz confirmed Popfly application submitted. Also applying to Hydroflask campaign on Popfly marketplace.\n[Apr 17–20 thread]: 3rd video filming locked for May 13–14 (Kenny's dad has pacemaker follow-up May 11 in Naples). Ian acknowledged and accepted the timeline. Location: Steinhafels in Downers Grove, IL. Agreement deadline = end of May for 3rd video post.",
-      "activity_note": "Apr 20: Popfly platform application confirmed. 3rd video filming set for May 13-14; Ian accepted the timeline. End-of-May deadline for 3rd post per the agreement."
+      "notes": "[Apr 20]: Liz confirmed Popfly application submitted (welcome email received). Also applying to Hydroflask campaign on Popfly marketplace.\n[Apr 17–20 thread]: 3rd video filming locked for May 13–14 (Kenny's dad has pacemaker follow-up May 11 in Naples). Ian acknowledged and accepted the timeline. Location: Steinhafels in Downers Grove, IL. Agreement deadline = end of May for 3rd video post.",
+      "activity_note": "Apr 20: Popfly platform enrollment confirmed (welcome email received). 3rd video filming set for May 13-14; Ian accepted timeline. End-of-May deadline for 3rd post per agreement."
     }
   ],
   "activities": []
