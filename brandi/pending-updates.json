@@ -1,1 +1,25 @@
-[]
+[{
+  "run_summary": {
+    "summary": "One update today — SOJOS Vision. Ruby emailed this morning confirming she received Liz's signed contract and resent the final content requirements for Reel 1. Draft is due THIS Wednesday, April 23 — that's 3 days away. One small note: today's brief says video must be ≥10 seconds (the April 7 brief said ≥15 sec, so the requirement appears to have been loosened slightly). Everything else is the same: outdoor/car background, @sojosvision tag, #sojos + #amazonsunglasses hashtags, MISSLIZSOJOS code (10% off), and submit draft to Ruby for approval before posting (24hr turnaround). Updated last_contact to today.",
+    "emails_scanned": 4,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "deadline",
+        "brand": "SOJOS Vision",
+        "message": "Reel 1 draft is due to Ruby by Wednesday April 23 — that's 3 days from today. Ruby is ready and waiting! Final requirements: ≥10 sec video, close-ups of sunglasses ≥ half the video, outdoor/car background, tag @sojosvision, hashtags #sojos and #amazonsunglasses, caption must include MISSLIZSOJOS (10% off code). Send draft to marketing202@sojosvision.com — Ruby turns around approval within 24 hours."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS Vision",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20]: Ruby confirmed receipt of signed contract. Resent final content requirements for Reel 1 — video ≥10 seconds (updated from ≥15 sec in earlier brief), close-up shots ≥ half the video, outdoor/car background, tag @sojosvision, #sojos #amazonsunglasses, MISSLIZSOJOS 10% off code in caption. Must submit draft for Ruby's approval before posting (24hr turnaround). Draft due 4/23.",
+      "activity_note": "Apr 20: Ruby confirmed contract received and sent final Reel 1 content requirements. Draft due 4/23."
+    }
+  ],
+  "activities": []
+}]
