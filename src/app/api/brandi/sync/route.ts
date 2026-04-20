@@ -153,11 +153,18 @@ export async function GET() {
           if (deal.next_action && deal.next_action !== fullDeal?.next_action) { updates.next_action = deal.next_action; changes.push('next_action'); }
           if (deal.next_action_date && deal.next_action_date !== fullDeal?.next_action_date) { updates.next_action_date = deal.next_action_date; changes.push('next_action_date'); }
           if (deal.last_contact && deal.last_contact !== fullDeal?.last_contact) { updates.last_contact = deal.last_contact; changes.push('last_contact'); }
-          // Stage change — only if actually different
+          // Stage change — only FORWARD moves allowed (never backward)
           if (deal.stage && deal.stage !== fullDeal?.stage) {
-            updates.stage = deal.stage;
-            updates.stage_changed_at = new Date().toISOString();
-            changes.push(`stage → ${deal.stage}`);
+            const stageOrder = ['outreach', 'pitched', 'negotiation', 'agreed', 'contract', 'content', 'approval', 'scheduled', 'delivered', 'invoiced', 'paid', 'complete'];
+            const currentIdx = stageOrder.indexOf(fullDeal?.stage || '');
+            const newIdx = stageOrder.indexOf(deal.stage);
+            if (newIdx > currentIdx) {
+              updates.stage = deal.stage;
+              updates.stage_changed_at = new Date().toISOString();
+              changes.push(`stage → ${deal.stage}`);
+            } else {
+              results.details.push(`${deal.brand}: blocked backward move ${fullDeal?.stage} → ${deal.stage}`);
+            }
           }
           // Prepend new notes (always add context even if other fields unchanged)
           if (deal.notes) {
