@@ -190,6 +190,31 @@ export async function GET() {
             .update(updates)
             .eq('id', existing[0].id);
 
+          // Always log stage moves as their own activity entry
+          if (updates.stage) {
+            await supabaseAdmin.from('deal_activities').insert({
+              deal_id: existing[0].id,
+              date: new Date().toISOString().split('T')[0],
+              note: `Moved from ${fullDeal?.stage} → ${updates.stage}`,
+              actor: 'brandi',
+            });
+          }
+
+          // Log field changes (waiting_on, next_action, next_action_date) if no stage move
+          const fieldChanges: string[] = [];
+          if (updates.waiting_on) fieldChanges.push(`Waiting on → ${updates.waiting_on}`);
+          if (updates.next_action) fieldChanges.push(`Next action → ${updates.next_action}`);
+          if (updates.next_action_date) fieldChanges.push(`Next action date → ${updates.next_action_date}`);
+          if (!updates.stage && fieldChanges.length > 0) {
+            await supabaseAdmin.from('deal_activities').insert({
+              deal_id: existing[0].id,
+              date: new Date().toISOString().split('T')[0],
+              note: fieldChanges.join(' | '),
+              actor: 'brandi',
+            });
+          }
+
+          // Log Brandi's activity note (email context)
           if (deal.activity_note) {
             await supabaseAdmin.from('deal_activities').insert({
               deal_id: existing[0].id,
