@@ -1,32 +1,32 @@
 [{
   "run_summary": {
-    "summary": "One update: Flexsteel/Steinhafels thread advanced this afternoon. Ian (Popfly) asked Kenny to submit a support ticket for the business account access issue and confirm their store visit time. Kenny confirmed both — ticket being submitted today, arriving at Steinhafels Downers Grove 11:30-12pm Thursday (Apr 23). Everything else (Linkind concept approval, other brands) quiet since last run.",
-    "emails_scanned": 5,
+    "summary": "One update: Liz followed up with the Linkind agency today asking for concept approval status. She mentioned the lights arrived yesterday and she's ready to film — just waiting on their green light. The Flexsteel thread is unchanged since last run (store visit still Thu Apr 23, 11:30am–12pm at Steinhafels Downers Grove).",
+    "emails_scanned": 6,
     "deals_created": 0,
     "deals_updated": 1,
     "suggestions": [
       {
         "type": "reminder",
         "brand": "Flexsteel",
-        "message": "Store visit is Thursday (Apr 23) at 11:30am-12pm at the Steinhafels Downers Grove location. Also make sure the Popfly support ticket actually got submitted today — Kenny said he'd do it this afternoon."
+        "message": "Store visit is THIS Thursday (Apr 23) at 11:30am–12pm at Steinhafels Downers Grove. Worth confirming the Popfly support ticket was actually submitted Tuesday before you head over."
       },
       {
         "type": "follow-up",
         "brand": "Linkind",
-        "message": "Still waiting on concept approval (Liz responded Apr 20). If you haven't heard back by tomorrow (Apr 22), worth nudging the socialmediacollabs.com agency so Liz can get to filming."
+        "message": "Liz already nudged the agency today — lights are in hand and she's raring to go. If no concept approval comes back by Thursday (Apr 23), one more nudge is warranted. Any delay now is entirely on the brand side."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "Flexsteel",
+      "brand": "Linkind",
       "waiting_on": "brand",
-      "next_action": "Attend Steinhafels retail store visit (arrive 11:30-12pm) + check Popfly support ticket status",
+      "next_action": "Wait for concept approval from agency; follow up if no response by Apr 23",
       "next_action_date": "2026-04-23",
       "last_contact": "2026-04-21",
-      "notes": "[Apr 21 PM]: Ian (Popfly) asked Kenny to submit a support ticket for the business account access issue — click the green chat bubble in the platform. Kenny confirmed ticket being submitted today. Also confirmed store visit: arriving Steinhafels Downers Grove 11:30-12pm Thursday (Apr 23).",
-      "activity_note": "Apr 21: Kenny confirmed Popfly support ticket being submitted + Steinhafels store visit set for Thu Apr 23 at 11:30am-12pm"
+      "notes": "[Apr 21]: Liz followed up with agency asking for any update on concept approval — noted lights arrived Apr 20 and she's ready to film. [Apr 20]: Brand (relayed via agency) asked for time breakdown to confirm lights get majority screen time. Liz clarified her 'Top 3 Spring Porch Refresh Tips' concept: lights are Tip #1, plan includes assembling lights, app screen recordings, day & night shots, and key features walkthrough — lights featured 50%+ of video.",
+      "activity_note": "Apr 21: Liz followed up with agency — product arrived Apr 20, ready to film, awaiting concept approval"
     }
   ],
   "activities": []
