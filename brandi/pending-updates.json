@@ -1,1 +1,57 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Scanned 8 emails across 3 threads. Flexsteel campaign is moving via Popfly platform, but Kenny hit a wall — Popfly is requiring managerial access to Liz's Instagram business account before he can submit the campaign application. Kenny pushed back, sent screenshots to Ian (Popfly) today, and is waiting on their dev team to clarify or fix. Ian also still needs a confirmed time for the Steinhafels retail store visit. Timing note: the reveal shoot is targeting May 13/14 due to Kenny's dad's health situation; third video is due end of May per agreement. Separately, the Linkind SP6 Solar Pathway Lights deal is in content concept limbo — Liz submitted a 'Top 3 Tips' concept, brand asked for a screen time breakdown on Apr 20, and Liz responded the same day confirming lights will be the feature (50%+ screen time). Waiting on concept approval before she can film. Also: xTool reached out with a $10K in-kind laser machine offer — Liz politely declined in favor of paid collabs only.",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 2,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "Flexsteel",
+        "message": "Kenny is waiting on Ian (Popfly) to resolve the Instagram business account managerial access requirement. If you don't hear back by Wednesday, nudge Ian directly. Also — Ian still needs your planned time for the Steinhafels Downers Grove visit so the store can prepare."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Linkind",
+        "message": "You addressed the brand's screen time concern on Apr 20 — they should have everything they need to approve the concept. If no answer by Wed Apr 23, worth following up with the agency so you can get to filming."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "brand",
+      "next_action": "Wait for Ian (Popfly) to resolve Instagram business account access requirement",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Kenny sent screenshots to Ian Saunders at Popfly (ian@popfly.com) showing the Instagram business account managerial access prompt that's blocking campaign application. Ian checking with dev team. Note: Ian also needs confirmed retail store visit time — Steinhafels Downers Grove, IL. Reveal shoot targeting May 13/14 (Kenny's dad recovering from pacemaker replacement + follow-up in Naples FL). Third video due end of May per agreement.",
+      "activity_note": "Apr 21: Kenny sent Popfly access screenshots to Ian Saunders — waiting on Popfly dev team to clarify/resolve Instagram business account permissions issue"
+    },
+    {
+      "action": "update",
+      "brand": "Linkind",
+      "waiting_on": "brand",
+      "next_action": "Wait for agency/brand to approve 'Top 3 Tips' content concept",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20]: Liz clarified concept to agency/brand — lights will be the feature (50%+ screen time). Content structure: Top 3 spring porch refresh tips → lights as #1 → assembly → app walkthrough → day/night demo → key features. Waiting on concept approval before filming. [Apr 14]: Liz pushed back on overly detailed concept requirements (beyond payment scope), submitted generalized 'Top 3 Tips' concept instead.",
+      "activity_note": "Apr 20: Liz addressed brand's screen time concern — lights guaranteed to be the focus (50%+). Waiting on concept approval to film."
+    },
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "waiting_on": "brand",
+      "next_action": "Wait for agency/brand to approve 'Top 3 Tips' content concept",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-20",
+      "deal_type": "posted",
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "contact_source": "Email (Brandi)",
+      "notes": "[Apr 20]: Liz clarified concept to agency/brand — lights will be the feature (50%+ screen time). Content structure: Top 3 spring porch refresh tips → lights as #1 → assembly → app walkthrough → day/night demo → key features. Waiting on concept approval before filming.\n[Apr 14]: Liz pushed back on overly detailed concept requirements (beyond payment scope), submitted generalized 'Top 3 Tips' concept instead. Agency intermediary: socialmediacollabs.com.",
+      "activity_note": "New deal — Linkind SP6 Smart Solar Pathway Lights. Paid collab via socialmediacollabs.com agency. In content stage, concept submitted, awaiting approval."
+    }
+  ],
+  "activities": []
+}]
