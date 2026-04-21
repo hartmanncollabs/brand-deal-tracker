@@ -1,1 +1,72 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Active day across three deals! JLab payment is still MIA — Liz followed up with the agent today and the agent is chasing JLab accounting directly (apparently others on the same campaign were paid two weeks ago 👀). Aleve came back with revision requests on the submitted content — the VO didn't follow the approved script language and the required disclaimers (#AlevePartner in the first 5 seconds) are missing. Liz says she'll fix it. On Flexsteel, Ian at Popfly sorted out the account access issue and asked Kenny to try applying again — and there's a retail store visit locked in for Thursday, April 23rd. Finally, Linkind (solar pathway lights) is an active paid deal that I'm logging — product arrived, the concept is waiting on brand approval before filming, and Liz is following up today.",
+    "emails_scanned": 14,
+    "deals_created": 1,
+    "deals_updated": 3,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "The agent expects to hear back from JLab accounting tomorrow (Apr 22). If nothing comes through by EOD, worth a second nudge — being paid weeks after everyone else on the campaign is a red flag worth staying on top of."
+      },
+      {
+        "type": "action-required",
+        "brand": "Aleve",
+        "message": "Liz needs to redo the voiceover to match the approved script language AND add the #AlevePartner disclosure in the first 5 seconds. The script is in the Google Drive link the agent shared. This is blocking approval — worth prioritizing today or tomorrow."
+      },
+      {
+        "type": "action-required",
+        "brand": "Flexsteel",
+        "message": "Kenny should try re-applying to the Flexsteel campaign on Popfly today — Ian removed the access requirement. Also confirm the retail store visit is still on for Thursday 11:30 AM."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "JLab",
+      "waiting_on": "brand",
+      "next_action": "Follow up on payment if no response from agent by Apr 22",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Liz followed up with agent re: still no JLab payment. Agent says she's in contact with JLab accounting — others on the same campaign pulse were paid ~2 weeks ago. Agent expects to hear back Apr 22.",
+      "activity_note": "Apr 21: Liz chased missing JLab payment — agent escalating to accounting, expects update Apr 22"
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "stage": "approval",
+      "waiting_on": "us",
+      "next_action": "Redo VO per Aleve's approved script and add #AlevePartner disclaimer (first 5 seconds)",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Aleve content revision requested — VO doesn't follow approved language; all required disclaimers missing (#AlevePartner must appear in first 5 seconds per brief). Approved script shared in Google Drive by agent. Liz said she'll check it out.",
+      "activity_note": "Apr 21: Aleve requested content revisions — VO language wrong, disclaimers missing. Moved to Approval."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Re-apply to Flexsteel campaign on Popfly (Ian removed access requirement) + retail store visit Thu Apr 23 11:30 AM–12 PM",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Ian (Popfly) updated the Flexsteel & Steinhafels campaign to remove the managerial account access requirement — Kenny to try applying again. Retail store visit confirmed for Thu Apr 23, 11:30 AM–12 PM for content filming.",
+      "activity_note": "Apr 21: Popfly access issue resolved by Ian — Kenny to re-apply to campaign. Store visit Thu Apr 23."
+    },
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "waiting_on": "brand",
+      "next_action": "Follow up with agent on Linkind concept approval",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "contact_name": "Liz Hartmann (agent)",
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "notes": "[Apr 21]: Liz followed up asking for concept approval update — 'Got the lights in yesterday and they look so great!' Product (SP6 Smart Solar Pathway Lights) arrived Apr 20. [Apr 20]: Brand asked for time breakdown to confirm product is featured 50%+ of video. Liz clarified her 'Top 3 Tips' concept — lights are the main feature, will show setup, app, day/night footage, and key features. Waiting for brand to approve concept before filming begins.",
+      "activity_note": "Apr 21: Created card — active paid deal, product received, concept pending brand approval before filming"
+    }
+  ],
+  "activities": []
+}]
