@@ -116,4 +116,30 @@
     }
   ],
   "activities": []
+},{
+  "run_summary": {
+    "summary": "Apr 21 AM scan — one meaningful update. Ian Saunders responded to Kenny's Popfly access pushback at 8:42 PM Apr 20: he says 'no brand will have access to this (neither Popfly)' and suspects it may be a bug — he wants to check with his dev team. Asked Kenny to send a screenshot of the access prompt. Ball is back in our court. All other threads (Linkind concept, Bedsure follow-up, xTool decline) were already captured in yesterday's run.",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Ian responded to Kenny's Popfly access concern — he says no brand OR Popfly would have that access and thinks it might be a platform bug. He needs a screenshot of exactly where Kenny is seeing the 'managerial access' prompt. Send that screenshot to ian@popfly.com today so he can investigate with his dev team and unblock the application."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Send Ian screenshot of the Popfly managerial access prompt so he can investigate with dev team",
+      "next_action_date": "2026-04-21",
+      "last_contact": "2026-04-20",
+      "notes": "[Apr 20 8:42 PM]: Ian replied to Kenny's access concern — he says neither the brand nor Popfly would have access to the account and wants to check with his dev team if this is a new requirement or a bug. Asked Kenny to send a screenshot of where the managerial access prompt is appearing."
+    }
+  ],
+  "activities": []
 }]
