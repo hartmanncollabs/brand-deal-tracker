@@ -1,32 +1,72 @@
 [{
   "run_summary": {
-    "summary": "One update: Liz followed up with the Linkind agency today asking for concept approval status. She mentioned the lights arrived yesterday and she's ready to film — just waiting on their green light. The Flexsteel thread is unchanged since last run (store visit still Thu Apr 23, 11:30am–12pm at Steinhafels Downers Grove).",
-    "emails_scanned": 6,
+    "summary": "Big afternoon: Aleve has revision feedback Liz didn't know about — brand wants the VO redone to match approved language and all disclosures added (including #AlevePartner in first 5 seconds). JLab March payment is overdue (was due Apr 20), Mariah is pushing on accounting and expects an update tomorrow. Linkind's agency responded — concept isn't formally approved yet but they told Liz she can film speculatively and submit for review. On Flexsteel, Ian at Popfly may have fixed the managerial access issue and asked Kenny to try applying again — need to confirm before Thursday's store visit.",
+    "emails_scanned": 10,
     "deals_created": 0,
-    "deals_updated": 1,
+    "deals_updated": 4,
     "suggestions": [
       {
-        "type": "reminder",
+        "type": "action",
+        "brand": "Aleve",
+        "message": "🚨 Liz has revision feedback she just found out about today — brand flagged that the VO doesn't follow the approved script and all disclosures are missing (#AlevePartner must appear in first 5 seconds). She said 'I'll check that out' but this needs to happen ASAP. The script is in the Google Drive. Worth checking in with her today or first thing tomorrow."
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "March payment was due Apr 20 and still hasn't arrived. Mariah says she's working on it with JLab accounting and should have an update by tomorrow (Apr 22). Others on the same campaign were paid 2 weeks ago — so this is unusually delayed. Worth confirming with Mariah tomorrow if the money comes through."
+      },
+      {
+        "type": "action",
         "brand": "Flexsteel",
-        "message": "Store visit is THIS Thursday (Apr 23) at 11:30am–12pm at Steinhafels Downers Grove. Worth confirming the Popfly support ticket was actually submitted Tuesday before you head over."
+        "message": "Ian at Popfly updated the campaign and asked Kenny to try applying again — the managerial access issue blocking sign-up may be resolved. Kenny should try this TODAY before the Thursday store visit (Apr 23, 11:30am–12pm at Steinhafels). Also remind Kenny to submit that Popfly support ticket."
       },
       {
         "type": "follow-up",
         "brand": "Linkind",
-        "message": "Liz already nudged the agency today — lights are in hand and she's raring to go. If no concept approval comes back by Thursday (Apr 23), one more nudge is warranted. Any delay now is entirely on the brand side."
+        "message": "Agency said the brand hasn't formally approved the concept yet but told Liz she can go ahead and film based on all the back-and-forth discussion and submit for their review. Liz has the lights. Decision point: does she film now (riskier if they still have changes) or wait for formal approval? Given the delays, filming speculatively seems reasonable — but Liz should weigh in."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Redo VO to match approved script in Google Drive and add all required disclosures (#AlevePartner in first 5 seconds, per brief)",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Brand flagged revision issues via Mariah: (1) VO doesn't follow approved language — needs to match script in Google Drive; (2) missing #AlevePartner disclosure in first 5 seconds and other disclosures per brief. Liz was unaware of feedback (it was shared in the thread around Apr 13) and said she'll review. Script link: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/edit",
+      "activity_note": "Apr 21: Brand revision feedback surfaced — VO must match approved script and include #AlevePartner disclosure in first 5 seconds. Liz was unaware; now on her radar."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "waiting_on": "brand",
+      "next_action": "Confirm with Mariah that JLab accounting came through with payment (she expected an update Apr 22)",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: March payment still not received (was due Apr 20). Liz flagged to Mariah. Mariah is in touch with JLab accounting — noted that other creators on the same campaign pulse were paid 2 weeks ago, so this is overdue. Expects to hear back Apr 22.",
+      "activity_note": "Apr 21: JLab March payment overdue (due Apr 20) — Mariah following up with accounting, expects update Apr 22"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Try applying to Popfly campaign again (Ian updated the campaign Apr 21 — managerial access requirement may be removed). Confirm Popfly app goes through before Thursday store visit. Also submit Popfly support ticket for the access issue.",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Ian (Popfly) updated the campaign and asked Kenny to try applying again — possible fix for the managerial Instagram access requirement. Kenny sent screenshots of the access prompt to Ian. Store visit confirmed: Thu Apr 23, 11:30am–12pm at Steinhafels Downers Grove. Kenny still needs to submit a Popfly support ticket via the in-platform chat.",
+      "activity_note": "Apr 21: Popfly campaign updated by Ian — try applying again before Thu store visit (11:30am–12pm, Steinhafels Downers Grove, Apr 23)"
+    },
+    {
+      "action": "update",
       "brand": "Linkind",
       "waiting_on": "brand",
-      "next_action": "Wait for concept approval from agency; follow up if no response by Apr 23",
-      "next_action_date": "2026-04-23",
+      "next_action": "Decide whether to film speculatively and submit for brand review — agency says OK to proceed without formal approval. Follow up if no concept approval by Apr 23.",
+      "next_action_date": "2026-04-22",
       "last_contact": "2026-04-21",
-      "notes": "[Apr 21]: Liz followed up with agency asking for any update on concept approval — noted lights arrived Apr 20 and she's ready to film. [Apr 20]: Brand (relayed via agency) asked for time breakdown to confirm lights get majority screen time. Liz clarified her 'Top 3 Spring Porch Refresh Tips' concept: lights are Tip #1, plan includes assembling lights, app screen recordings, day & night shots, and key features walkthrough — lights featured 50%+ of video.",
-      "activity_note": "Apr 21: Liz followed up with agency — product arrived Apr 20, ready to film, awaiting concept approval"
+      "notes": "[Apr 21 PM]: Agency responded — brand hasn't formally approved concept yet, still going back and forth on details. Agency suggested Liz can film based on all discussion so far (Top 3 tips, lights as main focus, 50%+ screen time) and submit for review. Liz has the product in hand (arrived Apr 20).",
+      "activity_note": "Apr 21: Agency says Liz can film speculatively — brand hasn't formally approved concept but OK to submit draft for review"
     }
   ],
   "activities": []
