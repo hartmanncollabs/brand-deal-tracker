@@ -1,8 +1,8 @@
 [{
   "run_summary": {
-    "summary": "Active day across the pipeline! Liz submitted her first SOJOS Reel draft for brand approval this morning — creating a new card for that deal. Kenny confirmed Flexsteel's Popfly enrollment is now live with a Steinhafels store visit tomorrow (Apr 23). Aleve needs immediate attention: brand flagged that the submitted VO doesn't match the approved script and is missing #AlevePartner disclosures — Liz committed to redoing it today. JLab payment is still MIA (overdue vs. other creators on same campaign). Also creating a new Linkind card — solar lights product arrived Monday, concept review is dragging but brand cleared Liz to just film and submit.",
-    "emails_scanned": 30,
-    "deals_created": 2,
+    "summary": "Active day across the pipeline! Liz submitted her first SOJOS Reel draft for brand approval this morning — creating a new card for that deal. Kenny confirmed Flexsteel's Popfly enrollment is now live with a Steinhafels store visit tomorrow (Apr 23). Aleve needs immediate attention: brand flagged that the submitted VO doesn't match the approved script and is missing #AlevePartner disclosures — Liz committed to redoing it today. JLab payment is still MIA (overdue vs. other creators on same campaign). Also creating a new Linkind card — solar lights product arrived Monday, concept review is dragging but brand cleared Liz to just film and submit. New: Gaia Herbs paid opportunity via PDM ($1K–$5K, May+Jun) — needs Liz to apply if interested.",
+    "emails_scanned": 45,
+    "deals_created": 3,
     "deals_updated": 3,
     "suggestions": [
       {
@@ -24,6 +24,11 @@
         "type": "heads-up",
         "brand": "Flexsteel",
         "message": "Store visit to Steinhafels Downers Grove is tomorrow (Apr 23) 11:30am-noon. Ian knows to expect them — just a heads-up so Kenny doesn't forget to confirm the content upload through Popfly afterward."
+      },
+      {
+        "type": "action",
+        "brand": "Gaia Herbs",
+        "message": "New PDM opportunity — Gaia Herbs, $1K–$5K, May+Jun 2026. 1x Reel + Stories with collab post. Brief targets wellness/herbal/health creators. If Liz is interested, apply via https://forms.gle/GeRkt5hpW5HB1fTj8 using her PDM-provided email — deadline is likely very soon."
       }
     ]
   },
@@ -83,6 +88,21 @@
       "brand": "JLab",
       "last_contact": "2026-04-21",
       "notes": "[Apr 21]: Payment still outstanding. Mariah (PDM) confirmed other creators on same campaign were paid ~2 weeks ago — she's in direct contact with JLab accounting and expected an update Apr 22. Liz following up via manager, no action needed from Kenny/Liz directly yet."
+    },
+    {
+      "action": "create",
+      "brand": "Gaia Herbs",
+      "stage": "negotiation",
+      "value": "$1,000",
+      "contact_name": "Mariah Zingarelli (PDM)",
+      "contact_email": "info@pickingdaisiesmedia.com",
+      "contact_source": "Picking Daisies Media roster bulletin",
+      "waiting_on": "us",
+      "next_action": "Decide whether to apply — review brief fit and submit via PDM form if interested",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Firm offer via PDM roster bulletin. Deliverables: 1x IG Story (3 frames), 1x IG Story Reminder Frame, 1x IG Reel (45–60 sec, collab post to feed). Dates: May + June 2026. Budget range: $1,000–$5,000. Usage: 30-day organic + paid whitelist. Exclusivity: 1 week before/during/after content in herbal/nutritional supplement space. Brief targets wellness, health, fitness, herbal, holistic/natural living creators. Apply via form (must use PDM-provided email): https://forms.gle/GeRkt5hpW5HB1fTj8",
+      "activity_note": "Apr 22: Firm offer received via PDM — $1K–$5K budget, May+Jun 2026 campaign. New card created, action required: review fit and apply if interested."
     }
   ],
   "activities": []
