@@ -1,19 +1,34 @@
 [{
   "run_summary": {
-    "summary": "Active day across the pipeline! SOJOS content was submitted for brand approval this morning, and the Aleve brand has revision feedback that Liz acknowledged and is fixing today (VO needs to match approved script + add disclosures). JLab payment is still MIA — Kenny is escalating with their accounting since others on the same campaign were paid 2 weeks ago. Flexsteel's Popfly platform issue is resolved and the campaign is now confirmed 'in progress' on Liz's dashboard — time to start creating content. Also flagging a new Gaia Herbs opportunity from PDM ($1K–$5K, May–June) that needs a decision before the deadline closes.",
+    "summary": "Busy Wednesday! SOJOS content was submitted to Ruby this morning — video + caption are in Google Drive and we're waiting on approval. Aleve still needs urgent attention: brand flagged the VO back on Apr 13 (missed until yesterday) — it didn't follow the approved script and all disclosures are missing. Liz said she'd redo it today, so hopefully that's already in progress. JLab payment is overdue — others on the same campaign pulse were paid two weeks ago; management is escalating with JLab accounting and should hear back tomorrow. Big Flexsteel news: the Popfly platform issue is fully resolved, campaign is confirmed 'in progress' on Liz's dashboard, and there's a Steinhafels retail store visit TOMORROW (Thu Apr 23, 11:30am–12pm) for filming — don't miss it! Two new PDM opportunities: Gaia Herbs is a real cash offer ($1K–$5K, May–June, 1 Reel + Stories) that fits Liz's wellness angle, and Outdoorsy is a trade deal for an RV rental in exchange for content — no cash but could be a fun family trip.",
     "emails_scanned": 7,
-    "deals_created": 1,
+    "deals_created": 2,
     "deals_updated": 4,
     "suggestions": [
       {
         "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Store visit is TOMORROW — Thu Apr 23 between 11:30am–12pm at the Steinhafels retail location. Ian at Popfly has been notified. Campaign is confirmed active. Don't be late! 🏠"
+      },
+      {
+        "type": "urgent",
         "brand": "Aleve",
-        "message": "Liz said she'd redo the VO today — follow up this afternoon to confirm it's been resubmitted. Brand flagged: (1) VO didn't follow the approved script, (2) missing all disclosures (#AlevePartner for the first 5 seconds). Script link: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/"
+        "message": "Liz said she'd redo the VO today (Apr 22) — check that it's been resubmitted with the correct script and #AlevePartner disclosure for the first 5 seconds. Approved script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/"
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "Payment is overdue — others on the same Pulse campaign were paid ~2 weeks ago. Management is escalating with JLab accounting. Follow up tomorrow (Apr 23) if no word. 💸"
       },
       {
         "type": "opportunity",
         "brand": "Gaia Herbs",
-        "message": "PDM sent a firm casting call for Gaia Herbs — $1K–$5K budget, 1 Reel + 1 Story (3 frames) + 1 Reminder Frame, May–June 2026. Liz fits the wellness niche well. To apply she needs to use her PDM email and submit via the Google Form. Worth a quick yes/no — deadline likely tight since PDM noted early access to campaign budgets."
+        "message": "PDM firm offer: $1K–$5K for 1x IG Reel (45–60 sec, collab post) + 1x IG Story (3 frames) + 1x Reminder Frame. May–June 2026. Wellness/holistic niche is a good fit for Liz. Must apply via PDM Google Form using PDM email: https://forms.gle/GeRkt5hpW5HB1fTj8 — deadline is tight, decide ASAP! 🌿"
+      },
+      {
+        "type": "opportunity",
+        "brand": "Outdoorsy",
+        "message": "PDM trade deal: free RV rental + concierge booking in exchange for content sharing the trip experience. No cash, but could be a great family adventure. Apply via PDM Google Form if interested: https://docs.google.com/forms/d/e/1FAIpQLSfDd3E8vvrXrgrvOaPRVMecI-x_px4vVWyTioYvErmTct9zIQ/viewform 🚐"
       }
     ]
   },
@@ -26,39 +41,39 @@
       "next_action": "Wait for Ruby at SOJOS to approve the video and caption",
       "next_action_date": "2026-04-24",
       "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Liz submitted content to Ruby at SOJOS for approval — video in Google Drive, caption includes discount code MISSLIZSOJOS and @sojosvision tag.",
-      "activity_note": "Apr 22: Content submitted to SOJOS for approval — moved to Approval, waiting on brand"
+      "notes": "[Apr 22]: Liz submitted content to Ruby for approval — video in Google Drive (https://drive.google.com/drive/folders/1n6MJkM0aFQ8bHU_5NySfcxFiZ7gxy4h6), caption includes @sojosvision tag, discount code MISSLIZSOJOS, and 'Comment SUN for link' CTA.",
+      "activity_note": "Apr 22: Content submitted to SOJOS for approval — moved to Approval, waiting on Ruby"
     },
     {
       "action": "update",
       "brand": "Aleve",
       "waiting_on": "us",
-      "next_action": "Redo VO with approved language + add #AlevePartner disclosure for first 5 seconds, then resubmit",
+      "next_action": "Redo VO with approved language + add #AlevePartner disclosure for first 5 seconds, then resubmit to brand",
       "next_action_date": "2026-04-22",
       "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Brand gave revision feedback (originally from Apr 13, surfaced by Kenny on Apr 21): VO did not follow approved script and all disclosures were missing. Liz confirmed she'll redo today. Approved script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/",
-      "activity_note": "Apr 22: Aleve revision feedback — VO must match approved language + add #AlevePartner disclosures. Liz redoing today."
+      "notes": "[Apr 22]: Revision feedback (originally from Apr 13, surfaced by Kenny on Apr 21): VO did not follow approved language and all disclosures are missing (#AlevePartner required for first 5 seconds per brief). Liz confirmed she will redo today. Approved script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/",
+      "activity_note": "Apr 22: Aleve flagged VO revision needed — must match approved script + add #AlevePartner disclosures. Liz redoing today."
     },
     {
       "action": "update",
       "brand": "JLab",
       "waiting_on": "brand",
-      "next_action": "Follow up on payment — Kenny is escalating with JLab accounting",
+      "next_action": "Follow up if JLab payment not received — management escalating with their accounting",
       "next_action_date": "2026-04-23",
       "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Payment still outstanding. Others on the same campaign pulse were paid ~2 weeks ago. Kenny following up directly with JLab accounting.",
-      "activity_note": "Apr 22: JLab payment still outstanding — escalating with their accounting team"
+      "notes": "[Apr 22]: Payment still outstanding. Others on the same Pulse campaign were paid ~2 weeks ago. Kenny/management following up directly with JLab accounting; expect response tomorrow.",
+      "activity_note": "Apr 22: JLab payment overdue — escalating with their accounting team"
     },
     {
       "action": "update",
       "brand": "Flexsteel",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Begin content creation for Flexsteel & Steinhafels Popfly campaign",
-      "next_action_date": "2026-04-25",
+      "next_action": "Film at Steinhafels retail store — store visit Thu Apr 23 between 11:30am–12pm",
+      "next_action_date": "2026-04-23",
       "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Popfly platform enrollment issue resolved (Kenny worked through it with Ian Saunders at Popfly). Campaign now shows as 'in progress' on Liz's dashboard — application button replaced with 'applications closed.' Ready to create content.",
-      "activity_note": "Apr 22: Flexsteel/Steinhafels campaign confirmed active on Popfly — moving to Content"
+      "notes": "[Apr 22]: Popfly platform issue fully resolved. Kenny confirmed with Ian Saunders (ian@popfly.com) that campaign now shows 'in progress' on Liz's dashboard and apply button replaced with 'applications closed.' Store visit confirmed for Thu Apr 23, 11:30am–12pm at Steinhafels retail location.",
+      "activity_note": "Apr 22: Flexsteel/Popfly campaign confirmed active — moved to Content. Store visit Thu Apr 23 at 11:30am."
     },
     {
       "action": "create",
@@ -71,8 +86,21 @@
       "contact_name": "Mariah Zingarelli",
       "contact_email": "info@pickingdaisiesmedia.com",
       "value": 3000,
-      "notes": "[Apr 22]: PDM casting call — Gaia Herbs firm offer. Budget: $1,000–$5,000. Deliverables: 1x IG Reel (45–60 sec with collab post), 1x IG Story (3 frames), 1x IG Story Reminder Frame. Timeline: May–June 2026. Exclusivity: no competing herbal/supplement products 1 week before/during/after content. Must apply via PDM Google Form using PDM email address. Note: sent to full PDM roster — not a direct offer, requires application and selection.",
-      "activity_note": "Apr 22: New opportunity via PDM — Gaia Herbs casting call, $1K–$5K, requires application"
+      "notes": "[Apr 22]: PDM firm offer — Gaia Herbs. Budget: $1,000–$5,000. Deliverables: 1x IG Reel (45–60 sec, collab post), 1x IG Story (3 frames), 1x IG Story Reminder Frame. Usage: link in bio 30 days + organic/paid whitelisting 30 days. Exclusivity: no competing herbal/supplement products 1 week before/during/after. Timeline: May–June 2026. Target: wellness/holistic/low-tox creators. Note: must apply via PDM Google Form (https://forms.gle/GeRkt5hpW5HB1fTj8) using PDM email address — non-PDM email will not be shortlisted. Sent to full PDM roster, not a direct offer.",
+      "activity_note": "Apr 22: New PDM opportunity — Gaia Herbs firm offer, $1K–$5K. Needs application decision ASAP."
+    },
+    {
+      "action": "create",
+      "brand": "Outdoorsy",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide whether to apply for Outdoorsy RV trade deal via PDM",
+      "next_action_date": "2026-04-23",
+      "contact_name": "Mariah Zingarelli",
+      "contact_email": "info@pickingdaisiesmedia.com",
+      "value": 0,
+      "notes": "[Apr 22]: PDM trade offer — Outdoorsy RV Rental. TRADE ONLY (no cash): free RV rental + concierge booking in exchange for content sharing the trip experience with followers. Apply via PDM Google Form: https://docs.google.com/forms/d/e/1FAIpQLSfDd3E8vvrXrgrvOaPRVMecI-x_px4vVWyTioYvErmTct9zIQ/viewform (use PDM email). Sent to full PDM roster.",
+      "activity_note": "Apr 22: New PDM trade opportunity — Outdoorsy RV Rental (trade deal, no cash)."
     }
   ],
   "activities": []
