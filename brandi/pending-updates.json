@@ -1,1 +1,68 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Busy day in the pipeline! Aleve needs a quick V/O fix today — the brand flagged that the voiceover didn't follow the approved script and the #AlevePartner disclosure is missing from the first 5 seconds. Liz acknowledged this morning she'll redo it today, so let's make sure that actually happens. JLab's March payment ($2,000, due 4/20) is still MIA — manager is following up with their accounting since other creators on the same campaign were paid 2 weeks ago. Flexsteel is moving — Kenny has the Steinhafels store visit locked in for Thursday 4/23 and the Popfly platform issue is resolved. Linkind concept is still in limbo but the product arrived Monday and the manager gave the green light to just film and submit for review. Also: Picking Daisies sent several FIRM OFFER roster blasts today — Gaia Herbs and Ted Danson Anti-Aging look potentially interesting, flagged as suggestions below.",
+    "emails_scanned": 17,
+    "deals_created": 0,
+    "deals_updated": 4,
+    "suggestions": [
+      {
+        "type": "opportunity",
+        "brand": "Gaia Herbs",
+        "message": "PDM sent a FIRM OFFER today for Gaia Herbs — wellness/herbal brand, 1x IG Reel (45-60 sec) + 3-frame Story, budget $1,000–$5,000, timeline May–June 2026. Requires submission via PDM Google Form (must use PDM email). Good fit if Liz has a wellness/natural living audience segment. Apply via PDM if interested."
+      },
+      {
+        "type": "opportunity",
+        "brand": "Ted Danson Anti-Aging",
+        "message": "PDM also sent a FIRM OFFER for a Ted Danson Anti-Aging campaign — interesting celebrity-tied product. Details not fully reviewed but worth checking the PDM email from this morning if Liz is interested in the anti-aging/beauty space."
+      },
+      {
+        "type": "opportunity",
+        "brand": "Outdoorsy RV / Wine Brand",
+        "message": "Two more PDM FIRM OFFERs today: Outdoorsy RV Rental and a Wine Brand. Check the PDM morning emails if either sounds like a fit — deadlines are likely tight."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Redo V/O with approved script language and add #AlevePartner disclosure (first 5 sec required by brief), then resubmit to brand",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Liz confirmed she'll redo V/O today — admitted she had a brain lapse and mixed up scripts. Brand raised two issues: (1) V/O didn't match the approved language in the brief, (2) all disclosures missing including #AlevePartner which must appear in the first 5 seconds. Approved script in Google Doc shared by manager: docs.google.com/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4. Liz was unaware the brand had commented back with feedback (it was in the thread from Apr 13).",
+      "activity_note": "Apr 22: Aleve revision needed — V/O didn't match approved script and #AlevePartner disclosure missing. Liz redoing VO today."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "waiting_on": "brand",
+      "next_action": "Follow up on JLab March campaign payment ($2,000 due 4/20/26 — overdue)",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: JLab March campaign payment ($2,000, due 4/20/26) still not received as of Apr 21. Manager in touch with JLab accounting — noted that other creators on the same campaign were paid ~2 weeks ago. Unclear why Liz's is delayed. Manager expected an update by Apr 22.",
+      "activity_note": "Apr 21: JLab March payment ($2k, due 4/20) still outstanding. Manager following up with JLab accounting — others on campaign paid 2 weeks ago."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Film Reel 1 (Pre-Search concept ready) and submit draft via Popfly for review",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Kenny confirmed Steinhafels visit Thu Apr 23, 11:30–12pm (for Reel 2 shopping footage). Plan: film Reel 1 this week, Reel 2 after store visit, Reels posting 1 week apart. Reel 3 (father-in-law reveal) after parents return from Florida — flying home May 12, filming May 13/14. Contract deadline for post 3 is end of May. Popfly platform access issue (managerial permissions request was a bug) resolved by Ian on Apr 21 — Kenny should re-try applying in Popfly.",
+      "activity_note": "Apr 21: Steinhafels visit locked in for Thu Apr 23. Filming schedule set: Reel 1 this week, Reel 2 post-store-visit, Reel 3 mid-May. Popfly access issue fixed."
+    },
+    {
+      "action": "update",
+      "brand": "Linkind",
+      "waiting_on": "us",
+      "next_action": "Film Linkind SP6 Reel with lights as main focus (50%+ screen time), meeting brand's talking points, and submit via manager for review",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Manager gave green light to film and submit for brand review without waiting for formal concept approval. Brand's main concern: product must be front and center, talking points must be met. Liz plans: top 3 tips format, #1 is spring porch lighting (lights take 50%+ of video), will show assembly + app + day/night footage. Product arrived Apr 20 — looks great per Liz. Note: if this deal is stored as 'Smart Solar Path' in the tracker, this update may not match — please check.",
+      "activity_note": "Apr 21: Lights arrived (Apr 20). Concept back-and-forth resolved — manager says proceed to film and submit for brand review."
+    }
+  ],
+  "activities": []
+}]
