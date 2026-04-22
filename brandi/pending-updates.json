@@ -1,1 +1,79 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Active day across the pipeline! SOJOS content was submitted for brand approval this morning, and the Aleve brand has revision feedback that Liz acknowledged and is fixing today (VO needs to match approved script + add disclosures). JLab payment is still MIA — Kenny is escalating with their accounting since others on the same campaign were paid 2 weeks ago. Flexsteel's Popfly platform issue is resolved and the campaign is now confirmed 'in progress' on Liz's dashboard — time to start creating content. Also flagging a new Gaia Herbs opportunity from PDM ($1K–$5K, May–June) that needs a decision before the deadline closes.",
+    "emails_scanned": 7,
+    "deals_created": 1,
+    "deals_updated": 4,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Aleve",
+        "message": "Liz said she'd redo the VO today — follow up this afternoon to confirm it's been resubmitted. Brand flagged: (1) VO didn't follow the approved script, (2) missing all disclosures (#AlevePartner for the first 5 seconds). Script link: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/"
+      },
+      {
+        "type": "opportunity",
+        "brand": "Gaia Herbs",
+        "message": "PDM sent a firm casting call for Gaia Herbs — $1K–$5K budget, 1 Reel + 1 Story (3 frames) + 1 Reminder Frame, May–June 2026. Liz fits the wellness niche well. To apply she needs to use her PDM email and submit via the Google Form. Worth a quick yes/no — deadline likely tight since PDM noted early access to campaign budgets."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Wait for Ruby at SOJOS to approve the video and caption",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Liz submitted content to Ruby at SOJOS for approval — video in Google Drive, caption includes discount code MISSLIZSOJOS and @sojosvision tag.",
+      "activity_note": "Apr 22: Content submitted to SOJOS for approval — moved to Approval, waiting on brand"
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Redo VO with approved language + add #AlevePartner disclosure for first 5 seconds, then resubmit",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Brand gave revision feedback (originally from Apr 13, surfaced by Kenny on Apr 21): VO did not follow approved script and all disclosures were missing. Liz confirmed she'll redo today. Approved script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/",
+      "activity_note": "Apr 22: Aleve revision feedback — VO must match approved language + add #AlevePartner disclosures. Liz redoing today."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "waiting_on": "brand",
+      "next_action": "Follow up on payment — Kenny is escalating with JLab accounting",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Payment still outstanding. Others on the same campaign pulse were paid ~2 weeks ago. Kenny following up directly with JLab accounting.",
+      "activity_note": "Apr 22: JLab payment still outstanding — escalating with their accounting team"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Begin content creation for Flexsteel & Steinhafels Popfly campaign",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Popfly platform enrollment issue resolved (Kenny worked through it with Ian Saunders at Popfly). Campaign now shows as 'in progress' on Liz's dashboard — application button replaced with 'applications closed.' Ready to create content.",
+      "activity_note": "Apr 22: Flexsteel/Steinhafels campaign confirmed active on Popfly — moving to Content"
+    },
+    {
+      "action": "create",
+      "brand": "Gaia Herbs",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide whether to apply for Gaia Herbs campaign via PDM Google Form",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-22",
+      "contact_name": "Mariah Zingarelli",
+      "contact_email": "info@pickingdaisiesmedia.com",
+      "value": 3000,
+      "notes": "[Apr 22]: PDM casting call — Gaia Herbs firm offer. Budget: $1,000–$5,000. Deliverables: 1x IG Reel (45–60 sec with collab post), 1x IG Story (3 frames), 1x IG Story Reminder Frame. Timeline: May–June 2026. Exclusivity: no competing herbal/supplement products 1 week before/during/after content. Must apply via PDM Google Form using PDM email address. Note: sent to full PDM roster — not a direct offer, requires application and selection.",
+      "activity_note": "Apr 22: New opportunity via PDM — Gaia Herbs casting call, $1K–$5K, requires application"
+    }
+  ],
+  "activities": []
+}]
