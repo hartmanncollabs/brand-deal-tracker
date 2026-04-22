@@ -1,1 +1,89 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Active day across the pipeline! Liz submitted her first SOJOS Reel draft for brand approval this morning — creating a new card for that deal. Kenny confirmed Flexsteel's Popfly enrollment is now live with a Steinhafels store visit tomorrow (Apr 23). Aleve needs immediate attention: brand flagged that the submitted VO doesn't match the approved script and is missing #AlevePartner disclosures — Liz committed to redoing it today. JLab payment is still MIA (overdue vs. other creators on same campaign). Also creating a new Linkind card — solar lights product arrived Monday, concept review is dragging but brand cleared Liz to just film and submit.",
+    "emails_scanned": 30,
+    "deals_created": 2,
+    "deals_updated": 3,
+    "suggestions": [
+      {
+        "type": "heads-up",
+        "brand": "Aleve",
+        "message": "Liz said she'd redo the Aleve VO today — the approved script link is in the notes. Make sure the new version has #AlevePartner in the first 5 seconds before resubmitting to Mariah."
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "Mariah expected to hear from JLab accounting yesterday (Apr 22). Worth checking in today — other creators on the same campaign were paid two weeks ago, so this is getting awkward."
+      },
+      {
+        "type": "heads-up",
+        "brand": "SOJOS Vision",
+        "message": "Liz's caption for the SOJOS draft doesn't include #sojos or #amazonsunglasses — Ruby's brief explicitly requires both. Worth confirming before Ruby flags it in her review."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Flexsteel",
+        "message": "Store visit to Steinhafels Downers Grove is tomorrow (Apr 23) 11:30am-noon. Ian knows to expect them — just a heads-up so Kenny doesn't forget to confirm the content upload through Popfly afterward."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "SOJOS Vision",
+      "stage": "approval",
+      "value": "$2,250",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "contact_source": "Direct outreach",
+      "waiting_on": "brand",
+      "next_action": "Wait for Ruby's feedback on first Reel draft",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: First Reel draft submitted for approval via Drive (https://drive.google.com/drive/folders/1n6MJkM0aFQ8bHU_5NySfcxFiZ7gxy4h6). Caption submitted: 'The sunnies I'm rocking this season! Comment SUN for link! @sojosvision is my go to brand for sunglasses...' with code MISSLIZSOJOS. Note: caption may be missing #sojos and #amazonsunglasses per brief.\n[Apr 17]: Liz signed contract. Kenny negotiated draft target by Apr 23 (flexible per Ruby). Reel 2 posting: June (if invited to Amazon event) or Prime Day.\n[Apr 3]: Rate agreed — $2,250 for 2 IG Reels. No brand reposting rights. Liz selected 4 sunglass styles. Shipping address confirmed (2241 Bird Ln, Batavia IL 60510).\n[Mar 26]: Ruby at SOJOS Vision reached out — met Liz at Amazon Influencer Event Chicago 2024. Started as gifted-only, Liz countered at $2,500 reel rate, settled at $2,250 total for 2 Reels.",
+      "activity_note": "Apr 22: First Reel draft submitted to Ruby for approval — moved to Approval. Deal: $2,250 for 2 IG Reels. New card created."
+    },
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "value": "$2,000",
+      "contact_name": "Mariah Zingarelli (PDM)",
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "contact_source": "Picking Daisies Media",
+      "waiting_on": "us",
+      "next_action": "Film Linkind SP6 Solar Pathway Lights content and submit draft for brand review",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Product (Linkind SP6 Smart Solar Pathway Lights) arrived Apr 20. Concept not formally approved — brand wants product as primary focus and screen-time majority. Mariah said Liz can film based on all feedback shared and send for review if comfortable.\n[Apr 14]: Liz pushed back on overly detailed concept requirements given payment amount. Said she cannot film until next week at earliest (out of town Thu-Sun), no product yet.\n[Apr 6]: Contract revisions agreed — deadline extended (original clause voided payment if posted after Apr 15), revisions capped at 2 rounds maximum.\n[Mar 31]: Deal agreed at $2,000. Deliverables: 1 IG Reel (60-90s dedicated), 1 Story set (3 frames with link), TikTok crosspost. Usage: 30-day commercial licensing + 30-day ad code on IG and TikTok. Comment-for-link required.",
+      "activity_note": "Apr 21: Product received. Concept still in review limbo but brand cleared Liz to film. New card created."
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Redo VO to match approved script and add #AlevePartner disclosure (required in first 5 seconds per brief)",
+      "next_action_date": "2026-04-22",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Brand flagged two issues with submitted content: (1) VO does not follow approved language, (2) disclosures missing — #AlevePartner required in first 5 seconds per brief. Liz said she got confused with another collab and will redo the VO today. Approved script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4",
+      "activity_note": "Apr 22: Aleve requested revisions — VO doesn't match approved script, #AlevePartner disclosure missing from first 5 seconds. Liz redoing today."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Visit Steinhafels Downers Grove and film first video content, then upload draft through Popfly",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Campaign now shows 'in progress' on Popfly — enrollment confirmed. Store visit to Steinhafels in Downers Grove, IL tomorrow (Apr 23) 11:30am-noon. Ian is aware to expect them. Plan: first video draft by end of next week, second early the following week. Dad's reveal video (gift/unboxing) cannot happen until May 13-14 — dad flying back from Florida after pacemaker surgery follow-up (May 11 appointment). Ian confirmed May timeline is fine. Drafts to be uploaded through Popfly platform.",
+      "activity_note": "Apr 22: Popfly enrollment confirmed — campaign in progress. Store visit Steinhafels Downers Grove Apr 23, first draft target end of next week."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Payment still outstanding. Mariah (PDM) confirmed other creators on same campaign were paid ~2 weeks ago — she's in direct contact with JLab accounting and expected an update Apr 22. Liz following up via manager, no action needed from Kenny/Liz directly yet."
+    }
+  ],
+  "activities": []
+}]
