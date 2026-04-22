@@ -1,28 +1,41 @@
 [{
   "run_summary": {
-    "summary": "Busy day in the pipeline! Aleve needs a quick V/O fix today — the brand flagged that the voiceover didn't follow the approved script and the #AlevePartner disclosure is missing from the first 5 seconds. Liz acknowledged this morning she'll redo it today, so let's make sure that actually happens. JLab's March payment ($2,000, due 4/20) is still MIA — manager is following up with their accounting since other creators on the same campaign were paid 2 weeks ago. Flexsteel is moving — Kenny has the Steinhafels store visit locked in for Thursday 4/23 and the Popfly platform issue is resolved. Linkind concept is still in limbo but the product arrived Monday and the manager gave the green light to just film and submit for review. Also: Picking Daisies sent several FIRM OFFER roster blasts today — Gaia Herbs and Ted Danson Anti-Aging look potentially interesting, flagged as suggestions below.",
-    "emails_scanned": 17,
+    "summary": "Two-day pipeline recap: Big new move — Liz submitted her SOJOS Sunglasses IG Reel + caption to Ruby today (Apr 22), so that deal moves to Approval, waiting on brand feedback. Aleve V/O revision is also confirmed this morning — Liz admitted she mixed up scripts and is redoing the VO today (both script and #AlevePartner disclosure needed). JLab March payment ($2,000 due 4/20) is still outstanding — manager is on it with accounting. Flexsteel on track: Steinhafels store visit locked for Thu Apr 23, Popfly issue resolved. Linkind concept resolved and Liz is ready to film. PDM sent several FIRM OFFER roster blasts today — Gaia Herbs flagged as best potential fit.",
+    "emails_scanned": 20,
     "deals_created": 0,
-    "deals_updated": 4,
+    "deals_updated": 5,
     "suggestions": [
       {
         "type": "opportunity",
         "brand": "Gaia Herbs",
-        "message": "PDM sent a FIRM OFFER today for Gaia Herbs — wellness/herbal brand, 1x IG Reel (45-60 sec) + 3-frame Story, budget $1,000–$5,000, timeline May–June 2026. Requires submission via PDM Google Form (must use PDM email). Good fit if Liz has a wellness/natural living audience segment. Apply via PDM if interested."
+        "message": "PDM sent a FIRM OFFER today for Gaia Herbs — wellness/herbal brand, 1x IG Reel (45-60 sec) + 3-frame IG Story, budget $1,000–$5,000, timeline May–June 2026. Must submit via PDM Google Form using PDM-provided email. Could be a fit if Liz's audience skews wellness/natural living. Apply via PDM if interested."
       },
       {
         "type": "opportunity",
         "brand": "Ted Danson Anti-Aging",
-        "message": "PDM also sent a FIRM OFFER for a Ted Danson Anti-Aging campaign — interesting celebrity-tied product. Details not fully reviewed but worth checking the PDM email from this morning if Liz is interested in the anti-aging/beauty space."
+        "message": "PDM also sent a FIRM OFFER for a Ted Danson Anti-Aging campaign (built on a prior video with Jane Fonda that hit 15M+ views). Targeting lifestyle creators 50+, TikTok + IG Reels, timing end of May–June. Worth a look if Liz has reach in that demo."
       },
       {
         "type": "opportunity",
         "brand": "Outdoorsy RV / Wine Brand",
-        "message": "Two more PDM FIRM OFFERs today: Outdoorsy RV Rental and a Wine Brand. Check the PDM morning emails if either sounds like a fit — deadlines are likely tight."
+        "message": "Two more PDM FIRM OFFERs: Outdoorsy RV Rental (trade deal, not cash) and a Wine Brand (location-restricted: IN/TX/FL/GA). Both likely not fits — flagging FYI in case Liz wants to check the PDM morning emails."
       }
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "SOJOS Vision",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Check in on content approval with Ruby at SOJOS",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-22",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "notes": "[Apr 22]: Liz submitted IG Reel video + caption to Ruby for review via Google Drive. Caption opened with 'The sunnies I'm...' — awaiting brand feedback. Contract was signed Apr 17 (Ruby had updated it, Liz signed same day). Ruby sent IG Reel filming requirements Apr 20 (total length specs, sunglasses requirements). Content turned around quickly — 5 days from contract to submission.",
+      "activity_note": "Apr 22: Liz submitted IG Reel + caption to Ruby for brand review — moved to Approval"
+    },
     {
       "action": "update",
       "brand": "Aleve",
@@ -30,7 +43,7 @@
       "next_action": "Redo V/O with approved script language and add #AlevePartner disclosure (first 5 sec required by brief), then resubmit to brand",
       "next_action_date": "2026-04-22",
       "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Liz confirmed she'll redo V/O today — admitted she had a brain lapse and mixed up scripts. Brand raised two issues: (1) V/O didn't match the approved language in the brief, (2) all disclosures missing including #AlevePartner which must appear in the first 5 seconds. Approved script in Google Doc shared by manager: docs.google.com/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4. Liz was unaware the brand had commented back with feedback (it was in the thread from Apr 13).",
+      "notes": "[Apr 22]: Liz confirmed she'll redo V/O today — admitted she had a brain lapse and mixed up scripts ('confused with another collab'). Brand raised two issues: (1) V/O didn't match the approved language in the brief, (2) all disclosures missing including #AlevePartner which must appear in the first 5 seconds. Approved script in Google Doc shared by manager: docs.google.com/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4. Liz was unaware the brand had commented back with feedback (it was in the thread from Apr 13).",
       "activity_note": "Apr 22: Aleve revision needed — V/O didn't match approved script and #AlevePartner disclosure missing. Liz redoing VO today."
     },
     {
