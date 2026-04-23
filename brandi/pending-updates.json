@@ -1,88 +1,17 @@
 [{
   "run_summary": {
-    "summary": "8 emails scanned across 6 threads. One new inbound: Wise Block (via Iris at Make Wonder INC — same rep as Bedsure) is asking for a rate quote for a paid YouTube/IG video. Urgent — their launch window is before Apr 25-30, so today or tomorrow is the window to respond. Yousky officially confirmed $250 as their hard ceiling; our counter is $2000+ — that gap isn't closing and the team needs to make a call. Flexsteel/Steinhafels campaign is now enrolled on Popfly and showing 'in progress' on Liz's dashboard as of Apr 22 — Kenny confirmed with Ian that you're good to go and ready to create content. Also updated last contact on Dreo, Govee, and Bedsure after Liz sent follow-ups on all three yesterday.",
-    "emails_scanned": 8,
-    "deals_created": 1,
-    "deals_updated": 5,
+    "summary": "6 emails scanned across 5 threads. Everything from Apr 22 was already captured in the last run (Yousky $250 cap, Dreo/Govee/Bedsure follow-ups, Wise Block creation). No responses yet from Yaki, Muriel, or Iris. One new item: Popfly sent a campaign notification for Victorinox AG (Swiss Tool X Plus Ratchet) — $5,000 compensation, application deadline April 30. Worth a look before the deadline.",
+    "emails_scanned": 6,
+    "deals_created": 0,
+    "deals_updated": 0,
     "suggestions": [
       {
-        "type": "action-required",
-        "brand": "Wise Block",
-        "message": "Iris from Make Wonder INC (who also reps Bedsure) reached out TODAY for Wise Block's Eastern Botanicals Building Set — paid cash + free product, 1x YouTube/IG Video. They want your quote ASAP, launch before Apr 25-30. Heads up: sample delivery is 3-5 days after confirmation, so realistically content would be early May regardless, but they still want to hear from you now."
-      },
-      {
-        "type": "decision-needed",
-        "brand": "Yousky",
-        "message": "Luna confirmed again that $250 is Yousky's hard cap for a first collab (plus 10% commission). You've countered at $2000 twice. This isn't moving — worth a gut check on whether to accept $250 + commission or formally close this one out."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Flexsteel",
-        "message": "Flexsteel/Steinhafels campaign is live on Popfly — Kenny confirmed enrollment Apr 22. If this card isn't already in Content stage, worth moving it. Check your Popfly dashboard for any content deadlines."
+        "type": "opportunity",
+        "brand": "Victorinox AG",
+        "message": "Popfly just dropped a new campaign: Victorinox Swiss Tool X Plus Ratchet — Professional Trades Creator Campaign. $5,000 compensation, application deadline April 30. You're already on Popfly from the Flexsteel deal. This is a tool/trades-focused campaign so check if it fits your content style, but the dollar amount is strong and the deadline is a week out."
       }
     ]
   },
-  "deals": [
-    {
-      "action": "create",
-      "brand": "Wise Block",
-      "stage": "negotiation",
-      "waiting_on": "us",
-      "next_action": "Respond to Iris with rate quote for 1 YouTube/IG Video",
-      "next_action_date": "2026-04-24",
-      "last_contact": "2026-04-23",
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 23]: Inbound from Iris (Make Wonder INC — same rep as Bedsure). 1x YouTube/IG Video for Wise Block Botanical Series (Eastern flora-inspired building sets — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Cash compensation + free set. They want our rate. Desired launch before Apr 25–30, but sample delivery is 3–5 days after confirmation so content would realistically be early May.",
-      "activity_note": "Apr 23: New inbound — Iris (Make Wonder INC) pitched Wise Block Botanical Building Set paid collab, asking for our quote"
-    },
-    {
-      "action": "update",
-      "brand": "Yousky",
-      "waiting_on": "us",
-      "next_action": "Decide whether to accept Yousky's $250 cap or close the deal",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Luna confirmed $250 is the hard ceiling for a first collab (+ 10% uncapped commission). Our last counter was $2000 discounted rate. Gap is $1,750+ — team needs to make a call on whether to accept, counter, or close out.",
-      "activity_note": "Apr 23: Luna (Yousky) confirmed $250 max — deal at impasse, team decision needed"
-    },
-    {
-      "action": "update",
-      "brand": "Flexsteel",
-      "waiting_on": "us",
-      "next_action": "Create content for Flexsteel & Steinhafels Popfly campaign",
-      "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Popfly campaign enrollment confirmed — shows 'in progress' on Liz's dashboard, apply button now says 'applications closed.' Kenny confirmed with Ian (ian@popfly.com) that we are good to go. Ready to start creating content.",
-      "activity_note": "Apr 22: Flexsteel/Steinhafels campaign enrolled and active on Popfly — ready for content creation"
-    },
-    {
-      "action": "update",
-      "brand": "Dreo",
-      "waiting_on": "brand",
-      "next_action": "Wait for Yaki's response on Dreo misting fan collaboration",
-      "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Liz sent follow-up to Yaki (Vanzo Media). Pitched summer lake cabin use case — spending lots of time in a cabin without AC, misting fan would be a natural organic share.",
-      "activity_note": "Apr 22: Liz sent follow-up to Yaki (Vanzo Media) on Dreo misting fan"
-    },
-    {
-      "action": "update",
-      "brand": "Govee",
-      "waiting_on": "brand",
-      "next_action": "Wait for Muriel's response on Govee Instagram campaign",
-      "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-22",
-      "activity_note": "Apr 22: Liz sent follow-up to Muriel (Vanzo Media) on Govee Instagram"
-    },
-    {
-      "action": "update",
-      "brand": "Bedsure",
-      "waiting_on": "brand",
-      "next_action": "Wait for Iris's response on Bedsure Sheet Set collaboration",
-      "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-22",
-      "activity_note": "Apr 22: Liz sent follow-up to Iris (Make Wonder INC) on Bedsure Sheet Set"
-    }
-  ],
+  "deals": [],
   "activities": []
 }]
