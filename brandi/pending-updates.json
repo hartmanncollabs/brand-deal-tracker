@@ -1,23 +1,79 @@
 [{
   "run_summary": {
-    "summary": "Two actionable updates today. First: SOJOS isn't just waiting on brand approval anymore — Ruby replied after Liz submitted content and asked for a voiceover intro to be added. Ball is back in our court, needs to be done ASAP. Second and more urgent: Linkind SP6 Solar Pathway Lights deal just got the green light on concept (Apr 23) and the brand wants content submitted Monday or Tuesday (Apr 27–28). That's this weekend to film. $2,000 deal — don't let this slip now that you're this close.",
-    "emails_scanned": 27,
-    "deals_created": 0,
-    "deals_updated": 2,
+    "summary": "Five deals touched today. Yousky is officially dead — Luna confirmed $250 is their ceiling and they're done negotiating, time to close that card. New inbound from Make Wonder INC: Wise Block paid collab for 1x IG/YT video, Eastern Botanical building set series, VERY tight launch window of Apr 25–30 — Iris needs your quote today. Flexsteel/Steinhafels campaign enrollment confirmed 'in progress' on Popfly; Kenny also mentioned a retail store visit Thursday, so heads up on that. Linkind sent detailed filming specs today — nighttime-only shots, 50% lighting focus, must show app switching patterns with color animations, correct lens installed. SOJOS voiceover revision still on the to-do list and ticking.",
+    "emails_scanned": 35,
+    "deals_created": 1,
+    "deals_updated": 4,
     "suggestions": [
+      {
+        "type": "close",
+        "brand": "Yousky",
+        "message": "Luna confirmed today: $250 is their absolute max, won't move. Five weeks of negotiation, zero progress toward your $2K rate. Recommend marking this as dead and closing the card — don't let it sit and clutter the board. 🚫"
+      },
+      {
+        "type": "urgent",
+        "brand": "Wise Block",
+        "message": "New paid collab in your inbox from Make Wonder INC (Iris). Botanical Series building sets — 1x IG or YT video. They want to launch Apr 25–30, which is THIS WEEKEND. Need your rate quote today or tomorrow to have any shot at moving forward. 🌸"
+      },
       {
         "type": "urgent",
         "brand": "Linkind",
-        "message": "Concept APPROVED — brand wants content by Monday/Tuesday (Apr 27–28). You have the lights in hand since ~Apr 19. Film this weekend! $2,000 on the line. 🎬"
+        "message": "Concept approved, content due Mon/Tue (Apr 27–28). Filming specs from today: nighttime ONLY, no daylight shots, 50% of video = lighting effects, must show app switching color patterns + animations. Film this weekend and make sure the lens is installed correctly! $2,000 on the line. 🎬"
       },
       {
         "type": "action-needed",
         "brand": "SOJOS",
-        "message": "Ruby loved the video but asked you to add a voiceover introducing the sunglasses and brand. Quick revision — knock it out today or tomorrow and resubmit so this doesn't stall. 🕶️"
+        "message": "Ruby's voiceover revision is still waiting. Quick addition — record a brief intro introducing SOJOS and the sunglasses over your existing video and resubmit so this doesn't get stuck at approval. 🕶️"
+      },
+      {
+        "type": "opportunity",
+        "brand": "Victorinox AG",
+        "message": "Popfly just dropped a $5,000 Victorinox Swiss Tool campaign — application deadline April 30. You already use Popfly (Flexsteel deal). Worth a look if tools/outdoor fits your content calendar! 🛠️"
+      },
+      {
+        "type": "opportunity",
+        "brand": "BlackStrap",
+        "message": "Two BlackStrap campaigns on Popfly: Family Ambassador ($3K + $1.2K product) and Individual Ambassador ($2.5K + $700 product), both deadline April 28. Fast turnaround — does spring/outdoor fit? 🎿"
       }
     ]
   },
   "deals": [
+    {
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Send rate quote to Iris at Make Wonder INC for Botanical Series collab",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-23",
+      "value": 0,
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 23]: Iris from Make Wonder INC (official agency for Wise Block/Alpha Group) reached out for 1x YouTube or IG video featuring Eastern Botanical Series building sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Paid collab + free product set. Launch window Apr 25–30 — extremely tight. Need to reply with rate ASAP.",
+      "activity_note": "Apr 23: New inbound — Make Wonder INC/Wise Block paid collab, tight Apr 25–30 launch window, awaiting our quote"
+    },
+    {
+      "action": "update",
+      "brand": "Yousky",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide: accept $250 or close deal",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Luna confirmed final answer — $250 max fee, will not go higher. Liz held firm at $2,000 throughout 5+ weeks of negotiation (initial ask $2,500, dropped to $2,000 on Mar 24). Deal is at a dead end at our rate. Recommend closing.",
+      "activity_note": "Apr 23: Luna at Yousky confirmed $250 is their ceiling — deal is dead at our rate, recommend closing"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Begin content creation for Flexsteel/Steinhafels Popfly campaign",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Kenny confirmed to Ian Saunders (ian@popfly.com) that campaign now shows 'in progress' on Liz's dashboard; Apply button now reads 'applications closed' — enrollment confirmed. Thread also mentions visiting the Steinhafels retail store Thursday (~Apr 24) for in-store content. Parent card only — campaign-wide enrollment update.",
+      "activity_note": "Apr 22: Flexsteel/Steinhafels Popfly campaign confirmed enrolled and in progress; retail store visit Thursday"
+    },
     {
       "action": "update",
       "brand": "SOJOS",
@@ -25,20 +81,20 @@
       "waiting_on": "us",
       "next_action": "Add voiceover intro to SOJOS video per Ruby's revision request, then resubmit",
       "next_action_date": "2026-04-24",
-      "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Ruby (marketing202@sojosvision.com) reviewed submitted content and asked Liz to add a voice-over introducing the sunglasses and brand. Revision needed before approval can proceed.",
-      "activity_note": "Apr 22: Ruby at SOJOS reviewed content and requested voiceover addition — revision needed, back to us"
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Ruby (marketing202@sojosvision.com) reviewed submitted content and asked Liz to add a voiceover introducing the sunglasses and brand. Revision needed before approval. Content was submitted Apr 22 via Google Drive link (includes caption with code MISSLIZSOJOS).",
+      "activity_note": "Apr 23: Ruby at SOJOS reviewed content and requested voiceover addition — revision needed, resubmit when done"
     },
     {
       "action": "update",
       "brand": "Linkind",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Film Linkind SP6 Smart Solar Pathway Lights content per approved concept",
+      "next_action": "Film Linkind SP6 Smart Solar Pathway Lights content — nighttime only, per brand specs",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Platform (SocialMediaCollabs) relayed that concept is approved — brand wants content submitted Monday/Tuesday (Apr 27–28). Lights received ~Apr 19–20. $2,000 for 1x 60–90s dedicated IG Reel. Film this weekend.",
-      "activity_note": "Apr 23: Linkind concept approved — content deadline Mon/Tue Apr 27–28; film this weekend"
+      "notes": "[Apr 23]: SocialMediaCollabs relayed detailed filming requirements from Linkind: (1) lighting portion = ~50% of video, not the SP6 product itself, (2) main content must be nighttime shots — NO daylight filming, patterns must be clearly visible, (3) must show app controlling/switching between patterns with visible color changes and animations, (4) light show interface should be accurate, (5) ensure correct lens installed. Content due Mon/Tue Apr 27–28. $2,000 for 1x 60–90s dedicated IG Reel.\n[Apr 23]: Platform (SocialMediaCollabs) relayed that concept is approved — brand wants content submitted Monday/Tuesday (Apr 27–28). Lights received ~Apr 19–20.",
+      "activity_note": "Apr 23: Detailed filming requirements received from Linkind — nighttime-only, app pattern shots required, deadline Mon/Tue Apr 27–28"
     }
   ],
   "activities": []
