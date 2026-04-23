@@ -1,72 +1,52 @@
 [{
   "run_summary": {
-    "summary": "Found 3 active negotiations that don't appear to be in the pipeline yet — all from outreach that's been going on for weeks. Most urgent: Govee has a posting deadline of April 25 (TOMORROW) and the rate gap is huge ($1000 brand vs $3000 Liz). That window has basically closed — worth a quick call to Muriel to see if they're still interested at any rate, or just let it go. Dreo (also VanzoMedia/Yaki) is a better situation — posting window runs through April 30 and the Dreo misting fan is a perfect fit for the lake cabin summer content Liz pitched. Bedsure is going stale at 10 days with no response. All three deals have Liz doing her part (follow-ups sent Apr 22) but no brand replies yet.",
-    "emails_scanned": 11,
-    "deals_created": 3,
-    "deals_updated": 0,
+    "summary": "Active day for the pipeline. Flexsteel/Steinhafels store visit happened today with a TOMORROW (Apr 24) deadline to apply on the Popfly platform — Kenny said he'd handle it after the store visit, but this needs to not fall through the cracks. Linkind SP6 has a confirmed content deadline of Monday/Tuesday (Apr 27-28) with detailed filming specs from the brand. SOJOS is in final revision — Liz submitted her voice-over edit today and is waiting on Ruby's approval. Yousky PR gave their definitive final answer today: $250 max, no exceptions. If Yousky is in the pipeline, close it — that $1750 rate gap is never closing.",
+    "emails_scanned": 10,
+    "deals_created": 0,
+    "deals_updated": 3,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Govee",
-        "message": "🚨 Govee's posting deadline is TOMORROW (Apr 25) and Muriel hasn't replied to Liz's rate of $3000 — brand countered at $1000 back on Apr 2. That's a $2000 gap with basically no runway left. If Liz wants this deal, she'd have to drop rate significantly and film immediately. Recommend: shoot Muriel a quick message today asking if the campaign is still open and at what rate — otherwise close this one out."
+        "brand": "Flexsteel",
+        "message": "🚨 Popfly campaign enrollment closes TOMORROW (Apr 24). Kenny and Liz visited Steinhafels today for content — Kenny told Ian he'd apply to the Popfly platform when they got back from the store. Ian gave a 👍 but the window closes tomorrow. Make sure the application actually gets submitted today."
       },
       {
-        "type": "follow-up",
-        "brand": "Dreo",
-        "message": "Dreo's posting window runs through April 30 so there's still time. Liz pitched a great angle (lake cabin, no AC, perfect summer product). Yaki at VanzoMedia hasn't replied to the rate quote of $3000. Might be worth a quick check-in this week — if they don't respond by Apr 28 or so, it's probably safe to close."
-      },
-      {
-        "type": "follow-up",
-        "brand": "Bedsure",
-        "message": "Bedsure/Iris at Make Wonder INC has gone quiet since Liz sent her rate on Apr 13 — two follow-ups with no response. Liz's ask is $4500 (IG Reel + paid usage + 14-day link in bio). Worth giving it a few more days but if nothing by end of next week, close it out."
+        "type": "close-out",
+        "brand": "Yousky",
+        "message": "Luna from Yousky PR gave her firm final answer today: $250 max, no exceptions. Liz has been at $2000 since March and sent another follow-up today — Luna came back with the same $250. If Yousky is in the pipeline, recommend closing it out. Rate gap is unbridgeable and the brand isn't moving."
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "Govee",
-      "stage": "negotiation",
-      "deal_type": "posted",
-      "waiting_on": "brand",
-      "next_action": "Decide whether to pursue Govee — posting deadline Apr 25 has passed, rate gap is $1000 vs $3000. Contact Muriel today or close out.",
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly platform — deadline tomorrow Apr 24 (URGENT)",
       "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-22",
-      "value": 1000,
-      "contact_name": "Muriel Tang",
-      "contact_email": "muriel.tang@vanzomedia.com",
-      "notes": "[Apr 22]: Liz sent 2nd follow-up to Muriel — no response yet.\n[Apr 14]: Liz sent 1st follow-up.\n[Apr 3]: Liz replied to Govee inquiry with $3000 rate for 1 IG Video.\n[Apr 2]: Muriel Tang (VanzoMedia) reached out — Govee TV Backlights, 1 IG Video, posting before Apr 25, brand budget $1000. DEADLINE PASSED.",
-      "activity_note": "Apr 22: Deal picked up from email — Govee TV Backlights via VanzoMedia, posting deadline Apr 25, brand at $1000 vs Liz at $3000, no resolution"
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Kenny and Liz visited Steinhafels store today for content creation. Ian (Popfly) reopened the campaign enrollment window which had previously showed 'applications closed.' Kenny confirmed he'll apply to the Popfly platform when they return from the store. Deadline to apply is Apr 24. Parent card update — this is campaign enrollment, not a specific deliverable.",
+      "activity_note": "Apr 23: Steinhafels store visit for Flexsteel content — Ian (Popfly) reopened enrollment window, Kenny confirmed he'll apply to platform before Apr 24 deadline [parent card]"
     },
     {
-      "action": "create",
-      "brand": "Dreo",
-      "stage": "negotiation",
-      "deal_type": "posted",
-      "waiting_on": "brand",
-      "next_action": "Wait for Yaki (VanzoMedia) to respond to $3000 rate — follow up Apr 28 if still no reply",
-      "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-22",
-      "value": 3000,
-      "contact_name": "Yaki",
-      "contact_email": "yakiii@vanzomedia.com",
-      "notes": "[Apr 22]: Liz sent 3rd follow-up with lake cabin summer angle — great organic pitch.\n[Apr 14]: Liz sent 2nd follow-up (noted she was on vacation).\n[Apr 1]: Liz replied to Dreo inquiry with $3000 rate.\n[Mar 31]: Yaki (VanzoMedia) reached out — Dreo misting fan, 1 IG Reel co-post + 7-day link in bio + 1 Story, posting window Apr 15–Apr 30. Asked for rate.",
-      "activity_note": "Apr 22: Deal picked up from email — Dreo misting fan via VanzoMedia/Yaki, Liz quoted $3000, brand hasn't responded to rate, posting window Apr 15-30"
+      "action": "update",
+      "brand": "Linkind",
+      "waiting_on": "us",
+      "next_action": "Film and submit SP6 nighttime content — brand deadline is Mon/Tue Apr 27-28",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Content deadline confirmed — brand wants Linkind SP6 video by Monday/Tuesday (Apr 27-28). Liz confirmed she can deliver, possibly sooner. Filming specs from brand: nighttime-only filming required (no daylight shots), lighting effects should take up ~50% of video (not just the SP6 product), must show app controlling and switching patterns with dynamic color changes and animations, correct lens installation position required, visuals and voiceover must match.",
+      "activity_note": "Apr 23: Linkind SP6 content deadline confirmed — Mon/Tue Apr 27-28, nighttime filming, app controls, lighting effects focus"
     },
     {
-      "action": "create",
-      "brand": "Bedsure",
-      "stage": "negotiation",
-      "deal_type": "posted",
+      "action": "update",
+      "brand": "SOJOS",
       "waiting_on": "brand",
-      "next_action": "Wait for Iris (Make Wonder INC) to respond — 2nd follow-up sent Apr 22, close out if no reply by Apr 30",
-      "next_action_date": "2026-04-30",
-      "last_contact": "2026-04-22",
-      "value": 4500,
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 22]: Liz sent 2nd follow-up — no response.\n[Apr 20]: Liz sent 1st follow-up.\n[Apr 13]: Liz replied with rate: $2500 for IG Reel + $1000/30 days paid usage, $4500 bundle including 14-day link in bio.\n[Apr 10]: Iris (Make Wonder INC, Bedsure official partner) reached out — summer sheet sets collab, paid + free product.",
-      "activity_note": "Apr 22: Deal picked up from email — Bedsure summer sheets via Make Wonder INC/Iris, Liz quoted $4500 bundle, no response in 10 days"
+      "next_action": "Wait for Ruby's final approval on revised SOJOS video with voice-over",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Liz submitted revised video to Drive with voice-over per Ruby's request. Waiting for final brand approval.\n[Apr 22]: Liz submitted initial video to Drive with caption ('The sunnies I'm rocking this season! Comment SUN for link! @sojosvision...', 10% off code: MISSLIZSOJOS). Ruby (SOJOS Vision marketing) asked for voice-over introducing the brand to be added.",
+      "activity_note": "Apr 23: Liz resubmitted SOJOS video with voice-over revision — waiting for Ruby's (SOJOS Vision) final approval"
     }
   ],
   "activities": []
