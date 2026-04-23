@@ -1,84 +1,97 @@
 [{
   "run_summary": {
-    "summary": "Liz sent a batch of outbound follow-ups this evening — Yousky, Dreo, Govee, and Bedsure all got a nudge. Most urgent: Govee has a brand-side posting deadline of April 25 (TOMORROW) and there's still a $2K gap between Liz's $3K ask and their $1K offer from Vanzo Media — if this deal is going to happen at all, someone needs to bridge that gap today. Dreo (also Vanzo Media) is a similar situation — Liz quoted $3K back on April 1st and has been following up with zero response. Bedsure (Make Wonder INC) is also quiet after Liz's $4500 bundle quote. Yousky is the oldest thread — in negotiation since March at Liz's $2000 counter, and Kenny followed up April 13. Liz checked in again today. On the Popfly front, Osprey Packs just posted a UGC run campaign ($700 + free product, deadline April 28) — could be a quick easy win.",
-    "emails_scanned": 16,
-    "deals_created": 3,
-    "deals_updated": 1,
+    "summary": "Big scan today — 6 deals with actionable updates. Top alert: Wise Block (building blocks, same Iris/Make Wonder agency as Bedsure) just landed in the inbox with a paid collab ask and a launch deadline of April 25–30, so this needs a rate response by tomorrow. Yousky finally replied after weeks of chasing... but their cap is $250, way below Liz's $2K counter — that needs a yes/no decision fast. On the bright side: Flexsteel & Steinhafels is now confirmed 'in progress' on Popfly with a store visit Thursday (Apr 24), and Liz submitted SOJOS content for approval yesterday. Less good: JLab payment is still MIA even though others on the same Pulse campaign were paid 2 weeks ago — manager is chasing it. And Aleve flagged a VO revision + missing disclaimers that Liz committed to redo yesterday.",
+    "emails_scanned": 13,
+    "deals_created": 1,
+    "deals_updated": 5,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Govee",
-        "message": "Brand deadline is TOMORROW (April 25) and no response to Liz's $3K counter since April 3rd. Their offer was $1K. Either someone bridges the gap today or this deal dies. Worth a quick email to Muriel at muriel.tang@vanzomedia.com — even meeting at $2K might save it. ⏰"
+        "brand": "Wise Block",
+        "message": "New inbound from Iris at Make Wonder INC (same agency as Bedsure) — Wise Block premium building blocks, paid cash collab, 1x YouTube/Instagram video. Launch deadline BEFORE April 25–30 and sample ships 3–5 days after you confirm. This needs a rate response TODAY or tomorrow at the latest. 🧱"
       },
       {
-        "type": "follow-up",
-        "brand": "Dreo",
-        "message": "Liz has followed up three times now (Apr 1, Apr 14, Apr 22) on the Dreo misting fan deal. Yaki at Vanzo Media hasn't responded to the $3K quote. One more nudge or let it go — your call. The lake cabin no-AC angle Liz pitched today was a great hook though. 🌬️"
-      },
-      {
-        "type": "follow-up",
+        "type": "decision",
         "brand": "Yousky",
-        "message": "Still waiting on Luna at Yousky for a response to the $2K counter. Thread has been open since March — Kenny followed up April 13, Liz again today. Give it until April 25 then decide whether to lower the rate or walk. 🏊"
+        "message": "Luna at Yousky finally responded — but their hard cap is $250 for a first collab. Liz's counter was $2,000. That gap is not bridgeable at face value. Make the call: accept $250, try countering lower (maybe $500?), or pass. Don't let this sit — it's been open since March. 🤝"
       },
       {
-        "type": "opportunity",
-        "brand": "Osprey Packs",
-        "message": "New Popfly campaign: S26 Run UGC Campaign — $700 + free product, application deadline April 28. UGC deal so it goes straight to invoicing after creation. Outdoor/active niche fits if Liz is doing summer content. Apply on Popfly before the 28th if interested. 🎒"
+        "type": "urgent",
+        "brand": "Govee",
+        "message": "Still no response from Muriel at Vanzo Media and Govee's posting deadline is April 25 — 2 days from now. If you want to save this deal, email Muriel (muriel.tang@vanzomedia.com) today and offer to meet closer to their $1K. Otherwise it's probably dead. ⏰"
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "Manager is chasing JLab accounting — everyone else on the Pulse campaign was paid ~2 weeks ago. If you don't hear back today, might be worth Liz reaching out directly to her JLab contact to nudge. 💸"
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "Yousky",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Luna if no response on $2000 rate by Apr 25",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-22",
-      "notes": "[Apr 22]: Liz sent another follow-up to Luna (luna@yousky.com) checking in on the $2000 counter. Context: Yousky reached out in March about their pool/hot tub cleaner, Liz countered at $2000, Kenny followed up Apr 13 also asking to align at $2000 with hot tub angle.",
-      "activity_note": "Apr 22: Liz sent follow-up to Yousky — $2000 rate still on table, waiting on Luna"
-    },
-    {
       "action": "create",
-      "brand": "Dreo",
+      "brand": "Wise Block",
       "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Yaki at Vanzo Media on $3000 rate — or decide whether to close out",
+      "waiting_on": "us",
+      "next_action": "Send rate quote to Iris for Wise Block collab — 1x YT/IG video",
       "next_action_date": "2026-04-24",
-      "last_contact": "2026-04-22",
-      "contact_name": "Yaki",
-      "contact_email": "yakiii@vanzomedia.com",
-      "value": 3000,
-      "notes": "[Apr 22]: Third follow-up sent. Liz pitched summer lake cabin angle (no AC, perfect for misting fan). No response from Yaki.\n[Apr 14]: Second follow-up. Mentioned just back from vacation, still interested.\n[Apr 1]: Liz quoted $3000 for Dreo misting fan IG collaboration. Vanzo Media (Yaki) reached out Mar 31 about Dreo misting fan campaign. Deliverables and posting date not yet confirmed — pending rate agreement.",
-      "activity_note": "Apr 22: Liz's third follow-up on Dreo misting fan deal — $3000 quoted via Vanzo Media, no brand response yet"
-    },
-    {
-      "action": "create",
-      "brand": "Govee",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "URGENT — contact Muriel today about Govee: brand deadline is April 25, consider meeting closer to $2000",
-      "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-22",
-      "contact_name": "Muriel Tang",
-      "contact_email": "muriel.tang@vanzomedia.com",
-      "value": 3000,
-      "notes": "[Apr 22]: Second follow-up sent to Muriel. Still no response to $3000 counter.\n[Apr 14]: First follow-up after no response.\n[Apr 3]: Liz quoted $3000 for 1x Instagram Video featuring Govee TV Backlights. Muriel (Vanzo Media) reached out Apr 2 offering $1000 with posting deadline April 25. Major rate gap: brand at $1000, Liz at $3000.",
-      "activity_note": "Apr 22: Follow-up sent on Govee — URGENT April 25 deadline, $1K offer vs $3K counter, no brand response"
-    },
-    {
-      "action": "create",
-      "brand": "Bedsure",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Iris on $4500 bundle rate if no response",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-22",
+      "last_contact": "2026-04-23",
       "contact_name": "Iris",
       "contact_email": "iris@makewondermcn.com",
-      "value": 4500,
-      "notes": "[Apr 22]: Third follow-up sent — 'Just following up again.'\n[Apr 20]: Second follow-up confirming they received Liz's reply.\n[Apr 13]: Liz quoted $4500 bundle: $2500 IG Reel + $1000/30 days paid usage + 14-day link in bio. Iris (Make Wonder INC, Bedsure's agency) first reached out Apr 10 about Bedsure Summer Sheet Sets collab. Product: premium summer sheet sets.",
-      "activity_note": "Apr 22: Third follow-up on Bedsure — $4500 bundle quoted (IG Reel + paid usage + link in bio), waiting on Iris at Make Wonder INC"
+      "notes": "[Apr 23]: Inbound from Iris at Make Wonder INC (same agency as Bedsure). Brand: Wise Block (premium building blocks, Alpha Group) — Botanical Series: Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony. Ask: 1x YouTube/Instagram Video. Offer: competitive cash fee + free building set + 'Key Partner' status + brand exposure across global channels. URGENT: launch deadline before Apr 25–30; sample ships 3–5 days after confirmation. Liz to send rate.",
+      "activity_note": "Apr 23: Inbound from Make Wonder INC / Iris about Wise Block Botanical Series — paid cash collab, 1x video, urgent April 25–30 launch deadline"
+    },
+    {
+      "action": "update",
+      "brand": "Yousky",
+      "waiting_on": "us",
+      "next_action": "Decide: accept Yousky's $250 cap, counter lower, or pass",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Luna (luna@yousky.com) replied — hard cap of $250 for first collaboration. Liz's standing counter is $2,000. Major gap. Decision needed: accept, negotiate down, or walk.",
+      "activity_note": "Apr 22: Yousky replied with $250 hard cap — vs Liz's $2000 counter; awaiting our decision"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Visit Steinhafels store and film Flexsteel content",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Kenny confirmed Popfly campaign is 'in progress' (via Ian Saunders, ian@popfly.com). Application window closed. Store visit to Steinhafels scheduled Thursday Apr 24, 11:30am–12pm.",
+      "activity_note": "Apr 22: Flexsteel & Steinhafels campaign confirmed 'in progress' on Popfly — store visit Thu Apr 24 to film content"
+    },
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Await content approval from Ruby at SOJOS",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Liz submitted video content + caption to Ruby (marketing202@sojosvision.com) via Google Drive for review. Caption theme: 'The sunnies I'm...' Awaiting brand approval.",
+      "activity_note": "Apr 22: SOJOS content submitted to Ruby for approval — moved to Approval"
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "waiting_on": "brand",
+      "next_action": "Follow up on JLab payment — confirm manager received update from accounting",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: Payment still not received. Liz flagged to manager (misslizdidit@socialmediacollabs.com) — others on same Pulse campaign were paid ~2 weeks ago. Manager actively following up with JLab accounting, expected update by Apr 22.",
+      "activity_note": "Apr 21: JLab payment overdue — others on Pulse campaign already paid; manager chasing JLab accounting"
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "us",
+      "next_action": "Redo Aleve video VO per brand script + add disclaimers, then resubmit",
+      "next_action_date": "2026-04-23",
+      "last_contact": "2026-04-22",
+      "notes": "[Apr 22]: Brand flagged VO revision needed + missing disclaimers. Manager forwarded revised scripts via Google Doc. Liz acknowledged she confused Aleve's VO requirements with another collab — committed to redo and add disclosures same day (Apr 22).",
+      "activity_note": "Apr 22: Aleve requested VO revision + disclaimers — Liz committed to redo content"
     }
   ],
   "activities": []
