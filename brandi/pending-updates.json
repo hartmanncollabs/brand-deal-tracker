@@ -1,1 +1,72 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Active pipeline day! 🚨 URGENT: Ian Saunders at Popfly re-opened the Flexsteel/Steinhafels campaign application — it closes TOMORROW (Apr 24) and Kenny still needs to apply (he's out at Steinhafels today but said he'll do it when back). SOJOS revised content was submitted today with voiceover added per Ruby's request — in Approval, waiting on brand. Linkind has a firm content deadline of Mon/Tue Apr 26-27 and Liz confirmed she can hit it. Yousky came back with their final offer of $250 — way below Liz's $2000 rate — I'd recommend closing that one out.",
+    "emails_scanned": 8,
+    "deals_created": 1,
+    "deals_updated": 3,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "🚨 Kenny needs to apply to the Popfly campaign TODAY before it closes tomorrow (Apr 24). Ian re-opened it as a favor to get them in. Kenny said he'd do it when back from Steinhafels — make sure this happens!"
+      },
+      {
+        "type": "decision",
+        "brand": "Yousky",
+        "message": "Luna confirmed $250 is their absolute max for a first collab. Liz's ask is $2000. That gap isn't closable — recommend archiving this one unless Liz wants to take a deeply discounted intro deal."
+      },
+      {
+        "type": "deadline",
+        "brand": "Linkind",
+        "message": "Content is due Mon/Tue Apr 26-27 for the SP6 Solar Pathway Lights. Filming needs to be done at nighttime — please don't forget! Brand gave a detailed shot list."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly — closes Apr 24",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Ian Saunders (ian@popfly.com) re-opened Flexsteel/Steinhafels campaign on Popfly — must apply by Apr 24 before it closes again. Kenny confirmed he'll apply when back from Steinhafels visit. Ian gave thumbs up reaction.",
+      "activity_note": "Apr 23: Ian re-opened Popfly campaign application — Kenny must apply by Apr 24 (URGENT)"
+    },
+    {
+      "action": "update",
+      "brand": "Yousky",
+      "waiting_on": "us",
+      "next_action": "Decide whether to accept Yousky's final offer of $250 — far below our $2000 rate, recommend closing",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Luna (luna@yousky.com) replied to Liz's follow-up — confirmed $250 is their maximum budget for a first collaboration. Liz has been asking $2000. Gap is not bridgeable. Recommend archiving unless Liz wants to accept deeply discounted rate.",
+      "activity_note": "Apr 23: Yousky's final counter is $250 max — Liz's ask is $2000, recommend closing"
+    },
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "waiting_on": "brand",
+      "next_action": "Wait for Ruby at SOJOS to approve revised video (voiceover added per request)",
+      "next_action_date": "2026-04-26",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Liz submitted revised video with voiceover added (Ruby's request) via Google Drive. Waiting on SOJOS approval.\n[Apr 22]: Ruby (marketing202@sojosvision.com) requested voiceover introducing SOJOS brand after reviewing initial content submission.",
+      "activity_note": "Apr 23: Revised content with voiceover submitted to Ruby at SOJOS via Drive — waiting on approval"
+    },
+    {
+      "action": "create",
+      "brand": "Linkind",
+      "stage": "content",
+      "deal_type": "posted",
+      "waiting_on": "us",
+      "next_action": "Film SP6 Smart Solar Pathway Lights content — nighttime shots, app controls, voiceover required",
+      "next_action_date": "2026-04-26",
+      "last_contact": "2026-04-23",
+      "contact_name": "Liz (Social Media Collabs)",
+      "contact_email": "misslizdidit@socialmediacollabs.com",
+      "notes": "[Apr 23]: Brand wants content ready by Mon/Tue Apr 26-27. Liz confirmed she can deliver. Key filming requirements per brand: nighttime shots only (no daylight), lighting portion = ~50% of video, show app controlling patterns and color changes, voiceover must match visuals, lens installed in correct position, clean shot of app switching between patterns. Brand still reviewing concept but Liz has confirmed delivery timeline.",
+      "activity_note": "Apr 23: Content deadline confirmed Mon/Tue Apr 26-27 — detailed brand filming requirements received, Liz confirmed timeline"
+    }
+  ],
+  "activities": []
+}]
