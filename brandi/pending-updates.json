@@ -1,31 +1,28 @@
 [{
   "run_summary": {
-    "summary": "One new deal opportunity came in today — Iris at Make Wonder INC (same contact as Bedsure) is offering a paid collab for the Wise Block Botanical Series: building block sets inspired by Eastern flora. The original Bedsure sheet set thread had stalled since Liz quoted her rate on Apr 13 with no reply; Iris is now pivoting to this new campaign. The catch: launch window is April 25–30, so this needs a rate reply from Liz TODAY. Cash comp is confirmed but no number was given — Iris asked Liz to send her quotation.",
-    "emails_scanned": 6,
-    "deals_created": 1,
-    "deals_updated": 0,
+    "summary": "SOJOS came through today — Ruby approved the revised content (with voiceover) and is proactively requesting Liz's bank info to arrange payment. This is a big move: SOJOS goes from Approval to Scheduled. Liz needs to send her banking details and confirm her upload date ASAP. Everything else from yesterday (Flexsteel/Popfly deadline, Linkind SP6 content, Wise Block) was already captured in prior runs.",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Wise Block",
-        "message": "🚨 Iris (Make Wonder INC) is waiting on Liz's rate quote for the Wise Block Botanical Series — 1 YouTube/Instagram Video, cash comp, free product. Launch window is April 25–30, which means there's essentially no runway. This needs a reply today with a rate if Liz wants to take it."
+        "brand": "SOJOS",
+        "message": "💸 Ruby at SOJOS Vision approved the content AND is asking for bank info to process payment. Liz needs to reply with banking details (Beneficiary Name, Bank name, Bank Address, Routing Number, Account Number, Swift Code) and confirm her posting date. Don't let this sit — they're ready to pay!"
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "Wise Block",
-      "stage": "negotiation",
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "scheduled",
       "waiting_on": "us",
-      "next_action": "Reply to Iris with rate quote for 1 YouTube/Instagram Video",
-      "next_action_date": "2026-04-24",
+      "next_action": "Post SOJOS content and send bank info to Ruby for payment",
+      "next_action_date": "2026-04-25",
       "last_contact": "2026-04-24",
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "value": null,
-      "notes": "[Apr 24]: Iris (Make Wonder INC — official agency for Wise Block) offered paid collab for Wise Block Botanical Series. Deliverables: 1 YouTube/Instagram Video. Compensation: cash fee (amount TBD, Iris asked for Liz's quotation) + free Botanical Series building block set. URGENT: Launch date Apr 25–30. Product: 4 designs — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony. Eastern-inspired building block sets, positioned as home décor/relaxation. Same agency contact as the Bedsure sheet set thread — that thread stalled after Liz quoted her rate on Apr 13; Iris is now offering this separate campaign.",
-      "activity_note": "Apr 24: New paid opportunity — Wise Block Botanical Series via Iris/Make Wonder INC. 1 YT/IG Video, cash comp (TBD), launch Apr 25–30. Awaiting Liz's rate reply."
+      "notes": "[Apr 24]: Ruby (SOJOS Vision) approved revised content with voiceover — said 'Thanks so much! Let us know when you will upload!' She is also requesting bank info to arrange payment (Beneficiary Name, Bank name, Bank Address, Routing Number, Account Number, Swift Code).",
+      "activity_note": "Apr 24: SOJOS approved revised content with voiceover — moved Approval → Scheduled. Ruby also requesting bank info to process payment."
     }
   ],
   "activities": []
