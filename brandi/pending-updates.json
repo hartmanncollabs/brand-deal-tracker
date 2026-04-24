@@ -1,24 +1,29 @@
 [{
   "run_summary": {
-    "summary": "Three deals need attention today. Iris at Wise Block (Make Wonder MCN) finally replied to Liz's follow-ups with a specific Botanical Series pitch — cash comp + free product, 1 YouTube/Instagram video, launch window April 25-30. Liz needs to send her rate TODAY. Linkind SP6 content deadline is confirmed for Monday/Tuesday (Apr 27-28) with detailed filming requirements from the agency — Liz agreed to try to deliver even sooner. And on Flexsteel: Ian Saunders (Popfly) reopened the campaign application on Apr 23 and told Kenny to apply before it closed TODAY (Apr 24). Kenny said he'd do it after Steinhafels — need to confirm it was submitted.",
+    "summary": "One new deal surfaced: SOJOS Sunglasses (product collab, signed contract) — Liz submitted a revised IG Reel to Ruby at SOJOS on Apr 23 after Ruby asked for a voiceover. SOJOS said they respond within 24 hours, so expect approval or feedback today. The three urgent items from yesterday remain open and are now more pressing: Wise Block's launch window starts TOMORROW (Apr 25) and Iris's email is still UNREAD — rate needs to go out today. Flexsteel's application window CLOSED TODAY with no confirmation of submission. Linkind SP6 content is due tomorrow.",
     "emails_scanned": 6,
-    "deals_created": 0,
+    "deals_created": 1,
     "deals_updated": 3,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "🚨 Iris replied TODAY with a specific Botanical Series pitch (building blocks, Eastern/Zen aesthetic). She's offering cash comp + free product for 1 YouTube/Instagram video. Launch window is April 25-30 — that's THIS WEEKEND. Liz needs to send her rate ASAP or this window closes."
+        "message": "🚨 Launch window starts TOMORROW (Apr 25)! Iris's rate request is still UNREAD — Liz hasn't replied yet. She needs to send her quotation TODAY for the Botanical Series (cash comp + free product, 1 YT/IG video, launch Apr 25-30). Don't let this one slip!"
       },
       {
         "type": "urgent",
         "brand": "Flexsteel (Popfly)",
-        "message": "⚠️ Ian Saunders reopened the Flexsteel/Popfly campaign application on Apr 23 and said the window closes TODAY (Apr 24). Kenny said he'd apply after Steinhafels. Did it happen? Log into Popfly and confirm the application was submitted before the deadline expires!"
+        "message": "⚠️ The Flexsteel/Popfly application window CLOSED TODAY (Apr 24). Kenny said he'd submit after Steinhafels — no confirmation email found. Log into Popfly RIGHT NOW and verify the application went through before the window locks permanently."
       },
       {
         "type": "reminder",
         "brand": "Linkind SP6",
-        "message": "📹 Content deadline is Monday/Tuesday (Apr 27-28). Agency wants: 50% lighting effects, nighttime focus, app pattern controls, clean aesthetics, voiceover matching visuals. Liz said she'd try to deliver sooner — keep that momentum!"
+        "message": "📹 Content deadline is TOMORROW (Mon Apr 27). Agency specs: nighttime lighting effects + app pattern controls = ~50% of video, voiceover must match visuals, lens in correct position. Liz said she'd try to deliver early — is it ready to send?"
+      },
+      {
+        "type": "new",
+        "brand": "SOJOS Sunglasses",
+        "message": "👓 New deal added: SOJOS Sunglasses is in Approval stage. Liz submitted a revised IG Reel (with voiceover intro) to Ruby at marketing202@sojosvision.com on Apr 23. SOJOS responds within 24 hours — if no approval by end of day today, follow up. Note: appears to be product-only compensation (4 pairs of sunglasses + 10% off code MISSLIZSOJOS, no cash comp identified). Created the card because there's a signed contract and content is actively in review."
       }
     ]
   },
@@ -27,31 +32,45 @@
       "action": "update",
       "brand": "Wise Block",
       "waiting_on": "us",
-      "next_action": "Send rate/quotation to Iris for Wise Block Botanical Series (1 YouTube or Instagram video)",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Iris (Make Wonder MCN, Official Partner Agency for Wise Block) replied to Liz's follow-ups with a specific pitch for the Botanical Series (building blocks inspired by Eastern flora — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Offering cash compensation + free product + Key Partner status. Deliverable: 1 YouTube or Instagram Video. Launch window: April 25-30. Sample delivery: 3-5 days after confirmation. They're waiting on Liz's quotation.",
-      "activity_note": "Apr 24: Iris replied with Wise Block Botanical Series pitch — cash + free product, 1 YT/IG video, launch Apr 25-30. Ball in Liz's court to send rate."
+      "next_action": "Send rate/quotation to Iris TODAY — Botanical Series launch window opens TOMORROW (Apr 25)",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Iris (Make Wonder MCN, Official Partner Agency for Wise Block) replied to Liz's follow-ups with a specific pitch for the Botanical Series (building blocks inspired by Eastern flora — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Offering cash compensation + free product + Key Partner status. Deliverable: 1 YouTube or Instagram Video. Launch window: April 25-30. Sample delivery: 3-5 days after confirmation. Waiting on Liz's quotation.",
+      "activity_note": "Apr 24: Wise Block rate still unsent — Iris's email UNREAD, launch window opens TOMORROW Apr 25. Rate must go out today."
     },
     {
       "action": "update",
       "brand": "Linkind SP6",
       "waiting_on": "us",
-      "next_action": "Film and deliver SP6 content per agency guidelines (nighttime lighting focus, app controls, 50% lighting footage, voiceover matching visuals)",
+      "next_action": "Film and deliver SP6 content per agency guidelines — DUE TOMORROW Apr 27 (nighttime lighting + app controls = ~50% of video, voiceover matching visuals)",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Agency (via Liz Hartmann at socialmediacollabs.com) requested content by Monday/Tuesday (Apr 27-28). Liz replied 'That works! I can try to get something to you sooner.' Key filming requirements: lighting portion should be ~50% of video (not just the SP6 product), main focus on nighttime lighting effects, avoid turning lights on in daylight, show app controlling pattern changes, lens in correct position, visuals and voiceover must match, avoid deviating from agreed concept.",
-      "activity_note": "Apr 23: Agency confirmed Mon/Tue content deadline, provided detailed filming requirements. Liz agreed and may deliver early. Key: nighttime lighting effects + app controls = 50% of video."
+      "notes": "[Apr 23]: Agency (via Liz Hartmann at socialmediacollabs.com) requested content by Monday/Tuesday (Apr 27-28). Liz replied 'That works! I can try to get something to you sooner.' Key filming requirements: lighting portion ~50% of video, main focus on nighttime lighting effects, avoid turning lights on in daylight, show app controlling pattern changes, lens in correct position, visuals and voiceover must match, avoid deviating from agreed concept.",
+      "activity_note": "Apr 23: Agency confirmed Mon/Tue content deadline (Apr 27-28). Liz agreed and may deliver early. Key: nighttime lighting effects + app controls = 50% of video."
     },
     {
       "action": "update",
       "brand": "Flexsteel",
       "waiting_on": "us",
-      "next_action": "Confirm Flexsteel/Popfly campaign application was submitted (deadline was Apr 24 — verify in Popfly dashboard)",
+      "next_action": "VERIFY NOW: Confirm Flexsteel/Popfly campaign application was submitted — deadline was TODAY Apr 24. Check Popfly dashboard immediately.",
       "next_action_date": "2026-04-24",
       "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Ian Saunders (Popfly) reopened the Flexsteel campaign application after Kenny thought it was already submitted. Ian said the window closes April 24 and asked Kenny to apply today. Kenny replied he'd work on it after returning from Steinhafels. Ian 👍'd the message. No confirmation yet that application was actually submitted — this needs to be verified TODAY.",
-      "activity_note": "Apr 23: Ian Saunders reopened Flexsteel campaign app window (closes Apr 24). Kenny said he'd apply after Steinhafels — need to confirm submission."
+      "notes": "[Apr 23]: Ian Saunders (Popfly) reopened the Flexsteel campaign application after Kenny thought it was already submitted. Ian said the window closes April 24 and asked Kenny to apply today. Kenny replied he'd work on it after returning from Steinhafels. Ian 👍'd the message. Application deadline is TODAY — no confirmation yet that it was actually submitted.",
+      "activity_note": "Apr 24: Flexsteel/Popfly application deadline was TODAY (Apr 24). No submission confirmation received — verify in Popfly dashboard immediately."
+    },
+    {
+      "action": "create",
+      "brand": "SOJOS Sunglasses",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Follow up on SOJOS content approval (Liz submitted revised IG Reel on Apr 23 with voiceover added per Ruby's request)",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-23",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "value": 0,
+      "notes": "[Apr 23]: Liz sent revised IG Reel content to Ruby — added voiceover introducing SOJOS sunglasses and brand per Ruby's Apr 22 request. SOJOS said they respond within 24 hours. Caption: 'The sunnies I'm rocking this season! Comment SUN for link! @sojosvision...code MISSLIZSOJOS.'\n[Apr 22]: Liz submitted original video draft + caption to Ruby for approval. Ruby requested voiceover addition.\n[Apr 18]: Liz signed the contract. Draft deadline agreed as 4/23; 2nd video planned for later in May.\n[Apr 14]: Liz confirmed receipt of 4 pairs of SOJOS sunglasses, requested signed agreement.\nCompensation: product-only — 4 pairs of sunglasses + 10% off affiliate code MISSLIZSOJOS (no cash comp identified). 2 deliverables total: 1 IG Reel now + 1 more video in May.",
+      "activity_note": "Apr 23: Liz submitted revised SOJOS IG Reel (voiceover added per Ruby's request). In Approval stage, waiting on brand. Product-only deal — card created because contract is signed and content is actively in review."
     }
   ],
   "activities": []
