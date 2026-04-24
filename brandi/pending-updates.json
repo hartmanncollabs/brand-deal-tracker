@@ -1,69 +1,63 @@
 [{
   "run_summary": {
-    "summary": "Four meaningful updates today. SOJOS is the biggest move — Ruby from SOJOS Vision approved Liz's revised content AND requested bank payment info to arrange payment; Kenny replied with bank details and said he'd notify Ruby when the post goes live. Time to schedule and post. Flexsteel has an urgent issue that was missed in this morning's scan: Kenny forgot to apply Liz to the Flexsteel/Steinhafels campaign after their visit, and had to ask Ian (Popfly) to reopen the application window — status unknown, needs follow-up ASAP. From Mariah's check-in, two deals missed earlier: Aleve's $12k content is under brand approval, and JLab May campaign is 'ready for content.' Also noting Aquara payment expected soon.",
-    "emails_scanned": 10,
-    "deals_created": 0,
-    "deals_updated": 5,
+    "summary": "New paid inbound from Wise Block (via Make Wonder INC agency): Iris replied to Liz's follow-up with a paid offer — 1 YouTube/Instagram Video for the Botanical Series, cash fee TBD, product launch April 25-30. They're waiting on Liz's rate. Very time-sensitive. Linkind SP6 Smart Solar Lights ($2k) is in active content: Liz confirmed she's editing on Apr 24, and the agency needs it by Mon/Tue April 27-28 with detailed creative notes from the client. Also flagging: Bark ($750 TikTok + Whitelisting) was due today per agency check-in; JLab March Campaign ($2k, due April 20) is 4 days overdue with a form/payment issue — JLab had the wrong email for Liz; and Antique Candle Co ($1,500 story shares for June flash sale) appears in agency check-in — verify it has a card on the board.",
+    "emails_scanned": 8,
+    "deals_created": 1,
+    "deals_updated": 2,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Flexsteel",
-        "message": "Kenny forgot to apply Liz to the Flexsteel/Steinhafels campaign after their store visit Apr 23. Ian had already reopened the application window once — Kenny asked him to do it again on Apr 24. Did Ian respond? This needs to be resolved ASAP before the window closes again."
+        "brand": "Wise Block",
+        "message": "Iris from Make Wonder INC is waiting on Liz's quotation for the Wise Block Botanical Series — 1 YouTube/Instagram Video, competitive cash fee. Product launch is April 25-30 (tomorrow!). Reply to iris@makewondermcn.com today with your rate."
+      },
+      {
+        "type": "urgent",
+        "brand": "Bark",
+        "message": "Bark (1 TikTok + Whitelisting, $750) was due today April 24 per agency check-in. Is content live/submitted? Check the Bark Drive folder or ping Mariah."
       },
       {
         "type": "action-needed",
-        "brand": "SOJOS",
-        "message": "SOJOS approved Liz's revised content and asked 'let us know when you will upload!' — Kenny sent payment bank info. Content is cleared, just needs to be posted. Notify Ruby at marketing202@sojosvision.com once it goes live."
+        "brand": "JLab March",
+        "message": "JLab March Campaign ($2k, 1 Reel/Story) was due April 20 and is now 4 days overdue. JLab had the wrong email for Liz's registration form — agency says form + payment should be coming ASAP. Verify with Mariah or JLab directly that the form got through."
       },
       {
         "type": "heads-up",
-        "brand": "JLab May",
-        "message": "JLab May campaign is 'ready for content' per Mariah's Apr 24 check-in. $2,000 deal — Liz should start filming."
+        "brand": "Antique Candle Co",
+        "message": "Agency check-in lists Antique Candle Co (2 story shares, $1,500) for a Clearance flash sale June 18-22. Make sure this has a card on the board — it hasn't shown up in any of my recent scans."
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "SOJOS",
-      "stage": "scheduled",
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
       "waiting_on": "us",
-      "next_action": "Post SOJOS content and notify Ruby when live",
+      "next_action": "Send rate/quotation to Iris for 1 YouTube/Instagram Video (Wise Block Botanical Series)",
       "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Ruby approved revised content — replied 'Thanks so much! Let us know when you will upload!' and requested Liz's bank payment info to arrange payment. Kenny sent bank details and confirmed he'll notify Ruby when the post goes live. Content is ready to post.",
-      "activity_note": "Apr 24: SOJOS approved revised content + requested bank payment info — Kenny sent bank details. Moving Approval → Scheduled."
+      "last_contact": "2026-04-23",
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 23]: Iris (Make Wonder INC, official partner agency for Wise Block) replied to Liz's follow-up. Offer: 1 YouTube/Instagram Video, competitive cash fee (amount TBD), free Wise Block Botanical Series set (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony), Key Partner status. Product launch: April 25-30. Iris asking for Liz's quotation. Prior Bedsure relationship — same agency (Make Wonder INC/iris@makewondermcn.com).",
+      "activity_note": "Apr 23: Inbound paid offer — Wise Block Botanical Series via Make Wonder INC (Iris). Liz was already following up. Needs rate response ASAP — launch imminent."
     },
     {
       "action": "update",
-      "brand": "Flexsteel",
-      "waiting_on": "brand",
-      "next_action": "Confirm Ian reopened Flexsteel campaign application — apply immediately if open",
-      "next_action_date": "2026-04-25",
+      "brand": "Smart Solar Path",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Finish editing Linkind SP6 solar lights video and submit to agency",
+      "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: URGENT — Kenny forgot to apply Liz to the Flexsteel campaign after the Steinhafels visit (got home, kids activities, etc.). Ian had reopened the application window on Apr 23, but Kenny missed it. Kenny emailed Ian on Apr 24 to ask if he can reopen it again. Waiting on Ian's response. Risk: campaign window may close again.",
-      "activity_note": "Apr 24: Missed detail — Kenny forgot to apply to Flexsteel campaign post-Steinhafels; asked Ian (ian@popfly.com) to reopen application window"
+      "notes": "[Apr 24]: Liz confirmed she's editing solar lights content — asked agency about creative brief (not visible in Drive folder). Agency had shared detailed client feedback on Apr 23: nighttime lighting effects should dominate (~50% of video), show app controls and pattern switching, avoid filming in daylight, correct lens position, clear voiceover/visual alignment, logical structure. Agency requesting content delivery by Mon/Tue April 27-28.",
+      "activity_note": "Apr 24: Liz editing Linkind SP6 content — agency needs delivery by Mon/Tue Apr 27-28"
     },
     {
       "action": "update",
-      "brand": "Aleve",
+      "brand": "Bark",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Per Mariah's weekly check-in — Aleve (3x Instagram Reels @Aleve_US, $12,000) is under content approval.",
-      "activity_note": "Apr 24: Mariah check-in confirms Aleve content is under brand approval"
-    },
-    {
-      "action": "update",
-      "brand": "Aquara",
-      "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Per Mariah's weekly check-in — Aquara payment is coming soon. 1 Reel, $1,500.",
-      "activity_note": "Apr 24: Mariah check-in — Aquara payment expected soon"
-    },
-    {
-      "action": "update",
-      "brand": "JLab",
-      "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Per Mariah's weekly check-in — JLab May campaign (1 Reel/Stories, $2,000) is 'ready for content' — Liz should start filming. JLab April Campaign is on track, due 5/17/26.",
-      "activity_note": "Apr 24: Mariah check-in — JLab May ready for content ($2k); JLab April due 5/17/26 and on track"
+      "notes": "[Apr 24]: Agency check-in (Mariah) shows Bark (1 TikTok + Whitelisting, $750) was due today April 24. Status listed as active in check-in table.",
+      "activity_note": "Apr 24: Bark TikTok + Whitelisting ($750) flagged as due today in agency check-in — verify content submitted"
     }
   ],
   "activities": []
