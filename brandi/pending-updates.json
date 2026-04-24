@@ -1,9 +1,9 @@
 [{
   "run_summary": {
-    "summary": "Big move on Flexsteel — Ian responded to Kenny's email in under 6 hours and extended the PopFly application window to Monday. Ball is back in our court: apply before Monday or lose the slot a fifth time. Also creating a new deal card for Wise Block — Iris at Make Wonder INC replied to Liz's follow-ups with a formal offer (1x YT/IG Video, cash + product, Key Partner status), but the launch window is April 25–30 so Liz needs to send her rate TODAY. Two deal notes from Mariah's weekly check-in: JLab March Campaign is past its 4/20 due date because JLab had the wrong email for Liz when sending the registration form (Mariah says form + payment coming ASAP); and Liz confirmed caption is uploaded to the Smart Solar Drive folder as of Friday evening.",
-    "emails_scanned": 12,
+    "summary": "Big move on Flexsteel — Ian responded to Kenny's email in under 6 hours and extended the PopFly application window to Monday. Apply before Monday or lose the slot a fifth time. New deal card for Wise Block — Iris at Make Wonder INC replied to Liz's follow-ups with a formal offer (1x YT/IG Video, cash + product, Key Partner status), but the launch window is April 25-30 so Liz needs to send her rate TODAY. Pulling from Mariah's full check-in and the Apr 22 Collab thread: JLab March is past-due (wrong email — now fixed, form + payment expected ASAP); Smart Solar caption uploaded, video editing due Mon/Tue; Aleve had a VO revision request Apr 22 (missing #AlevePartner disclosures + wrong script) — Liz resubmitted same day, back under approval per Apr 24 check-in; JLab May ready for content; JLab April on track for 5/17; Aqara payment incoming; Antique Candle flash sale hard deadline June 18-22.",
+    "emails_scanned": 14,
     "deals_created": 1,
-    "deals_updated": 3,
+    "deals_updated": 8,
     "suggestions": [
       {
         "type": "urgent",
@@ -13,16 +13,16 @@
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Iris at Make Wonder INC (iris@makewondermcn.com) is waiting on Liz's rate quote for the Wise Block Botanical Series. Launch window is April 25–30 — today is the last day to respond with a number. If Liz is interested, she needs to reply ASAP."
+        "message": "Iris at Make Wonder INC (iris@makewondermcn.com) is waiting on Liz's rate quote for the Wise Block Botanical Series. Launch window is April 25-30 — today is the last day to respond with a number. If Liz is interested, she needs to reply ASAP."
       },
       {
         "type": "follow-up",
         "brand": "Bark",
-        "message": "Mariah's weekly check-in shows Bark (1 TikTok + Whitelisting, $750) was due TODAY April 24 — no status note in the check-in. Worth confirming content was submitted. Drive folder: https://drive.google.com/drive/folders/1Wkq80ztLyqK16XMAKa52ZqRX8Tj7j2wm"
+        "message": "Bark (1 TikTok + Whitelisting, $750) was due today April 24 — no status note in the check-in. Confirm content was submitted to the Drive folder: https://drive.google.com/drive/folders/1Wkq80ztLyqK16XMAKa52ZqRX8Tj7j2wm"
       },
       {
         "type": "follow-up",
-        "brand": "JLab",
+        "brand": "JLab March Campaign",
         "message": "JLab March Campaign ($2,000, 1 Reel/Story) was due 4/20 — Mariah says JLab had the wrong email when trying to send Liz the registration form. Now corrected; form + payment expected ASAP."
       }
     ]
@@ -59,7 +59,7 @@
       "next_action_date": "2026-04-25",
       "last_contact": "2026-04-24",
       "value": 0,
-      "notes": "[Apr 24]: Iris (iris@makewondermcn.com), Make Wonder INC (Official Wise Block Agency), replied with formal offer: 1x YouTube/Instagram Video for Wise Block Botanical Series (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony — Eastern flora/Zen garden building block sets). Offer includes cash compensation (amount TBD, awaiting Liz's quotation) + free product + Key Partner status + global brand exposure. Launch date April 25–30. Liz had been pursuing since ~Apr 13 with follow-ups Apr 20 and Apr 23. Iris explicitly asks for Liz's quotation to proceed.",
+      "notes": "[Apr 24]: Iris (iris@makewondermcn.com), Make Wonder INC (Official Wise Block Agency), replied with formal offer: 1x YouTube/Instagram Video for Wise Block Botanical Series (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony — Eastern flora/Zen garden building block sets). Offer includes cash compensation (amount TBD, awaiting Liz's quotation) + free product + Key Partner status + global brand exposure. Launch date April 25-30. Liz had been pursuing since ~Apr 13 with follow-ups Apr 20 and Apr 23. Iris explicitly asks for Liz's quotation to proceed.",
       "activity_note": "Apr 24: New deal card created — Wise Block Botanical Series via Make Wonder INC; urgent quote needed, launch Apr 25-30"
     },
     {
@@ -71,6 +71,57 @@
       "last_contact": "2026-04-24",
       "notes": "[Apr 24]: Mariah's weekly check-in: JLab March Campaign (1 Reel/Story, $2,000) was due 4/20/26. Delay caused by JLab having the wrong email address for Liz when sending the registration form. Issue now resolved — Mariah says form + payment should be arriving ASAP.",
       "activity_note": "Apr 24: Mariah flagged JLab March past-due — wrong email was the cause, now corrected, form + payment expected soon"
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "waiting_on": "brand",
+      "next_action": "Await Aleve content approval on revised Reel",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 22]: Aleve flagged two issues with submitted content — (1) V/O did not follow approved language/script, (2) missing required disclosures (#AlevePartner must appear in first 5 seconds). Script: https://docs.google.com/document/d/1Y9GTFoO9pVS5c9oarq00onyFvIv_hXb4/edit. Liz responded: 'I'll redo that today & add disclosures.' Mariah's Apr 24 check-in confirms Aleve is 'under content approval' ($12,000, 3x IG Reels @Aleve_US) — revised content appears resubmitted.",
+      "activity_note": "Apr 22: Aleve requested VO revision + disclosures; Liz resubmitted same day — under brand approval as of Apr 24"
+    },
+    {
+      "action": "update",
+      "brand": "Aqara Cameras",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on payment if not received by end of month",
+      "next_action_date": "2026-05-01",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly check-in: Aqara 1 Reel ($1,500, Doorbell) — status: 'payment coming soon.' Drive: https://drive.google.com/drive/folders/1yQfuFZc6c4uQHgi-lDH9ondl1HmZawCJ",
+      "activity_note": "Apr 24: Mariah check-in confirms Aqara payment incoming — moving to Invoiced"
+    },
+    {
+      "action": "update",
+      "brand": "JLab May",
+      "waiting_on": "us",
+      "next_action": "Film JLab May Reel + Stories content",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly check-in: JLab May Campaign (1 Reel/Stories, $2,000) — status: 'ready for content.' Liz needs to film. Drive: https://drive.google.com/drive/folders/1cYQlZ0LQBu55eDhUSZMffl0jtM4nVJHn",
+      "activity_note": "Apr 24: Mariah check-in — JLab May ready for content, waiting on Liz to film"
+    },
+    {
+      "action": "update",
+      "brand": "JLab April Campaign",
+      "waiting_on": "us",
+      "next_action": "Film JLab April Campaign Reel + Story",
+      "next_action_date": "2026-05-17",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly check-in: JLab April Campaign (1 Reel/Story, $2,000) — status: 'this will be on time.' Due 5/17/26.",
+      "activity_note": "Apr 24: Mariah check-in — JLab April on track, confirmed due 5/17/26"
+    },
+    {
+      "action": "update",
+      "brand": "Antique Candle",
+      "waiting_on": "us",
+      "next_action": "Create 2 story shares for Antique Candle Clearance Flash Sale (June 18-22)",
+      "next_action_date": "2026-06-15",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly check-in: Antique Candle Co. (2 story shares — 2 frames first + 1 follow-up, $1,500) — promoting bi-annual Clearance Flash Sale June 18-22. Hard deadline before June 18. Drive: https://drive.google.com/drive/folders/1QWHECghvXHAZiv4ssccXpWB5MD-fnQ33",
+      "activity_note": "Apr 24: Mariah check-in — Antique Candle flash sale June 18-22; deadline noted"
     }
   ],
   "activities": []
