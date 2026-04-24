@@ -1,1 +1,77 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Productive Friday with several real moves on the board. Liz submitted revised SOJOS content today (Apr 23), confirmed Linkind content delivery by Mon/Tue Apr 27-28, and Kenny captured Flexsteel footage at Steinhafels. Wise Block (building block brand via Make Wonder INC) finally responded to Liz's 3 follow-ups with a paid video offer — no rate given, they want her quote, and launch is Apr 25-30 so this is urgent. Bark content is due TODAY. JLab March campaign payment is 4 days overdue — registration form was sent to wrong email, now fixed per Mariah's check-in.",
+    "emails_scanned": 7,
+    "deals_created": 1,
+    "deals_updated": 4,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Bark",
+        "message": "Bark content (1 TikTok + Whitelisting, $750) is due TODAY, Apr 24! Make sure it's been submitted or posted."
+      },
+      {
+        "type": "urgent",
+        "brand": "JLab (March Campaign)",
+        "message": "JLab March campaign payment was due 4/20 and is now 4 days overdue. Per Mariah's check-in: JLab had the wrong email for the registration form — should now be fixed and payment coming ASAP. Worth confirming payment is actually on the way."
+      },
+      {
+        "type": "action-needed",
+        "brand": "Wise Block",
+        "message": "Iris at Make Wonder INC finally replied after 3 follow-ups. She wants Liz's rate quote for a YouTube/Instagram video featuring the Wise Block Botanical Series (building blocks). Launch window is Apr 25–30 — extremely tight. Reply ASAP with a quote or pass on this one."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
+      "deal_type": "posted",
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "waiting_on": "us",
+      "next_action": "Reply to Iris with rate quote for Wise Block Botanical Series video",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Iris (Make Wonder INC — official partner for Wise Block) replied after 3 follow-ups from Liz. Offering paid collab for Wise Block Botanical Series building block set. Deliverable: 1x YouTube or Instagram video. Compensation: cash fee (no amount given — they want Liz's quote) + 1 free set. Launch window Apr 25–30, very tight. Liz had been following up since Apr 13 on this thread (originally a Bedsure collab).",
+      "activity_note": "Apr 24: Wise Block (Make Wonder INC) replied with paid video offer — Liz needs to send rate quote ASAP, launch Apr 25-30"
+    },
+    {
+      "action": "update",
+      "brand": "SOJOS",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Check in on SOJOS content approval",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Liz sent revised content edits to SOJOS (sojosvision.com) with Drive link. Waiting on brand approval.",
+      "activity_note": "Apr 23: Revised content submitted to SOJOS — moved to Approval, waiting on brand"
+    },
+    {
+      "action": "update",
+      "brand": "Smart Solar",
+      "waiting_on": "us",
+      "next_action": "Film and deliver Linkind SP6 content by Monday Apr 27",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Liz confirmed she can have content ready by Mon/Tue (Apr 27–28) per brand request. Client filming requirements: lighting should be ~50% of video, must shoot at nighttime (patterns/colors visible), show app controlling light patterns with dynamic color changes, clear app UI shots, lens in correct position. Avoid daytime shots. Logical video structure recommended.",
+      "activity_note": "Apr 23: Content delivery confirmed for Mon/Tue Apr 27-28; detailed filming brief from Linkind shared"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Kenny confirmed they had a great time filming content at Steinhafels. Good content captured at the event. Kenny updated Ian (Popfly) on the visit.",
+      "activity_note": "Apr 24: Content captured at Steinhafels event — Kenny confirmed to Popfly"
+    },
+    {
+      "action": "update",
+      "brand": "Bark",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Per Mariah weekly check-in — Bark TikTok + Whitelisting content is due TODAY (Apr 24). $750 deal.",
+      "activity_note": "Apr 24: Mariah confirmed Bark content due date is today, Apr 24"
+    }
+  ],
+  "activities": []
+}]
