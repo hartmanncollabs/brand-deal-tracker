@@ -1,63 +1,50 @@
 [{
   "run_summary": {
-    "summary": "New paid inbound from Wise Block (via Make Wonder INC agency): Iris replied to Liz's follow-up with a paid offer — 1 YouTube/Instagram Video for the Botanical Series, cash fee TBD, product launch April 25-30. They're waiting on Liz's rate. Very time-sensitive. Linkind SP6 Smart Solar Lights ($2k) is in active content: Liz confirmed she's editing on Apr 24, and the agency needs it by Mon/Tue April 27-28 with detailed creative notes from the client. Also flagging: Bark ($750 TikTok + Whitelisting) was due today per agency check-in; JLab March Campaign ($2k, due April 20) is 4 days overdue with a form/payment issue — JLab had the wrong email for Liz; and Antique Candle Co ($1,500 story shares for June flash sale) appears in agency check-in — verify it has a card on the board.",
+    "summary": "Flexsteel content was shot at Steinhafels on Apr 23, but Kenny forgot to apply to the PopFly campaign after returning home and emailed Ian today to reopen the window — this is the fourth time the application window has needed to be reopened. The deal is real ($2,500/post, contract signed), content exists, but it won't officially register until the PopFly application goes through. Also: Mariah followed up asking Liz to upload the caption for the Smart Solar/Linkind video to the Drive folder (new since last run). And the weekly agency check-in explicitly confirms Aleve's 3x IG Reels ($12k) are under content approval — logging that for the record.",
     "emails_scanned": 8,
-    "deals_created": 1,
-    "deals_updated": 2,
+    "deals_created": 0,
+    "deals_updated": 3,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Wise Block",
-        "message": "Iris from Make Wonder INC is waiting on Liz's quotation for the Wise Block Botanical Series — 1 YouTube/Instagram Video, competitive cash fee. Product launch is April 25-30 (tomorrow!). Reply to iris@makewondermcn.com today with your rate."
-      },
-      {
-        "type": "urgent",
-        "brand": "Bark",
-        "message": "Bark (1 TikTok + Whitelisting, $750) was due today April 24 per agency check-in. Is content live/submitted? Check the Bark Drive folder or ping Mariah."
-      },
-      {
-        "type": "action-needed",
-        "brand": "JLab March",
-        "message": "JLab March Campaign ($2k, 1 Reel/Story) was due April 20 and is now 4 days overdue. JLab had the wrong email for Liz's registration form — agency says form + payment should be coming ASAP. Verify with Mariah or JLab directly that the form got through."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Antique Candle Co",
-        "message": "Agency check-in lists Antique Candle Co (2 story shares, $1,500) for a Clearance flash sale June 18-22. Make sure this has a card on the board — it hasn't shown up in any of my recent scans."
+        "brand": "Flexsteel",
+        "message": "Kenny emailed Ian (ian@popfly.com) today to reopen the Flexsteel/Steinhafels PopFly application window — again. Content was shot at Steinhafels on Apr 23! The PopFly application is the last blocker. If Ian doesn't respond by Monday, consider calling him directly at 801.787.0976."
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "Wise Block",
-      "stage": "negotiation",
-      "waiting_on": "us",
-      "next_action": "Send rate/quotation to Iris for 1 YouTube/Instagram Video (Wise Block Botanical Series)",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-23",
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 23]: Iris (Make Wonder INC, official partner agency for Wise Block) replied to Liz's follow-up. Offer: 1 YouTube/Instagram Video, competitive cash fee (amount TBD), free Wise Block Botanical Series set (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony), Key Partner status. Product launch: April 25-30. Iris asking for Liz's quotation. Prior Bedsure relationship — same agency (Make Wonder INC/iris@makewondermcn.com).",
-      "activity_note": "Apr 23: Inbound paid offer — Wise Block Botanical Series via Make Wonder INC (Iris). Liz was already following up. Needs rate response ASAP — launch imminent."
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "brand",
+      "next_action": "Apply to Flexsteel campaign on PopFly once Ian reopens the application window",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Kenny and Liz visited Steinhafels (Downers Grove, IL) on Apr 23 and shot content. Kenny forgot to apply to the PopFly campaign after getting home. Emailed Ian Saunders (ian@popfly.com, 801.787.0976) to reopen the application window — 4th reopening. Formal campaign submission on PopFly still needs to happen before content can be uploaded for review. Deliverables: 2 video posts ($2,500/post). Contract signed Mar 25.",
+      "activity_note": "Apr 24: Content shot at Steinhafels on Apr 23 — Kenny forgot to apply to PopFly campaign, asked Ian to reopen window again"
     },
     {
       "action": "update",
       "brand": "Smart Solar Path",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Finish editing Linkind SP6 solar lights video and submit to agency",
+      "next_action": "Finish editing Linkind SP6 video and upload both video and caption to Drive folder",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Liz confirmed she's editing solar lights content — asked agency about creative brief (not visible in Drive folder). Agency had shared detailed client feedback on Apr 23: nighttime lighting effects should dominate (~50% of video), show app controls and pattern switching, avoid filming in daylight, correct lens position, clear voiceover/visual alignment, logical structure. Agency requesting content delivery by Mon/Tue April 27-28.",
-      "activity_note": "Apr 24: Liz editing Linkind SP6 content — agency needs delivery by Mon/Tue Apr 27-28"
+      "notes": "[Apr 24]: Mariah asked Liz to upload the caption to the Drive folder in addition to the video. Liz confirmed actively editing content. Delivery needed by Mon/Tue Apr 27-28. Drive folder: https://drive.google.com/drive/folders/1AAus-zWzTyGIHFWMuPvwDUFqJu3jDdni",
+      "activity_note": "Apr 24: Mariah requested caption upload to Drive alongside video — Liz actively editing, due Mon/Tue"
     },
     {
       "action": "update",
-      "brand": "Bark",
+      "brand": "Aleve",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Follow up on content approval if no word by Mon Apr 27",
+      "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Agency check-in (Mariah) shows Bark (1 TikTok + Whitelisting, $750) was due today April 24. Status listed as active in check-in table.",
-      "activity_note": "Apr 24: Bark TikTok + Whitelisting ($750) flagged as due today in agency check-in — verify content submitted"
+      "notes": "[Apr 24]: Weekly agency check-in (Mariah) confirms 3x Instagram Reels @Aleve_US ($12,000) are under content approval. Waiting on brand sign-off.",
+      "activity_note": "Apr 24: Agency check-in confirms Aleve 3x IG Reels ($12k) currently under content approval"
     }
   ],
   "activities": []
