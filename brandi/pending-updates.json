@@ -1,52 +1,31 @@
 [{
   "run_summary": {
-    "summary": "Active day for the pipeline. Flexsteel/Steinhafels store visit happened today with a TOMORROW (Apr 24) deadline to apply on the Popfly platform — Kenny said he'd handle it after the store visit, but this needs to not fall through the cracks. Linkind SP6 has a confirmed content deadline of Monday/Tuesday (Apr 27-28) with detailed filming specs from the brand. SOJOS is in final revision — Liz submitted her voice-over edit today and is waiting on Ruby's approval. Yousky PR gave their definitive final answer today: $250 max, no exceptions. If Yousky is in the pipeline, close it — that $1750 rate gap is never closing.",
-    "emails_scanned": 10,
-    "deals_created": 0,
-    "deals_updated": 3,
+    "summary": "One new deal opportunity came in today — Iris at Make Wonder INC (same contact as Bedsure) is offering a paid collab for the Wise Block Botanical Series: building block sets inspired by Eastern flora. The original Bedsure sheet set thread had stalled since Liz quoted her rate on Apr 13 with no reply; Iris is now pivoting to this new campaign. The catch: launch window is April 25–30, so this needs a rate reply from Liz TODAY. Cash comp is confirmed but no number was given — Iris asked Liz to send her quotation.",
+    "emails_scanned": 6,
+    "deals_created": 1,
+    "deals_updated": 0,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Flexsteel",
-        "message": "🚨 Popfly campaign enrollment closes TOMORROW (Apr 24). Kenny and Liz visited Steinhafels today for content — Kenny told Ian he'd apply to the Popfly platform when they got back from the store. Ian gave a 👍 but the window closes tomorrow. Make sure the application actually gets submitted today."
-      },
-      {
-        "type": "close-out",
-        "brand": "Yousky",
-        "message": "Luna from Yousky PR gave her firm final answer today: $250 max, no exceptions. Liz has been at $2000 since March and sent another follow-up today — Luna came back with the same $250. If Yousky is in the pipeline, recommend closing it out. Rate gap is unbridgeable and the brand isn't moving."
+        "brand": "Wise Block",
+        "message": "🚨 Iris (Make Wonder INC) is waiting on Liz's rate quote for the Wise Block Botanical Series — 1 YouTube/Instagram Video, cash comp, free product. Launch window is April 25–30, which means there's essentially no runway. This needs a reply today with a rate if Liz wants to take it."
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "Flexsteel",
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
       "waiting_on": "us",
-      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly platform — deadline tomorrow Apr 24 (URGENT)",
-      "next_action_date": "2026-04-23",
-      "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Kenny and Liz visited Steinhafels store today for content creation. Ian (Popfly) reopened the campaign enrollment window which had previously showed 'applications closed.' Kenny confirmed he'll apply to the Popfly platform when they return from the store. Deadline to apply is Apr 24. Parent card update — this is campaign enrollment, not a specific deliverable.",
-      "activity_note": "Apr 23: Steinhafels store visit for Flexsteel content — Ian (Popfly) reopened enrollment window, Kenny confirmed he'll apply to platform before Apr 24 deadline [parent card]"
-    },
-    {
-      "action": "update",
-      "brand": "Linkind",
-      "waiting_on": "us",
-      "next_action": "Film and submit SP6 nighttime content — brand deadline is Mon/Tue Apr 27-28",
-      "next_action_date": "2026-04-27",
-      "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Content deadline confirmed — brand wants Linkind SP6 video by Monday/Tuesday (Apr 27-28). Liz confirmed she can deliver, possibly sooner. Filming specs from brand: nighttime-only filming required (no daylight shots), lighting effects should take up ~50% of video (not just the SP6 product), must show app controlling and switching patterns with dynamic color changes and animations, correct lens installation position required, visuals and voiceover must match.",
-      "activity_note": "Apr 23: Linkind SP6 content deadline confirmed — Mon/Tue Apr 27-28, nighttime filming, app controls, lighting effects focus"
-    },
-    {
-      "action": "update",
-      "brand": "SOJOS",
-      "waiting_on": "brand",
-      "next_action": "Wait for Ruby's final approval on revised SOJOS video with voice-over",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-23",
-      "notes": "[Apr 23]: Liz submitted revised video to Drive with voice-over per Ruby's request. Waiting for final brand approval.\n[Apr 22]: Liz submitted initial video to Drive with caption ('The sunnies I'm rocking this season! Comment SUN for link! @sojosvision...', 10% off code: MISSLIZSOJOS). Ruby (SOJOS Vision marketing) asked for voice-over introducing the brand to be added.",
-      "activity_note": "Apr 23: Liz resubmitted SOJOS video with voice-over revision — waiting for Ruby's (SOJOS Vision) final approval"
+      "next_action": "Reply to Iris with rate quote for 1 YouTube/Instagram Video",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-24",
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "value": null,
+      "notes": "[Apr 24]: Iris (Make Wonder INC — official agency for Wise Block) offered paid collab for Wise Block Botanical Series. Deliverables: 1 YouTube/Instagram Video. Compensation: cash fee (amount TBD, Iris asked for Liz's quotation) + free Botanical Series building block set. URGENT: Launch date Apr 25–30. Product: 4 designs — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony. Eastern-inspired building block sets, positioned as home décor/relaxation. Same agency contact as the Bedsure sheet set thread — that thread stalled after Liz quoted her rate on Apr 13; Iris is now offering this separate campaign.",
+      "activity_note": "Apr 24: New paid opportunity — Wise Block Botanical Series via Iris/Make Wonder INC. 1 YT/IG Video, cash comp (TBD), launch Apr 25–30. Awaiting Liz's rate reply."
     }
   ],
   "activities": []
