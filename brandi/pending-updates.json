@@ -1,28 +1,57 @@
 [{
   "run_summary": {
-    "summary": "SOJOS came through today — Ruby approved the revised content (with voiceover) and is proactively requesting Liz's bank info to arrange payment. This is a big move: SOJOS goes from Approval to Scheduled. Liz needs to send her banking details and confirm her upload date ASAP. Everything else from yesterday (Flexsteel/Popfly deadline, Linkind SP6 content, Wise Block) was already captured in prior runs.",
-    "emails_scanned": 8,
+    "summary": "Three deals need attention today. Iris at Wise Block (Make Wonder MCN) finally replied to Liz's follow-ups with a specific Botanical Series pitch — cash comp + free product, 1 YouTube/Instagram video, launch window April 25-30. Liz needs to send her rate TODAY. Linkind SP6 content deadline is confirmed for Monday/Tuesday (Apr 27-28) with detailed filming requirements from the agency — Liz agreed to try to deliver even sooner. And on Flexsteel: Ian Saunders (Popfly) reopened the campaign application on Apr 23 and told Kenny to apply before it closed TODAY (Apr 24). Kenny said he'd do it after Steinhafels — need to confirm it was submitted.",
+    "emails_scanned": 6,
     "deals_created": 0,
-    "deals_updated": 1,
+    "deals_updated": 3,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "SOJOS",
-        "message": "💸 Ruby at SOJOS Vision approved the content AND is asking for bank info to process payment. Liz needs to reply with banking details (Beneficiary Name, Bank name, Bank Address, Routing Number, Account Number, Swift Code) and confirm her posting date. Don't let this sit — they're ready to pay!"
+        "brand": "Wise Block",
+        "message": "🚨 Iris replied TODAY with a specific Botanical Series pitch (building blocks, Eastern/Zen aesthetic). She's offering cash comp + free product for 1 YouTube/Instagram video. Launch window is April 25-30 — that's THIS WEEKEND. Liz needs to send her rate ASAP or this window closes."
+      },
+      {
+        "type": "urgent",
+        "brand": "Flexsteel (Popfly)",
+        "message": "⚠️ Ian Saunders reopened the Flexsteel/Popfly campaign application on Apr 23 and said the window closes TODAY (Apr 24). Kenny said he'd apply after Steinhafels. Did it happen? Log into Popfly and confirm the application was submitted before the deadline expires!"
+      },
+      {
+        "type": "reminder",
+        "brand": "Linkind SP6",
+        "message": "📹 Content deadline is Monday/Tuesday (Apr 27-28). Agency wants: 50% lighting effects, nighttime focus, app pattern controls, clean aesthetics, voiceover matching visuals. Liz said she'd try to deliver sooner — keep that momentum!"
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "SOJOS",
-      "stage": "scheduled",
+      "brand": "Wise Block",
       "waiting_on": "us",
-      "next_action": "Post SOJOS content and send bank info to Ruby for payment",
+      "next_action": "Send rate/quotation to Iris for Wise Block Botanical Series (1 YouTube or Instagram video)",
       "next_action_date": "2026-04-25",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Ruby (SOJOS Vision) approved revised content with voiceover — said 'Thanks so much! Let us know when you will upload!' She is also requesting bank info to arrange payment (Beneficiary Name, Bank name, Bank Address, Routing Number, Account Number, Swift Code).",
-      "activity_note": "Apr 24: SOJOS approved revised content with voiceover — moved Approval → Scheduled. Ruby also requesting bank info to process payment."
+      "notes": "[Apr 24]: Iris (Make Wonder MCN, Official Partner Agency for Wise Block) replied to Liz's follow-ups with a specific pitch for the Botanical Series (building blocks inspired by Eastern flora — Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Offering cash compensation + free product + Key Partner status. Deliverable: 1 YouTube or Instagram Video. Launch window: April 25-30. Sample delivery: 3-5 days after confirmation. They're waiting on Liz's quotation.",
+      "activity_note": "Apr 24: Iris replied with Wise Block Botanical Series pitch — cash + free product, 1 YT/IG video, launch Apr 25-30. Ball in Liz's court to send rate."
+    },
+    {
+      "action": "update",
+      "brand": "Linkind SP6",
+      "waiting_on": "us",
+      "next_action": "Film and deliver SP6 content per agency guidelines (nighttime lighting focus, app controls, 50% lighting footage, voiceover matching visuals)",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Agency (via Liz Hartmann at socialmediacollabs.com) requested content by Monday/Tuesday (Apr 27-28). Liz replied 'That works! I can try to get something to you sooner.' Key filming requirements: lighting portion should be ~50% of video (not just the SP6 product), main focus on nighttime lighting effects, avoid turning lights on in daylight, show app controlling pattern changes, lens in correct position, visuals and voiceover must match, avoid deviating from agreed concept.",
+      "activity_note": "Apr 23: Agency confirmed Mon/Tue content deadline, provided detailed filming requirements. Liz agreed and may deliver early. Key: nighttime lighting effects + app controls = 50% of video."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Confirm Flexsteel/Popfly campaign application was submitted (deadline was Apr 24 — verify in Popfly dashboard)",
+      "next_action_date": "2026-04-24",
+      "last_contact": "2026-04-23",
+      "notes": "[Apr 23]: Ian Saunders (Popfly) reopened the Flexsteel campaign application after Kenny thought it was already submitted. Ian said the window closes April 24 and asked Kenny to apply today. Kenny replied he'd work on it after returning from Steinhafels. Ian 👍'd the message. No confirmation yet that application was actually submitted — this needs to be verified TODAY.",
+      "activity_note": "Apr 23: Ian Saunders reopened Flexsteel campaign app window (closes Apr 24). Kenny said he'd apply after Steinhafels — need to confirm submission."
     }
   ],
   "activities": []
