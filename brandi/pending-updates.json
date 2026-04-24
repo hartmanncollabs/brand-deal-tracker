@@ -1,14 +1,29 @@
 [{
   "run_summary": {
-    "summary": "Flexsteel content was shot at Steinhafels on Apr 23, but Kenny forgot to apply to the PopFly campaign after returning home and emailed Ian today to reopen the window — this is the fourth time the application window has needed to be reopened. The deal is real ($2,500/post, contract signed), content exists, but it won't officially register until the PopFly application goes through. Also: Mariah followed up asking Liz to upload the caption for the Smart Solar/Linkind video to the Drive folder (new since last run). And the weekly agency check-in explicitly confirms Aleve's 3x IG Reels ($12k) are under content approval — logging that for the record.",
-    "emails_scanned": 8,
-    "deals_created": 0,
+    "summary": "Big move on Flexsteel — Ian responded to Kenny's email in under 6 hours and extended the PopFly application window to Monday. Ball is back in our court: apply before Monday or lose the slot a fifth time. Also creating a new deal card for Wise Block — Iris at Make Wonder INC replied to Liz's follow-ups with a formal offer (1x YT/IG Video, cash + product, Key Partner status), but the launch window is April 25–30 so Liz needs to send her rate TODAY. Two deal notes from Mariah's weekly check-in: JLab March Campaign is past its 4/20 due date because JLab had the wrong email for Liz when sending the registration form (Mariah says form + payment coming ASAP); and Liz confirmed caption is uploaded to the Smart Solar Drive folder as of Friday evening.",
+    "emails_scanned": 12,
+    "deals_created": 1,
     "deals_updated": 3,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Flexsteel",
-        "message": "Kenny emailed Ian (ian@popfly.com) today to reopen the Flexsteel/Steinhafels PopFly application window — again. Content was shot at Steinhafels on Apr 23! The PopFly application is the last blocker. If Ian doesn't respond by Monday, consider calling him directly at 801.787.0976."
+        "message": "Ian extended the PopFly window to Monday — apply NOW before it closes again. This is the 5th reopening. Don't wait until Monday morning."
+      },
+      {
+        "type": "urgent",
+        "brand": "Wise Block",
+        "message": "Iris at Make Wonder INC (iris@makewondermcn.com) is waiting on Liz's rate quote for the Wise Block Botanical Series. Launch window is April 25–30 — today is the last day to respond with a number. If Liz is interested, she needs to reply ASAP."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Bark",
+        "message": "Mariah's weekly check-in shows Bark (1 TikTok + Whitelisting, $750) was due TODAY April 24 — no status note in the check-in. Worth confirming content was submitted. Drive folder: https://drive.google.com/drive/folders/1Wkq80ztLyqK16XMAKa52ZqRX8Tj7j2wm"
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "JLab March Campaign ($2,000, 1 Reel/Story) was due 4/20 — Mariah says JLab had the wrong email when trying to send Liz the registration form. Now corrected; form + payment expected ASAP."
       }
     ]
   },
@@ -17,34 +32,45 @@
       "action": "update",
       "brand": "Flexsteel",
       "stage": "content",
-      "waiting_on": "brand",
-      "next_action": "Apply to Flexsteel campaign on PopFly once Ian reopens the application window",
+      "waiting_on": "us",
+      "next_action": "Apply to Flexsteel/Steinhafels campaign on PopFly — window open until Monday Apr 27",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Kenny and Liz visited Steinhafels (Downers Grove, IL) on Apr 23 and shot content. Kenny forgot to apply to the PopFly campaign after getting home. Emailed Ian Saunders (ian@popfly.com, 801.787.0976) to reopen the application window — 4th reopening. Formal campaign submission on PopFly still needs to happen before content can be uploaded for review. Deliverables: 2 video posts ($2,500/post). Contract signed Mar 25.",
-      "activity_note": "Apr 24: Content shot at Steinhafels on Apr 23 — Kenny forgot to apply to PopFly campaign, asked Ian to reopen window again"
+      "notes": "[Apr 24]: Ian Saunders (ian@popfly.com) responded to Kenny's morning email at 3:27 PM CT — confirmed he extended the PopFly application window to Monday (Apr 27). Apply before Monday or the window closes again (this would be the 5th time).",
+      "activity_note": "Apr 24: Ian confirmed PopFly window extended to Monday — waiting_on flipped to us, apply before Apr 27"
     },
     {
       "action": "update",
       "brand": "Smart Solar Path",
       "stage": "content",
       "waiting_on": "us",
-      "next_action": "Finish editing Linkind SP6 video and upload both video and caption to Drive folder",
+      "next_action": "Upload completed Linkind SP6 video to Drive folder (caption already confirmed uploaded)",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Mariah asked Liz to upload the caption to the Drive folder in addition to the video. Liz confirmed actively editing content. Delivery needed by Mon/Tue Apr 27-28. Drive folder: https://drive.google.com/drive/folders/1AAus-zWzTyGIHFWMuPvwDUFqJu3jDdni",
-      "activity_note": "Apr 24: Mariah requested caption upload to Drive alongside video — Liz actively editing, due Mon/Tue"
+      "notes": "[Apr 24]: Liz confirmed caption uploaded to Drive folder (reply to Mariah at 5:16 PM CT). Video still in editing as of midday. Full delivery due Mon/Tue Apr 27-28. Mariah shared consolidated client filming notes: 50% of video must focus on nighttime lighting effects, app controls showing pattern switching, avoid daylight shots, include color animations.",
+      "activity_note": "Apr 24: Liz confirmed caption uploaded to Drive — video editing still in progress, due Mon/Tue"
+    },
+    {
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Send rate/quotation to Iris at Make Wonder INC for Wise Block Botanical Series",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-24",
+      "value": 0,
+      "notes": "[Apr 24]: Iris (iris@makewondermcn.com), Make Wonder INC (Official Wise Block Agency), replied with formal offer: 1x YouTube/Instagram Video for Wise Block Botanical Series (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony — Eastern flora/Zen garden building block sets). Offer includes cash compensation (amount TBD, awaiting Liz's quotation) + free product + Key Partner status + global brand exposure. Launch date April 25–30. Liz had been pursuing since ~Apr 13 with follow-ups Apr 20 and Apr 23. Iris explicitly asks for Liz's quotation to proceed.",
+      "activity_note": "Apr 24: New deal card created — Wise Block Botanical Series via Make Wonder INC; urgent quote needed, launch Apr 25-30"
     },
     {
       "action": "update",
-      "brand": "Aleve",
-      "stage": "approval",
+      "brand": "JLab March Campaign",
       "waiting_on": "brand",
-      "next_action": "Follow up on content approval if no word by Mon Apr 27",
+      "next_action": "Await JLab registration form + payment (email issue resolved per Mariah)",
       "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Weekly agency check-in (Mariah) confirms 3x Instagram Reels @Aleve_US ($12,000) are under content approval. Waiting on brand sign-off.",
-      "activity_note": "Apr 24: Agency check-in confirms Aleve 3x IG Reels ($12k) currently under content approval"
+      "notes": "[Apr 24]: Mariah's weekly check-in: JLab March Campaign (1 Reel/Story, $2,000) was due 4/20/26. Delay caused by JLab having the wrong email address for Liz when sending the registration form. Issue now resolved — Mariah says form + payment should be arriving ASAP.",
+      "activity_note": "Apr 24: Mariah flagged JLab March past-due — wrong email was the cause, now corrected, form + payment expected soon"
     }
   ],
   "activities": []
