@@ -1,66 +1,94 @@
 [{
   "run_summary": {
-    "summary": "Big day in the inbox! 🤝 A brand-new inbound from Reach Agency dropped — a Sherwin Williams spray paint brand that could be worth ~$12k. Liz already replied same day saying she's in and flexible on rate, so the ball is squarely in their court. On the Flexsteel front: Kenny and Liz did their Steinhafels content shoot yesterday but forgot to apply to the Popfly campaign afterward. Ian Saunders at Popfly extended the deadline to Monday — so that needs to happen TODAY or first thing Monday morning. A few other deals worth checking: Aleve content is under brand review per Mariah's weekly status, Smart Solar Lights content is actively being edited by Liz (she uploaded a caption to Drive on Apr 24), and the Bark deal was due yesterday (4/24). Also spotted Liz uploading UGC creatives for what appears to be an Ollie's/Hawke Media collab — worth confirming that card is moving forward.",
-    "emails_scanned": 8,
+    "summary": "Mariah's Friday status email is the MVP this week — the full deal table fills in a lot of gaps. Aleve is officially confirmed in content approval with $12k on the line 💼. Smart Solar Lights has a hard Monday/Tuesday content deadline (Apr 27-28) and Liz already uploaded her caption, but the reel itself needs to be finished ASAP 🎬. Bark was due yesterday (4/24) with no delivery confirmation in email — needs an urgent check. On the exciting side: new inbound from iGarden (Make Wonder INC) for a paid collab + free $2,000+ pool product with a May 20 window — Liz hasn't replied yet. Also, Alisa at Hawke Media confirmed the Ollie's Expert Transition ads are live and she increased spend 🤝. Two more to keep an eye on from Mariah's table: JLab March campaign had the wrong registration email and $2,000 payment is 5 days overdue; and Antique Candle Co ($1,500, June flash sale) is on Mariah's list but may not have a board card.",
+    "emails_scanned": 14,
     "deals_created": 1,
-    "deals_updated": 1,
+    "deals_updated": 4,
     "suggestions": [
       {
         "type": "urgent",
-        "brand": "Flexsteel",
-        "message": "Kenny needs to apply to the Flexsteel/Steinhafels campaign on Popfly before Monday 4/27. Ian extended the deadline after Kenny forgot to apply following the content shoot. Don't let this one slip!"
+        "brand": "Bark",
+        "message": "Bark TikTok + Whitelisting ($750) was due 4/24 — that was yesterday. No delivery confirmation found anywhere in the inbox. Check if this got posted and if so, move to Delivered and send that invoice!"
+      },
+      {
+        "type": "urgent",
+        "brand": "JLab (March Campaign)",
+        "message": "JLab March campaign: $2,000 Reel/Story was due 4/20 — now 5 days late. Per Mariah's status: JLab had the wrong email for Liz's registration form, so they should be resending it + payment ASAP. Check the JLab March child card and confirm the form + $2k arrived."
       },
       {
         "type": "follow-up",
-        "brand": "Spray Paint Brand (Sherwin Williams)",
-        "message": "Liz responded to Reach Agency on Apr 24 and confirmed interest + rate flexibility (~$12k). Reach Agency's brand client deadline was 4/27 — expect to hear back early this week with next steps or a formal offer."
+        "brand": "Smart Solar Lights (Linkind SP6)",
+        "message": "Hard deadline: content due Monday/Tuesday April 27-28 per the brand. Liz uploaded her caption to Drive on Apr 24 and the social media manager confirmed receipt, but the reel is still 'in progress.' It needs to be submitted before Tuesday or the deadline is blown."
       },
       {
         "type": "check-in",
-        "brand": "Aleve",
-        "message": "Mariah's weekly status email (Apr 24) lists Aleve as 'under content approval' — 3x Instagram Reels @Aleve_US, $12k. Make sure the Aleve card is in the Approval stage and set a follow-up if it's been sitting there a while."
+        "brand": "JLab (May Campaign)",
+        "message": "JLab May campaign ($2,000, 1 Reel/Story) is flagged 'ready for content' in Mariah's Friday status. Check the JLab May child card — should be in Content stage. Drive folder: Liz-Jlab."
       },
       {
         "type": "check-in",
-        "brand": "Smart Solar Lights",
-        "message": "Liz was actively editing the Linkind SP6 solar lights reel on Apr 24 and uploaded a caption to the Google Drive folder. If this deal card exists, it may be ready to move from Content → Approval soon."
+        "brand": "Antique Candle",
+        "message": "Antique Candle Co is on Mariah's weekly status list ($1,500 — 2 story frames for a June 18-22 clearance flash sale, started 4/1), but I don't see a board card for it. Check if it exists and create one if not."
       },
       {
         "type": "check-in",
-        "brand": "Bark",
-        "message": "Per Mariah's status email, the Bark deal (1 TikTok + Whitelisting, $750) had a due date of 4/24/26 — that was yesterday. Check if it's been delivered and moved to Invoiced."
-      },
-      {
-        "type": "check-in",
-        "brand": "Ollie's (Hawke Media)",
-        "message": "Liz sent a UGC creative to Alisa Gofman (agofman@hawkemedia.com) at Hawke Media on Apr 24 with subject 'Expert Transition.' She mentioned getting another one uploaded next. Could be an Ollie's monthly delivery — confirm the right Ollie's child card is moving forward."
+        "brand": "Aquara",
+        "message": "Mariah's status notes Aquara ($1,500 for 1 Reel — Doorbell) has 'payment coming soon.' Make sure the Aquara card is in Invoiced stage and has a payment follow-up date set."
       }
     ]
   },
   "deals": [
     {
       "action": "create",
-      "brand": "Spray Paint Brand (Sherwin Williams)",
+      "brand": "iGarden (Make Wonder INC)",
       "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Wait for Reach Agency / Coreyiel to confirm rate and next steps",
+      "waiting_on": "us",
+      "next_action": "Review iGarden proposal and respond to Dimple — May 20 campaign window is tight",
       "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-24",
-      "value": 12000,
-      "contact_name": "Coreyiel Ellis",
-      "contact_email": "coreyiel.ellis@reach.agency",
-      "notes": "[Apr 24]: Inbound from Coreyiel Ellis at Reach Agency (Director, Influencer Marketing) re: a spray paint brand under the Sherwin Williams umbrella. Deliverables: 1 TikTok Video (syndicated to IG Reels + Pinterest), 1 IG Story Set (3 frames each), 3 Still assets for brand usage. Campaign requirements include: link in bio 14 days, IG Reels collaborate feature, TikTok Comment anchor, authentication rights (Sprout + TikTok), comment CTA + pin, broadcast channel placements. Budget: TBD, likely $10–12k. Usage: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM/email). Exclusivity: 2 months in spray paint category. Content launch: August 2026. Liz replied same day: confirmed free from exclusivity, said budget aligns (her estimate was slightly over $12k, happy to be flexible). Competitor check required: Home Depot, Behr, Rust-Oleum. Agency had asked for confirmation by EOD Monday 4/27.",
-      "activity_note": "Apr 24: New inbound from Reach Agency — Sherwin Williams spray paint brand, ~$12k. Liz replied same day confirming interest and rate flexibility."
+      "last_contact": "2026-04-25",
+      "value": 0,
+      "contact_name": "Dimple",
+      "contact_email": "dimple@makewondermcn.com",
+      "notes": "[Apr 25]: Follow-up from Dimple at Make Wonder INC (official partner of iGarden). Original outreach was Apr 22. Offering paid collaboration (asking Liz to share her rates) OR free premium unit — iGarden K60 pool cleaner or Swim Jet System ($2,000+ value). Deliverables: 1 dedicated video (IG Reel, TikTok, or YouTube) + 6-month usage rights for brand's official channels. Campaign window: April 20 - May 20. Budget TBD — awaiting Liz's rate card. Liz has not replied yet. Possible long-term partnership potential mentioned."
     },
     {
       "action": "update",
-      "brand": "Flexsteel",
-      "waiting_on": "us",
-      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly — deadline is Monday 4/27",
-      "next_action_date": "2026-04-27",
+      "brand": "Aleve",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Follow up on Aleve content approval if no response by Apr 28",
+      "next_action_date": "2026-04-28",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Liz and Kenny completed content shoot at Steinhafels but forgot to apply to the Popfly campaign afterward. Kenny emailed Ian Saunders (ian@popfly.com) to ask for an extension — Ian extended the campaign open date to Monday 4/27. Must apply before then.",
-      "activity_note": "Apr 24: Content shoot at Steinhafels complete. Forgot to apply to Popfly campaign post-shoot. Ian Saunders extended deadline to Monday 4/27 — apply ASAP."
+      "notes": "[Apr 24]: Mariah's Friday weekly status email confirms Aleve is 'under content approval' — 3x Instagram Reels @Aleve_US, $12,000. Waiting on brand to approve.",
+      "activity_note": "Apr 24: Confirmed in Approval stage via Mariah's weekly status — 3x IG Reels @Aleve_US under brand review"
+    },
+    {
+      "action": "update",
+      "brand": "Smart Solar Lights",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Finish and submit Smart Solar Lights reel + story to brand (caption uploaded, video still in progress)",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Hard content deadline Mon/Tue April 27-28 per brand request (via socialmediacollabs.com). Liz uploaded caption to Drive folder on Apr 24 — social media manager confirmed receipt. Reel still being edited. Deliverables: 1x 60-90s IG Reel reviewing Linkind SP6 Smart Solar Pathway Lights + 1x Story set (3 frames, include link) + TikTok cross-post + comment-for-link. $2,000. Mariah's status: 'in progress need content.'",
+      "activity_note": "Apr 24: Caption uploaded to Drive. Brand (via socialmediacollabs) confirmed receipt and set Mon/Tue Apr 27-28 hard deadline for full content submission."
+    },
+    {
+      "action": "update",
+      "brand": "Bark",
+      "waiting_on": "us",
+      "next_action": "Verify Bark TikTok was posted 4/24 — if yes, move to Delivered and send invoice",
+      "next_action_date": "2026-04-25",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 25]: Bark TikTok + Whitelisting ($750) had a due date of 4/24/26 per Mariah's Friday status. No delivery confirmation found in email inbox. Flagging as potentially overdue — needs immediate verification.",
+      "activity_note": "Apr 25: Bark due date 4/24 has passed — no delivery email found. Needs urgent verification."
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Alisa Gofman (Analyst, Paid Social at Hawke Media) confirmed ads are live for Liz's 'Expert Transition' UGC creative. Alisa mentioned she increased ad spend. Liz had uploaded the creative to the spreadsheet earlier that morning.",
+      "activity_note": "Apr 24: Hawke Media confirmed Ollie's Expert Transition UGC ads are live and ad spend increased."
     }
   ],
   "activities": []
