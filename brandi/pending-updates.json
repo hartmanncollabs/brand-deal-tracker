@@ -1,48 +1,31 @@
 [{
   "run_summary": {
-    "summary": "Caught two things from Mariah's Friday status table that the last run missed. First: Aleve content is under brand review — all 3 IG Reels for @Aleve_US are submitted for approval as of yesterday, so I moved that card to Approval. Second: JLab March payment is overdue since 4/20 — the brand had the wrong email for Liz's registration form, Mariah corrected it, and payment is supposedly on its way. Worth confirming that's actually landed. Bonus flag: Bark content was due 4/24 (yesterday) and there's no delivery confirmation in the emails — make sure that got submitted.",
-    "emails_scanned": 6,
-    "deals_created": 0,
-    "deals_updated": 2,
+    "summary": "New inbound deal from Reach Agency — they're repping a spray paint brand under the Sherwin Williams umbrella and reached out to Liz on Friday afternoon (Apr 24). Liz responded within 2 hours confirming she's free from exclusivity and that the ~$10-12k budget aligns with her rate (she noted her estimate is slightly over $12k but she's flexible). The agency needed a response by EOD Monday 4/27 to pitch her profile to the brand client, so this is on track — now waiting to hear back from Coreyiel on next steps. Creating a deal card so it's on the board.",
+    "emails_scanned": 2,
+    "deals_created": 1,
+    "deals_updated": 0,
     "suggestions": [
       {
-        "type": "urgent",
-        "brand": "Bark",
-        "message": "Bark content was due 4/24 (yesterday) — no confirmation of delivery in the emails. Did the TikTok + whitelisting assets go out? If not, get them in ASAP."
-      },
-      {
-        "type": "follow-up",
-        "brand": "JLab",
-        "message": "JLab March payment was due 4/20 — Mariah flagged the brand had Liz's email wrong for the registration form. That's been corrected, but confirm the payment has actually arrived before following up with JLab."
-      },
-      {
         "type": "heads-up",
-        "brand": "JLab",
-        "message": "JLab May campaign is 'ready for content' per Mariah — make sure that card is in the Content stage if it isn't already. Deliverable due 5/17/26."
+        "brand": "Sherwin Williams Spray Paint",
+        "message": "Reach Agency's deadline to pitch Liz's profile to the brand client was EOD Monday 4/27. Liz already replied Friday night — so we're waiting on Coreyiel to come back with a formal offer. If you don't hear by Wednesday 4/29, worth a quick nudge to coreyiel.ellis@reach.agency."
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "Aleve",
-      "stage": "approval",
+      "action": "create",
+      "brand": "Sherwin Williams Spray Paint",
+      "stage": "negotiation",
       "waiting_on": "brand",
-      "next_action": "Check in on content approval with Aleve",
-      "next_action_date": "2026-04-28",
+      "next_action": "Wait for Coreyiel at Reach Agency to respond — agency pitching Liz's profile to brand client by 4/27",
+      "next_action_date": "2026-04-29",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: Mariah's status update confirms all 3x IG Reels for @Aleve_US are under content approval. $12,000 deal.",
-      "activity_note": "Apr 24: Aleve content (3x IG Reels @Aleve_US) submitted for brand approval per Mariah's status update — moved to Approval"
-    },
-    {
-      "action": "update",
-      "brand": "JLab",
-      "waiting_on": "brand",
-      "next_action": "Confirm JLab March registration form + payment received (was due 4/20)",
-      "next_action_date": "2026-04-25",
-      "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: JLab March Campaign — brand had wrong email on file for Liz's registration form. Mariah corrected it; form + payment now expected soon. Payment was originally due 4/20/26.",
-      "activity_note": "Apr 24: JLab March — brand had wrong email for registration form, now corrected per Mariah. Payment overdue since 4/20, expected to arrive soon."
+      "value": 12000,
+      "contact_name": "Coreyiel Ellis",
+      "contact_email": "coreyiel.ellis@reach.agency",
+      "notes": "[Apr 24]: Reach Agency (Coreyiel Ellis, Director Influencer Marketing, 504.919.3186) pitched a spray paint brand under the Sherwin Williams umbrella. Deliverables (subject to change): 1 TikTok video (syndicated to IG Reels + Pinterest), 1 IG Story Set (3 frames), 3 still assets for brand use. Budget ~$10-12k — Liz noted her estimate is slightly over $12k but she's flexible. Usage term: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM/email). Exclusivity: 2 months in the spray paint category. Content launch: August 2026. Campaign also requires link in bio (14 days), IG Reels collab feature, TikTok Comment anchor, authentication rights (Sprout + TikTok), Comment CTA + pin, IG broadcast channel placement. Liz replied same evening confirming interest and that she's free from exclusivity.",
+      "activity_note": "Apr 24: New inbound from Reach Agency — spray paint brand (Sherwin Williams umbrella) expressed interest. Liz replied same day confirming interest + rate alignment. Waiting for agency to pitch her profile to brand client (deadline 4/27) and come back with formal next steps."
     }
   ],
   "activities": []
