@@ -1,29 +1,42 @@
 [{
   "run_summary": {
-    "summary": "Confirming earlier scan findings. JLab March campaign payment is 5 days overdue ($2k, due 4/20) — JLab had wrong email for the registration form. Mariah says form + payment are coming, but adding a note directly to the JLab card so it doesn't fall through the cracks. Previous runs covered Sherwin Williams spray paint (new deal, negotiation), Flexsteel Popfly application (must apply by Mon 4/27), Aleve content approval, and Smart Solar active editing.",
-    "emails_scanned": 7,
+    "summary": "Two updates from Friday evening emails: Liz replied to Reach Agency's Spray Paint pitch — confirmed free from exclusivity, budget aligns (~$10-12k), and told Coreyiel she'd be flexible. Ball is now in the agency's court to pitch her profile to the brand client by EOD Mon 4/27. Also: Kenny emailed Ian confirming he and Liz visited Steinhafels and shot content on Apr 23 — Ian extended the Popfly application window to Monday. Content is done, just need the application submitted.",
+    "emails_scanned": 5,
     "deals_created": 0,
-    "deals_updated": 1,
+    "deals_updated": 2,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Flexsteel",
-        "message": "Reminder: Popfly application deadline is TOMORROW (Mon 4/27). Has Kenny applied yet? Ian can't keep extending this."
+        "message": "Content is already shot at Steinhafels! All that's left is applying on Popfly by EOD Monday 4/27. Ian personally confirmed the extension — this is the last chance. Don't let it slip again."
       },
       {
         "type": "follow-up",
-        "brand": "JLab",
-        "message": "JLab March $2k payment is now 5 days overdue. Per Mariah: registration form was sent to wrong email, resending + payment should follow. Check if the form arrived and when to expect payment."
+        "brand": "Sherwin Williams",
+        "message": "Liz replied to Reach Agency Friday night and confirmed interest. Coreyiel is pitching her profile to the brand by EOD Mon 4/27. If no word by Tuesday, follow up with Coreyiel at coreyiel.ellis@reach.agency."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "JLab",
+      "brand": "Sherwin Williams",
+      "waiting_on": "brand",
+      "next_action": "Wait for Coreyiel @ Reach Agency to confirm brand's decision after pitching Liz's profile",
+      "next_action_date": "2026-04-28",
       "last_contact": "2026-04-24",
-      "notes": "[Apr 24]: March campaign payment overdue — was due 4/20 ($2k, now 5 days late). JLab had wrong email for registration form. Per campaign manager Mariah: form + payment should be coming soon. Confirm this has been received.",
-      "activity_note": "Apr 24: JLab March $2k payment overdue (due 4/20) — registration form sent to wrong email. Flagging so it doesn't get lost."
+      "notes": "[Apr 24]: Liz replied to Reach Agency pitch — confirmed free from exclusivity, thinks it's a great fit for her page. Budget of $10-12k aligns (her estimate was slightly over $12k but she's flexible). Agency (Coreyiel Ellis, coreyiel.ellis@reach.agency, 504.919.3186) will pitch Liz's profile to the brand client by EOD Mon 4/27. Deliverables: 1 TikTok (syndicated to IG Reels + Pinterest), 1 IG Story set (3 frames), 3 still assets for brand usage. Usage: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM). Exclusivity: 2 months in spray paint category. Content launch: August 2026.",
+      "activity_note": "Apr 24: Liz responded to Reach Agency — confirmed interest and budget alignment. Now waiting on brand confirmation."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply on Popfly by EOD Monday 4/27 — Ian has extended the deadline",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Ian (ian@popfly.com) confirmed Popfly application window extended to Monday 4/27. Kenny emailed Ian after forgetting to apply when they returned from Steinhafels. Liz and Kenny visited Steinhafels on Apr 23 and shot content — just need to submit the Popfly application now.",
+      "activity_note": "Apr 24: Liz + Kenny shot content at Steinhafels on Apr 23. Ian extended Popfly application to Mon 4/27 — must apply before it closes."
     }
   ],
   "activities": []
