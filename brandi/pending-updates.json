@@ -1,14 +1,24 @@
 [{
   "run_summary": {
-    "summary": "One fresh deal to add to the board: Reach Agency's Coreyiel Ellis pitched a spray paint brand under the Sherwin Williams umbrella — budget ~$10-12k (Liz says her estimate was slightly over $12k), deliverables include 1 TikTok (syndicated to IG Reels + Pinterest), 1 IG Story Set, and 3 still assets. Liz already replied the same evening (Apr 24) confirming she's free from exclusivity and interested. Reach Agency needs to pitch her profile to the brand client by EOD Monday 4/27 — so expect a response Tuesday or Wednesday. Everything else in today's scan (Flexsteel PopFly extension, Smart Solar editing, JLab/Aleve check-ins) was already captured in the previous run.",
+    "summary": "Sherwin Williams (Spray Paint) deal card still pending creation from yesterday's run — carried forward below. New from today's scan: Flexsteel has a hard PopFly submission deadline of Monday Apr 27 that Ian just extended for Kenny. This is urgent — content was filmed at Steinhafels and needs to go into PopFly by EOD Monday. Also: Liz is deep into Smart Solar content editing (found the brief in the folder Apr 24 PM) and uploaded a UGC creative to Ollie's spreadsheet for Alisa with more to follow. Loloi Rugs reached out about a Way Day affiliate share — skipping, not a paid deal.",
     "emails_scanned": 8,
     "deals_created": 1,
-    "deals_updated": 0,
+    "deals_updated": 3,
     "suggestions": [
+      {
+        "type": "urgent-deadline",
+        "brand": "Flexsteel",
+        "message": "🚨 PopFly submission deadline is THIS MONDAY Apr 27 — Ian extended it for you but that's the hard cutoff. Content was filmed at Steinhafels. Make sure it gets into PopFly before EOD Monday!"
+      },
       {
         "type": "follow-up",
         "brand": "Sherwin Williams (Spray Paint)",
-        "message": "Liz already replied to Coreyiel on Apr 24 — Reach Agency is pitching her profile to the brand client by EOD Monday 4/27. If no response by Tuesday afternoon, a quick nudge to Coreyiel wouldn't hurt: 'Just checking in — excited to hear if the client is interested!'"
+        "message": "Reach Agency is pitching Liz's profile to the brand client by EOD today (Monday Apr 27). If no word by Tuesday morning, a quick nudge to Coreyiel would be totally reasonable: 'Just checking in — excited to hear if the client's interested!'"
+      },
+      {
+        "type": "check-in",
+        "brand": "Ollie's Bargain Outlet",
+        "message": "Liz uploaded the first creative to Alisa's spreadsheet Friday and said she'd add more once Alisa confirms it looks good. Worth checking if Alisa responded — if she approved it, Liz should get the next one up."
       }
     ]
   },
@@ -26,6 +36,30 @@
       "contact_email": "coreyiel.ellis@reach.agency",
       "notes": "[Apr 24]: Reach Agency (Coreyiel Ellis, Director of Influencer Marketing, coreyiel.ellis@reach.agency, 504.919.3186) reached out about a spray paint brand under the Sherwin Williams umbrella. Deliverables (subject to change): 1 TikTok Video (syndicated to IG Reels + Pinterest), 1 IG Story Set (3 frames), 3 Still assets for brand usage. Budget: ~$10-12k (Liz said her estimate was slightly over $12k but she'd be flexible). Usage Term: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM email). Exclusivity: 2 months in spray paint category (Liz confirmed she is free from this). Content launch: August 2026. Agency must pitch Liz's profile to brand client by EOD Mon 4/27. Liz replied same evening confirming interest and flexibility on budget.",
       "activity_note": "Apr 24: Inbound from Reach Agency — Sherwin Williams spray paint brand, ~$10-12k budget; Liz replied same day confirming interest and exclusivity clearance"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Submit content to PopFly — deadline EOD Monday Apr 27",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Ian at PopFly extended the campaign submission deadline to Monday Apr 27. Kenny emailed Ian saying they filmed great content at Steinhafels and apologized for missing the original deadline — Ian replied 'No problem, I just extended the open date to Monday so should be good to go now.' Content needs to go into PopFly by EOD Apr 27.",
+      "activity_note": "Apr 24: Ian (PopFly) extended submission deadline to Apr 27 — content filmed at Steinhafels, must be submitted by EOD Monday"
+    },
+    {
+      "action": "update",
+      "brand": "Smart Solar",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Liz actively editing solar lights content — brand sent assets and a folder link ('Happy Friday!' email). Liz initially couldn't find the brief in the folder; confirmed it was there by evening. Still in content creation phase.",
+      "activity_note": "Apr 24: Liz editing solar lights content; brief confirmed in folder"
+    },
+    {
+      "action": "update",
+      "brand": "Ollie's Bargain Outlet",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Liz uploaded a UGC creative to the Ollie's spreadsheet for Alisa (contact at Ollie's). Said 'let me know if I did that alright, and if it looks good I'll get another one up for you' — more creatives are queued for delivery once Alisa confirms.",
+      "activity_note": "Apr 24: Liz uploaded UGC creative to Ollie's spreadsheet for Alisa; more creatives to follow pending approval"
     }
   ],
   "activities": []
