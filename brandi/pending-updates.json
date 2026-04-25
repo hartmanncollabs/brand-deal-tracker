@@ -92,4 +92,55 @@
     }
   ],
   "activities": []
+},
+{
+  "run_summary": {
+    "summary": "Two new items from Saturday's scan 💼. First — a legit new inbound from Reach Agency: they're pitching Liz to a spray paint brand under the Sherwin Williams umbrella ($10-12k, 1 TikTok + IG Story + 3 still assets, content August 2026). Liz already replied Friday night saying she's interested and flexible around $12k. Ball is in Reach Agency's court to confirm with the brand by EOD Monday 4/27 — so we should hear back Tuesday. Second — 🚨 URGENT Flexsteel alert: Kenny and Liz filmed content at Steinhafels on Apr 23 but Kenny forgot to apply Liz to the campaign in Popfly afterward. Kenny emailed Ian (Popfly) on Apr 24 and Ian extended the application deadline to Monday 4/27. Kenny MUST complete the campaign application today or tomorrow or the Monday deadline will slip. Also confirmed today: iGarden (Make Wonder INC) followed up again on Apr 25 asking if Liz is interested — Liz still hasn't replied. Campaign window closes May 20.",
+    "emails_scanned": 7,
+    "deals_created": 1,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "🚨 Kenny filmed content at Steinhafels on Apr 23 but forgot to apply Liz to the Flexsteel/Steinhafels campaign in Popfly. Ian Saunders (ian@popfly.com) extended the deadline to Monday 4/27 — Kenny needs to log into Popfly and apply TODAY or over the weekend. If this slips it could affect payment."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Sherwin Williams (Spray Paint)",
+        "message": "New deal just entered negotiation. Liz confirmed interest + rates to Reach Agency on Apr 24. Coreyiel Ellis (coreyiel.ellis@reach.agency) is pitching her profile to the spray paint brand client by EOD Monday 4/27. Expect an update Tuesday or Wednesday — if no word by Wed Apr 29, follow up with Coreyiel."
+      },
+      {
+        "type": "follow-up",
+        "brand": "iGarden (Make Wonder INC)",
+        "message": "iGarden followed up again today (Apr 25) — they want to know if Liz is interested in a paid partnership or free premium unit ($2,000+ pool product). Campaign window closes May 20. Liz should respond this weekend to keep this one alive."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Sherwin Williams (Spray Paint)",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Coreyiel at Reach Agency to confirm Liz is selected for spray paint brand campaign",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "value": 12000,
+      "contact_name": "Coreyiel Ellis",
+      "contact_email": "coreyiel.ellis@reach.agency",
+      "notes": "[Apr 24]: Coreyiel Ellis (Director, Influencer Marketing, Reach Agency — coreyiel.ellis@reach.agency, M: 504.919.3186) reached out about a spray paint brand under the Sherwin Williams umbrella. Deliverables: 1 TikTok video (syndicated to IG Reels + Pinterest), 1 IG Story set (3 frames), 3 still assets for brand usage. Budget: ~$10-12k. Usage: 5 months (Organic/Paid Social, Website, Retailer, Shopper, CRM). Exclusivity: 2 months in spray paint category. Content launch: August 2026. Coreyiel needed to pitch Liz's profile to brand client by EOD Monday 4/27. Liz replied Apr 24 evening: confirmed free from exclusivity, thinks it's a great fit, rates align (~$12k, willing to be flexible)."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply Liz to Flexsteel/Steinhafels campaign in Popfly (Ian extended deadline to Mon 4/27)",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Kenny and Liz filmed content at Steinhafels on Apr 23 — Kenny emailed Ian Saunders (ian@popfly.com) on Apr 24 to ask him to reopen the campaign application after forgetting to apply post-shoot. Ian replied and extended the open date to Monday 4/27. Kenny must complete the Popfly campaign application by Monday or the opportunity could be lost.",
+      "activity_note": "Apr 24: Filmed content at Steinhafels. Kenny forgot to apply to campaign — Ian (Popfly) extended deadline to Mon 4/27. Must apply ASAP."
+    }
+  ],
+  "activities": []
 }]
