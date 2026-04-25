@@ -1,1 +1,30 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Confirming earlier scan findings. JLab March campaign payment is 5 days overdue ($2k, due 4/20) — JLab had wrong email for the registration form. Mariah says form + payment are coming, but adding a note directly to the JLab card so it doesn't fall through the cracks. Previous runs covered Sherwin Williams spray paint (new deal, negotiation), Flexsteel Popfly application (must apply by Mon 4/27), Aleve content approval, and Smart Solar active editing.",
+    "emails_scanned": 7,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Reminder: Popfly application deadline is TOMORROW (Mon 4/27). Has Kenny applied yet? Ian can't keep extending this."
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "JLab March $2k payment is now 5 days overdue. Per Mariah: registration form was sent to wrong email, resending + payment should follow. Check if the form arrived and when to expect payment."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: March campaign payment overdue — was due 4/20 ($2k, now 5 days late). JLab had wrong email for registration form. Per campaign manager Mariah: form + payment should be coming soon. Confirm this has been received.",
+      "activity_note": "Apr 24: JLab March $2k payment overdue (due 4/20) — registration form sent to wrong email. Flagging so it doesn't get lost."
+    }
+  ],
+  "activities": []
+}]
