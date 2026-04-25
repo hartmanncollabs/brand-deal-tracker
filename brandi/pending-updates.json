@@ -1,1 +1,67 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Big day in the inbox! 🤝 A brand-new inbound from Reach Agency dropped — a Sherwin Williams spray paint brand that could be worth ~$12k. Liz already replied same day saying she's in and flexible on rate, so the ball is squarely in their court. On the Flexsteel front: Kenny and Liz did their Steinhafels content shoot yesterday but forgot to apply to the Popfly campaign afterward. Ian Saunders at Popfly extended the deadline to Monday — so that needs to happen TODAY or first thing Monday morning. A few other deals worth checking: Aleve content is under brand review per Mariah's weekly status, Smart Solar Lights content is actively being edited by Liz (she uploaded a caption to Drive on Apr 24), and the Bark deal was due yesterday (4/24). Also spotted Liz uploading UGC creatives for what appears to be an Ollie's/Hawke Media collab — worth confirming that card is moving forward.",
+    "emails_scanned": 8,
+    "deals_created": 1,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "Kenny needs to apply to the Flexsteel/Steinhafels campaign on Popfly before Monday 4/27. Ian extended the deadline after Kenny forgot to apply following the content shoot. Don't let this one slip!"
+      },
+      {
+        "type": "follow-up",
+        "brand": "Spray Paint Brand (Sherwin Williams)",
+        "message": "Liz responded to Reach Agency on Apr 24 and confirmed interest + rate flexibility (~$12k). Reach Agency's brand client deadline was 4/27 — expect to hear back early this week with next steps or a formal offer."
+      },
+      {
+        "type": "check-in",
+        "brand": "Aleve",
+        "message": "Mariah's weekly status email (Apr 24) lists Aleve as 'under content approval' — 3x Instagram Reels @Aleve_US, $12k. Make sure the Aleve card is in the Approval stage and set a follow-up if it's been sitting there a while."
+      },
+      {
+        "type": "check-in",
+        "brand": "Smart Solar Lights",
+        "message": "Liz was actively editing the Linkind SP6 solar lights reel on Apr 24 and uploaded a caption to the Google Drive folder. If this deal card exists, it may be ready to move from Content → Approval soon."
+      },
+      {
+        "type": "check-in",
+        "brand": "Bark",
+        "message": "Per Mariah's status email, the Bark deal (1 TikTok + Whitelisting, $750) had a due date of 4/24/26 — that was yesterday. Check if it's been delivered and moved to Invoiced."
+      },
+      {
+        "type": "check-in",
+        "brand": "Ollie's (Hawke Media)",
+        "message": "Liz sent a UGC creative to Alisa Gofman (agofman@hawkemedia.com) at Hawke Media on Apr 24 with subject 'Expert Transition.' She mentioned getting another one uploaded next. Could be an Ollie's monthly delivery — confirm the right Ollie's child card is moving forward."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Spray Paint Brand (Sherwin Williams)",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Reach Agency / Coreyiel to confirm rate and next steps",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "value": 12000,
+      "contact_name": "Coreyiel Ellis",
+      "contact_email": "coreyiel.ellis@reach.agency",
+      "notes": "[Apr 24]: Inbound from Coreyiel Ellis at Reach Agency (Director, Influencer Marketing) re: a spray paint brand under the Sherwin Williams umbrella. Deliverables: 1 TikTok Video (syndicated to IG Reels + Pinterest), 1 IG Story Set (3 frames each), 3 Still assets for brand usage. Campaign requirements include: link in bio 14 days, IG Reels collaborate feature, TikTok Comment anchor, authentication rights (Sprout + TikTok), comment CTA + pin, broadcast channel placements. Budget: TBD, likely $10–12k. Usage: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM/email). Exclusivity: 2 months in spray paint category. Content launch: August 2026. Liz replied same day: confirmed free from exclusivity, said budget aligns (her estimate was slightly over $12k, happy to be flexible). Competitor check required: Home Depot, Behr, Rust-Oleum. Agency had asked for confirmation by EOD Monday 4/27.",
+      "activity_note": "Apr 24: New inbound from Reach Agency — Sherwin Williams spray paint brand, ~$12k. Liz replied same day confirming interest and rate flexibility."
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly — deadline is Monday 4/27",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Liz and Kenny completed content shoot at Steinhafels but forgot to apply to the Popfly campaign afterward. Kenny emailed Ian Saunders (ian@popfly.com) to ask for an extension — Ian extended the campaign open date to Monday 4/27. Must apply before then.",
+      "activity_note": "Apr 24: Content shoot at Steinhafels complete. Forgot to apply to Popfly campaign post-shoot. Ian Saunders extended deadline to Monday 4/27 — apply ASAP."
+    }
+  ],
+  "activities": []
+}]
