@@ -1,1 +1,28 @@
-[]
+[{
+  "run_summary": {
+    "summary": "One urgent flag from the Flexsteel & Steinhafels thread: Kenny and Liz visited the Steinhafels Downers Grove store on April 23 for Video 2 content, but in the post-visit chaos Kenny forgot to apply to the campaign on Popfly. Ian Saunders extended the application window to Monday April 27 — that's TODAY. If Kenny doesn't apply on Popfly by end of day Monday, the campaign slot is at risk. Also captured the full 3-video filming timeline from the thread for reference. One other inbound email (Touchstone Home affiliate/ambassador program blast from Picking Daisies Media) was skipped — it went to their entire roster and has no cash offer.",
+    "emails_scanned": 15,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel / Steinhafels",
+        "message": "🚨 Popfly application closes TODAY (Monday Apr 27). Ian Saunders extended it specifically so Kenny could apply after forgetting post-store-visit. Kenny needs to log into Popfly and hit Apply on the Flexsteel/Steinhafels campaign before end of day — this is the formal campaign enrollment needed to submit draft content. Don't let it slip again!"
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply to campaign on Popfly — DEADLINE TODAY MON APR 27 (Ian extended it for us)",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Ian extended Popfly campaign application deadline to Monday Apr 27 — Kenny forgot to apply after the Steinhafels store visit. Must apply on Popfly by end of Monday or risk losing the campaign slot. [Apr 23]: Kenny & Liz visited Steinhafels Downers Grove, IL for Video 2 content. Full 3-video timeline per agreement: Video 1 (concept ready, filming week of Apr 21), Video 2 (store footage from Apr 23 visit), Video 3 (film after Liz's parents return from FL ~May 13-14, as dad has pacemaker follow-up May 11). All 3 videos to post by end of May per agreement. Contact: Ian Saunders, ian@popfly.com",
+      "activity_note": "Apr 24: Popfly deadline extended to Mon Apr 27 — Kenny must apply to Flexsteel/Steinhafels campaign on Popfly today"
+    }
+  ],
+  "activities": []
+}]
