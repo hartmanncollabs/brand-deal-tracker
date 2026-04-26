@@ -1,1 +1,63 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Scanned 18 emails across 4 threads. Three key deals need attention: (1) 🚨 Flexsteel/Steinhafels — Kenny filmed content at the store on Apr 23 but forgot to apply to the Popfly campaign platform. Ian Saunders extended the deadline to Monday Apr 28 — this needs to happen first thing Monday morning. (2) Aleve — Brand flagged VO revision issues on Apr 13 (wrong script language + missing #AlevePartner disclosure in first 5 seconds). Liz said she'd redo it Apr 22, and the Happy Friday pipeline sheet shows it back 'under content approval' as of Apr 24 — so it should be in the brand's hands now, just needs a follow-up check. (3) JLab March campaign — Payment was due 4/20 and still hasn't arrived as of Apr 21. Mariah at Social Media Collabs is following up with JLab accounting. Also spotted several deals in the Happy Friday pipeline sheet that may not be tracked yet — flagged as suggestions.",
+    "emails_scanned": 18,
+    "deals_created": 0,
+    "deals_updated": 3,
+    "suggestions": [
+      {
+        "type": "urgent-action",
+        "brand": "Flexsteel",
+        "message": "Kenny needs to apply to the Flexsteel/Steinhafels Popfly campaign by Monday April 28 — Ian extended the deadline but it will close again. Don't let this one slip!"
+      },
+      {
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "JLab March payment is overdue (was due 4/20). Mariah is on it, but worth a check-in Monday to see if it came through."
+      },
+      {
+        "type": "untracked-deals",
+        "brand": "Multiple",
+        "message": "Spotted 4 potentially untracked deals in the Happy Friday pipeline sheet: Smart Solar Path/Linkind SP6 ($2,000 - content in progress), Bark ($750 TikTok - was due 4/24), Antique Candle ($1,500 - June clearance sale), and Aquara ($1,500 - payment coming soon). Worth checking if these are on the board."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Apply to Flexsteel/Steinhafels campaign on Popfly platform — deadline Monday April 28",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "contact_name": "Ian Saunders",
+      "contact_email": "ian@popfly.com",
+      "notes": "[Apr 24]: Ian (Popfly) extended campaign application deadline to Monday Apr 28. Kenny and Liz visited Steinhafels on Apr 23 and filmed content — but Kenny forgot to complete the Popfly application. Must apply via Popfly platform before the deadline closes again.",
+      "activity_note": "Apr 24: Content filmed at Steinhafels on Apr 23. Ian Saunders (ian@popfly.com) extended Popfly campaign application deadline to Monday Apr 28 — Kenny needs to apply before it closes."
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Check in on Aleve content approval status",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 22]: Aleve's revision feedback — VO didn't follow approved script language and was missing #AlevePartner disclosure in first 5 seconds of all 3 reels. Liz said she'd redo the VO and add disclosures. As of Apr 24 Happy Friday sheet, Aleve is listed as 'under content approval' — revised content appears to have been resubmitted.",
+      "activity_note": "Apr 22: Aleve sent revision feedback — VO script wrong + missing #AlevePartner disclosure. Liz resubmitted revised content ~Apr 22. Back under brand approval as of Apr 24."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on overdue JLab payment (March campaign — was due 4/20)",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-21",
+      "notes": "[Apr 21]: JLab March campaign payment still not received (due 4/20/26). Liz flagged to Social Media Collabs — Mariah is following up with JLab accounting directly (others on the same campaign were paid 2 weeks ago).",
+      "activity_note": "Apr 21: JLab payment overdue — was due 4/20. Mariah at Social Media Collabs escalating to JLab accounting."
+    }
+  ],
+  "activities": []
+}]
