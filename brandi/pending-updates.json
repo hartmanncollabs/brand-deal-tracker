@@ -165,4 +165,44 @@
     }
   ],
   "activities": []
+},
+{
+  "run_summary": {
+    "summary": "Sunday Apr 26 scan — 21 emails across 48 hours reviewed. Previous runs captured all Friday activity. One new opportunity spotted: Natural Farm Pet campaign just dropped on Popfly ($825 cash + Turkey Tendon product, May 1 deadline). Two Monday deadlines to action first thing tomorrow: (1) Flexsteel — Kenny must apply on Popfly before the window closes again; (2) Sherwin Williams — Reach Agency pitches Liz to the brand by EOD Monday, expect a reply Tuesday. Skipped: Loloi Rugs/Way Day (affiliate-only, no flat fee), Meteoric/root+spring (gifted-only, confirmed again), Amazon shipment, ShopMy affiliate payment, Picking Daisies vendor invoice.",
+    "emails_scanned": 21,
+    "deals_created": 1,
+    "deals_updated": 0,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "REMINDER: Flexsteel Popfly application deadline is TOMORROW Monday Apr 27. Kenny needs to log into Popfly and apply Liz to the campaign before the window closes for the second time. Content was already shot at Steinhafels."
+      },
+      {
+        "type": "opportunity",
+        "brand": "Natural Farm Pet",
+        "message": "New Popfly campaign: Natural Farm Pet Turkey Tendon Launch. Compensation $825 cash + $54.99 product. Application deadline May 1 — 5 days away. You're already on Popfly from the Flexsteel deal, so applying is quick. Worth a look if the pet niche fits (you already have Bark on the board)."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Sherwin Williams Spray Paint",
+        "message": "Reach Agency is pitching Liz to the brand by EOD Monday. Expect an update Tuesday Apr 28 — if nothing by end of day, nudge Coreyiel Ellis (coreyiel.ellis@reach.agency)."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Natural Farm Pet",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide whether to apply to Natural Farm Pet campaign on Popfly",
+      "next_action_date": "2026-05-01",
+      "last_contact": "2026-04-24",
+      "value": 825,
+      "notes": "[Apr 24]: Popfly automated campaign notification — Natural Farm Pet: Your Pet's New Favorite Treat - Turkey Tendon Launch. Compensation: $825 cash + Turkey Tendon product ($54.99 value). Application deadline: May 1, 2026. Must apply through Popfly platform (already registered from Flexsteel deal). Deliverables TBD upon acceptance. Pet niche — aligns with existing Bark deal.",
+      "activity_note": "Apr 24: Natural Farm Pet campaign dropped on Popfly — $825 + product. Application deadline May 1. Needs decision to apply."
+    }
+  ],
+  "activities": []
 }]
