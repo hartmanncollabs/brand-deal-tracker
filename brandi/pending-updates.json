@@ -133,4 +133,36 @@
     }
   ],
   "activities": []
+},
+{
+  "run_summary": {
+    "summary": "New inbound from Reach Agency — spray paint brand under Sherwin Williams umbrella. Coreyiel Ellis reached out Friday evening (Apr 24) with a proposed ~$10-12k deal for 1 TikTok, 1 IG Story set, and 3 still assets launching August 2026. Liz replied the same night expressing strong interest (her own estimate was slightly over $12k, willing to be flexible). Reach Agency is pitching Liz's profile to the brand by EOD Monday 4/27 — follow up Tuesday if no word. No other new emails since previous scan.",
+    "emails_scanned": 9,
+    "deals_created": 1,
+    "deals_updated": 0,
+    "suggestions": [
+      {
+        "type": "follow-up",
+        "brand": "Sherwin Williams Spray Paint (Reach Agency)",
+        "message": "Reach Agency is pitching Liz to the spray paint brand by EOD Monday 4/27. If you don't hear back by Tuesday 4/28, nudge Coreyiel Ellis at coreyiel.ellis@reach.agency (504.919.3186). Budget ~$10-12k for 1 TikTok + 1 IG Story set + 3 still assets — content launches August 2026."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Sherwin Williams Spray Paint",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Reach Agency to confirm brand decision on Liz",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "value": 12000,
+      "contact_name": "Coreyiel Ellis",
+      "contact_email": "coreyiel.ellis@reach.agency",
+      "notes": "[Apr 24]: Coreyiel Ellis (Reach Agency, coreyiel.ellis@reach.agency, 504.919.3186, Director of Influencer Marketing) reached out about a spray paint brand under the Sherwin Williams umbrella. Deliverables: 1 TikTok (syndicated to IG Reels + Pinterest), 1 IG Story set (3 frames), 3 still assets for brand usage. Budget TBD, likely ~$10-12k. Liz replied same evening expressing interest: budget aligns (Liz estimate slightly over $12k, willing to be flexible), free from exclusivity. Agency pitching Liz's profile to brand by EOD Mon 4/27. Exclusivity: 2 months in spray paint category. Usage: 5 months (organic/paid social, website, retailer, shopper, CRM email). Content launch: August 2026. Campaign reqs: link in bio 14 days, IG Reels collaborate, TikTok comment anchor, authentication rights (Sprout + TikTok), comment CTA/pin, broadcast channel placement.",
+      "activity_note": "Apr 24: Reach Agency pitched Sherwin Williams spray paint brand deal — Liz replied same evening expressing interest and flagging her rate. Agency pitching Liz to brand by EOD Mon 4/27."
+    }
+  ],
+  "activities": []
 }]
