@@ -1,31 +1,135 @@
 [{
   "run_summary": {
-    "summary": "New inbound deal from Reach Agency — they're repping a spray paint brand under the Sherwin Williams umbrella and reached out to Liz on Friday afternoon (Apr 24). Liz responded within 2 hours confirming she's free from exclusivity and that the ~$10-12k budget aligns with her rate (she noted her estimate is slightly over $12k but she's flexible). The agency needed a response by EOD Monday 4/27 to pitch her profile to the brand client, so this is on track — now waiting to hear back from Coreyiel on next steps. Creating a deal card so it's on the board.",
-    "emails_scanned": 2,
-    "deals_created": 1,
-    "deals_updated": 0,
+    "summary": "Busy Friday — 12 emails across 6 active threads. Most urgent: Kenny needs to apply Liz to the Flexsteel campaign on Popfly by Monday 4/27 (Ian extended the deadline after Kenny forgot Friday following the Steinhafels shoot). JLab March payment is 6 days overdue — JLab was sending the registration form to the wrong email. On the brighter side: Liz submitted Smart Solar content to the review folder Friday evening (moving to approval), SOJOS content is fully approved with bank info sent (just needs to post), and Whisker's Litter Robot 5 Pro post went live this week with Kenny invoicing Friday. Mariah's weekly status table also surfaced 4 active deals without board cards: Aquara ($1,500, payment coming soon), Bark ($750, past due), Antique Candle ($1,500, June sale), and Smart Solar. Skipped Meteoric/root+spring — gifted-only with no cash payment.",
+    "emails_scanned": 12,
+    "deals_created": 6,
+    "deals_updated": 3,
     "suggestions": [
       {
+        "type": "urgent",
+        "brand": "Flexsteel",
+        "message": "URGENT: Ian from Popfly (ian@popfly.com) extended the Flexsteel campaign application window to Monday 4/27 — Kenny needs to log into the Popfly platform and formally apply Liz to the campaign before it closes again. Content was already shot at Steinhafels on Thursday. Don't miss the deadline a second time!"
+      },
+      {
+        "type": "overdue",
+        "brand": "JLab March Campaign",
+        "message": "JLab March payment ($2,000) was due 4/20 — now 6 days overdue. The problem: JLab was sending the registration form to the wrong email. Mariah says form + payment should arrive 'asap' but worth a direct nudge to your JLab contact to make sure it's actually moving."
+      },
+      {
+        "type": "action-needed",
+        "brand": "SOJOS Sunglasses",
+        "message": "SOJOS content is approved by Ruby and bank info is already sent. Just need to post the content and let Ruby know when it's live — she specifically asked to be notified."
+      },
+      {
         "type": "heads-up",
-        "brand": "Sherwin Williams Spray Paint",
-        "message": "Reach Agency's deadline to pitch Liz's profile to the brand client was EOD Monday 4/27. Liz already replied Friday night — so we're waiting on Coreyiel to come back with a formal offer. If you don't hear by Wednesday 4/29, worth a quick nudge to coreyiel.ellis@reach.agency."
+        "brand": "Bark",
+        "message": "Bark's content due date was 4/24 (2 days ago) — created a card but worth a quick check: was the TikTok posted? If yes, send invoice. If not, get it up ASAP."
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "Sherwin Williams Spray Paint",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Wait for Coreyiel at Reach Agency to respond — agency pitching Liz's profile to brand client by 4/27",
-      "next_action_date": "2026-04-29",
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "us",
+      "next_action": "Apply on Popfly platform — Ian extended open date to Monday 4/27",
+      "next_action_date": "2026-04-27",
       "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Liz and Kenny shot content at Steinhafels on Apr 23. Kenny forgot to apply Liz to the Flexsteel campaign on the Popfly platform before the application window closed. Ian Saunders (ian@popfly.com) extended the open date to Monday 4/27. MUST log into Popfly and apply before deadline closes again.",
+      "activity_note": "Apr 24: Content shot at Steinhafels on 4/23. Missed Popfly application window — Ian extended to Monday 4/27. Apply ASAP."
+    },
+    {
+      "action": "update",
+      "brand": "Aleve",
+      "stage": "approval",
+      "waiting_on": "brand",
       "value": 12000,
-      "contact_name": "Coreyiel Ellis",
-      "contact_email": "coreyiel.ellis@reach.agency",
-      "notes": "[Apr 24]: Reach Agency (Coreyiel Ellis, Director Influencer Marketing, 504.919.3186) pitched a spray paint brand under the Sherwin Williams umbrella. Deliverables (subject to change): 1 TikTok video (syndicated to IG Reels + Pinterest), 1 IG Story Set (3 frames), 3 still assets for brand use. Budget ~$10-12k — Liz noted her estimate is slightly over $12k but she's flexible. Usage term: 5 months (Organic + Paid Social, Website, Retailer, Shopper, CRM/email). Exclusivity: 2 months in the spray paint category. Content launch: August 2026. Campaign also requires link in bio (14 days), IG Reels collab feature, TikTok Comment anchor, authentication rights (Sprout + TikTok), Comment CTA + pin, IG broadcast channel placement. Liz replied same evening confirming interest and that she's free from exclusivity.",
-      "activity_note": "Apr 24: New inbound from Reach Agency — spray paint brand (Sherwin Williams umbrella) expressed interest. Liz replied same day confirming interest + rate alignment. Waiting for agency to pitch her profile to brand client (deadline 4/27) and come back with formal next steps."
+      "next_action": "Follow up on Aleve content approval",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly status table confirms Aleve (3x Instagram Reels @Aleve_US) is 'under content approval.' $12,000 deal. Waiting on brand to review and approve. Aleve folder: https://drive.google.com/drive/folders/1GX8jYLxkEArnvJJe9jVE12Ul5mOoX6mi",
+      "activity_note": "Apr 24: Status table confirms Aleve content is under brand review — updated to Approval stage."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-24",
+      "notes": "[Apr 24]: Mariah's weekly status table — three active JLab campaigns: (1) March Campaign ($2,000, due 4/20/26 — OVERDUE 6 days): JLab was sending registration form to wrong email, form + payment should arrive 'asap' but needs follow-up. (2) April Campaign ($2,000, due 5/17/26): 'this will be on time.' (3) May Campaign ($2,000, due 5/17/26): 'ready for content.' All are 1 Reel/Story deliverables each. Liz-JLab content folder: https://drive.google.com/drive/folders/1cYQlZ0LQBu55eDhUSZMffl0jtM4nVJHn",
+      "activity_note": "Apr 24: JLab status from Mariah — March payment overdue (wrong email for registration form), April/May on track for 5/17. Follow up on March payment."
+    },
+    {
+      "action": "create",
+      "brand": "Smart Solar Path",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Wait for Linkind brand review of submitted content",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "value": 2000,
+      "notes": "[Apr 24]: Liz submitted content to the shared folder Friday evening ('In the folder :)'). Brand (Linkind SP6 Smart Solar Pathway Lights) requested content by Mon/Tue 4/27-4/28. Brand feedback shared Apr 23: nighttime lighting effects should be ~50% of video, show app controlling patterns and color changes, avoid filming in daylight, proper lens install, visuals/voiceover must match. Deliverables: 1x IG Reel (60-90s) + 1 Story set (3 frames) + TikTok crosspost + comment-for-link required. $2,000 deal managed via socialmediacollabs.com (Mariah). Folder: https://drive.google.com/drive/folders/1AAus-zWzTyGIHFWMuPvwDUFqJu3jDdni",
+      "activity_note": "Apr 24: Content submitted to review folder — moved to Approval. Brand review deadline Mon/Tue 4/27-4/28."
+    },
+    {
+      "action": "create",
+      "brand": "SOJOS Sunglasses",
+      "stage": "scheduled",
+      "waiting_on": "us",
+      "next_action": "Post SOJOS content and notify Ruby when live",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-24",
+      "contact_name": "Ruby",
+      "contact_email": "marketing202@sojosvision.com",
+      "notes": "[Apr 24]: Content fully approved. Kenny sent payment/bank info to Ruby at SOJOS Vision (marketing202@sojosvision.com). Content revision history: Ruby requested voiceover with brand intro (Apr 22), Liz re-edited and shared updated folder link (Apr 24), Ruby approved. Ruby asked to be notified when post goes live. Deal managed directly by Liz/Kenny.",
+      "activity_note": "Apr 24: SOJOS content approved by Ruby. Bank info sent. Ready to schedule and post — notify Ruby when live."
+    },
+    {
+      "action": "create",
+      "brand": "Whisker",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on Whisker invoice payment",
+      "next_action_date": "2026-05-24",
+      "last_contact": "2026-04-24",
+      "contact_name": "Cheyenne Mabey",
+      "contact_email": "cmabey@whisker.com",
+      "notes": "[Apr 24]: Post (Litter Robot 5 Pro) went live week of 4/20. Kenny sent invoice to Cheyenne Mabey (cmabey@whisker.com) on Apr 24. Approval history: Liz submitted content Apr 14 — Cheyenne flagged voiceover said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro'. Liz re-recorded and Cheyenne approved Apr 15. Kenny expressed strong interest in future collabs ('Litter Robot is easily in my top 3 favorite products we've ever received').",
+      "activity_note": "Apr 24: Litter Robot 5 Pro post live week of 4/20. Invoice sent to Cheyenne Mabey at Whisker on 4/24 — moved to Invoiced."
+    },
+    {
+      "action": "create",
+      "brand": "Aquara",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on Aquara payment",
+      "next_action_date": "2026-05-10",
+      "last_contact": "2026-04-24",
+      "value": 1500,
+      "notes": "[Apr 24]: Per Mariah's weekly status table — Aquara deal (started 2/12, 1 Reel, Doorbell product, $1,500) shows 'payment coming soon.' Content has been delivered. Folder: https://drive.google.com/drive/folders/1yQfuFZc6c4uQHgi-lDH9ondl1HmZawCJ",
+      "activity_note": "Apr 24: Mariah's status table shows Aquara 'payment coming soon' — created invoiced card."
+    },
+    {
+      "action": "create",
+      "brand": "Bark",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Verify if Bark TikTok was posted — if yes, send invoice; if no, post ASAP",
+      "next_action_date": "2026-04-27",
+      "last_contact": "2026-04-24",
+      "value": 750,
+      "notes": "[Apr 24]: Per Mariah's weekly status table — Bark deal (started 2/16, 1 TikTok + Whitelisting, $750). Due date was 4/24/26 — now 2 days past. No status flag in table suggesting issues. Folder: https://drive.google.com/drive/folders/1Wkq80ztLyqK16XMAKa52ZqRX8Tj7j2wm. Verify whether content was posted and send invoice if so.",
+      "activity_note": "Apr 24: Bark due date (4/24) has passed — created card from Mariah status table. Check posting status Monday."
+    },
+    {
+      "action": "create",
+      "brand": "Antique Candle",
+      "stage": "content",
+      "waiting_on": "us",
+      "next_action": "Create story content for Antique Candle June clearance sale",
+      "next_action_date": "2026-06-10",
+      "last_contact": "2026-04-24",
+      "value": 1500,
+      "notes": "[Apr 24]: Per Mariah's weekly status table — Antique Candle Co deal (started 4/1, $1,500). Deliverable: 2 shares (2-frame IG Story + 1 follow-up Story) promoting Antique Candle Co's bi-annual Clearance Flash Sale, June 18-22. Folder: https://drive.google.com/drive/folders/1QWHECghvXHAZiv4ssccXpWB5MD-fnQ33. Content needs to be created and posted around June 18.",
+      "activity_note": "Apr 24: Antique Candle June clearance sale promo confirmed from Mariah's status table — created content card for June 18-22 posting."
     }
   ],
   "activities": []
