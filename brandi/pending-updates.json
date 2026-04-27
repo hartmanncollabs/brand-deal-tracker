@@ -1,45 +1,48 @@
 [{
   "run_summary": {
-    "summary": "Two substantive updates today, plus a correction flag from the previous run. 💼\n\n**Whisker (Litter-Robot):** Invoice is officially in accounting! Cheyenne confirmed she submitted it this morning and said payment will come via ACH through Tipalti. We're waiting on the payment — I've moved the card to Invoiced and set a 30-day follow-up. Love that Kenny closed the invoice email with a genuine plug for working together again — great relationship energy.\n\n**JLab:** Liz completed the Tipalti payment portal registration this afternoon (account created + payment details set). JLab can now process the ACH payment. If an invoice is already out, it should move through the portal now.\n\n**⚠️ Previous run correction:** Last run incorrectly attributed the Whisker/ACH conversation to JLab, labeling Cheyenne Mabey (cmabey@whisker.com) as a JLab contact. The Cheyenne note in the JLab card from the previous run is actually about the Whisker deal. Please review and clean up the JLab notes if needed.",
+    "summary": "Liz is on her pitch game today! 💼 She sent TWO outbound collaboration pitches this morning for the same backyard firepit/patio makeover project — one to Shabebe (Rock Glue + hardscape) and one to Black Diamond Coatings (Mulch Glue). Smart parallel outreach. Both are now in the pipeline at negotiation stage, waiting on the brands to respond. I've created cards for both so we don't lose track.\n\nWhisker + JLab were covered in the previous run (both updates should still be in the queue). No new inbound brand emails today.",
     "emails_scanned": 9,
-    "deals_created": 0,
-    "deals_updated": 2,
+    "deals_created": 2,
+    "deals_updated": 0,
     "suggestions": [
       {
-        "type": "correction",
-        "brand": "JLab",
-        "message": "⚠️ The previous run added a note to JLab saying 'Liz confirmed ACH with Cheyenne at JLab' — but Cheyenne Mabey is at Whisker (cmabey@whisker.com), not JLab. The ACH conversation was about the Whisker/Litter-Robot deal. Worth removing or correcting that note from the JLab card so there's no confusion."
+        "type": "follow-up",
+        "brand": "Shabebe",
+        "message": "Liz pitched Lauren at Shabebe (wenna@shabebellc.com) this morning for a backyard firepit patio collab. If no response by Thursday Apr 30, worth a nudge — she sent a similar pitch to Black Diamond Coatings too, so she's clearly ready to move on this project."
       },
       {
         "type": "follow-up",
-        "brand": "Whisker",
-        "message": "Cheyenne submitted the Whisker invoice to accounting today and said Tipalti invite is coming — Liz will need to set up a Whisker Tipalti account separately from the JLab one. Watch for that invite, it'll be from a different portal URL. Payment follow-up set for May 27 if nothing arrives by then. 💸"
-      },
-      {
-        "type": "action",
-        "brand": "JLab",
-        "message": "JLab Tipalti registration is complete — payment setup is done on our end. If there's an outstanding invoice with JLab, it should flow through now. Invoice goes to apinvoice@jlab.com (PDF/JPG/PNG only), portal: suppliers.tipalti.com/jlab."
+        "brand": "Black Diamond Coatings",
+        "message": "Liz pitched Lauren Jankauskas at Black Diamond Coatings (lauren.jankauskas@blackdiamondcoatings.com) for the same backyard firepit patio project featuring their Mulch Glue. Follow up Apr 30 if no reply. Whichever brand responds first likely gets the feature!"
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "Whisker",
-      "stage": "invoiced",
+      "action": "create",
+      "brand": "Shabebe",
+      "stage": "negotiation",
       "waiting_on": "brand",
-      "next_action": "Follow up on payment if not received",
-      "next_action_date": "2026-05-27",
+      "next_action": "Wait for Lauren's response on backyard firepit collab proposal",
+      "next_action_date": "2026-04-30",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Cheyenne (Whisker) confirmed invoice submitted to accounting — ACH payment coming via Tipalti (Whisker's payment platform). Watch for Tipalti registration invite from Whisker (separate from JLab's Tipalti portal). | [Apr 24]: Kenny sent invoice to Cheyenne for post that went live week of Apr 21. Kenny's email also expressed interest in future collabs.",
-      "activity_note": "Apr 27: Cheyenne confirmed invoice submitted to accounting — ACH/Tipalti payment in progress. Follow up May 27 if payment hasn't arrived."
+      "contact_name": "Lauren",
+      "contact_email": "wenna@shabebellc.com",
+      "notes": "[Apr 27]: Liz sent outbound pitch for backyard firepit/patio makeover collab. Offering to feature Shabebe's Rock Glue and hardscape products in a DIY raised patio project (large pavers + pea gravel + fire pit area + Adirondack chairs). Attached media kit. Kenny cc'd.",
+      "activity_note": "Apr 27: Liz sent outbound pitch to Shabebe (Lauren, wenna@shabebellc.com) — backyard firepit patio collab featuring Rock Glue. Waiting on response."
     },
     {
-      "action": "update",
-      "brand": "JLab",
+      "action": "create",
+      "brand": "Black Diamond Coatings",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Lauren's response on backyard firepit collab proposal",
+      "next_action_date": "2026-04-30",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz completed JLab Tipalti payment portal registration — account created and payment details (ACH) submitted. JLab can now process payment. Invoice goes to apinvoice@jlab.com (PDF, JPG, or PNG only). Portal: suppliers.tipalti.com/jlab. NOTE: The 'ACH confirmed with Cheyenne' note from the previous run belongs to the Whisker deal (Cheyenne Mabey, cmabey@whisker.com) — not JLab.",
-      "activity_note": "Apr 27: Liz completed Tipalti registration for JLab — ACH payment setup confirmed and ready to receive payment."
+      "contact_name": "Lauren Jankauskas",
+      "contact_email": "lauren.jankauskas@blackdiamondcoatings.com",
+      "notes": "[Apr 27]: Liz sent outbound pitch for backyard firepit/patio makeover collab. Offering to feature Black Diamond Coatings' Mulch Glue and hardscape products in a DIY raised patio project (large pavers + pea gravel + fire pit area + Adirondack chairs). Attached media kit. Kenny cc'd.",
+      "activity_note": "Apr 27: Liz sent outbound pitch to Black Diamond Coatings (Lauren Jankauskas, lauren.jankauskas@blackdiamondcoatings.com) — backyard firepit patio collab featuring Mulch Glue. Waiting on response."
     }
   ],
   "activities": []
