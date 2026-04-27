@@ -1,31 +1,43 @@
 [{
   "run_summary": {
-    "summary": "💸 Payment incoming from Whisker! Cheyenne (cmabey@whisker.com) replied to Kenny's Apr 24 invoice and asked for payment preference — ACH or Paypal. The $2,000 Litter-Robot 5 Pro deal is done and dusted, just need to reply with which payment method you want so she can send the money!",
+    "summary": "💸 Both Whisker and JLab are moving toward payment via Tipalti! On Whisker: Liz replied to Cheyenne this morning with payment preference, Cheyenne confirmed the invoice was submitted to accounting and that an ACH invite was coming — and it did (Whisker Accounting just sent a Tipalti portal invite, expires May 27). On JLab: their accounting team sent TWO Tipalti payment portal invitations today — this one's URGENT, the link expires in just 7 days (May 4). Both need Tipalti registration to get paid, but JLab is the priority.",
     "emails_scanned": 8,
     "deals_created": 0,
-    "deals_updated": 1,
+    "deals_updated": 2,
     "suggestions": [
       {
         "type": "action-required",
+        "brand": "JLab",
+        "message": "🚨 URGENT: JLab Accounting (ap@jlabaudio.com) sent a Tipalti payment portal invitation — the link expires in 7 DAYS (May 4). Register ASAP at suppliers.tipalti.com/JLAB — you'll need contact details, banking info (routing + account), and tax info (EIN/W-9). Don't let this one slip!"
+      },
+      {
+        "type": "action-required",
         "brand": "Whisker",
-        "message": "Reply to Cheyenne at cmabey@whisker.com today with your payment preference (ACH or Paypal) — she's ready to send the $2,000 and just needs to know which method works for you!"
+        "message": "Whisker Accounting (accounting@whisker.com) sent a Tipalti vendor portal invite to set up ACH payment for the $2,000. Less urgent than JLab — link expires May 27 (30 days). Same process: contact info, banking details, tax info. You can also reach them at 248-564-2067."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
+      "brand": "JLab",
+      "waiting_on": "us",
+      "next_action": "Register on JLab's Tipalti payment portal — link expires May 4 (URGENT!)",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-27",
+      "notes": "[Apr 27]: JLab Accounting (ap@jlabaudio.com) sent Tipalti payment portal invitation x2. URGENT — link expires May 4 (7 days). Must register to receive payment: contact info, payment method + banking details (routing/account), and tax identity (W-9/EIN). Future login: suppliers.tipalti.com/jlab.",
+      "activity_note": "Apr 27: JLab Accounting sent Tipalti payment portal invite (expires May 4 — 7 days). Register ASAP to receive payment."
+    },
+    {
+      "action": "update",
       "brand": "Whisker",
       "stage": "invoiced",
       "waiting_on": "us",
-      "next_action": "Reply to Cheyenne with payment preference (ACH or Paypal)",
+      "next_action": "Register on Whisker's Tipalti vendor portal to complete ACH payment setup (link expires May 27)",
       "next_action_date": "2026-04-28",
       "last_contact": "2026-04-27",
-      "value": "2000",
-      "contact_name": "Cheyenne Mabey",
-      "contact_email": "cmabey@whisker.com",
-      "notes": "[Apr 27]: Cheyenne replied to invoice — asked for payment preference (ACH or Paypal). Payment is on its way! Reply to confirm method so she can process the $2,000.\n\n[Apr 24]: Kenny sent invoice for the Litter-Robot 5 Pro IG Reel that went live ~Apr 20-22.\n\n[Apr 15]: Content approved by Cheyenne after voiceover fix (said \"Litter-Robot 5\" instead of \"Litter-Robot 5 Pro\" — Liz re-recorded). Approved to post early next week.\n\n[Apr 14]: Liz submitted content for approval via Google Drive.\n\n[Mar 4]: Whisker placed the Litter-Robot 5 Pro order — unit shipped to Liz.\n\n[Feb 27]: Liz signed and returned the contract.\n\n[Feb 26]: Cheyenne sent the contract.\n\n[Feb 18]: Kenny accepted Cheyenne's $2,000 counter (down from Liz's $3,000 ask). Deliverables: TikTok + IG Reel for Litter-Robot 5 Pro (white). Address and name provided for contract.",
-      "activity_note": "Apr 27: Cheyenne (Whisker) accepted invoice and asked for payment preference — ACH or Paypal. $2,000 payment incoming once we reply with preferred method."
+      "notes": "[Apr 27]: Liz replied to Cheyenne with payment preference. Cheyenne confirmed invoice submitted to Whisker accounting — $2,000 processing. Whisker Accounting (accounting@whisker.com / 248-564-2067) sent Tipalti vendor portal invite to complete ACH setup. Link expires in 30 days (May 27). After registering, invoices go to APInvoices@whisker.com; other comms to Accounting@whisker.com.",
+      "activity_note": "Apr 27: Cheyenne confirmed invoice submitted to Whisker accounting. Whisker sent Tipalti vendor portal invite — register to receive $2,000 via ACH."
     }
   ],
   "activities": []
