@@ -1,1 +1,30 @@
-[]
+[{
+  "run_summary": {
+    "summary": "Picked up 1 new inbound opportunity — Touchstone Home via Picking Daisies Media (your PR firm). They're building an ambassador/affiliate program and sent a firm offer to the full roster. Compensation TBD — could be paid or gifted depending on credentials and product. Liz needs to decide if she wants to pursue: apply via Awin + fill out the questionnaire. Deadlines are noted as tight so worth a quick look today.",
+    "emails_scanned": 1,
+    "deals_created": 1,
+    "deals_updated": 0,
+    "suggestions": [
+      {
+        "type": "action-required",
+        "brand": "Touchstone Home",
+        "message": "Mariah at Picking Daisies sent a firm offer for Touchstone Home's ambassador/affiliate program — went to the full roster so this is first-come. No rate confirmed yet (could be gifted or paid — they make electric fireplaces/home products so product value could be $500+). If Liz is interested: (1) sign up for the Awin affiliate program, and (2) fill out the attached questionnaire ('Touchstone Home Products SOCIAL INFLUENCER Questions - 2026.docx') and send to her manager. Deadline likely tight."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "create",
+      "brand": "Touchstone Home",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Decide if interested in Touchstone Home opportunity — if yes, sign up for Awin affiliate program and fill out questionnaire, send to Mariah at Picking Daisies",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-26",
+      "contact_name": "Mariah Zingarelli",
+      "contact_email": "info@pickingdaisiesmedia.com",
+      "notes": "[Apr 26]: Firm offer via Picking Daisies Media (Liz's PR firm). Touchstone Home building ambassador/affiliate program. Compensation unclear — email says it 'may be 100% gratis' depending on credentials, timing, and specific product. They make electric fireplaces and home products (potentially $500+ product value). Sent to full PR roster. To apply: (1) join Awin affiliate network at touchstonehomeproducts.com/pages/join-the-touchstone-home-products-affiliate-program, (2) fill out attached questionnaire 'Touchstone Home Products SOCIAL INFLUENCER Questions - 2026.docx' and send to manager."
+    }
+  ],
+  "activities": []
+}]
