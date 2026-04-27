@@ -1,42 +1,45 @@
 [{
   "run_summary": {
-    "summary": "One new outbound pitch to log! 🤝 Liz sent TWO pitches today for the backyard firepit project — the Black Diamond Coatings one was already captured, but she also pitched Shabebe LLC (Rock Glue + hardscape products) to Wenna at wenna@shabebellc.com about an hour later. Created that card so you can track both pitches side by side. Also adding a JLab payment detail: Liz confirmed ACH with Cheyenne at JLab today and invoices should go to apinvoice@jlab.com — flagging in case the specific contact name and invoice email weren't in previous notes.",
-    "emails_scanned": 14,
-    "deals_created": 1,
-    "deals_updated": 1,
+    "summary": "Two substantive updates today, plus a correction flag from the previous run. 💼\n\n**Whisker (Litter-Robot):** Invoice is officially in accounting! Cheyenne confirmed she submitted it this morning and said payment will come via ACH through Tipalti. We're waiting on the payment — I've moved the card to Invoiced and set a 30-day follow-up. Love that Kenny closed the invoice email with a genuine plug for working together again — great relationship energy.\n\n**JLab:** Liz completed the Tipalti payment portal registration this afternoon (account created + payment details set). JLab can now process the ACH payment. If an invoice is already out, it should move through the portal now.\n\n**⚠️ Previous run correction:** Last run incorrectly attributed the Whisker/ACH conversation to JLab, labeling Cheyenne Mabey (cmabey@whisker.com) as a JLab contact. The Cheyenne note in the JLab card from the previous run is actually about the Whisker deal. Please review and clean up the JLab notes if needed.",
+    "emails_scanned": 9,
+    "deals_created": 0,
+    "deals_updated": 2,
     "suggestions": [
       {
-        "type": "new-pitch",
-        "brand": "Shabebe",
-        "message": "Liz pitched Wenna at Shabebe LLC for the same firepit patio project as Black Diamond Coatings — featuring their Rock Glue + hardscape products. Interesting to see two brands approached for the same project! If both respond, you'll want to decide which (or both?) to move forward with. If no reply by Thursday, a quick follow-up would be timely 🔥"
+        "type": "correction",
+        "brand": "JLab",
+        "message": "⚠️ The previous run added a note to JLab saying 'Liz confirmed ACH with Cheyenne at JLab' — but Cheyenne Mabey is at Whisker (cmabey@whisker.com), not JLab. The ACH conversation was about the Whisker/Litter-Robot deal. Worth removing or correcting that note from the JLab card so there's no confusion."
+      },
+      {
+        "type": "follow-up",
+        "brand": "Whisker",
+        "message": "Cheyenne submitted the Whisker invoice to accounting today and said Tipalti invite is coming — Liz will need to set up a Whisker Tipalti account separately from the JLab one. Watch for that invite, it'll be from a different portal URL. Payment follow-up set for May 27 if nothing arrives by then. 💸"
       },
       {
         "type": "action",
         "brand": "JLab",
-        "message": "JLab payment detail to save: Liz confirmed ACH with Cheyenne at JLab today. Invoices go to apinvoice@jlab.com (PDF, JPG, or PNG format only). If the invoice hasn't been sent yet, that's your address!"
+        "message": "JLab Tipalti registration is complete — payment setup is done on our end. If there's an outstanding invoice with JLab, it should flow through now. Invoice goes to apinvoice@jlab.com (PDF/JPG/PNG only), portal: suppliers.tipalti.com/jlab."
       }
     ]
   },
   "deals": [
     {
-      "action": "create",
-      "brand": "Shabebe",
-      "stage": "negotiation",
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "invoiced",
       "waiting_on": "brand",
-      "contact_name": "Wenna",
-      "contact_email": "wenna@shabebellc.com",
-      "next_action": "Wait for Wenna at Shabebe to respond to pitch",
-      "next_action_date": "2026-04-30",
+      "next_action": "Follow up on payment if not received",
+      "next_action_date": "2026-05-27",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz sent outbound pitch to Wenna (wenna@shabebellc.com) at Shabebe LLC. Pitching backyard firepit patio makeover collab — raised paver patio with pea gravel, designated fire pit + Adirondack chair space. Wants to feature Shabebe's Rock Glue and other hardscape products as the clean, low-maintenance solution. Media kit attached, Kenny cc'd. No rate or deliverables discussed yet.",
-      "activity_note": "Apr 27: Liz sent outbound pitch for backyard firepit patio project featuring Rock Glue + hardscape products. Awaiting response."
+      "notes": "[Apr 27]: Cheyenne (Whisker) confirmed invoice submitted to accounting — ACH payment coming via Tipalti (Whisker's payment platform). Watch for Tipalti registration invite from Whisker (separate from JLab's Tipalti portal). | [Apr 24]: Kenny sent invoice to Cheyenne for post that went live week of Apr 21. Kenny's email also expressed interest in future collabs.",
+      "activity_note": "Apr 27: Cheyenne confirmed invoice submitted to accounting — ACH/Tipalti payment in progress. Follow up May 27 if payment hasn't arrived."
     },
     {
       "action": "update",
       "brand": "JLab",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz confirmed ACH payment method with Cheyenne at JLab (Liz: 'ACH would be great, but either works'). JLab invoice email: apinvoice@jlab.com (PDF, JPG, or PNG format only). Payment portal: suppliers.tipalti.com/jlab.",
-      "activity_note": "Apr 27: ACH confirmed with Cheyenne at JLab — invoice to apinvoice@jlab.com"
+      "notes": "[Apr 27]: Liz completed JLab Tipalti payment portal registration — account created and payment details (ACH) submitted. JLab can now process payment. Invoice goes to apinvoice@jlab.com (PDF, JPG, or PNG only). Portal: suppliers.tipalti.com/jlab. NOTE: The 'ACH confirmed with Cheyenne' note from the previous run belongs to the Whisker deal (Cheyenne Mabey, cmabey@whisker.com) — not JLab.",
+      "activity_note": "Apr 27: Liz completed Tipalti registration for JLab — ACH payment setup confirmed and ready to receive payment."
     }
   ],
   "activities": []
