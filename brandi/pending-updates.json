@@ -1,19 +1,24 @@
 [{
   "run_summary": {
-    "summary": "💸 Both Whisker and JLab are moving toward payment via Tipalti! On Whisker: Liz replied to Cheyenne this morning with payment preference, Cheyenne confirmed the invoice was submitted to accounting and that an ACH invite was coming — and it did (Whisker Accounting just sent a Tipalti portal invite, expires May 27). On JLab: their accounting team sent TWO Tipalti payment portal invitations today — this one's URGENT, the link expires in just 7 days (May 4). Both need Tipalti registration to get paid, but JLab is the priority.",
-    "emails_scanned": 8,
-    "deals_created": 0,
+    "summary": "Big payment progress today! 💸 Both JLab and Whisker Tipalti registrations are NOW COMPLETE — Liz set up payment details on both portals this morning. JLab: account confirmed + payment details updated (apinvoice@jlab.com for future invoices). Whisker: 'Welcome to vendor portal' received + payment details updated — invoice is in accounting's hands and ACH is in motion. Both deals flip to waiting on brand for payment. Also: Liz sent a new outbound pitch to Black Diamond Coatings today for a backyard firepit patio collab — created that card so you can track it.",
+    "emails_scanned": 14,
+    "deals_created": 1,
     "deals_updated": 2,
     "suggestions": [
       {
-        "type": "action-required",
-        "brand": "JLab",
-        "message": "🚨 URGENT: JLab Accounting (ap@jlabaudio.com) sent a Tipalti payment portal invitation — the link expires in 7 DAYS (May 4). Register ASAP at suppliers.tipalti.com/JLAB — you'll need contact details, banking info (routing + account), and tax info (EIN/W-9). Don't let this one slip!"
+        "type": "follow-up",
+        "brand": "Whisker",
+        "message": "Payment is in motion via Tipalti ACH — I'd set a calendar reminder for May 27 to follow up if nothing's arrived. Kenny's closing note to Cheyenne about loving the Litter Robot was a great touch. If Whisker ever wants more content, they'll definitely remember it 🐱"
       },
       {
-        "type": "action-required",
-        "brand": "Whisker",
-        "message": "Whisker Accounting (accounting@whisker.com) sent a Tipalti vendor portal invite to set up ACH payment for the $2,000. Less urgent than JLab — link expires May 27 (30 days). Same process: contact info, banking details, tax info. You can also reach them at 248-564-2067."
+        "type": "follow-up",
+        "brand": "JLab",
+        "message": "Tipalti is all set — JLab should be able to process your payment now. Follow up around May 27 if you haven't heard anything. And note for next time: JLab invoices go to apinvoice@jlab.com (pdf/jpg/png only), not to a person."
+      },
+      {
+        "type": "new-pitch",
+        "brand": "Black Diamond Coatings",
+        "message": "Liz pitched Lauren Jankauskas at Black Diamond Coatings for the backyard firepit patio project — great seasonal angle! No response yet. If you don't hear back by Thursday (May 1), a quick follow-up email could help move it along."
       }
     ]
   },
@@ -21,23 +26,36 @@
     {
       "action": "update",
       "brand": "JLab",
-      "waiting_on": "us",
-      "next_action": "Register on JLab's Tipalti payment portal — link expires May 4 (URGENT!)",
-      "next_action_date": "2026-04-28",
+      "waiting_on": "brand",
+      "next_action": "Follow up on JLab payment",
+      "next_action_date": "2026-05-27",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: JLab Accounting (ap@jlabaudio.com) sent Tipalti payment portal invitation x2. URGENT — link expires May 4 (7 days). Must register to receive payment: contact info, payment method + banking details (routing/account), and tax identity (W-9/EIN). Future login: suppliers.tipalti.com/jlab.",
-      "activity_note": "Apr 27: JLab Accounting sent Tipalti payment portal invite (expires May 4 — 7 days). Register ASAP to receive payment."
+      "notes": "[Apr 27]: Tipalti registration complete — account confirmed, payment details updated (contact + banking info submitted). JLab now processes payment. Future invoices to apinvoice@jlab.com (pdf/jpg/png only). Portal: suppliers.tipalti.com/jlab. JLab accounting contact: ap@jlabaudio.com.",
+      "activity_note": "Apr 27: JLab Tipalti registration completed — account confirmed + payment details set up. Waiting on JLab to process payment."
     },
     {
       "action": "update",
       "brand": "Whisker",
       "stage": "invoiced",
-      "waiting_on": "us",
-      "next_action": "Register on Whisker's Tipalti vendor portal to complete ACH payment setup (link expires May 27)",
-      "next_action_date": "2026-04-28",
+      "waiting_on": "brand",
+      "next_action": "Follow up on Whisker payment ($2,000)",
+      "next_action_date": "2026-05-27",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz replied to Cheyenne with payment preference. Cheyenne confirmed invoice submitted to Whisker accounting — $2,000 processing. Whisker Accounting (accounting@whisker.com / 248-564-2067) sent Tipalti vendor portal invite to complete ACH setup. Link expires in 30 days (May 27). After registering, invoices go to APInvoices@whisker.com; other comms to Accounting@whisker.com.",
-      "activity_note": "Apr 27: Cheyenne confirmed invoice submitted to Whisker accounting. Whisker sent Tipalti vendor portal invite — register to receive $2,000 via ACH."
+      "notes": "[Apr 27]: Whisker Tipalti registration complete — 'Welcome to vendor portal' received, payment details (ACH) updated. Cheyenne confirmed invoice submitted to Whisker Accounting. Future invoices to APInvoices@whisker.com (not monitored — send statements/comms to Accounting@whisker.com). Portal: suppliers.tipalti.com/Whisker.",
+      "activity_note": "Apr 27: Cheyenne submitted invoice to Whisker Accounting. Tipalti ACH registration complete. Waiting on $2,000 payment."
+    },
+    {
+      "action": "create",
+      "brand": "Black Diamond Coatings",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "contact_name": "Lauren Jankauskas",
+      "contact_email": "lauren.jankauskas@blackdiamondcoatings.com",
+      "next_action": "Wait for Lauren at Black Diamond Coatings to respond to pitch",
+      "next_action_date": "2026-04-30",
+      "last_contact": "2026-04-27",
+      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren Jankauskas (lauren.jankauskas@blackdiamondcoatings.com). Pitching a backyard firepit patio makeover collab — raised paver patio with pea gravel, designated fire pit + Adirondack chair space. Wants to feature Black Diamond's Mulch Glue and hardscape products as the solution for a clean, low-maintenance finish. Media kit attached. No rate or deliverables discussed yet.",
+      "activity_note": "Apr 27: Liz sent outbound pitch for backyard firepit patio project featuring Mulch Glue + hardscape products. Awaiting response."
     }
   ],
   "activities": []
