@@ -1,1 +1,32 @@
-[]
+[{
+  "run_summary": {
+    "summary": "💸 Payment incoming from Whisker! Cheyenne (cmabey@whisker.com) replied to Kenny's Apr 24 invoice and asked for payment preference — ACH or Paypal. The $2,000 Litter-Robot 5 Pro deal is done and dusted, just need to reply with which payment method you want so she can send the money!",
+    "emails_scanned": 8,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "action-required",
+        "brand": "Whisker",
+        "message": "Reply to Cheyenne at cmabey@whisker.com today with your payment preference (ACH or Paypal) — she's ready to send the $2,000 and just needs to know which method works for you!"
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "invoiced",
+      "waiting_on": "us",
+      "next_action": "Reply to Cheyenne with payment preference (ACH or Paypal)",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-27",
+      "value": "2000",
+      "contact_name": "Cheyenne Mabey",
+      "contact_email": "cmabey@whisker.com",
+      "notes": "[Apr 27]: Cheyenne replied to invoice — asked for payment preference (ACH or Paypal). Payment is on its way! Reply to confirm method so she can process the $2,000.\n\n[Apr 24]: Kenny sent invoice for the Litter-Robot 5 Pro IG Reel that went live ~Apr 20-22.\n\n[Apr 15]: Content approved by Cheyenne after voiceover fix (said \"Litter-Robot 5\" instead of \"Litter-Robot 5 Pro\" — Liz re-recorded). Approved to post early next week.\n\n[Apr 14]: Liz submitted content for approval via Google Drive.\n\n[Mar 4]: Whisker placed the Litter-Robot 5 Pro order — unit shipped to Liz.\n\n[Feb 27]: Liz signed and returned the contract.\n\n[Feb 26]: Cheyenne sent the contract.\n\n[Feb 18]: Kenny accepted Cheyenne's $2,000 counter (down from Liz's $3,000 ask). Deliverables: TikTok + IG Reel for Litter-Robot 5 Pro (white). Address and name provided for contract.",
+      "activity_note": "Apr 27: Cheyenne (Whisker) accepted invoice and asked for payment preference — ACH or Paypal. $2,000 payment incoming once we reply with preferred method."
+    }
+  ],
+  "activities": []
+}]
