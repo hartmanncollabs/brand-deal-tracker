@@ -1,36 +1,39 @@
 [{
   "run_summary": {
-    "summary": "Two substantive things happened today on existing deals. JLab switched their payment platform to Tipalti — Liz got the invite this morning and completed registration by 9:15 AM. Critical change: invoices to JLab must now go to apinvoice@jlab.com (PDF/JPG/PNG only). Please update your contacts/invoice workflow for JLab. On Whisker, Cheyenne reached out this morning about preferred payment method and Liz confirmed ACH works — this strongly suggests Whisker is processing payment. Keep an eye on your bank/email for a payment confirmation.\n\nSeparately: Shabebe and Black Diamond Coatings deal creates from Liz's pitches earlier today should already be in the queue from the previous run.",
-    "emails_scanned": 11,
+    "summary": "Whisker payment is fully in motion — the Tipalti loop closed this afternoon. After Liz confirmed ACH this morning, Cheyenne replied at 10:34 AM confirming the invoice was submitted to accounting. Whisker then sent a Tipalti vendor portal invite (10:51 AM UTC), Liz registered, and by 11:29 AM UTC the system confirmed her payment details. Going forward: Whisker invoices go to APInvoices@whisker.com (same Tipalti pattern as JLab). JLab also sent a formal 'Tipalti account created successfully' email at 11:15 AM UTC, officially confirming Liz's account is active. Everything is set up on both sides for payments to come in.",
+    "emails_scanned": 9,
     "deals_created": 0,
     "deals_updated": 2,
     "suggestions": [
       {
-        "type": "action-required",
-        "brand": "JLab",
-        "message": "JLab has moved to Tipalti for payments. Liz completed registration today. Going forward all invoices go to apinvoice@jlab.com — update your invoice workflow! Old contact method may no longer work."
-      },
-      {
         "type": "watch",
         "brand": "Whisker",
-        "message": "Cheyenne asked Liz about payment method this morning and Liz said ACH works. Payment appears to be in progress — watch for a deposit or payment confirmation email."
+        "message": "Whisker ACH payment is in process via Tipalti. Invoice was submitted to accounting on Apr 27. Watch for deposit around May 24 (30 days from invoice date Apr 24). Future invoices go to APInvoices@whisker.com — update your invoice workflow."
+      },
+      {
+        "type": "info",
+        "brand": "JLab",
+        "message": "JLab Tipalti account officially confirmed live by ap@jlabaudio.com. Next invoice should go directly to apinvoice@jlab.com (PDF/JPG/PNG only) — old contact method may no longer route correctly."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "JLab",
+      "brand": "Whisker",
+      "waiting_on": "brand",
+      "next_action": "Wait for ACH payment via Tipalti (expected ~May 24)",
+      "next_action_date": "2026-05-24",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: JLab switched to Tipalti as their payment platform. Liz received invite at 8:50 AM and completed registration by 9:15 AM. IMPORTANT: All future invoices must be sent to apinvoice@jlab.com (PDF, JPG, or PNG format only). Payment portal: suppliers.tipalti.com/jlab. Two payment details update confirmations followed at 9:17 AM and 9:23 AM.",
-      "activity_note": "Apr 27: JLab moved to Tipalti payment system. Liz registered and completed setup. New invoice address: apinvoice@jlab.com — update invoice workflow."
+      "notes": "[Apr 27]: Liz registered on Whisker Tipalti vendor portal (welcome email 11:27 AM UTC, payment details confirmed 11:29 AM UTC). IMPORTANT: Future invoices → APInvoices@whisker.com. Portal: suppliers.tipalti.com/Whisker/account/login. Cheyenne replied at 10:34 AM CDT confirming invoice was submitted to accounting and Tipalti invite was coming. Earlier: Cheyenne asked about payment method (8:45 AM CDT), Liz confirmed ACH works (10:31 AM CDT).",
+      "activity_note": "Apr 27: Whisker Tipalti setup complete. Invoice submitted to accounting by Cheyenne. Liz registered on vendor portal. Future invoices → APInvoices@whisker.com. ACH payment expected ~May 24."
     },
     {
       "action": "update",
-      "brand": "Whisker",
+      "brand": "JLab",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Cheyenne (cmabey@whisker.com) emailed Liz asking about preferred payment method. Liz replied: 'ACH would be great, but either works. Thank you!' Indicates Whisker is actively processing payment.",
-      "activity_note": "Apr 27: Cheyenne confirmed payment method with Liz — ACH preferred. Payment appears to be in progress."
+      "notes": "[Apr 27]: ap@jlabaudio.com sent formal 'Tipalti account created successfully' confirmation (11:15 AM UTC). Account active and ready to receive payments. Earlier: JLab invited Liz to Tipalti (8:50 AM CDT), registration completed by 9:15 AM. IMPORTANT: All invoices → apinvoice@jlab.com (PDF/JPG/PNG only). Portal: suppliers.tipalti.com/jlab.",
+      "activity_note": "Apr 27: JLab Tipalti account officially confirmed active by ap@jlabaudio.com. Invoice workflow: apinvoice@jlab.com."
     }
   ],
   "activities": []
