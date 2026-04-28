@@ -1,19 +1,24 @@
 [{
   "run_summary": {
-    "summary": "Three deals landing on the board today: (1) Wise Block — Iris from Make Wonder INC followed up for the 4th time this morning (Apr 28), their Apr 25–30 launch window is down to 2 days. Previous run only flagged this as a suggestion but per the playbook it should be a card — creating it now at Negotiation so it's visible. Cash comp + free product + Key Partner status for 1 YouTube/Instagram video. (2) Shabebe — Liz sent an outbound pitch Apr 27 proposing a backyard firepit patio collab featuring their Rock Glue. No reply yet, creating card at Negotiation/waiting on brand. (3) Black Diamond Coatings — same pitch concept sent same day to Lauren Jankauskas, featuring their Mulch Glue for the DIY patio project. No reply yet either. ZAPAKA insertion order skipped — affiliate/commission-only (8%), no upfront fee. Whisker ACH confirmation (Liz replied Apr 27) already captured in the previous run's card.",
-    "emails_scanned": 5,
+    "summary": "One deal update and three new deal cards to carry forward from the last run. JLab's accounting team reached out on Apr 27 to onboard Liz to their Tipalti payment portal — she registered and added payment details the same day (confirmed by 'Contact or payment details have been changed' notification). Invoice submission address is apinvoice@jlab.com. This is meaningful context for wherever the JLab deal sits right now — if it's at Invoiced, payment could be coming soon. Also preserving three new deal creates from the previous run that may not have been applied yet: Wise Block (launch window closes Apr 30 — urgent!), Shabebe, and Black Diamond Coatings.",
+    "emails_scanned": 11,
     "deals_created": 3,
-    "deals_updated": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Today or tomorrow is the last window — Iris has followed up 4 times since Apr 23 and their launch deadline is Apr 25–30. The offer is cash comp + free building block set + Key Partner status for 1 YouTube/Instagram video. If there's any interest, the rate quote needs to go out by tomorrow Apr 29 at the latest."
+        "message": "Today (Apr 28) is the last real window — Iris at Make Wonder INC has followed up 5 times since Apr 23 and their Botanical Series launch deadline is Apr 25–30. Cash comp + free building block set + Key Partner status for 1 YouTube/Instagram video. If there's any interest at all, a rate quote needs to go out today."
+      },
+      {
+        "type": "heads-up",
+        "brand": "JLab",
+        "message": "Liz completed JLab's Tipalti payment portal setup on Apr 27 — payment details are in. If an invoice hasn't gone out yet, now is a good time. Submit invoices to apinvoice@jlab.com (pdf/jpg/png only). Portal: suppliers.tipalti.com/jlab/Account/Login"
       },
       {
         "type": "heads-up",
         "brand": "Shabebe",
-        "message": "Liz pitched them Apr 27 for the backyard firepit patio collab featuring Rock Glue — card is on the board now. Follow-up around Apr 30 if no response."
+        "message": "Liz pitched them Apr 27 for the backyard firepit patio collab featuring Rock Glue — card is on the board. Follow-up around Apr 30 if no response."
       },
       {
         "type": "heads-up",
@@ -24,6 +29,13 @@
   },
   "deals": [
     {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-27",
+      "notes": "[Apr 27]: JLab accounting team (ap@jlabaudio.com) sent Tipalti payment portal invitation. Liz completed registration same day — account created successfully and payment/banking details added (confirmed by payment change notification). Invoice submission: apinvoice@jlab.com (pdf, jpg, or png only). Portal login: suppliers.tipalti.com/jlab/Account/Login",
+      "activity_note": "Apr 27: JLab onboarded Liz to Tipalti payment portal — account created and payment details confirmed"
+    },
+    {
       "action": "create",
       "brand": "Wise Block",
       "stage": "negotiation",
@@ -33,7 +45,7 @@
       "last_contact": "2026-04-28",
       "contact_name": "Iris",
       "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 28]: Iris followed up a 4th time asking for Liz's quotation for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
+      "notes": "[Apr 28]: Iris followed up a 5th time asking for Liz's quotation for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
     },
     {
       "action": "create",
