@@ -1,33 +1,49 @@
 [{
   "run_summary": {
-    "summary": "One deal update and three new deal cards to carry forward from the last run. JLab's accounting team reached out on Apr 27 to onboard Liz to their Tipalti payment portal — she registered and added payment details the same day (confirmed by 'Contact or payment details have been changed' notification). Invoice submission address is apinvoice@jlab.com. This is meaningful context for wherever the JLab deal sits right now — if it's at Invoiced, payment could be coming soon. Also preserving three new deal creates from the previous run that may not have been applied yet: Wise Block (launch window closes Apr 30 — urgent!), Shabebe, and Black Diamond Coatings.",
-    "emails_scanned": 11,
+    "summary": "One new find this run: Whisker (Litter-Robot 5 Pro) — Kenny sent the invoice on Apr 24 and Liz confirmed ACH as her payment preference with Cheyenne Mabey on Apr 27. If there's a Whisker deal card, it should be at Invoiced with payment expected via ACH (~May 24). Carrying forward four items from the previous run that appear still pending: Wise Block (URGENT — Apr 30 Botanical Series deadline is now 2 days away, Iris has followed up 5+ times and is still waiting on a rate quote), Shabebe and Black Diamond Coatings (both outbound pitches sent Apr 27, follow-ups due Apr 30), and the JLab Tipalti onboarding note (portal set up Apr 27, invoices go to apinvoice@jlab.com).",
+    "emails_scanned": 10,
     "deals_created": 3,
-    "deals_updated": 1,
+    "deals_updated": 2,
     "suggestions": [
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Today (Apr 28) is the last real window — Iris at Make Wonder INC has followed up 5 times since Apr 23 and their Botanical Series launch deadline is Apr 25–30. Cash comp + free building block set + Key Partner status for 1 YouTube/Instagram video. If there's any interest at all, a rate quote needs to go out today."
+        "message": "Apr 30 deadline is 2 days away and Iris has now followed up 5+ times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
       },
       {
         "type": "heads-up",
-        "brand": "JLab",
-        "message": "Liz completed JLab's Tipalti payment portal setup on Apr 27 — payment details are in. If an invoice hasn't gone out yet, now is a good time. Submit invoices to apinvoice@jlab.com (pdf/jpg/png only). Portal: suppliers.tipalti.com/jlab/Account/Login"
+        "brand": "Whisker",
+        "message": "Litter-Robot 5 Pro collab is wrapping up cleanly — content posted, invoice out Apr 24, and Liz confirmed ACH as payment method with Cheyenne on Apr 27. Payment should arrive around May 24 (30-day window). Kenny already sent a warm note about wanting to work together again, which is great relationship maintenance."
       },
       {
         "type": "heads-up",
         "brand": "Shabebe",
-        "message": "Liz pitched them Apr 27 for the backyard firepit patio collab featuring Rock Glue — card is on the board. Follow-up around Apr 30 if no response."
+        "message": "Liz pitched the backyard firepit patio collab (featuring Rock Glue) on Apr 27. No reply yet — follow up Apr 30 if still silent."
       },
       {
         "type": "heads-up",
         "brand": "Black Diamond Coatings",
-        "message": "Same firepit concept pitched to Lauren Jankauskas Apr 27 — card is on the board. Follow-up around Apr 30 if no response."
+        "message": "Same firepit concept pitched to Lauren Jankauskas on Apr 27 (featuring Mulch Glue). No reply yet — follow up Apr 30 if still silent."
+      },
+      {
+        "type": "heads-up",
+        "brand": "JLab",
+        "message": "Tipalti payment portal setup confirmed Apr 27 — Liz's banking details are in. Submit invoices to apinvoice@jlab.com (pdf, jpg, or png only). Portal: suppliers.tipalti.com/jlab/Account/Login"
       }
     ]
   },
   "deals": [
+    {
+      "action": "update",
+      "brand": "Whisker",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Follow up on payment",
+      "next_action_date": "2026-05-24",
+      "last_contact": "2026-04-27",
+      "notes": "[Apr 27]: Liz confirmed ACH as payment preference to Cheyenne Mabey (cmabey@whisker.com). Kenny sent invoice Apr 24. Payment will arrive via ACH.",
+      "activity_note": "Apr 27: Liz confirmed ACH payment method with Cheyenne — invoice out Apr 24, awaiting payment"
+    },
     {
       "action": "update",
       "brand": "JLab",
@@ -45,7 +61,7 @@
       "last_contact": "2026-04-28",
       "contact_name": "Iris",
       "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 28]: Iris followed up a 5th time asking for Liz's quotation for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
+      "notes": "[Apr 28]: Iris followed up again asking for Liz's rate quote for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
     },
     {
       "action": "create",
@@ -64,7 +80,7 @@
       "brand": "Black Diamond Coatings",
       "stage": "negotiation",
       "waiting_on": "brand",
-      "next_action": "Follow up with Lauren if no response by Apr 30",
+      "next_action": "Follow up with Lauren Jankauskas if no response by Apr 30",
       "next_action_date": "2026-04-30",
       "last_contact": "2026-04-27",
       "contact_name": "Lauren Jankauskas",
