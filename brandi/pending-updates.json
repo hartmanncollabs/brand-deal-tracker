@@ -1,30 +1,46 @@
 [{
   "run_summary": {
-    "summary": "One new inbound opportunity surfaced today: Wise Block (via Make Wonder INC) has been following up since April 23 on a paid collab for their Botanical Series building sets. They're offering cash + product and need a 1x YT/IG video — no rate proposed, they want our quote. The window is tight: their launch deadline is before April 25-30, so today and tomorrow are the last realistic days to respond. Creating a card so it's on the board. Liz also sent two outbound pitches yesterday (Shabebe + Black Diamond Coatings hardscape products for the backyard firepit project) — both already in the system from a prior run, no replies yet.",
-    "emails_scanned": 7,
+    "summary": "Big one today: Whisker (Litter-Robot 5 Pro) is fully through the pipeline and I'm creating the card at Invoiced. Liz posted approximately Apr 20–21, Kenny sent the invoice Apr 24, and Cheyenne Mabey confirmed on Apr 27 that it went to accounting with ACH via Tipalti on the way. Also catching a JLab payment infrastructure update — JLab's AP team sent Liz a Tipalti payee invite April 27 and she completed setup same day (ACH configured, invoices go to apinvoice@jlab.com). If there's an open JLab invoice, that's the channel. Wise Block got another follow-up from Iris this morning (Apr 28) — still the last window of their Apr 25–30 launch deadline. Shabebe and Black Diamond Coatings pitches sent April 27, no replies yet. ZAPAKA sent an affiliate insertion order (commission-only, no upfront fee) — skipped.",
+    "emails_scanned": 13,
     "deals_created": 1,
-    "deals_updated": 0,
+    "deals_updated": 1,
     "suggestions": [
       {
-        "type": "follow-up",
+        "type": "heads-up",
+        "brand": "Whisker",
+        "message": "Litter-Robot 5 Pro collab is invoiced and in accounting's hands at Whisker. Cheyenne said the Tipalti (ACH) invite is coming — keep an eye on your inbox for it and get that payee setup done so payment processes smoothly. Follow up around late May if nothing's hit."
+      },
+      {
+        "type": "action-required",
+        "brand": "JLab",
+        "message": "JLab Tipalti account is set up — ACH is configured and invoices should go to apinvoice@jlab.com (PDF, JPG, or PNG only). If there's an open JLab invoice that hasn't been submitted yet, now's the time to send it through."
+      },
+      {
+        "type": "urgent",
         "brand": "Wise Block",
-        "message": "Iris from Make Wonder INC (iris@makewondermcn.com) has been waiting since April 23 — this is their second touchpoint today. Their launch deadline is before April 30 so you're at the very end of the window. If you want this one, today is basically the last day to reply with your rate."
+        "message": "Iris from Make Wonder INC followed up again this morning (Apr 28) — that's 3 touchpoints now and today or tomorrow is literally the last day inside their Apr 25–30 launch window. If you want this one, it has to move today."
       }
     ]
   },
   "deals": [
     {
       "action": "create",
-      "brand": "Wise Block",
-      "stage": "negotiation",
-      "waiting_on": "us",
-      "next_action": "Reply to Iris with rate for 1x YT/IG Video",
-      "next_action_date": "2026-04-28",
-      "last_contact": "2026-04-28",
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 28]: Follow-up from Iris at Make Wonder INC (official partner agency for Wise Block, a premium building block brand under Alpha Group). Originally reached out Apr 23. Offer: cash fee + free Botanical Series set. Need: 1x YouTube/Instagram Video. Product: Botanical Series (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony) — Eastern-aesthetic building sets that double as home décor. Launch deadline: before April 25–30. Sample delivery: 3–5 days post-confirmation. No rate proposed — they want our quote. URGENT: launch window closing.",
-      "activity_note": "Apr 28: New inbound — Make Wonder INC (Wise Block) following up on paid collab pitch. 1x YT/IG Video, cash fee, launch deadline before Apr 30."
+      "brand": "Whisker",
+      "stage": "invoiced",
+      "waiting_on": "brand",
+      "next_action": "Monitor Tipalti for Whisker payee invite + payment confirmation; follow up with Cheyenne if no payment by late May",
+      "next_action_date": "2026-05-27",
+      "last_contact": "2026-04-27",
+      "contact_name": "Cheyenne Mabey",
+      "contact_email": "cmabey@whisker.com",
+      "notes": "[Apr 27]: Cheyenne confirmed invoice submitted to Whisker accounting. Payment coming via Tipalti (ACH) — Liz should expect a Tipalti payee invite from Whisker soon.\n[Apr 24]: Kenny sent invoice to Cheyenne after post went live earlier that week (~Apr 20–21). Kenny noted it's been a pleasure to work with and expressed interest in future collabs.\n[Apr 15]: Content approved by Cheyenne after one re-record — Liz originally said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro'. Fixed same day, Cheyenne okayed posting early the following week.\n[Apr 14]: Liz submitted content for approval via Google Drive link."
+    },
+    {
+      "action": "update",
+      "brand": "JLab",
+      "last_contact": "2026-04-27",
+      "notes": "[Apr 27]: JLab AP team (ap@jlabaudio.com) sent Tipalti payee portal invite. Liz completed registration and submitted ACH payment details same day. Going forward, JLab invoices must be emailed to apinvoice@jlab.com (PDF, JPG, or PNG only). JLab processes all creator payments via Tipalti.",
+      "activity_note": "Apr 27: JLab Tipalti payee account set up by Liz — ACH configured, invoices go to apinvoice@jlab.com"
     }
   ],
   "activities": []
