@@ -1,91 +1,33 @@
 [{
   "run_summary": {
-    "summary": "One new find this run: Whisker (Litter-Robot 5 Pro) — Kenny sent the invoice on Apr 24 and Liz confirmed ACH as her payment preference with Cheyenne Mabey on Apr 27. If there's a Whisker deal card, it should be at Invoiced with payment expected via ACH (~May 24). Carrying forward four items from the previous run that appear still pending: Wise Block (URGENT — Apr 30 Botanical Series deadline is now 2 days away, Iris has followed up 5+ times and is still waiting on a rate quote), Shabebe and Black Diamond Coatings (both outbound pitches sent Apr 27, follow-ups due Apr 30), and the JLab Tipalti onboarding note (portal set up Apr 27, invoices go to apinvoice@jlab.com).",
-    "emails_scanned": 10,
-    "deals_created": 3,
-    "deals_updated": 2,
+    "summary": "One active deal update this run: Linkind came back with content revision requests for the SP6 Smart Solar Pathway Lights through socialmediacollabs.com. The brand wants Liz to add a Pattern Switch / Light Show feature demo (with app group setup), reshoot the 30-39s preset section in a darker environment so the lighting effects actually pop, and add an end CTA. The talent manager pushed back on the Light Show request but Linkind confirmed it's required. Ball is in our court. Everything else in the inbox was already captured in the previous run — Wise Block's follow-up (Apr 28), JLab Tipalti setup, Whisker ACH confirmation, Shabebe + Black Diamond outbound pitches. Those prior run items are still awaiting processing. Keeping the Wise Block urgent flag active since the Apr 30 deadline is now 2 days away.",
+    "emails_scanned": 12,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
+      {
+        "type": "heads-up",
+        "brand": "Linkind",
+        "message": "Linkind came back with three revision requests on the SP6 Solar Pathway Lights content: (1) Add the Pattern Switch + Light Show feature demo — they want a visual + voiceover showing the feature with an app group created (manager pushed back but brand said it's required); (2) Reshoot the 30-39s preset section in a darker environment so the lighting effects are actually visible — bright daylight kills the impact; (3) Add an end CTA. Once revisions are submitted, ping me and I'll move the card forward."
+      },
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Apr 30 deadline is 2 days away and Iris has now followed up 5+ times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Whisker",
-        "message": "Litter-Robot 5 Pro collab is wrapping up cleanly — content posted, invoice out Apr 24, and Liz confirmed ACH as payment method with Cheyenne on Apr 27. Payment should arrive around May 24 (30-day window). Kenny already sent a warm note about wanting to work together again, which is great relationship maintenance."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Shabebe",
-        "message": "Liz pitched the backyard firepit patio collab (featuring Rock Glue) on Apr 27. No reply yet — follow up Apr 30 if still silent."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Black Diamond Coatings",
-        "message": "Same firepit concept pitched to Lauren Jankauskas on Apr 27 (featuring Mulch Glue). No reply yet — follow up Apr 30 if still silent."
-      },
-      {
-        "type": "heads-up",
-        "brand": "JLab",
-        "message": "Tipalti payment portal setup confirmed Apr 27 — Liz's banking details are in. Submit invoices to apinvoice@jlab.com (pdf, jpg, or png only). Portal: suppliers.tipalti.com/jlab/Account/Login"
+        "message": "Apr 30 deadline is 2 days away and Iris has followed up multiple times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "Whisker",
-      "stage": "invoiced",
-      "waiting_on": "brand",
-      "next_action": "Follow up on payment",
-      "next_action_date": "2026-05-24",
-      "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz confirmed ACH as payment preference to Cheyenne Mabey (cmabey@whisker.com). Kenny sent invoice Apr 24. Payment will arrive via ACH.",
-      "activity_note": "Apr 27: Liz confirmed ACH payment method with Cheyenne — invoice out Apr 24, awaiting payment"
-    },
-    {
-      "action": "update",
-      "brand": "JLab",
-      "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: JLab accounting team (ap@jlabaudio.com) sent Tipalti payment portal invitation. Liz completed registration same day — account created successfully and payment/banking details added (confirmed by payment change notification). Invoice submission: apinvoice@jlab.com (pdf, jpg, or png only). Portal login: suppliers.tipalti.com/jlab/Account/Login",
-      "activity_note": "Apr 27: JLab onboarded Liz to Tipalti payment portal — account created and payment details confirmed"
-    },
-    {
-      "action": "create",
-      "brand": "Wise Block",
-      "stage": "negotiation",
+      "brand": "Linkind",
+      "stage": "approval",
       "waiting_on": "us",
-      "next_action": "Reply to Iris with rate quote — launch window closes Apr 30",
+      "next_action": "Make revisions per Linkind's feedback — add Pattern Switch/Light Show demo, reshoot 30-39s in darker setting, add end CTA",
       "next_action_date": "2026-04-29",
       "last_contact": "2026-04-28",
-      "contact_name": "Iris",
-      "contact_email": "iris@makewondermcn.com",
-      "notes": "[Apr 28]: Iris followed up again asking for Liz's rate quote for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
-    },
-    {
-      "action": "create",
-      "brand": "Shabebe",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Lauren if no response by Apr 30",
-      "next_action_date": "2026-04-30",
-      "last_contact": "2026-04-27",
-      "contact_name": "Lauren",
-      "contact_email": "wenna@shabebellc.com",
-      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren at Shabebe proposing a backyard firepit patio makeover collab. Concept: raised patio with large pavers + pea gravel, showcasing Shabebe's Rock Glue and hardscape products for a DIY family-friendly outdoor space. Liz attached media kit and CC'd Kenny."
-    },
-    {
-      "action": "create",
-      "brand": "Black Diamond Coatings",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Follow up with Lauren Jankauskas if no response by Apr 30",
-      "next_action_date": "2026-04-30",
-      "last_contact": "2026-04-27",
-      "contact_name": "Lauren Jankauskas",
-      "contact_email": "lauren.jankauskas@blackdiamondcoatings.com",
-      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren Jankauskas at Black Diamond Coatings proposing a backyard firepit patio makeover collab. Same DIY patio project concept as Shabebe pitch, featuring their Mulch Glue and hardscape products. Liz attached media kit and CC'd Kenny."
+      "notes": "[Apr 28]: Linkind sent content revision requests via socialmediacollabs.com: (1) Missing Pattern Switch / Light Show feature demo — needs visual + voiceover with app group setup and dynamic color/animation effects, lens in correct position; (2) Reshoot 30-39s preset section in darker environment — lighting effects not visible in bright conditions, close-up shows only 1-2 lights not full setup; (3) Low-value 20-24s segment (tab switching) needs visual adjustment to match voiceover; (4) Add end CTA. Manager pushed back on item 1 but Linkind confirmed it is required.",
+      "activity_note": "Apr 28: Linkind requested content revisions — add Light Show/Pattern Switch demo, darker reshoots for 30-39s section, and end CTA"
     }
   ],
   "activities": []
