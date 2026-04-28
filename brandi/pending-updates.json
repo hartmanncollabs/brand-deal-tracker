@@ -1,46 +1,63 @@
 [{
   "run_summary": {
-    "summary": "Big one today: Whisker (Litter-Robot 5 Pro) is fully through the pipeline and I'm creating the card at Invoiced. Liz posted approximately Apr 20–21, Kenny sent the invoice Apr 24, and Cheyenne Mabey confirmed on Apr 27 that it went to accounting with ACH via Tipalti on the way. Also catching a JLab payment infrastructure update — JLab's AP team sent Liz a Tipalti payee invite April 27 and she completed setup same day (ACH configured, invoices go to apinvoice@jlab.com). If there's an open JLab invoice, that's the channel. Wise Block got another follow-up from Iris this morning (Apr 28) — still the last window of their Apr 25–30 launch deadline. Shabebe and Black Diamond Coatings pitches sent April 27, no replies yet. ZAPAKA sent an affiliate insertion order (commission-only, no upfront fee) — skipped.",
-    "emails_scanned": 13,
-    "deals_created": 1,
-    "deals_updated": 1,
+    "summary": "Three deals landing on the board today: (1) Wise Block — Iris from Make Wonder INC followed up for the 4th time this morning (Apr 28), their Apr 25–30 launch window is down to 2 days. Previous run only flagged this as a suggestion but per the playbook it should be a card — creating it now at Negotiation so it's visible. Cash comp + free product + Key Partner status for 1 YouTube/Instagram video. (2) Shabebe — Liz sent an outbound pitch Apr 27 proposing a backyard firepit patio collab featuring their Rock Glue. No reply yet, creating card at Negotiation/waiting on brand. (3) Black Diamond Coatings — same pitch concept sent same day to Lauren Jankauskas, featuring their Mulch Glue for the DIY patio project. No reply yet either. ZAPAKA insertion order skipped — affiliate/commission-only (8%), no upfront fee. Whisker ACH confirmation (Liz replied Apr 27) already captured in the previous run's card.",
+    "emails_scanned": 5,
+    "deals_created": 3,
+    "deals_updated": 0,
     "suggestions": [
-      {
-        "type": "heads-up",
-        "brand": "Whisker",
-        "message": "Litter-Robot 5 Pro collab is invoiced and in accounting's hands at Whisker. Cheyenne said the Tipalti (ACH) invite is coming — keep an eye on your inbox for it and get that payee setup done so payment processes smoothly. Follow up around late May if nothing's hit."
-      },
-      {
-        "type": "action-required",
-        "brand": "JLab",
-        "message": "JLab Tipalti account is set up — ACH is configured and invoices should go to apinvoice@jlab.com (PDF, JPG, or PNG only). If there's an open JLab invoice that hasn't been submitted yet, now's the time to send it through."
-      },
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Iris from Make Wonder INC followed up again this morning (Apr 28) — that's 3 touchpoints now and today or tomorrow is literally the last day inside their Apr 25–30 launch window. If you want this one, it has to move today."
+        "message": "Today or tomorrow is the last window — Iris has followed up 4 times since Apr 23 and their launch deadline is Apr 25–30. The offer is cash comp + free building block set + Key Partner status for 1 YouTube/Instagram video. If there's any interest, the rate quote needs to go out by tomorrow Apr 29 at the latest."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Shabebe",
+        "message": "Liz pitched them Apr 27 for the backyard firepit patio collab featuring Rock Glue — card is on the board now. Follow-up around Apr 30 if no response."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Black Diamond Coatings",
+        "message": "Same firepit concept pitched to Lauren Jankauskas Apr 27 — card is on the board. Follow-up around Apr 30 if no response."
       }
     ]
   },
   "deals": [
     {
       "action": "create",
-      "brand": "Whisker",
-      "stage": "invoiced",
-      "waiting_on": "brand",
-      "next_action": "Monitor Tipalti for Whisker payee invite + payment confirmation; follow up with Cheyenne if no payment by late May",
-      "next_action_date": "2026-05-27",
-      "last_contact": "2026-04-27",
-      "contact_name": "Cheyenne Mabey",
-      "contact_email": "cmabey@whisker.com",
-      "notes": "[Apr 27]: Cheyenne confirmed invoice submitted to Whisker accounting. Payment coming via Tipalti (ACH) — Liz should expect a Tipalti payee invite from Whisker soon.\n[Apr 24]: Kenny sent invoice to Cheyenne after post went live earlier that week (~Apr 20–21). Kenny noted it's been a pleasure to work with and expressed interest in future collabs.\n[Apr 15]: Content approved by Cheyenne after one re-record — Liz originally said 'Litter-Robot 5' instead of 'Litter-Robot 5 Pro'. Fixed same day, Cheyenne okayed posting early the following week.\n[Apr 14]: Liz submitted content for approval via Google Drive link."
+      "brand": "Wise Block",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Reply to Iris with rate quote — launch window closes Apr 30",
+      "next_action_date": "2026-04-29",
+      "last_contact": "2026-04-28",
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 28]: Iris followed up a 4th time asking for Liz's quotation for the Wise Block Botanical Series. Launch window closes Apr 30.\n[Apr 23]: Original outreach from Iris at Make Wonder INC (official Wise Block partner agency under Alpha Group). Offering cash compensation (competitive collaboration fee) + 1 free building block set + Key Partner status for 1 YouTube/Instagram Video. Botanical Series = Eastern-themed building block sets (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony). Sample delivery: 3–5 days after confirmation. Launch deadline: before April 25–30."
     },
     {
-      "action": "update",
-      "brand": "JLab",
+      "action": "create",
+      "brand": "Shabebe",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Lauren if no response by Apr 30",
+      "next_action_date": "2026-04-30",
       "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: JLab AP team (ap@jlabaudio.com) sent Tipalti payee portal invite. Liz completed registration and submitted ACH payment details same day. Going forward, JLab invoices must be emailed to apinvoice@jlab.com (PDF, JPG, or PNG only). JLab processes all creator payments via Tipalti.",
-      "activity_note": "Apr 27: JLab Tipalti payee account set up by Liz — ACH configured, invoices go to apinvoice@jlab.com"
+      "contact_name": "Lauren",
+      "contact_email": "wenna@shabebellc.com",
+      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren at Shabebe proposing a backyard firepit patio makeover collab. Concept: raised patio with large pavers + pea gravel, showcasing Shabebe's Rock Glue and hardscape products for a DIY family-friendly outdoor space. Liz attached media kit and CC'd Kenny."
+    },
+    {
+      "action": "create",
+      "brand": "Black Diamond Coatings",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Lauren if no response by Apr 30",
+      "next_action_date": "2026-04-30",
+      "last_contact": "2026-04-27",
+      "contact_name": "Lauren Jankauskas",
+      "contact_email": "lauren.jankauskas@blackdiamondcoatings.com",
+      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren Jankauskas at Black Diamond Coatings proposing a backyard firepit patio makeover collab. Same DIY patio project concept as Shabebe pitch, featuring their Mulch Glue and hardscape products. Liz attached media kit and CC'd Kenny."
     }
   ],
   "activities": []
