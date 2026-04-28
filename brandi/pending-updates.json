@@ -1,1 +1,29 @@
-[]
+[{
+  "run_summary": {
+    "summary": "One Flexsteel update — the Popfly blocker from this morning's run is now resolved. Ian sent Liz a direct campaign link around 5 PM, she applied, Ian confirmed 'You are in!', and Liz uploaded Video 1 to the Popfly campaign/content folder ('Done!!') at 5:48 PM. The previous run's notes flagged this as still unresolved, so this closes that loop. Everything else (Linkind revisions, Yousky closed, Wise Block new deal) was already captured. One flag: Wise Block's launch window closes Apr 30 — Liz hasn't responded to Iris's follow-up yet based on inbox.",
+    "emails_scanned": 5,
+    "deals_created": 0,
+    "deals_updated": 1,
+    "suggestions": [
+      {
+        "type": "urgent",
+        "brand": "Wise Block",
+        "message": "Iris from Make Wonder INC followed up on Apr 28 — her original outreach was Apr 23 and she mentioned 'Launch date: Before April 25–30.' Today is Apr 28 and I don't see a reply from Liz in the sent folder. That window closes in 2 days. If you want this deal, reply to Iris today or tomorrow with a quote. If the deadline has passed and she's still open to it, even better — reach out now and see."
+      }
+    ]
+  },
+  "deals": [
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "stage": "approval",
+      "waiting_on": "brand",
+      "next_action": "Follow up with Ian on Video 1 review — then prep Video 2 (Steinhafels shopping trip + chair testing)",
+      "next_action_date": "2026-04-30",
+      "last_contact": "2026-04-28",
+      "notes": "[Apr 28 PM]: Popfly campaign access RESOLVED. Ian sent Liz a direct campaign link at ~5 PM; she applied immediately. Ian confirmed she's accepted ('You are in!') and asked her to upload video draft to the campaign/content folder. Liz confirmed upload at 5:48 PM ('Done!!'). Separately, Popfly sent an automated acceptance notification for 'Flexsteel Retail Partnership x Steinhafels Campaign Brief.' Video 1 is now officially in the Popfly system — waiting on Ian/Flexsteel team review and feedback.",
+      "activity_note": "Apr 28 PM: Popfly campaign access resolved — Liz applied via Ian's direct link, confirmed accepted. Video 1 uploaded to Popfly campaign/content folder."
+    }
+  ],
+  "activities": []
+}]
