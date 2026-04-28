@@ -1,19 +1,24 @@
 [{
   "run_summary": {
-    "summary": "One active deal update this run: Linkind came back with content revision requests for the SP6 Smart Solar Pathway Lights through socialmediacollabs.com. The brand wants Liz to add a Pattern Switch / Light Show feature demo (with app group setup), reshoot the 30-39s preset section in a darker environment so the lighting effects actually pop, and add an end CTA. The talent manager pushed back on the Light Show request but Linkind confirmed it's required. Ball is in our court. Everything else in the inbox was already captured in the previous run — Wise Block's follow-up (Apr 28), JLab Tipalti setup, Whisker ACH confirmation, Shabebe + Black Diamond outbound pitches. Those prior run items are still awaiting processing. Keeping the Wise Block urgent flag active since the Apr 30 deadline is now 2 days away.",
-    "emails_scanned": 12,
-    "deals_created": 0,
-    "deals_updated": 1,
+    "summary": "Three updates this run. Linkind has evolved — Liz pushed back hard on the revision requests on Apr 28, saying they're contradictory ('they don't want a close shot, but they don't want a wide shot'). She's willing to fix the CTA and caption but confused on the visual direction and offered to jump on a call with Mariah. Ball is in Linkind's court to clarify. The Flexsteel/Steinhafels Popfly campaign is moving — Kenny emailed Ian at Popfly today describing a 3-video concept (Video 1: tribute montage to Kenny's dad for 80th birthday + Father's Day, Video 2: shopping at Steinhafels, Video 3: reveal/gifting). They're sitting down to film Video 1, but the campaign is NOT showing on Liz's dashboard — Ian needs to reopen or set it as an invite. That's a blocker. Also created a Shabebe deal — Liz pitched Lauren at Shabebe LLC on Apr 27 for a backyard firepit patio collab featuring Rock Glue + hardscape products. Wise Block's Apr 30 deadline is still live — keeping the urgent flag active.",
+    "emails_scanned": 6,
+    "deals_created": 1,
+    "deals_updated": 2,
     "suggestions": [
-      {
-        "type": "heads-up",
-        "brand": "Linkind",
-        "message": "Linkind came back with three revision requests on the SP6 Solar Pathway Lights content: (1) Add the Pattern Switch + Light Show feature demo — they want a visual + voiceover showing the feature with an app group created (manager pushed back but brand said it's required); (2) Reshoot the 30-39s preset section in a darker environment so the lighting effects are actually visible — bright daylight kills the impact; (3) Add an end CTA. Once revisions are submitted, ping me and I'll move the card forward."
-      },
       {
         "type": "urgent",
         "brand": "Wise Block",
-        "message": "Apr 30 deadline is 2 days away and Iris has followed up multiple times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
+        "message": "Apr 30 deadline is in 2 days and Iris has followed up multiple times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Linkind",
+        "message": "Liz pushed back on the revision requests — she says the feedback is contradictory (no close shot AND no wide shot?) and she's frustrated. She offered to jump on a call with Mariah to sort it out. Keep an eye on Mariah's response — if they insist on all the same revisions, it may be worth a direct conversation to get clarity before Liz reshoot anything."
+      },
+      {
+        "type": "heads-up",
+        "brand": "Flexsteel",
+        "message": "Flexsteel x Steinhafels filming is underway but there's a blocker — the Popfly campaign isn't showing on Liz's dashboard so she can't formally apply/sign up. Kenny asked Ian (ian@popfly.com) to reopen it or set it as an invite. Worth confirming that gets resolved before they finish filming Video 1. Three-video concept: tribute to Kenny's dad (80th bday/Father's Day) → Steinhafels shopping trip → reveal/gifting."
       }
     ]
   },
@@ -22,12 +27,34 @@
       "action": "update",
       "brand": "Linkind",
       "stage": "approval",
-      "waiting_on": "us",
-      "next_action": "Make revisions per Linkind's feedback — add Pattern Switch/Light Show demo, reshoot 30-39s in darker setting, add end CTA",
+      "waiting_on": "brand",
+      "next_action": "Wait for Linkind/Mariah to respond to Liz's pushback on revision requests — she flagged contradictions and offered to jump on a call",
+      "next_action_date": "2026-04-30",
+      "last_contact": "2026-04-28",
+      "notes": "[Apr 28]: Liz pushed back on revision requests — says they're contradictory (don't want close shot, don't want wide shot). She's willing to add CTA + caption updates but says she already showed the Pattern Switch/Light Show and doesn't know how to proceed. Offered to jump on a call with Mariah. Ball in Linkind's court to clarify direction.\n[Apr 28]: Linkind sent content revision requests via socialmediacollabs.com: (1) Missing Pattern Switch / Light Show feature demo — needs visual + voiceover with app group setup and dynamic color/animation effects, lens in correct position; (2) Reshoot 30-39s preset section in darker environment — lighting effects not visible in bright conditions, close-up shows only 1-2 lights not full setup; (3) Low-value 20-24s segment (tab switching) needs visual adjustment to match voiceover; (4) Add end CTA; (5) Caption updates — comment-for-link mechanism, tag brand account, add hashtags. Manager pushed back on item 1 but Linkind confirmed it is required.",
+      "activity_note": "Apr 28: Liz pushed back on Linkind revision requests — flagged contradictions, offered call. Waiting on Linkind/Mariah to clarify"
+    },
+    {
+      "action": "update",
+      "brand": "Flexsteel",
+      "waiting_on": "brand",
+      "next_action": "Confirm Flexsteel/Popfly campaign sign-up — campaign not showing on Liz's dashboard. Follow up with Ian at ian@popfly.com to reopen or set as invite",
       "next_action_date": "2026-04-29",
       "last_contact": "2026-04-28",
-      "notes": "[Apr 28]: Linkind sent content revision requests via socialmediacollabs.com: (1) Missing Pattern Switch / Light Show feature demo — needs visual + voiceover with app group setup and dynamic color/animation effects, lens in correct position; (2) Reshoot 30-39s preset section in darker environment — lighting effects not visible in bright conditions, close-up shows only 1-2 lights not full setup; (3) Low-value 20-24s segment (tab switching) needs visual adjustment to match voiceover; (4) Add end CTA. Manager pushed back on item 1 but Linkind confirmed it is required.",
-      "activity_note": "Apr 28: Linkind requested content revisions — add Light Show/Pattern Switch demo, darker reshoots for 30-39s section, and end CTA"
+      "notes": "[Apr 28]: Kenny emailed Ian Saunders at Popfly (ian@popfly.com) — campaign not visible on Liz's dashboard, can't apply/sign up. Needs Ian to reopen or set as an invite. 3-video concept confirmed: Video 1 = montage/tribute to Kenny's dad (80th birthday + Father's Day, over-the-shoulder Steinhafels website/Flexsteel chair browsing); Video 2 = shopping at Steinhafels, testing the chair; Video 3 = reveal/gifting to dad. Filming Video 1 is imminent.",
+      "activity_note": "Apr 28: Flexsteel x Steinhafels Popfly campaign confirmed active — filming underway but campaign not on Liz's dashboard. Kenny following up with Ian at Popfly to resolve"
+    },
+    {
+      "action": "create",
+      "brand": "Shabebe",
+      "stage": "negotiation",
+      "waiting_on": "brand",
+      "next_action": "Wait for Lauren's response to firepit patio collab pitch",
+      "next_action_date": "2026-05-02",
+      "last_contact": "2026-04-27",
+      "contact_name": "Lauren",
+      "contact_email": "wenna@shabebellc.com",
+      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren at Shabebe LLC (wenna@shabebellc.com). Concept: install raised patio with large pavers + pea gravel around fire pit + Adirondack chairs using Shabebe's Rock Glue and hardscape products. Framed as a DIY backyard firepit makeover — family-friendly outdoor space for gatherings. Sent media kit. CC'd Kenny."
     }
   ],
   "activities": []
