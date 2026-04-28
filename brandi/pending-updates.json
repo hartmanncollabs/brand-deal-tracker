@@ -1,60 +1,26 @@
 [{
   "run_summary": {
-    "summary": "Three updates this run. Linkind has evolved — Liz pushed back hard on the revision requests on Apr 28, saying they're contradictory ('they don't want a close shot, but they don't want a wide shot'). She's willing to fix the CTA and caption but confused on the visual direction and offered to jump on a call with Mariah. Ball is in Linkind's court to clarify. The Flexsteel/Steinhafels Popfly campaign is moving — Kenny emailed Ian at Popfly today describing a 3-video concept (Video 1: tribute montage to Kenny's dad for 80th birthday + Father's Day, Video 2: shopping at Steinhafels, Video 3: reveal/gifting). They're sitting down to film Video 1, but the campaign is NOT showing on Liz's dashboard — Ian needs to reopen or set it as an invite. That's a blocker. Also created a Shabebe deal — Liz pitched Lauren at Shabebe LLC on Apr 27 for a backyard firepit patio collab featuring Rock Glue + hardscape products. Wise Block's Apr 30 deadline is still live — keeping the urgent flag active.",
-    "emails_scanned": 6,
-    "deals_created": 1,
-    "deals_updated": 2,
+    "summary": "One Flexsteel update. Ian checked in this morning asking about the Popfly application AND the concept pieces — Kenny responded at noon sharing the full 3-video concept in writing (Video 1: tribute to dad/80th bday + Father's Day via Steinhafels website + Flexsteel chair browsing; Video 2: Steinhafels shopping trip + chair testing; Video 3: reveal/gifting to dad). They were literally filming Video 1 as he typed. The Popfly platform access is still unresolved — Kenny asked Ian to reopen or set as an invite. Waiting on Ian to respond on both. Previous run had the concept right but missed that it's now been formally shared with Ian and that filming is actively underway.",
+    "emails_scanned": 5,
+    "deals_created": 0,
+    "deals_updated": 1,
     "suggestions": [
-      {
-        "type": "urgent",
-        "brand": "Wise Block",
-        "message": "Apr 30 deadline is in 2 days and Iris has followed up multiple times with no reply. If there's any interest in the Botanical Series collab, a rate quote needs to go out today. If not, a quick 'not the right fit right now' keeps the door open with Make Wonder INC for future opportunities."
-      },
-      {
-        "type": "heads-up",
-        "brand": "Linkind",
-        "message": "Liz pushed back on the revision requests — she says the feedback is contradictory (no close shot AND no wide shot?) and she's frustrated. She offered to jump on a call with Mariah to sort it out. Keep an eye on Mariah's response — if they insist on all the same revisions, it may be worth a direct conversation to get clarity before Liz reshoot anything."
-      },
       {
         "type": "heads-up",
         "brand": "Flexsteel",
-        "message": "Flexsteel x Steinhafels filming is underway but there's a blocker — the Popfly campaign isn't showing on Liz's dashboard so she can't formally apply/sign up. Kenny asked Ian (ian@popfly.com) to reopen it or set it as an invite. Worth confirming that gets resolved before they finish filming Video 1. Three-video concept: tribute to Kenny's dad (80th bday/Father's Day) → Steinhafels shopping trip → reveal/gifting."
+        "message": "They started filming Video 1 today (tribute to Kenny's dad) but Ian still hasn't confirmed the Popfly campaign access. Kenny sent the 3-video concept to Ian in writing — worth following up tonight or tomorrow morning to make sure Ian reopened the campaign and responded to the concept. Don't want to finish all three videos before the campaign is officially in their system."
       }
     ]
   },
   "deals": [
     {
       "action": "update",
-      "brand": "Linkind",
-      "stage": "approval",
-      "waiting_on": "brand",
-      "next_action": "Wait for Linkind/Mariah to respond to Liz's pushback on revision requests — she flagged contradictions and offered to jump on a call",
-      "next_action_date": "2026-04-30",
-      "last_contact": "2026-04-28",
-      "notes": "[Apr 28]: Liz pushed back on revision requests — says they're contradictory (don't want close shot, don't want wide shot). She's willing to add CTA + caption updates but says she already showed the Pattern Switch/Light Show and doesn't know how to proceed. Offered to jump on a call with Mariah. Ball in Linkind's court to clarify direction.\n[Apr 28]: Linkind sent content revision requests via socialmediacollabs.com: (1) Missing Pattern Switch / Light Show feature demo — needs visual + voiceover with app group setup and dynamic color/animation effects, lens in correct position; (2) Reshoot 30-39s preset section in darker environment — lighting effects not visible in bright conditions, close-up shows only 1-2 lights not full setup; (3) Low-value 20-24s segment (tab switching) needs visual adjustment to match voiceover; (4) Add end CTA; (5) Caption updates — comment-for-link mechanism, tag brand account, add hashtags. Manager pushed back on item 1 but Linkind confirmed it is required.",
-      "activity_note": "Apr 28: Liz pushed back on Linkind revision requests — flagged contradictions, offered call. Waiting on Linkind/Mariah to clarify"
-    },
-    {
-      "action": "update",
       "brand": "Flexsteel",
       "waiting_on": "brand",
-      "next_action": "Confirm Flexsteel/Popfly campaign sign-up — campaign not showing on Liz's dashboard. Follow up with Ian at ian@popfly.com to reopen or set as invite",
+      "next_action": "Follow up with Ian on Popfly campaign access — Kenny sent 3-video concept today, filming Video 1 underway. Need Ian to reopen or invite Liz on the platform before all videos are done.",
       "next_action_date": "2026-04-29",
       "last_contact": "2026-04-28",
-      "notes": "[Apr 28]: Kenny emailed Ian Saunders at Popfly (ian@popfly.com) — campaign not visible on Liz's dashboard, can't apply/sign up. Needs Ian to reopen or set as an invite. 3-video concept confirmed: Video 1 = montage/tribute to Kenny's dad (80th birthday + Father's Day, over-the-shoulder Steinhafels website/Flexsteel chair browsing); Video 2 = shopping at Steinhafels, testing the chair; Video 3 = reveal/gifting to dad. Filming Video 1 is imminent.",
-      "activity_note": "Apr 28: Flexsteel x Steinhafels Popfly campaign confirmed active — filming underway but campaign not on Liz's dashboard. Kenny following up with Ian at Popfly to resolve"
-    },
-    {
-      "action": "create",
-      "brand": "Shabebe",
-      "stage": "negotiation",
-      "waiting_on": "brand",
-      "next_action": "Wait for Lauren's response to firepit patio collab pitch",
-      "next_action_date": "2026-05-02",
-      "last_contact": "2026-04-27",
-      "contact_name": "Lauren",
-      "contact_email": "wenna@shabebellc.com",
-      "notes": "[Apr 27]: Liz sent outbound pitch to Lauren at Shabebe LLC (wenna@shabebellc.com). Concept: install raised patio with large pavers + pea gravel around fire pit + Adirondack chairs using Shabebe's Rock Glue and hardscape products. Framed as a DIY backyard firepit makeover — family-friendly outdoor space for gatherings. Sent media kit. CC'd Kenny."
+      "notes": "[Apr 28]: Kenny replied to Ian's check-in with full 3-video concept in writing — started filming Video 1 same day. Campaign still not showing on Liz's Popfly dashboard; Kenny asked Ian to reopen or set as invite. Waiting on Ian to respond on both platform access and concept."
     }
   ],
   "activities": []
