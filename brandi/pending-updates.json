@@ -1,39 +1,30 @@
 [{
   "run_summary": {
-    "summary": "Whisker payment is fully in motion — the Tipalti loop closed this afternoon. After Liz confirmed ACH this morning, Cheyenne replied at 10:34 AM confirming the invoice was submitted to accounting. Whisker then sent a Tipalti vendor portal invite (10:51 AM UTC), Liz registered, and by 11:29 AM UTC the system confirmed her payment details. Going forward: Whisker invoices go to APInvoices@whisker.com (same Tipalti pattern as JLab). JLab also sent a formal 'Tipalti account created successfully' email at 11:15 AM UTC, officially confirming Liz's account is active. Everything is set up on both sides for payments to come in.",
-    "emails_scanned": 9,
-    "deals_created": 0,
-    "deals_updated": 2,
+    "summary": "One new inbound opportunity surfaced today: Wise Block (via Make Wonder INC) has been following up since April 23 on a paid collab for their Botanical Series building sets. They're offering cash + product and need a 1x YT/IG video — no rate proposed, they want our quote. The window is tight: their launch deadline is before April 25-30, so today and tomorrow are the last realistic days to respond. Creating a card so it's on the board. Liz also sent two outbound pitches yesterday (Shabebe + Black Diamond Coatings hardscape products for the backyard firepit project) — both already in the system from a prior run, no replies yet.",
+    "emails_scanned": 7,
+    "deals_created": 1,
+    "deals_updated": 0,
     "suggestions": [
       {
-        "type": "watch",
-        "brand": "Whisker",
-        "message": "Whisker ACH payment is in process via Tipalti. Invoice was submitted to accounting on Apr 27. Watch for deposit around May 24 (30 days from invoice date Apr 24). Future invoices go to APInvoices@whisker.com — update your invoice workflow."
-      },
-      {
-        "type": "info",
-        "brand": "JLab",
-        "message": "JLab Tipalti account officially confirmed live by ap@jlabaudio.com. Next invoice should go directly to apinvoice@jlab.com (PDF/JPG/PNG only) — old contact method may no longer route correctly."
+        "type": "follow-up",
+        "brand": "Wise Block",
+        "message": "Iris from Make Wonder INC (iris@makewondermcn.com) has been waiting since April 23 — this is their second touchpoint today. Their launch deadline is before April 30 so you're at the very end of the window. If you want this one, today is basically the last day to reply with your rate."
       }
     ]
   },
   "deals": [
     {
-      "action": "update",
-      "brand": "Whisker",
-      "waiting_on": "brand",
-      "next_action": "Wait for ACH payment via Tipalti (expected ~May 24)",
-      "next_action_date": "2026-05-24",
-      "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: Liz registered on Whisker Tipalti vendor portal (welcome email 11:27 AM UTC, payment details confirmed 11:29 AM UTC). IMPORTANT: Future invoices → APInvoices@whisker.com. Portal: suppliers.tipalti.com/Whisker/account/login. Cheyenne replied at 10:34 AM CDT confirming invoice was submitted to accounting and Tipalti invite was coming. Earlier: Cheyenne asked about payment method (8:45 AM CDT), Liz confirmed ACH works (10:31 AM CDT).",
-      "activity_note": "Apr 27: Whisker Tipalti setup complete. Invoice submitted to accounting by Cheyenne. Liz registered on vendor portal. Future invoices → APInvoices@whisker.com. ACH payment expected ~May 24."
-    },
-    {
-      "action": "update",
-      "brand": "JLab",
-      "last_contact": "2026-04-27",
-      "notes": "[Apr 27]: ap@jlabaudio.com sent formal 'Tipalti account created successfully' confirmation (11:15 AM UTC). Account active and ready to receive payments. Earlier: JLab invited Liz to Tipalti (8:50 AM CDT), registration completed by 9:15 AM. IMPORTANT: All invoices → apinvoice@jlab.com (PDF/JPG/PNG only). Portal: suppliers.tipalti.com/jlab.",
-      "activity_note": "Apr 27: JLab Tipalti account officially confirmed active by ap@jlabaudio.com. Invoice workflow: apinvoice@jlab.com."
+      "action": "create",
+      "brand": "Wise Block",
+      "stage": "negotiation",
+      "waiting_on": "us",
+      "next_action": "Reply to Iris with rate for 1x YT/IG Video",
+      "next_action_date": "2026-04-28",
+      "last_contact": "2026-04-28",
+      "contact_name": "Iris",
+      "contact_email": "iris@makewondermcn.com",
+      "notes": "[Apr 28]: Follow-up from Iris at Make Wonder INC (official partner agency for Wise Block, a premium building block brand under Alpha Group). Originally reached out Apr 23. Offer: cash fee + free Botanical Series set. Need: 1x YouTube/Instagram Video. Product: Botanical Series (Sakura Zen, Pine Breath, Maple Whisper, Blossom Harmony) — Eastern-aesthetic building sets that double as home décor. Launch deadline: before April 25–30. Sample delivery: 3–5 days post-confirmation. No rate proposed — they want our quote. URGENT: launch window closing.",
+      "activity_note": "Apr 28: New inbound — Make Wonder INC (Wise Block) following up on paid collab pitch. 1x YT/IG Video, cash fee, launch deadline before Apr 30."
     }
   ],
   "activities": []
