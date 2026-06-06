@@ -1,17 +1,1 @@
-[{
-  "run_summary": {
-    "summary": "Gmail authentication failed this run — the refresh token has expired or been revoked. No emails were scanned and no deals were updated. To fix: re-authorize Brandi's Gmail access and replace the refresh_token in her run configuration. Everything on the board is untouched.",
-    "emails_scanned": 0,
-    "deals_created": 0,
-    "deals_updated": 0,
-    "suggestions": [
-      {
-        "type": "action-required",
-        "brand": "Gmail Auth",
-        "message": "Brandi's Gmail refresh token has expired. Re-authorize her access at https://oauth2.googleapis.com and update the refresh_token in the run config so she can resume scanning."
-      }
-    ]
-  },
-  "deals": [],
-  "activities": []
-}]
+[]
