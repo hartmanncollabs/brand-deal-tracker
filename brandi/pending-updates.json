@@ -1,17 +1,1 @@
-[{
-  "run_summary": {
-    "summary": "⚠️ Gmail access is broken — the OAuth token has expired or been revoked. Brandi couldn't scan any emails this run. Liz needs to re-authorize Gmail access to restore email scanning. No deals were updated.",
-    "emails_scanned": 0,
-    "deals_created": 0,
-    "deals_updated": 0,
-    "suggestions": [
-      {
-        "type": "action-required",
-        "brand": "Gmail Auth",
-        "message": "The Gmail OAuth refresh token is expired or revoked. Re-authorize Gmail access so Brandi can resume email scanning."
-      }
-    ]
-  },
-  "deals": [],
-  "activities": []
-}]
+[]
