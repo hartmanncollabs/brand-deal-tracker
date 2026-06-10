@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "tsx scripts/seed-data.ts"
+    "seed": "tsx scripts/seed-data.ts",
+    "brandi:runner": "node scripts/brandi-openclaw-runner.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

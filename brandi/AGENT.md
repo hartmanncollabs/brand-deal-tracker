@@ -134,6 +134,8 @@ When a brand or agency reaches out to Liz with a collaboration opportunity (not 
 - Always reference thread context when setting dates — don't use defaults if the thread specifies a timeline
 - If unsure about timing, be conservative (shorter follow-up windows)
 - **NEVER move a card backward in the pipeline** (e.g., from invoiced → content, from paid → negotiation). If you see activity that seems to contradict a card's current stage, add a note — do NOT move it backward. Only move cards FORWARD.
+- **NEVER skip forward more than one stage in a single run.** A card can only advance to its immediate next stage, and only when the email evidences that exact transition (e.g., negotiation → agreed requires both sides confirming rate AND deliverables in the thread). If the email implies a later stage (e.g., an invoice arrives for a card still in `approval`), do NOT leapfrog — log a flagged note so Kenny can review and move it manually.
+- **Match tasks to stages before applying them.** Before setting a `next_action` or moving a stage, confirm the card's current stage is eligible for that task type. See **Task-to-Stage Eligibility** below.
 
 ### Parent vs Child Card Rules (Multi-Phase Deals)
 
@@ -143,12 +145,39 @@ When a brand or agency reaches out to Liz with a collaboration opportunity (not 
 - **Child cards** (Phase 1, Phase 2, etc.) = individual deliverable phases. Each child tracks its own content creation → approval → posting → invoicing → payment cycle independently.
 
 **Rules for Brandi:**
-1. **Campaign-wide updates go on the PARENT card only** — things like: signing up for a platform, campaign enrollment, overall contract discussions, relationship-level follow-ups. NEVER apply campaign-wide tasks to child cards.
+1. **Campaign-wide updates go on the PARENT card only** — things like: creator-platform enrollment (Aspire, Creator IQ), campaign onboarding, overall contract discussions, relationship-level follow-ups. NEVER apply campaign-wide tasks to child cards.
+   - **Carveout:** invoicing/payment platforms (Tipalti, Bill.com, payment portal setup) are NOT campaign-wide for these purposes — they follow the **Task-to-Stage Eligibility** rules below and land on the child(ren) at `delivered` or later, not on the parent.
 2. **Deliverable-specific updates go on the CHILD card** — things like: specific content due dates, individual phase approvals, per-phase invoicing, per-phase payment.
 3. **NEVER update child card next_action/next_action_date with campaign-wide tasks** — if the email is about signing up for a campaign or a general campaign update, that goes on the parent. Child cards have their own content timelines.
 4. **NEVER move child cards based on campaign-wide activity** — a child card in "invoiced" should not be moved to "content" because a new campaign phase started. Each child progresses through the pipeline independently.
 5. **When matching emails to cards:** If the email is about the overall brand relationship or campaign scope → update the parent. If the email is about a specific deliverable, phase, or content piece → update the matching child card.
 6. **If unsure whether something is campaign-wide or phase-specific → default to updating the parent card only.** It's safer to put info on the parent than to accidentally overwrite a child card's progress.
+
+### Task-to-Stage Eligibility
+
+A task can only land on a card whose current stage is at-or-past the prerequisite for that task type. If a task arrives for a card that hasn't reached its prerequisite stage, do NOT set `next_action` and do NOT move the stage — log a flagged note on the parent so Kenny can review.
+
+**Stage prerequisites by task type:**
+- **Rate / deliverable negotiation** → card must be at `negotiation` or later
+- **Contract review / signature** → card must be at `agreed` or later
+- **Content / filming / draft submission** → card must be at `content` or later (i.e., contract is signed)
+- **Approval / revision requests** → card must be at `approval` or later
+- **Posting / scheduling** → card must be at `scheduled` or later
+- **Invoicing tasks (sending invoice, Tipalti signup, payment portal setup, W-9 / banking info)** → card must be at `delivered` or later
+- **Payment follow-up** → card must be at `invoiced` or later
+
+**For multi-phase deals (parent + children), routing a task:**
+1. Identify the task type and its stage prerequisite from the list above.
+2. Look at the parent and all child cards. Pick the card(s) whose current stage is at-or-past the prerequisite.
+3. If multiple children qualify, apply the task to the earliest-progressed qualifying child (the one closest to its prerequisite stage).
+4. If NO card in the family qualifies, log the task as a note on the parent with a "blocked: [card] still at [stage], needs to reach [prerequisite]" flag. Do NOT push it onto a card that's behind the prerequisite. Do NOT advance any card's stage just to make the task fit.
+5. Even when a task feels campaign-wide (e.g., "sign up for Tipalti for the JLab campaign"), invoicing/payment tasks land on the qualifying child, not the parent. Note in the activity log: "campaign-wide setup — logged on [child] because it's the first phase to need it."
+
+**Worked example (the JLab incident):**
+- State: JLab parent at `approval`. Phase 1 child at `delivered`. Phase 2 child at `content`.
+- Email arrives: "Please sign up for Tipalti so we can pay you for Phase 1."
+- ✅ Correct: set `next_action: "Sign up for Tipalti"` on the **Phase 1 child** (already at `delivered`, qualifies for invoicing tasks). Leave parent at `approval`. Leave Phase 2 at `content`.
+- ❌ Wrong (what happened): moved JLab parent from `approval` → `invoiced`. This skipped four stages, ignored the parent's actual progress, and applied an invoicing task to a card that hadn't reached `delivered`.
 
 ### Last Contact
 - Update `last_contact` to the date of the most recent email in the thread (YYYY-MM-DD format)

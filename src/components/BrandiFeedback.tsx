@@ -23,6 +23,19 @@ interface RunEntry {
   created_at: string;
 }
 
+function summarizeRun(run: RunEntry | null) {
+  if (!run) return null;
+
+  const parts = [
+    run.emails_scanned ? `${run.emails_scanned} emails scanned` : null,
+    run.deals_created ? `${run.deals_created} created` : null,
+    run.deals_updated ? `${run.deals_updated} updated` : null,
+    run.suggestions?.length ? `${run.suggestions.length} suggestions` : null,
+  ].filter(Boolean);
+
+  return parts.length > 0 ? parts.join(' • ') : 'No applied changes yet';
+}
+
 interface BrandiFeedbackProps {
   isOpen: boolean;
   onClose: () => void;
@@ -38,6 +51,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
   const [newMessage, setNewMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
+  const [runError, setRunError] = useState<string | null>(null);
   const [dismissedOverdue, setDismissedOverdue] = useState<Set<string>>(new Set());
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const pollIntervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -89,20 +103,35 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
     if (data) setEntries(data);
   };
 
-  const handleRunNow = () => {
+  const handleRunNow = async () => {
+    setRunError(null);
     setIsRunning(true);
     setActiveTab('runs');
     runCountRef.current = runs.length;
-    window.open('https://claude.ai/code/scheduled/trig_01MXqTt6Hj3C8wz33mKmTvgS', '_blank');
-    if (pollIntervalRef.current) clearInterval(pollIntervalRef.current);
-    pollIntervalRef.current = setInterval(fetchRuns, 15000);
-    setTimeout(() => {
-      if (pollIntervalRef.current) {
-        clearInterval(pollIntervalRef.current);
-        pollIntervalRef.current = null;
+
+    try {
+      const response = await fetch('/api/brandi/run-now', { method: 'POST' });
+      const payload = await response.json();
+
+      if (!response.ok || !payload.launchUrl) {
+        throw new Error(payload.error || 'Unable to start Brandi run');
       }
+
+      window.open(payload.launchUrl, '_blank', 'noopener,noreferrer');
+
+      if (pollIntervalRef.current) clearInterval(pollIntervalRef.current);
+      pollIntervalRef.current = setInterval(fetchRuns, 15000);
+      setTimeout(() => {
+        if (pollIntervalRef.current) {
+          clearInterval(pollIntervalRef.current);
+          pollIntervalRef.current = null;
+        }
+        setIsRunning(false);
+      }, 600000);
+    } catch (error) {
       setIsRunning(false);
-    }, 600000);
+      setRunError(error instanceof Error ? error.message : 'Unable to start Brandi run');
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -138,8 +167,11 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
       d.last_contact && isBefore(parseISO(d.last_contact), new Date(Date.now() - 7 * 86400000))
   );
 
+  const latestRun = runs.length > 0 ? runs[0] : null;
+  const latestRunSummary = summarizeRun(latestRun);
+
   // Get latest suggestions from most recent run
-  const latestSuggestions = runs.length > 0 && runs[0].suggestions ? runs[0].suggestions : [];
+  const latestSuggestions = latestRun?.suggestions ? latestRun.suggestions : [];
 
   const focusCount = overdueDeals.length + staleDeals.length + latestSuggestions.length;
 
@@ -151,14 +183,21 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
       <div className="relative bg-white rounded-t-xl sm:rounded-xl shadow-xl w-full sm:max-w-2xl mx-0 sm:mx-4 max-h-[85vh] flex flex-col">
         {/* Header */}
         <div className="p-4 border-b bg-indigo-50 rounded-t-xl flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium">Brandi</span>
-            <h2 className="text-lg font-semibold text-gray-900">Agent Panel</h2>
-            {isRunning && (
-              <span className="flex items-center gap-1.5 px-2 py-0.5 bg-indigo-200 text-indigo-800 text-xs rounded-full font-medium animate-pulse">
-                <span className="h-2 w-2 bg-indigo-600 rounded-full animate-spin" style={{ animationDuration: '1s' }}></span>
-                Scanning...
-              </span>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium">Brandi</span>
+              <h2 className="text-lg font-semibold text-gray-900">Agent Panel</h2>
+              {isRunning && (
+                <span className="flex items-center gap-1.5 px-2 py-0.5 bg-indigo-200 text-indigo-800 text-xs rounded-full font-medium animate-pulse">
+                  <span className="h-2 w-2 bg-indigo-600 rounded-full animate-spin" style={{ animationDuration: '1s' }}></span>
+                  Scanning...
+                </span>
+              )}
+            </div>
+            {latestRun && !isRunning && (
+              <p className="mt-1 text-xs text-indigo-800">
+                Last run {format(parseISO(latestRun.created_at), 'MMM d, h:mm a')} • {latestRunSummary}
+              </p>
             )}
           </div>
           <div className="flex items-center gap-2">
@@ -335,12 +374,35 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                 </div>
               </div>
             )}
+            {runError && (
+              <div className="bg-red-50 rounded-lg border border-red-200 p-3">
+                <p className="text-sm font-medium text-red-800">Couldn&apos;t start Brandi.</p>
+                <p className="text-xs text-red-600 mt-1">{runError}</p>
+              </div>
+            )}
             {runs.length === 0 && !isRunning ? (
               <div className="text-center text-gray-400 py-8">
                 <p className="text-sm">No runs yet.</p>
-                <p className="text-xs mt-1">Click &quot;Run Now&quot; to trigger Brandi&apos;s first email scan.</p>
+                <p className="text-xs mt-1">Click &quot;Run Now&quot; to start Brandi&apos;s first email scan.</p>
               </div>
             ) : (
+              <>
+                {latestRun && !isRunning && (
+                  <div className="bg-white rounded-lg border border-indigo-200 p-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">Latest Brandi run</p>
+                        <p className="text-xs text-gray-500 mt-0.5">
+                          {format(parseISO(latestRun.created_at), 'MMM d, h:mm a')}
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-sm font-medium text-indigo-700">{latestRunSummary}</p>
+                        <p className="text-xs text-gray-500">Applied changes are logged on cards as Brandi activity.</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
               runs.map((run) => (
                 <div key={run.id} className="bg-indigo-50 rounded-lg border border-indigo-200 p-3">
                   <div className="flex items-center justify-between mb-2">
@@ -362,9 +424,11 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                       )}
                     </div>
                   </div>
+                  <p className="text-xs text-indigo-700 font-medium mb-1">{summarizeRun(run)}</p>
                   <p className="text-sm text-gray-800 whitespace-pre-line">{run.summary}</p>
                 </div>
-              ))
+              ))}
+              </>
             )}
           </div>
         )}

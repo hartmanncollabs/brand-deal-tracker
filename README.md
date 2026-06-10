@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brand Deal Tracker
 
-## Getting Started
+Next.js + TypeScript + Supabase tracker for Liz's brand deals.
 
-First, run the development server:
+## Local app
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## OpenClaw Brandi trigger
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This repo now includes a small local trigger target that can launch Brandi through an OpenAI Codex run from Kenny's OpenClaw machine.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start it:
 
-## Learn More
+```bash
+cd /Users/melodi/clawd/projects/brand-deal-tracker
+export BRANDI_API_KEY=...
+export BRANDI_TRIGGER_TOKEN=choose-a-long-random-token
+export BRANDI_APP_URL=https://misslizdidit-brand-tracker.vercel.app
+npm run brandi:runner
+```
 
-To learn more about Next.js, take a look at the following resources:
+Default listener:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+http://127.0.0.1:8787/run?token=YOUR_TOKEN
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Recommended Brand Deal Tracker env:
 
-## Deploy on Vercel
+```text
+BRANDI_RUN_TRIGGER_URL=http://127.0.0.1:8787/run?token=YOUR_TOKEN
+BRANDI_RUN_TRIGGER_PROVIDER=openclaw-codex
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+What it does:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Receives the browser-triggered `/run` request.
+2. Spawns a local `codex exec --full-auto` run in this repo.
+3. Instructs Codex to act as Brandi, use the existing Gmail/feedback/sync APIs, and write `brandi/pending-updates.json`.
+4. Tells Codex to call `/api/brandi/sync` so the current run history and UI polling keep working.
+
+## Current limitation
+
+This is a launch-safe local trigger target, not a full always-on OpenClaw service yet.
+
+You still need:
+
+- `codex` installed and authenticated on the machine running the trigger
+- the runner process kept alive locally
+- the tracker UI opened on a machine that can reach `127.0.0.1:8787`, or a tunnel/reverse proxy if you want the deployed app to open a remote machine target
