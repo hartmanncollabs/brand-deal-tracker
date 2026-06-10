@@ -1,17 +1,1 @@
-[{
-  "run_summary": {
-    "summary": "Gmail scan failed — OAuth token has been expired or revoked. No emails were scanned this run. To restore scanning, re-authorize the Gmail connection and update the refresh token in the Brandi agent config.",
-    "emails_scanned": 0,
-    "deals_created": 0,
-    "deals_updated": 0,
-    "suggestions": [
-      {
-        "type": "auth-error",
-        "brand": null,
-        "message": "Gmail OAuth token is expired/revoked. Re-authorize at https://accounts.google.com or check the refresh token in the agent's curl command. Until this is fixed, Brandi cannot scan for new deals or thread updates."
-      }
-    ]
-  },
-  "deals": [],
-  "activities": []
-}]
+[]
