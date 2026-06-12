@@ -1,6 +1,6 @@
 [{
   "run_summary": {
-    "summary": "Brandi couldn't complete her Gmail scan today — the OAuth refresh token returned `invalid_grant`, meaning the Gmail authorization has expired or been revoked. No emails were scanned and no deals were updated. To fix this, Liz (or Kenny) needs to re-authorize Brandi's Gmail access. Until then, Brandi won't be able to pick up new inbound opportunities or track deal activity automatically.",
+    "summary": "Gmail OAuth token is still expired or revoked — Brandi is unable to scan emails. No deals were scanned, created, or updated. This has been the case since at least the previous run. To restore automatic deal tracking, Liz or Kenny needs to re-authorize Brandi's Gmail access and update the refresh token.",
     "emails_scanned": 0,
     "deals_created": 0,
     "deals_updated": 0,
@@ -8,7 +8,7 @@
       {
         "type": "auth-error",
         "brand": "N/A",
-        "message": "Gmail OAuth token is expired or revoked. Re-authorize Brandi's Gmail access to resume automatic deal tracking."
+        "message": "Gmail OAuth token is still expired or revoked. Re-authorize Brandi's Gmail access to resume automatic deal tracking. This is blocking all email scans."
       }
     ]
   },
