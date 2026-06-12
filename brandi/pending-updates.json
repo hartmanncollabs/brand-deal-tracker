@@ -1,17 +1,1 @@
-[{
-  "run_summary": {
-    "summary": "Gmail OAuth token is still expired or revoked — Brandi is unable to scan emails. No deals were scanned, created, or updated. This has been the case since at least the previous run. To restore automatic deal tracking, Liz or Kenny needs to re-authorize Brandi's Gmail access and update the refresh token.",
-    "emails_scanned": 0,
-    "deals_created": 0,
-    "deals_updated": 0,
-    "suggestions": [
-      {
-        "type": "auth-error",
-        "brand": "N/A",
-        "message": "Gmail OAuth token is still expired or revoked. Re-authorize Brandi's Gmail access to resume automatic deal tracking. This is blocking all email scans."
-      }
-    ]
-  },
-  "deals": [],
-  "activities": []
-}]
+[]
