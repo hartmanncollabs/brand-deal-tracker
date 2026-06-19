@@ -1,1 +1,18 @@
-[]
+[{
+  "run_summary": {
+    "summary": "🚨 Brandi couldn't run today — Gmail access was denied. The OAuth refresh token has expired or been revoked, so no emails were scanned. To fix this, you'll need to re-authorize Gmail access and update the refresh token in Brandi's scheduled run config. No deals were updated this run.",
+    "emails_scanned": 0,
+    "deals_created": 0,
+    "deals_updated": 0,
+    "error": "Gmail OAuth token expired or revoked (invalid_grant). Re-authorization required.",
+    "suggestions": [
+      {
+        "type": "action-required",
+        "brand": "System",
+        "message": "Gmail token is expired. Re-run the OAuth flow for hartmanncollabs@gmail.com and update the refresh token in Brandi's scheduled run configuration to restore email scanning."
+      }
+    ]
+  },
+  "deals": [],
+  "activities": []
+}]
