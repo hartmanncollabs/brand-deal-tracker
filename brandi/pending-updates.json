@@ -1,6 +1,6 @@
 [{
   "run_summary": {
-    "summary": "🚨 Brandi is still blocked — Gmail OAuth token expired. No emails scanned (2026-06-20, run 2). The re-auth helper script at scripts/gmail-reauth.mjs is ready and waiting. Until re-authorized, Brandi cannot monitor your inbox.",
+    "summary": "🚨 ONGOING: Gmail OAuth token expired — Brandi still cannot scan email (2026-06-20, run 3+). This has been broken across multiple consecutive runs. Re-authorization required to restore pipeline monitoring.",
     "emails_scanned": 0,
     "deals_created": 0,
     "deals_updated": 0,
@@ -9,7 +9,7 @@
       {
         "type": "action-required",
         "brand": "System",
-        "message": "ACTION NEEDED: Gmail token is expired — Brandi has been unable to scan emails. Run `node scripts/gmail-reauth.mjs` locally to open a browser consent screen for hartmanncollabs@gmail.com. After re-authorizing, copy the new refresh token into your environment config (Vercel env vars or .env.local). Full instructions print to the terminal when the script runs."
+        "message": "ACTION NEEDED: Gmail token has been expired for multiple consecutive runs — Brandi has been unable to monitor your inbox. Run `node scripts/gmail-reauth.mjs` locally to re-authorize. After completing the browser consent flow for hartmanncollabs@gmail.com, copy the new refresh token into your environment config (Vercel env vars or .env.local). Full instructions print to the terminal when the script runs."
       }
     ]
   },
