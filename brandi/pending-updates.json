@@ -1,6 +1,6 @@
 [{
   "run_summary": {
-    "summary": "🚨 ONGOING: Gmail OAuth token expired — Brandi still cannot scan email (2026-06-20, run 3+). This has been broken across multiple consecutive runs. Re-authorization required to restore pipeline monitoring.",
+    "summary": "🚨 ONGOING: Gmail OAuth token expired — Brandi still cannot scan email (2026-06-20, run 4+). This has been broken across multiple consecutive runs. Re-authorization required to restore pipeline monitoring.",
     "emails_scanned": 0,
     "deals_created": 0,
     "deals_updated": 0,
