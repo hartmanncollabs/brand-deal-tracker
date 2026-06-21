@@ -1,1 +1,17 @@
-[]
+[{
+  "run_summary": {
+    "summary": "🚨 Gmail auth error — Brandi couldn't scan email this run. The Gmail OAuth refresh token returned `invalid_grant`, meaning it's been revoked or expired. No emails were scanned and no deals were updated. To fix: re-authorize Brandi's Gmail access (re-run the OAuth flow to get a new refresh token).",
+    "emails_scanned": 0,
+    "deals_created": 0,
+    "deals_updated": 0,
+    "suggestions": [
+      {
+        "type": "action-required",
+        "brand": "N/A",
+        "message": "Gmail OAuth token is invalid (invalid_grant). Brandi needs a new refresh token to resume scanning. Re-run the OAuth authorization flow and update the refresh_token in Brandi's scheduled run config."
+      }
+    ]
+  },
+  "deals": [],
+  "activities": []
+}]
