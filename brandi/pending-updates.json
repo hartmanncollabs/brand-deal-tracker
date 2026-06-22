@@ -1,6 +1,6 @@
 [{
   "run_summary": {
-    "summary": "⚠️ Brandi cannot scan Gmail — the OAuth refresh token has expired or been revoked. This has been the case for multiple consecutive runs. No emails have been read and no deals have been updated since Apr 28. Action required: re-authorize Brandi's Gmail access to resume scheduled scanning.",
+    "summary": "⚠️ Brandi cannot scan Gmail — the OAuth refresh token has expired or been revoked. No emails have been read and no deals have been updated since Apr 28. Action required: re-authorize Brandi's Gmail access to resume scheduled scanning.",
     "emails_scanned": 0,
     "deals_created": 0,
     "deals_updated": 0,
@@ -9,7 +9,7 @@
       {
         "type": "action-required",
         "brand": "N/A",
-        "message": "Brandi's Gmail access has been broken for multiple runs (since ~Apr 28). She can't see any new brand emails or update the pipeline until the OAuth token is refreshed. Please re-authorize Gmail access from the settings where Brandi was originally connected."
+        "message": "Brandi's Gmail access has been broken since ~Apr 28 (nearly 2 months). She can't see any new brand emails or update the pipeline until the OAuth token is refreshed. Please re-authorize Gmail access from the settings where Brandi was originally connected."
       }
     ]
   },
