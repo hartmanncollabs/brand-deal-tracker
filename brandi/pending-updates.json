@@ -1,18 +1,1 @@
-[{
-  "run_summary": {
-    "summary": "⚠️ Brandi couldn't run today — Gmail access is broken. The OAuth refresh token returned an 'invalid_grant' error, which usually means the token has been revoked or expired. No emails were scanned and no deals were updated. To fix: go to your Google Account > Security > Third-party apps, find the Brand Deal Tracker / Brandi connection, and reconnect it. Then update the refresh token in the session config.",
-    "emails_scanned": 0,
-    "deals_created": 0,
-    "deals_updated": 0,
-    "error": "Gmail OAuth token refresh failed: invalid_grant (Bad Request). Refresh token may be expired or revoked.",
-    "suggestions": [
-      {
-        "type": "action-required",
-        "brand": "N/A",
-        "message": "Gmail OAuth is broken — Brandi can't scan emails until you reconnect. Visit Google Account > Security > Third-party apps to reauthorize, then update the refresh token in Brandi's config."
-      }
-    ]
-  },
-  "deals": [],
-  "activities": []
-}]
+[]
