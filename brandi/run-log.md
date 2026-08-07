@@ -1,5 +1,17 @@
 # Brandi Run Log
 
+## 2026-08-07 — ❌ GMAIL AUTH FAILURE (day 45)
+
+**Status:** Run failed — could not access Gmail.
+
+**Error:** `invalid_grant` — The Gmail OAuth refresh token remains expired/revoked. This is the **45th consecutive day** with no Gmail access (broken since June 23).
+
+**Impact:** No emails scanned. Deal pipeline has NOT been updated for over 6 weeks. Any inbound brand opportunities since June 23 are not captured.
+
+**Action required:** Re-authorize Brandi's Gmail access — see June 23 entry for instructions. This has NOT been resolved after 45 days.
+
+---
+
 ## 2026-08-06 — ❌ GMAIL AUTH FAILURE (day 44)
 
 **Status:** Run failed — could not access Gmail.
