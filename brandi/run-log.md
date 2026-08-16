@@ -1,5 +1,15 @@
 # Brandi Run Log
 
+## 2026-08-16 — ❌ GMAIL AUTH FAILURE (day 66, 2nd run today)
+
+**Status:** Run failed — could not access Gmail.
+
+**Error:** `invalid_grant` — Gmail OAuth refresh token still expired/revoked. **66 consecutive days** broken (since June 23). Pipeline has been completely unmaintained for 9+ weeks. This is the **2nd run today** — all failed.
+
+**Action required:** Re-authorize Gmail. See June 23 entry for instructions. **The schedule is burning compute on every fire with no result — please pause or fix urgently.**
+
+---
+
 ## 2026-08-16 — ❌ GMAIL AUTH FAILURE (day 66)
 
 **Status:** Run failed — could not access Gmail.
