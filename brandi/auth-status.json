@@ -1,1 +1,1 @@
-{"last_attempted": "2026-08-16", "error": "Gmail OAuth invalid_grant", "action_required": "Re-authenticate Gmail in Google Cloud Console"}
+{"last_attempted": "2026-08-16", "error": "Gmail OAuth invalid_grant", "action_required": "Re-authenticate Gmail in Google Cloud Console", "consecutive_days_broken": 67, "runs_today": 7}
