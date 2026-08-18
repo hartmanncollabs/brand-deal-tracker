@@ -1,5 +1,19 @@
 # Brandi Run Log
 
+## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 3rd run today)
+
+**Status:** Run failed — could not access Gmail.
+
+**Error:** `invalid_grant` — Gmail OAuth refresh token still expired/revoked. **70 consecutive days** broken (since June 23).
+
+**⚠️ Important:** FEEDBACK.md was updated today (2026-08-18) with a "Post-outage catch-up" instruction that assumes Gmail access has been restored. But the OAuth token is still failing. It's possible the intended new refresh token was never updated in the scheduled run config. Please verify: did you re-authorize Gmail OAuth and update the token in the scheduled run settings? If yes, the token in the stored prompt may not have been updated.
+
+**Action required:** 
+1. Confirm the new refresh token was saved in the scheduled task's stored prompt
+2. If not, re-run the OAuth flow and update the token in the scheduled run configuration
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 69, 1st run today)
 
 **Status:** Run failed — could not access Gmail.
