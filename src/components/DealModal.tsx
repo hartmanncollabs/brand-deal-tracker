@@ -837,7 +837,12 @@ function FileUploadSection({ label, url, onUrlChange, dealSlug, fileType }: File
 
   const uploadFile = async (file: File) => {
     setIsUploading(true);
-    const filePath = `${dealSlug}/${fileType}-${file.name}`;
+    // Sanitize filename — Supabase storage keys reject spaces/special characters
+    const safeName = file.name
+      .normalize('NFKD')
+      .replace(/[^\w.\- ]+/g, '')
+      .replace(/\s+/g, '_');
+    const filePath = `${dealSlug}/${fileType}-${safeName}`;
 
     const { error } = await supabase.storage
       .from('deal-attachments')
