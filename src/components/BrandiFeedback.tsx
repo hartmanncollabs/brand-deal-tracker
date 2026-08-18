@@ -403,7 +403,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                     </div>
                   </div>
                 )}
-              runs.map((run) => (
+              {runs.map((run) => (
                 <div key={run.id} className="bg-indigo-50 rounded-lg border border-indigo-200 p-3">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
