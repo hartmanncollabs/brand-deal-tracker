@@ -54,6 +54,41 @@ export default function DealModal({
   const [formData, setFormData] = useState<Partial<Deal>>({});
   const [newNote, setNewNote] = useState('');
   const [activeTab, setActiveTab] = useState<'details' | 'activity'>('details');
+  const [brandiStatus, setBrandiStatus] = useState<'idle' | 'queueing' | 'queued' | 'error'>('idle');
+
+  const handleBrandiUpdate = async () => {
+    if (!deal || brandiStatus === 'queueing') return;
+    setBrandiStatus('queueing');
+    try {
+      // Skip duplicate queue entries if a request is already pending for this deal
+      const { data: existing } = await supabase
+        .from('brandi_requests')
+        .select('id')
+        .eq('deal_id', deal.id)
+        .eq('status', 'pending')
+        .limit(1);
+
+      if (!existing || existing.length === 0) {
+        const { error } = await supabase.from('brandi_requests').insert({ deal_id: deal.id });
+        if (error) throw error;
+      }
+
+      // Launch a Brandi run now if a trigger is configured; otherwise the hourly run picks it up
+      const res = await fetch('/api/brandi/run-now', { method: 'POST' });
+      const payload = await res.json();
+      if (res.ok && payload.launchUrl) {
+        window.open(payload.launchUrl, '_blank', 'noopener,noreferrer');
+      }
+      setBrandiStatus('queued');
+    } catch {
+      setBrandiStatus('error');
+    }
+  };
+
+  // Reset button state when switching deals or reopening
+  useEffect(() => {
+    setBrandiStatus('idle');
+  }, [deal?.id, isOpen]);
 
   useEffect(() => {
     if (deal) {
@@ -160,12 +195,36 @@ export default function DealModal({
                 </div>
               )}
             </div>
-            <button
-              onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 text-2xl ml-4"
-            >
-              ×
-            </button>
+            <div className="flex items-center gap-2 ml-4">
+              {!isNew && deal && (
+                <button
+                  onClick={handleBrandiUpdate}
+                  disabled={brandiStatus === 'queueing' || brandiStatus === 'queued'}
+                  title="Brandi reviews this deal's email threads and updates the card"
+                  className={`px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors ${
+                    brandiStatus === 'queued'
+                      ? 'bg-green-50 border-green-200 text-green-700 cursor-default'
+                      : brandiStatus === 'error'
+                      ? 'bg-red-50 border-red-200 text-red-700'
+                      : 'bg-indigo-50 border-indigo-200 text-indigo-700 hover:bg-indigo-100'
+                  }`}
+                >
+                  {brandiStatus === 'queueing'
+                    ? 'Queueing…'
+                    : brandiStatus === 'queued'
+                    ? '✓ Brandi is on it'
+                    : brandiStatus === 'error'
+                    ? 'Failed — retry'
+                    : '✨ Update with Brandi'}
+                </button>
+              )}
+              <button
+                onClick={onClose}
+                className="text-gray-500 hover:text-gray-700 text-2xl"
+              >
+                ×
+              </button>
+            </div>
           </div>
         </div>
 

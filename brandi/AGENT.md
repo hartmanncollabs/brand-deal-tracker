@@ -179,6 +179,21 @@ A task can only land on a card whose current stage is at-or-past the prerequisit
 - ✅ Correct: set `next_action: "Sign up for Tipalti"` on the **Phase 1 child** (already at `delivered`, qualifies for invoicing tasks). Leave parent at `approval`. Leave Phase 2 at `content`.
 - ❌ Wrong (what happened): moved JLab parent from `approval` → `invoiced`. This skipped four stages, ignored the parent's actual progress, and applied an invoicing task to a card that hadn't reached `delivered`.
 
+### Deal-Specific Update Requests (the "Update with Brandi" button)
+
+Kenny can request a focused review of a single deal from the deal modal. **Check for these at the START of every run, before the general scan:**
+
+1. `GET /api/brandi/requests` (with `x-api-key`) — returns pending requests, each with the deal's brand, contact info, and current card state.
+2. For each pending request, do a **focused review** of that deal:
+   - Search Gmail for the deal's threads: contact_email (`from:` and `to:`), brand name, and any agency contacts in the card's notes. Look back further than the normal scan window if needed for THIS deal — the point is to reconcile the card with the full recent thread history (default `newer_than:30d`, extend if the thread is older).
+   - Apply all the normal rules (stage playbook, manual-changes-win, forward-only, one stage per run, parent/child routing, task-to-stage eligibility).
+   - Update stage, waiting_on, next_action, next_action_date, last_contact, and notes per the playbook — this is exactly what Kenny is asking for when he presses the button.
+   - If nothing in email contradicts or extends the card, say so in an activity note ("Reviewed threads through [date] — card is up to date") so Kenny knows the review happened.
+3. After processing each request: `PATCH /api/brandi/requests` with `{"id": "<request id>"}` to mark it done.
+4. Include a line per handled request in the run summary.
+
+Requested deals are exempt from any temporary scan-window restrictions in FEEDBACK.md — a button press means Kenny wants that specific deal fully reconciled.
+
 ### Last Contact
 - Update `last_contact` to the date of the most recent email in the thread (YYYY-MM-DD format)
 - This tracks when the last communication happened, whether inbound or outbound
