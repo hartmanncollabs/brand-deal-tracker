@@ -1,5 +1,17 @@
 # Brandi Run Log
 
+## 2026-08-19 — ❌ APP API UNREACHABLE (network policy)
+
+**Status:** Run failed — egress policy blocked all outbound calls to `misslizdidit-brand-tracker.vercel.app`.
+
+**Error:** The session's network policy denied `CONNECT` to `misslizdidit-brand-tracker.vercel.app:443` (403 from proxy gateway). This blocks both the Gmail proxy endpoint (`/api/brandi/gmail`) and deal management endpoints (`/api/brandi/requests`, `/api/deals`, `/api/brandi/sync`). No emails scanned, no requests checked, no updates applied.
+
+**Note:** This is a different failure mode from the recent Gmail OAuth errors. The Vercel app host itself is not reachable from this session's container — the environment's egress policy doesn't allow it.
+
+**Action required:** Check the Claude Code remote environment's network policy. The Vercel app host (`misslizdidit-brand-tracker.vercel.app`) needs to be allowed for Brandi's runs to work. If Gmail OAuth was re-authorized (as FEEDBACK.md suggests), the runs may start working once the egress policy is corrected.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
