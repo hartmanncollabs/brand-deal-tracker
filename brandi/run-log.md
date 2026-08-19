@@ -1,5 +1,19 @@
 # Brandi Run Log
 
+## 2026-08-19 — ❌ NETWORK POLICY BLOCKING VERCEL APP
+
+**Status:** Run failed — network egress policy blocked all access to `misslizdidit-brand-tracker.vercel.app` (HTTP 403 from proxy).
+
+**Error:** Session-level egress policy denial. The Vercel app is unreachable from this scheduled run session. This is separate from the Gmail OAuth issue — the app itself cannot be contacted at all.
+
+**What this means:** The scheduled run session's network policy does not allow outbound connections to the Vercel app. This would need to be fixed at the session/environment configuration level (egress policy for the scheduled task).
+
+**Previous issue for reference:** 70 consecutive days of Gmail OAuth `invalid_grant` errors (June 23 – August 18). FEEDBACK.md was updated 2026-08-18 anticipating Gmail restoration, but today's blocker is the network policy itself.
+
+**Action required:** Verify that the scheduled task's environment has network egress access to `misslizdidit-brand-tracker.vercel.app`. If the session was recently reconfigured, the egress policy may need to include this host.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
