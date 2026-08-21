@@ -1,5 +1,19 @@
 # Brandi Run Log
 
+## 2026-08-21 — ❌ APP API BLOCKED BY EGRESS POLICY
+
+**Status:** Run failed — app API unreachable from this session.
+
+**Error:** The egress proxy returned `403 connect_rejected` for `misslizdidit-brand-tracker.vercel.app:443`. This is a network policy denial, not an auth failure — the destination host is blocked by the organization's egress policy for this session.
+
+**Impact:** Could not check pending update requests, could not access the Gmail proxy endpoint, could not apply any updates. No emails scanned.
+
+**This is a NEW issue** — distinct from the previous Gmail OAuth failures. Gmail auth was restored on 2026-08-18 (per FEEDBACK.md), but now the session's network policy is blocking the app itself.
+
+**Action required:** The scheduled task's execution environment needs egress policy access to `misslizdidit-brand-tracker.vercel.app`. This may require updating the environment configuration at https://code.claude.com/docs/en/claude-code-on-the-web or contacting Anthropic support to allow this host in the session's outbound policy.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
