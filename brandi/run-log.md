@@ -1,5 +1,19 @@
 # Brandi Run Log
 
+## 2026-08-23 — ❌ EGRESS BLOCKED
+
+**Status:** Run failed — network egress policy blocked all API calls.
+
+**Error:** The outbound proxy rejected CONNECT to `misslizdidit-brand-tracker.vercel.app:443` with a 403 (policy denial). This is a new failure mode — previous runs could reach the app (they were failing at the Gmail OAuth layer). Today the app itself is unreachable from this session.
+
+**Impact:** Cannot check pending Brandi requests, cannot scan Gmail, cannot sync updates.
+
+**Not a retry-able error** — per egress proxy docs, 403/407 policy denials should not be routed around. This requires an admin or account-level fix to allow `misslizdidit-brand-tracker.vercel.app` in the egress policy for this session type.
+
+**Action required:** Check the Claude Code on the web environment network policy settings. The session's egress policy needs to allow outbound HTTPS to `misslizdidit-brand-tracker.vercel.app`. See https://code.claude.com/docs/en/claude-code-on-the-web for environment configuration docs.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
