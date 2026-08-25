@@ -1,5 +1,21 @@
 # Brandi Run Log
 
+## 2026-08-25 — ❌ API BLOCKED (egress policy)
+
+**Status:** Run failed — cannot reach `misslizdidit-brand-tracker.vercel.app`.
+
+**Error:** The remote execution environment's network egress policy is blocking HTTPS connections to `misslizdidit-brand-tracker.vercel.app` (proxy returns 403 on CONNECT). This is a new failure mode, separate from the previous Gmail auth issues.
+
+**Impact:** No pending requests checked, no Gmail emails scanned, no pipeline updates applied.
+
+**What this is NOT:** This is not a Gmail token failure. FEEDBACK.md was correctly updated on 2026-08-18 indicating Gmail access was restored. The problem here is that the scheduled task is running in a remote Claude Code session whose egress policy doesn't allow outbound connections to the Vercel app. All API calls (requests check, Gmail search, sync) go through the app, so nothing can proceed.
+
+**Action required:** The scheduled task needs to run in a session with egress access to `misslizdidit-brand-tracker.vercel.app`. Options:
+1. Check the remote environment's network policy settings and add the Vercel app domain as an allowed host.
+2. Re-configure the scheduled task to run in a local Claude Code session instead of a remote cloud session, where the egress policy doesn't apply.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
