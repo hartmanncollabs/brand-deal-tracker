@@ -1,5 +1,17 @@
 # Brandi Run Log
 
+## 2026-08-25 — ❌ APP API UNREACHABLE (network policy block)
+
+**Status:** Run failed — app API endpoint blocked by egress policy.
+
+**Error:** The remote session's network policy denied outbound HTTPS connections to `misslizdidit-brand-tracker.vercel.app` (403 from egress gateway). All Brandi operations route through this app (Gmail scan, pending request check, sync) — with it blocked, nothing could be done.
+
+**Note:** This is a session network policy issue, not a Gmail auth issue. The app endpoint itself is what's blocked. Previous runs failed on Gmail OAuth; this run's architecture (going through the app API) is correct, but the session's egress policy doesn't allow the destination host.
+
+**Action required:** The remote session environment's egress policy needs to allow `misslizdidit-brand-tracker.vercel.app`. This may be configurable in the Claude Code environment settings when setting up the scheduled task, or may need to be flagged to Anthropic support.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
