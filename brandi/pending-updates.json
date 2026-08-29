@@ -1,1 +1,17 @@
-[]
+[{
+  "run_summary": {
+    "summary": "⚠️ Brandi's scheduled run on Aug 29 could not complete — the remote execution environment's network policy blocked outbound connections to misslizdidit-brand-tracker.vercel.app (the app API, Gmail proxy, and sync endpoint). No emails were scanned and no deal-specific update requests were checked. This is a network/environment configuration issue, not a Brandi error. Please check the environment's egress policy or re-trigger the run from an environment that has access to the Vercel deployment.",
+    "emails_scanned": 0,
+    "deals_created": 0,
+    "deals_updated": 0,
+    "suggestions": [
+      {
+        "type": "infra",
+        "brand": "N/A",
+        "message": "The cloud execution environment blocked outbound HTTPS to misslizdidit-brand-tracker.vercel.app (proxy returned 403 on CONNECT). The Gmail scan, pending requests check, and sync step all failed. You may need to update the network policy for the scheduled-run environment to allow this domain, or run Brandi from a machine/environment with unrestricted outbound access."
+      }
+    ]
+  },
+  "deals": [],
+  "activities": []
+}]
