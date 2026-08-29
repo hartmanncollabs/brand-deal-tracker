@@ -1,5 +1,24 @@
 # Brandi Run Log
 
+## 2026-08-29 — ❌ API UNREACHABLE (egress proxy blocked)
+
+**Status:** Run failed — egress proxy blocked all connections to `misslizdidit-brand-tracker.vercel.app`.
+
+**Error:** `connect_rejected` — The remote execution environment's network policy (org-level egress proxy) denied outbound HTTPS to the Vercel app with a 403. This is a **different issue** from previous Gmail OAuth failures.
+
+**Impact:** Could not check pending requests, could not scan Gmail, pipeline not updated.
+
+**What changed:** Previous failures were `invalid_grant` Gmail OAuth errors. Today's failure is at the proxy level — the entire app API is unreachable. This may indicate:
+1. Network policy was tightened in the remote environment
+2. The Vercel app is on a domain the policy doesn't allow
+3. A transient proxy issue
+
+**Action required:**
+- If the scheduled task runs in Anthropic's cloud (Claude Code on the web): check the environment's network policy — `misslizdidit-brand-tracker.vercel.app` may need to be whitelisted.
+- If this is a fluke: the next scheduled run should resolve it automatically.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
