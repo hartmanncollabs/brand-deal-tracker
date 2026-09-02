@@ -3,7 +3,8 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Deal } from '@/types/database';
-import { format, parseISO, addDays } from 'date-fns';
+import { format, addDays } from 'date-fns';
+import { safeFormat } from '@/lib/dates';
 
 interface DealCardProps {
   deal: Deal;
@@ -167,12 +168,12 @@ export default function DealCard({ deal, onClick, onSpawnChild, isHovered, isDra
         <div className="flex gap-2">
           {deal.last_contact && (
             <span className="text-gray-400" title="Last contact">
-              Last: {format(parseISO(deal.last_contact), 'MMM d')}
+              Last: {safeFormat(deal.last_contact, 'MMM d')}
             </span>
           )}
           {deal.next_action_date && (
             <span className={`${isOverdue ? 'text-red-500 font-medium' : isDueToday ? 'text-amber-600 font-medium' : 'text-blue-500'}`} title="Next action date">
-              Due: {format(parseISO(deal.next_action_date), 'MMM d')}
+              Due: {safeFormat(deal.next_action_date, 'MMM d')}
             </span>
           )}
         </div>

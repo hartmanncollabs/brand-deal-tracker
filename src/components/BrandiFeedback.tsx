@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useAuth } from './AuthProvider';
 import { Deal, STAGE_LABELS, DealStage } from '@/types/database';
-import { format, parseISO, isBefore, startOfDay } from 'date-fns';
+import { parseISO, isBefore, startOfDay } from 'date-fns';
+import { safeFormat } from '@/lib/dates';
 
 interface FeedbackEntry {
   id: string;
@@ -196,7 +197,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
             </div>
             {latestRun && !isRunning && (
               <p className="mt-1 text-xs text-indigo-800">
-                Last run {format(parseISO(latestRun.created_at), 'MMM d, h:mm a')} • {latestRunSummary}
+                Last run {safeFormat(latestRun.created_at, 'MMM d, h:mm a')} • {latestRunSummary}
               </p>
             )}
           </div>
@@ -279,7 +280,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                         <div className="flex items-center gap-2">
                           <span className="font-medium text-gray-900 text-sm">{deal.brand}</span>
                           <span className="text-xs px-1.5 py-0.5 bg-red-100 text-red-600 rounded">
-                            {deal.next_action_date ? format(parseISO(deal.next_action_date), 'MMM d') : ''}
+                            {safeFormat(deal.next_action_date, 'MMM d', '')}
                           </span>
                           <span className="text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">
                             {STAGE_LABELS[deal.stage as DealStage] || deal.stage}
@@ -319,7 +320,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                       <div className="flex items-center gap-2">
                         <span className="font-medium text-gray-900 text-sm">{deal.brand}</span>
                         <span className="text-xs px-1.5 py-0.5 bg-amber-100 text-amber-600 rounded">
-                          Last contact: {deal.last_contact ? format(parseISO(deal.last_contact), 'MMM d') : 'unknown'}
+                          Last contact: {safeFormat(deal.last_contact, 'MMM d', 'unknown')}
                         </span>
                         <span className="text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">
                           {STAGE_LABELS[deal.stage as DealStage] || deal.stage}
@@ -393,7 +394,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                       <div>
                         <p className="text-sm font-medium text-gray-900">Latest Brandi run</p>
                         <p className="text-xs text-gray-500 mt-0.5">
-                          {format(parseISO(latestRun.created_at), 'MMM d, h:mm a')}
+                          {safeFormat(latestRun.created_at, 'MMM d, h:mm a')}
                         </p>
                       </div>
                       <div className="text-right">
@@ -409,7 +410,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                     <div className="flex items-center gap-2">
                       <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded font-medium">Brandi</span>
                       <span className="text-xs text-gray-400">
-                        {format(parseISO(run.created_at), 'MMM d, h:mm a')}
+                        {safeFormat(run.created_at, 'MMM d, h:mm a')}
                       </span>
                     </div>
                     <div className="flex gap-2 text-xs">
@@ -449,7 +450,7 @@ export default function BrandiFeedback({ isOpen, onClose, deals = [], onScrollTo
                       <p className="text-sm text-gray-800">{entry.message}</p>
                     </div>
                     <span className="text-xs text-gray-400 mt-0.5 self-end">
-                      {entry.author} &middot; {format(parseISO(entry.created_at), 'MMM d, h:mm a')}
+                      {entry.author} &middot; {safeFormat(entry.created_at, 'MMM d, h:mm a')}
                     </span>
                   </div>
                 ))

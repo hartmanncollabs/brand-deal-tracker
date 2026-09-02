@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Deal, DealActivity, DealStage, STAGES, STAGE_LABELS, STAGE_COLORS, Priority, WaitingOn, DealType } from '@/types/database';
-import { format, parseISO } from 'date-fns';
+import { format } from 'date-fns';
+import { safeFormat } from '@/lib/dates';
 import { supabase } from '@/lib/supabase';
 
 // Renders text with URLs as clickable links
@@ -430,6 +431,8 @@ export default function DealModal({
                   </label>
                   <input
                     type="date"
+                    min="2000-01-01"
+                    max="2100-12-31"
                     value={formData.last_contact || ''}
                     onChange={(e) => {
                       const updated = { ...formData, last_contact: e.target.value };
@@ -445,6 +448,8 @@ export default function DealModal({
                   </label>
                   <input
                     type="date"
+                    min="2000-01-01"
+                    max="2100-12-31"
                     value={formData.next_action_date || ''}
                     onChange={(e) => {
                       const newDate = e.target.value;
@@ -740,7 +745,7 @@ export default function DealModal({
                           <p className="text-gray-700"><Linkify text={activity.note} /></p>
                         </div>
                         <span className="text-xs text-gray-400 whitespace-nowrap ml-2">
-                          {format(parseISO(activity.created_at), 'MMM d, h:mm a')}
+                          {safeFormat(activity.created_at, 'MMM d, h:mm a')}
                         </span>
                       </div>
                     </div>
