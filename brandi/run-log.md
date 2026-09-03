@@ -1,5 +1,19 @@
 # Brandi Run Log
 
+## 2026-09-03 — ❌ NETWORK ACCESS BLOCKED
+
+**Status:** Run failed — egress proxy blocked all connections to `misslizdidit-brand-tracker.vercel.app`.
+
+**Error:** `connect_rejected` — the organization's egress proxy returned 403 (policy denial) on all CONNECT attempts to the Vercel app. This affects both the API calls (pending requests, Gmail proxy, sync endpoint) and means no Gmail scanning or deal updates could occur.
+
+**What was blocked:** All API calls to `misslizdidit-brand-tracker.vercel.app` — pending request check, Gmail search, and the sync endpoint. This is a network policy issue, not an auth issue.
+
+**Action required:** The Claude Code remote session's network policy needs to allow outbound HTTPS to `misslizdidit-brand-tracker.vercel.app`. This can be configured in the environment settings at https://code.claude.com/docs/en/claude-code-on-the-web. Once the policy allows the connection, Brandi's scheduled runs will resume normally.
+
+**Note:** FEEDBACK.md from 2026-08-18 indicates Gmail access was restored after a ~2-month outage. This run confirms the scheduled task is firing correctly, but the remote execution environment's network policy is the new blocker.
+
+---
+
 ## 2026-08-18 — ❌ GMAIL AUTH FAILURE (day 70, 6th run today)
 
 **Status:** Run failed — Gmail OAuth still broken.
